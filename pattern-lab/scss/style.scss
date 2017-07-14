@@ -1,0 +1,20 @@
+/* Imports Elements SDK SCSS, Font Awesome & Patternlab styles */
+@import '../../node_modules/pearson-elements/scss/elements';
+@import '_ux-override.scss';
+@import 'font-awesome/font-awesome';
+@import 'elements-v0-icons';
+@import 'ux-boilerplate';
+@import 'pattern-lab';
+@import 'ie11.scss';
+
+// Loads generic helper classes
+@import 'variables';
+@import 'mixins';
+@import 'helpers';
+@import 'flex';
+
+// Start project files located in the 'pattern-lab/source/_patterns' folders
+
+
+
+
