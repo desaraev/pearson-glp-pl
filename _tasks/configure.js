@@ -27,6 +27,8 @@ gulp.task('configure', ['install-elements'], function() {
         .pipe(gulp.dest('ui/images/'))
         .pipe(gulp.dest('pattern-lab/source/images/'));
 
+    gulp.src("meta/_01-foot.mustache")
+        .pipe(gulp.dest('pattern-lab/source/_meta/'))
 });
 
 
