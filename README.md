@@ -49,3 +49,12 @@ For more information on patternlab
 5. sign into VPN
 5. from the console run $ gulp ftp
 6. when the process is complete your pattern lab will be show up at: http://159.182.11.87/your-project/
+
+## Contributing
+Anyone can contribute to this project.  To get started:
+1. grab an issue from the issues queue.
+2. branch off of the latest master and complete the task
+3. when complete perform a pull request so the team can review.
+4. after review we will merge it to master
+
+All components must be accessible and reviewed by the group.
