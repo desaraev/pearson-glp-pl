@@ -1,0 +1,46 @@
+// TODO Change the colors over to Variables once the Colors have been complete
+.menu {
+  list-style-type: none;
+  padding:1em 0;
+  border: 1px solid #c7c7c7;
+  border-radius:2px;
+  width:220px;
+  margin-top: 0;
+  top: 16px;
+  position:relative;
+  li {
+    a {
+      position:relative;
+      display:inline-block;
+      text-decoration: none;
+      padding: 4px 24px 4px 34px;
+      width:100%;
+      color: #252525;
+      &:hover {
+        background-color: #e9e9e9;
+      }
+      svg {
+          position: absolute;
+          left: 10px;
+      }
+    }
+    &[aria-checked="false"] {
+      svg {
+        display:none;
+      }
+    }
+    &[aria-checked="true"] {
+      svg {
+        display:inline-block;
+      }
+    }
+    &.divider {
+      border-bottom:1px solid #c7c7c7;
+      padding-bottom:8px;
+      margin:0 25px;
+      + li {
+        margin-top:8px;
+      }
+    }
+  }
+}

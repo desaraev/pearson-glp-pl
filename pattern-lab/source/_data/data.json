@@ -1,8 +1,8 @@
 {
   "icon": [
     {
-      "icon":"remove-lg-18",
-      "label":"remove"
+      "icon": "remove-lg-18",
+      "label": "remove"
     }
   ],
   "textIconBtn": [
@@ -12,6 +12,53 @@
         {
           "icon": "calendar-18",
           "label": "calendar"
+        }
+      ]
+    }
+  ],
+  "dropdown": [
+    {
+      "icon": [
+        {
+          "icon": "dropdown-open-sm-18",
+          "label": "selected"
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "menuList": [
+        {
+          "label": "Option One",
+          "link": "#",
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        },
+        {
+          "label": "Option Two",
+          "link": "#",
+          "divider": true,
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        },
+        {
+          "label": "Option Three",
+          "link": "#",
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
         }
       ]
     }

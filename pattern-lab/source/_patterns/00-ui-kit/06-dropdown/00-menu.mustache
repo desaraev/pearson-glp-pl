@@ -1,0 +1,15 @@
+{{#menu}}
+	<ul role="menu" class="menu pe-label">
+		{{#menuList}}
+			<li role="menuitemcheckbox" aria-checked="false">
+				<a href="{{link}}">
+					{{> ui-kit-single-icon }}
+					{{label}}
+				</a>
+			</li>
+			{{#divider}}
+				<li class="divider"></li>
+			{{/divider}}
+		{{/menuList}}
+	</ul>
+{{/menu}}
