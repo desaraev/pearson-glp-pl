@@ -11,6 +11,12 @@
   }
 }
 
+.fancy-select {
+  .pe-input_underline {
+	background-color:#19a6a4;
+  }
+}
+
 .basic-input {
   .pe-textInput--basic {
 	&:focus {

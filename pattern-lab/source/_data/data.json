@@ -76,5 +76,31 @@
         }
       ]
     }
+  ],
+  "select": [
+    {
+      "id": "send_message",
+      "label": "Send message to",
+      "optionList": [
+        {
+          "value": "this_one",
+          "label": "Option one"
+        },
+        {
+          "value": "this_two",
+          "label": "Option two"
+        },
+        {
+          "value": "this_three",
+          "label": "Option three"
+        }
+      ],
+      "icon": [
+        {
+          "icon": "dropdown-open-sm-18",
+          "label": "selected"
+        }
+      ]
+    }
   ]
 }
