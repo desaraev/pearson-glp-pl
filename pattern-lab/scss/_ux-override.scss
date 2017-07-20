@@ -4,3 +4,18 @@
 	height:auto;
   }
 }
+
+.fancy-input {
+  .pe-input_underline {
+	background-color:#19a6a4;
+  }
+}
+
+.basic-input {
+  .pe-textInput--basic {
+	&:focus {
+	  border: 1px solid #19a6a4;
+	  box-shadow: 0px 0px 5px 0px #19a6a4;
+	}
+  }
+}

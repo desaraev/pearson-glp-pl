@@ -16,6 +16,20 @@
       ]
     }
   ],
+  "fancyInput": [
+    {
+      "label": "First Name",
+      "placeholder": "weee I'm placeholder",
+      "id": "fancyOne"
+    }
+  ],
+  "basicInput": [
+    {
+      "label": "First Name",
+      "placeholder": "weee I'm placeholder",
+      "id": "basicOne"
+    }
+  ],
   "dropdown": [
     {
       "icon": [
