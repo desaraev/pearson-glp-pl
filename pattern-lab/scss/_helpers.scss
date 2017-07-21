@@ -47,6 +47,14 @@ html {
   background-color: $secondary-three;
 }
 
+.secondary-four-bg {
+  background-color: $secondary-four;
+}
+
+.secondary-five-bg {
+  background-color: $secondary-five;
+}
+
 .neutral-bg {
   background-color:$neutral;
 }
@@ -79,9 +87,7 @@ html {
   background-color:$condition-three;
 }
 
-.condition-four-bg {
-  background-color:$condition-four;
-}
+
 
 // Font Color Helpers - Targets color and fill color for SVG ///
 ////////////////////////////////////////////////////////////////
@@ -153,9 +159,6 @@ html {
   @include font-color($condition-three);
 }
 
-.condition-four {
-  @include font-color($condition-four);
-}
 
 .flex-container {
   @include flex;
