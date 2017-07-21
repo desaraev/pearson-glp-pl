@@ -103,6 +103,68 @@
       ]
     }
   ],
+  "checkBox": [
+    {
+      "id": "checkBoxId",
+      "label": "Bacon",
+      "checked": true,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
+    },
+    {
+      "id": "checkBoxId2",
+      "label": "Bacon Disabled",
+      "disabled": true,
+      "checked": false,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
+    },
+    {
+      "id": "checkBoxId3",
+      "label": "Bacon Checked Disabled",
+      "disabled": true,
+      "checked": true,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
+    }
+  ],
+  "radios": [
+    {
+      "legend": "I am Legend",
+      "radioList": [
+        {
+          "id": "radioId1",
+          "label": "Bacon",
+          "checked": true
+        },
+        {
+          "id": "radioId2",
+          "label": "Eggs"
+        },
+        {
+          "id": "radioId3",
+          "label": "Sausage"
+        },
+        {
+          "id": "radioId3",
+          "label": "Green Eggs",
+          "disabled": true
+        }
+       ]
+    }
+  ],
   "textArea": [
     {
       "id": "textareaId",
