@@ -170,5 +170,35 @@
       "id": "textareaId",
       "label": "Basic Textarea"
     }
+  ],
+  "stepper": [
+    {
+      "uiControls": [
+        {
+          "label": "increase value",
+          "icon": [
+            {
+              "icon": "dropdown-close-18",
+              "label": "increase value"
+            }
+          ]
+        },
+        {
+          "label": "decrease value",
+          "icon": [
+            {
+              "icon": "dropdown-open-18",
+              "label": "decrease value"
+            }
+          ]
+        }
+      ],
+      "basicInput": [
+        {
+          "id": "pageStepper"
+        }
+      ],
+      "number": "102"
+    }
   ]
 }

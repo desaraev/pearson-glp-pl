@@ -1,0 +1,24 @@
+.stepper {
+  display:flex;
+  align-items: center;
+  button {
+    margin:0 .5em;
+    &:first-child {
+      margin-left:0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  svg {
+    fill: $neutral-three;
+  }
+  input {
+    margin:0;
+  }
+  .enterNumber {
+    margin-left: .5em;
+    padding:.5em;
+    width:70px;
+  }
+}
