@@ -25,3 +25,18 @@
 	}
   }
 }
+
+.textarea {
+  .pe-multiLineText {
+	&:focus {
+	  border: 1px solid #19a6a4;
+	  box-shadow: 0px 0px 5px 0px #19a6a4;
+	}
+  }
+  .pe-multiLineText--error {
+	&:focus {
+	  box-shadow: 0px 0px 4px 0px #DB0020;
+	  border: 1px solid #DB0020;
+	}
+  }
+}

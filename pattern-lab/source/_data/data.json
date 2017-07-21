@@ -102,5 +102,11 @@
         }
       ]
     }
+  ],
+  "textArea": [
+    {
+      "id": "textareaId",
+      "label": "Basic Textarea"
+    }
   ]
 }
