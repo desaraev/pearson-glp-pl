@@ -1,4 +1,4 @@
-.stepper {
+.stepper, .zoom {
   display:flex;
   align-items: center;
   button {
@@ -20,5 +20,11 @@
     margin-left: .5em;
     padding:.5em;
     width:70px;
+  }
+}
+
+.zoom {
+  .enterNumber {
+    width:90px;
   }
 }

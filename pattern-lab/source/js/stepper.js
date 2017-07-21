@@ -23,13 +23,13 @@
         increaseValue.addEventListener('click', () => {
             const inputValueNumber = parseInt(input.value);
             if (inputValueNumber  < maxValue)
-                return input.value = inputValueNumber  + 1
+                return input.value++
         });
 
         decreaseValue.addEventListener('click', () => {
             const inputValueNumber = parseInt(input.value);
-            if (inputValueNumber < maxValue && inputValueNumber !== 0)
-                return input.value = inputValueNumber - 1
+            if (inputValueNumber <= maxValue && inputValueNumber !== 0)
+                return input.value--
         })
     })
 
