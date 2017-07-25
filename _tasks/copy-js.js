@@ -7,4 +7,7 @@ gulp.task('copy-js', function() {
     gulp.src("ui/js/**")
         .pipe(gulp.dest('pattern-lab/source/js/'))
         .pipe(gulp.dest('pattern-lab/public/js/'));
+
+    gulp.src("pattern-lab/source/js/**")
+        .pipe(gulp.dest('pattern-lab/public/js/'));
 });
