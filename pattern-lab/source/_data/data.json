@@ -425,5 +425,269 @@
         }
       ]
     }
+  ],
+  "timepicker": [
+    {
+
+      "basicInput": [
+        {
+          "ariaLabel": "enter time",
+          "id": "timeSelector",
+          "placeholder": "10:30 AM"
+        }
+      ],
+      "icon": [
+        {
+          "icon": "clock-18",
+          "label": "enter time"
+        }
+      ],
+      "menu": [
+        {
+          "menuList": [
+            {
+              "label": "10:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "11:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "12:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "1:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "2:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "3:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "4:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "5:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "6:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "7:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "8:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "9:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "10:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "11:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "12:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "1:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "2:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "3:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "4:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "5:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "6:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "7:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "8:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "9:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
