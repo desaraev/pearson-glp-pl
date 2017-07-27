@@ -131,6 +131,10 @@ input[type=number]::-webkit-outer-spin-button {
   @include font-color($secondary-three);
 }
 
+.secondary-four {
+  @include font-color($secondary-four);
+}
+
 .neutral {
   @include font-color($neutral);
 }

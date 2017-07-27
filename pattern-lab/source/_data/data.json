@@ -234,5 +234,22 @@
         }
       ]
     }
+  ],
+  "loader": [
+    {
+      "label": "Loading...",
+      "light": true
+    }
+  ],
+  "loaderDark": [
+    {
+      "loader": [
+        {
+          "label": "Loading...",
+          "dark": true,
+          "light": false
+        }
+      ]
+    }
   ]
 }
