@@ -251,5 +251,11 @@
         }
       ]
     }
+  ],
+  "toggle": [
+    {
+      "id": "feedbackToggle",
+      "labelId": "labelToggle"
+    }
   ]
 }
