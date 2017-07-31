@@ -162,7 +162,7 @@
           "label": "Green Eggs",
           "disabled": true
         }
-       ]
+      ]
     }
   ],
   "textArea": [
@@ -250,6 +250,12 @@
           "light": false
         }
       ]
+    }
+  ],
+  "toggle": [
+    {
+      "id": "feedbackToggle",
+      "labelId": "labelToggle"
     }
   ]
 }
