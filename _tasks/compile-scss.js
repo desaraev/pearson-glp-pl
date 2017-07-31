@@ -9,5 +9,6 @@ gulp.task('compile-scss', function () {
             lineNumbers: true
         })
         .pipe(gulp.dest('pattern-lab/source/css'))
+        .pipe(gulp.dest('pattern-lab/public/css'))
         .pipe(gulp.dest('ui/css'));
 });
