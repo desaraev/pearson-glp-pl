@@ -1,5 +1,5 @@
 # Pearson GLP Patternlab - v0.5
-http://159.182.11.87/pearson-glp-pl
+http://45.55.127.237/pearson-glp-pl/
 
 ## Pattern Lab & Elements Boilerplate
 This setup will get you started with running a basic Pattern Lab integrated with elements.  Perfect for prototyping HTML and SCSS in an atomic environment. To get started, install all the necessary dependencies and load configuration folders and files.
