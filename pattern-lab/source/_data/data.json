@@ -16,6 +16,11 @@
       ]
     }
   ],
+  "linkBtn": [
+    {
+      "label": "text link"
+    }
+  ],
   "fancyInput": [
     {
       "label": "First Name",
@@ -231,6 +236,80 @@
           "type": "text",
           "value": "100",
           "id": "zoomStepper"
+        }
+      ]
+    }
+  ],
+  "pagination": [
+    {
+      "controlLeft": [
+        {
+          "disable": true,
+          "icon": [
+            {
+              "icon": "chevron-back-sm-18",
+              "label": "previous 5 items"
+            }
+          ]
+        }
+      ],
+      "controlRight": [
+        {
+          "icon": [
+            {
+              "icon": "chevron-next-sm-18",
+              "label": "next 5 items"
+            }
+          ]
+        }
+      ],
+      "list": [
+        {
+          "selected": true,
+          "label": "1"
+        },
+        {
+          "selected": false,
+          "label": "2"
+        },
+        {
+          "selected": false,
+          "label": "3"
+        },
+        {
+          "selected": false,
+          "label": "4"
+        },
+        {
+          "selected": false,
+          "label": "5"
+        }
+      ]
+    }
+  ],
+  "paginationGroup": [
+
+    {
+      "total": "25",
+      "controlLeft": [
+        {
+          "disable": true,
+          "icon": [
+            {
+              "icon": "chevron-back-sm-18",
+              "label": "previous 5 items"
+            }
+          ]
+        }
+      ],
+      "controlRight": [
+        {
+          "icon": [
+            {
+              "icon": "chevron-next-sm-18",
+              "label": "next 5 items"
+            }
+          ]
         }
       ]
     }
