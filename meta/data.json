@@ -1,55 +1,255 @@
 {
-  "alert": {
-    "error": {
-      "label": "Error",
-      "content": "Uh oh, we weren't able to verify your email address. Try resending the email."
+  "icon": [
+    {
+      "icon": "remove-lg-18",
+      "label": "remove"
+    }
+  ],
+  "textIconBtn": [
+    {
+      "label": "Button with Calendar Icon",
+      "icon": [
+        {
+          "icon": "calendar-18",
+          "label": "calendar"
+        }
+      ]
+    }
+  ],
+  "fancyInput": [
+    {
+      "label": "First Name",
+      "placeholder": "weee I'm placeholder",
+      "id": "fancyOne"
+    }
+  ],
+  "basicInput": [
+    {
+      "label": "First Name",
+      "placeholder": "weee I'm placeholder",
+      "id": "basicOne"
+    }
+  ],
+  "dropdown": [
+    {
+      "icon": [
+        {
+          "icon": "dropdown-open-sm-18",
+          "label": "selected"
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "menuList": [
+        {
+          "label": "Option One",
+          "link": "#",
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        },
+        {
+          "label": "Option Two",
+          "link": "#",
+          "divider": true,
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        },
+        {
+          "label": "Option Three",
+          "link": "#",
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "select": [
+    {
+      "id": "send_message",
+      "label": "Send message to",
+      "optionList": [
+        {
+          "value": "this_one",
+          "label": "Option one"
+        },
+        {
+          "value": "this_two",
+          "label": "Option two"
+        },
+        {
+          "value": "this_three",
+          "label": "Option three"
+        }
+      ],
+      "icon": [
+        {
+          "icon": "dropdown-open-sm-18",
+          "label": "selected"
+        }
+      ]
+    }
+  ],
+  "checkBox": [
+    {
+      "id": "checkBoxId",
+      "label": "Bacon",
+      "checked": true,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
     },
-    "success": {
-      "label": "Success",
-      "content": "Yay!  Your message was successfully sent."
+    {
+      "id": "checkBoxId2",
+      "label": "Bacon Disabled",
+      "disabled": true,
+      "checked": false,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
+    },
+    {
+      "id": "checkBoxId3",
+      "label": "Bacon Checked Disabled",
+      "disabled": true,
+      "checked": true,
+      "icon": [
+        {
+          "icon": "check-sm-18",
+          "label": "selected"
+        }
+      ]
     }
-  },
-  "header": {
-    "label": {
-      "one": "Help",
-      "two": "Sign in"
+  ],
+  "radios": [
+    {
+      "legend": "I am Legend",
+      "radioList": [
+        {
+          "id": "radioId1",
+          "label": "Bacon",
+          "checked": true
+        },
+        {
+          "id": "radioId2",
+          "label": "Eggs"
+        },
+        {
+          "id": "radioId3",
+          "label": "Sausage"
+        },
+        {
+          "id": "radioId3",
+          "label": "Green Eggs",
+          "disabled": true
+        }
+       ]
     }
-  },
-  "slider": {
-    "icon": {
-      "one": "image-18",
-      "two": "image-24"
+  ],
+  "textArea": [
+    {
+      "id": "textareaId",
+      "label": "Basic Textarea"
     }
-  },
-  "modal": {
-    "text": {
-      "title": "Basic Title",
-      "content": "Bacon ipsum dolor amet tri-tip beef picanha, hamburger shank pork loin kielbasa frankfurter pastrami tongue turducken turkey. Pastrami tongue chuck jowl, chicken leberkas bresaola pork chop bacon andouille."
+  ],
+  "stepper": [
+    {
+      "uiControls": [
+        {
+          "label": "increase value",
+          "icon": [
+            {
+              "icon": "dropdown-close-18",
+              "label": "increase value"
+            }
+          ]
+        },
+        {
+          "label": "decrease value",
+          "icon": [
+            {
+              "icon": "dropdown-open-18",
+              "label": "decrease value"
+            }
+          ]
+        }
+      ],
+      "basicInput": [
+        {
+          "type": "number",
+          "value": "1",
+          "id": "pageStepper"
+        }
+      ],
+      "number": "102"
     }
-  },
-  "btn-text": "Button Text",
-  "icon": "remove-sm-24",
-  "link-url": "#",
-  "avatar": {
-    "scale": {
-      "title": "Edit Photo",
-      "content": "Nice Photo!  Now use the photo editing tools to add that final touch"
+  ],
+  "zoom": [
+    {
+      "uiControls": [
+        {
+          "label": "increase value",
+          "icon": [
+            {
+              "icon": "dropdown-close-18",
+              "label": "increase value"
+            }
+          ]
+        },
+        {
+          "label": "decrease value",
+          "icon": [
+            {
+              "icon": "dropdown-open-18",
+              "label": "decrease value"
+            }
+          ]
+        }
+      ],
+      "basicInput": [
+        {
+          "maxValue": "1000",
+          "type": "text",
+          "value": "100",
+          "id": "zoomStepper"
+        }
+      ]
     }
-  },
-  "coachmark": {
-    "content": "Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.",
-    "link": "Got It",
-    "url": "#"
-  },
-  "label": "",
-  "singlelineID": "a",
-  "basiclineID": "z",
-  "basicselectID": "w",
-  "basiclineLabel": "Label",
-  "selectID": "b",
-  "checkboxID": "c",
-  "iconButtonTitle": "Close dialog",
-  "iconButtonID": "b1",
-  "basiclinePlaceholder": "Placeholder"
-
+  ],
+  "loader": [
+    {
+      "label": "Loading...",
+      "light": true
+    }
+  ],
+  "loaderDark": [
+    {
+      "loader": [
+        {
+          "label": "Loading...",
+          "dark": true,
+          "light": false
+        }
+      ]
+    }
+  ]
 }
