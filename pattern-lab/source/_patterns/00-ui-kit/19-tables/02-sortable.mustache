@@ -1,0 +1,24 @@
+{{#tableSort}}
+	<table class="sortable">
+		<thead>
+		<tr>
+			{{#th}}
+				<th>{{label}}
+					{{#icons}}
+						<span class="{{direction}}">{{>ui-kit-single-icon}}</span>
+					{{/icons}}
+				</th>
+			{{/th}}
+		</tr>
+		</thead>
+		<tbody>
+		{{#tr}}
+			<tr>
+				{{#td}}
+					<td>{{label}}</td>
+				{{/td}}
+			</tr>
+		{{/tr}}
+		</tbody>
+	</table>
+{{/tableSort}}

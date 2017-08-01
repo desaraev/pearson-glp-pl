@@ -167,7 +167,7 @@
           "label": "Green Eggs",
           "disabled": true
         }
-       ]
+      ]
     }
   ],
   "textArea": [
@@ -266,23 +266,39 @@
       "list": [
         {
           "selected": true,
-          "label": "1"
+          "linkBtn": [
+            {
+              "label": "1"
+            }
+          ]
         },
         {
-          "selected": false,
-          "label": "2"
+          "linkBtn": [
+            {
+              "label": "2"
+            }
+          ]
         },
         {
-          "selected": false,
-          "label": "3"
+          "linkBtn": [
+            {
+              "label": "3"
+            }
+          ]
         },
         {
-          "selected": false,
-          "label": "4"
+          "linkBtn": [
+            {
+              "label": "4"
+            }
+          ]
         },
         {
-          "selected": false,
-          "label": "5"
+          "linkBtn": [
+            {
+              "label": "5"
+            }
+          ]
         }
       ]
     }
@@ -335,6 +351,277 @@
     {
       "id": "feedbackToggle",
       "labelId": "labelToggle"
+    }
+  ],
+  "table": [
+    {
+      "th": [
+        {
+          "label": "First Name",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Last Name",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Position",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Age",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Role",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        }
+      ],
+      "tr": [
+        {
+          "td": [
+            {
+              "label": "Gordon"
+            },
+            {
+              "label": "Cole"
+            },
+            {
+              "label": "FBI Director"
+            },
+            {
+              "label": "70"
+            },
+            {
+              "label": "Instructor"
+            }
+          ]
+        },
+        {
+          "td": [
+            {
+              "label": "Cooper"
+            },
+            {
+              "label": "Dale"
+            },
+            {
+              "label": "Special Agent"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "Investigator"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tableSort": [
+    {
+      "th": [
+        {
+          "label": "First Name",
+          "icons": [
+            {
+              "direction": "down",
+              "icon": [
+                {
+                  "icon": "sort-down-18",
+                  "label": "sort descending"
+                }
+              ]
+            },
+            {
+              "direction": "up",
+              "icon": [
+                {
+                  "icon": "sort-up-18",
+                  "label": "sort ascending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Last Name",
+          "icons": [
+            {
+              "direction": "down",
+              "icon": [
+                {
+                  "icon": "sort-down-18",
+                  "label": "sort descending"
+                }
+              ]
+            },
+            {
+              "direction": "up",
+              "icon": [
+                {
+                  "icon": "sort-up-18",
+                  "label": "sort ascending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Position",
+          "icons": [
+            {
+              "direction": "down",
+              "icon": [
+                {
+                  "icon": "sort-down-18",
+                  "label": "sort descending"
+                }
+              ]
+            },
+            {
+              "direction": "up",
+              "icon": [
+                {
+                  "icon": "sort-up-18",
+                  "label": "sort ascending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Age",
+          "icons": [
+            {
+              "direction": "down",
+              "icon": [
+                {
+                  "icon": "sort-down-18",
+                  "label": "sort descending"
+                }
+              ]
+            },
+            {
+              "direction": "up",
+              "icon": [
+                {
+                  "icon": "sort-up-18",
+                  "label": "sort ascending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Role",
+          "icons": [
+            {
+              "direction": "down",
+              "icon": [
+                {
+                  "icon": "sort-down-18",
+                  "label": "sort descending"
+                }
+              ]
+            },
+            {
+              "direction": "up",
+              "icon": [
+                {
+                  "icon": "sort-up-18",
+                  "label": "sort ascending"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tr": [
+        {
+          "td": [
+            {
+              "label": "Gordon"
+            },
+            {
+              "label": "Cole"
+            },
+            {
+              "label": "FBI Director"
+            },
+            {
+              "label": "70"
+            },
+            {
+              "label": "Instructor"
+            }
+          ]
+        },
+        {
+          "td": [
+            {
+              "label": "Cooper"
+            },
+            {
+              "label": "Dale"
+            },
+            {
+              "label": "Special Agent"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "Investigator"
+            }
+          ]
+        },
+        {
+          "td": [
+            {
+              "label": "Cooper"
+            },
+            {
+              "label": "Dale"
+            },
+            {
+              "label": "Special Agent"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "Investigator"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

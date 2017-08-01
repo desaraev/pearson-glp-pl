@@ -352,5 +352,57 @@
       "id": "feedbackToggle",
       "labelId": "labelToggle"
     }
+  ],
+  "table": [
+    {
+      "th": [
+        {
+          "label": "First Name"
+        },
+        {
+          "label": "Last Name"
+        },
+        {
+          "label": "Position"
+        },
+        {
+          "label": "Age"
+        },
+        {
+          "label": "Role"
+        }
+      ],
+      "tr": [
+        {
+          "td": [
+            {
+              "label": "Picard"
+            },
+            {
+              "label": "Jean"
+            },
+            {
+              "label": "Captain"
+            },
+            {
+              "label": "54"
+            },
+            {
+              "label": "Instructor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sortable": [
+    {
+      "icon": [
+        {
+          "icon": "chevron-next-sm-18",
+          "label": "next 5 items"
+        }
+      ]
+    }
   ]
 }

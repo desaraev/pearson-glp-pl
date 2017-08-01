@@ -1,0 +1,65 @@
+'use strict';
+(function(){
+    const sortableTable = document.querySelectorAll('table.sortable');
+
+    function hasClass (el, className) {
+        return el.classList.contains(className)
+    }
+
+    sortableTable.forEach(table => {
+        const sortBtns = table.querySelectorAll('th');
+
+        function sortTable(n) {
+            let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            switching = true;
+            dir = "asc";
+            while (switching) {
+                switching = false;
+                rows = table.getElementsByTagName("TR");
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (dir === "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            console.log(dir)
+                            break;
+                        }
+                    } else if (dir === "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount ++;
+                } else {
+                    if (switchcount === 0 && dir === "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+        sortBtns.forEach((btn, index) => {
+            btn.addEventListener('click', event => {
+                if (btn.classList.contains('selected') === false) {
+                    sortBtns.forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                }
+                if (btn.classList.contains('selected'))
+                    btn.classList.remove('selected');
+                else
+                    btn.classList.add('selected');
+
+                sortTable(index);
+            })
+        })
+    })
+})();
