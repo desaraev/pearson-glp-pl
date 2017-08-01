@@ -1,0 +1,22 @@
+{{#selecTable}}
+	<table class="selectable">
+		<thead>
+		<tr>
+			<th width="50">{{> ui-kit-checkboxes }}</th>
+			{{#th}}
+				<th>{{label}}</th>
+			{{/th}}
+		</tr>
+		</thead>
+		<tbody>
+		{{#tr}}
+			<tr{{#selected}} class="selected"{{/selected}}>
+				<td width="50">{{> ui-kit-checkboxes }}</td>
+				{{#td}}
+					<td>{{label}}</td>
+				{{/td}}
+			</tr>
+		{{/tr}}
+		</tbody>
+	</table>
+{{/selecTable}}

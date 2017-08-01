@@ -50,7 +50,7 @@ table {
   }
   
   &.hoverable {
-	tr {
+	tbody tr {
 	  &:hover {
 		background-color:$neutral-five;
 		cursor: pointer;
@@ -73,6 +73,16 @@ table {
 		.down {
 		  display:none;
 		}
+	  }
+	}
+  }
+  &.selectable {
+	@extend .hoverable;
+	
+	.selected {
+	  background-color: $secondary-three;
+	  &:hover {
+		outline: 1px solid $primary;
 	  }
 	}
   }
