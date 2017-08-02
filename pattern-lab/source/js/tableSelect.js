@@ -1,5 +1,6 @@
 'use strict';
 (function(){
+    // TODO This code really needs to be refactored way too much duplication
     const selectableTable = document.querySelectorAll('table.selectable');
     selectableTable.forEach(table => {
        const tableRow = table.querySelectorAll('tbody tr'),
