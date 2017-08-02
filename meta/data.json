@@ -353,6 +353,461 @@
       "labelId": "labelToggle"
     }
   ],
+  "calendar": [
+    {
+      "month": "October",
+      "year": "2016",
+      "buttons": [
+        {
+          "icon": [
+            {
+              "icon": "chevron-back-18",
+              "label": "previous value"
+            }
+          ]
+        },
+        {
+          "icon": [
+            {
+              "icon": "chevron-next-18",
+              "label": "next value"
+            }
+          ]
+        }
+      ],
+      "days":[
+        {
+          "day": "S"
+        },
+        {
+          "day": "M"
+        },
+        {
+          "day": "T"
+        },
+        {
+          "day": "W"
+        },
+        {
+          "day": "T"
+        },
+        {
+          "day": "F"
+        },
+        {
+          "day": "S"
+        }
+      ],
+      "week": [
+        {
+          "numbers": [
+            {
+              "number": "1"
+            },
+            {
+              "number": "2"
+            },
+            {
+              "number": "3"
+            },
+            {
+              "number": "4"
+            },
+            {
+              "number": "5"
+            },
+            {
+              "number": "6"
+            },
+            {
+              "number": "7"
+            }
+          ]
+        },
+        {
+          "numbers": [
+            {
+              "number": "8"
+            },
+            {
+              "number": "9"
+            },
+            {
+              "number": "10"
+            },
+            {
+              "number": "11"
+            },
+            {
+              "number": "12"
+            },
+            {
+              "number": "13"
+            },
+            {
+              "number": "14"
+            }
+          ]
+        },
+        {
+          "numbers": [
+            {
+              "number": "15"
+            },
+            {
+              "number": "16"
+            },
+            {
+              "number": "17"
+            },
+            {
+              "number": "18"
+            },
+            {
+              "number": "19"
+            },
+            {
+              "number": "20"
+            },
+            {
+              "number": "21"
+            }
+          ]
+        },
+        {
+          "numbers": [
+            {
+              "number": "22"
+            },
+            {
+              "number": "23"
+            },
+            {
+              "number": "24"
+            },
+            {
+              "number": "25"
+            },
+            {
+              "number": "26"
+            },
+            {
+              "number": "27"
+            },
+            {
+              "number": "28"
+            }
+          ]
+        },
+        {
+          "numbers": [
+            {
+              "number": "29"
+            },
+            {
+              "number": "30"
+            },
+            {
+              "number": "31"
+            },
+            {
+              "number": " "
+            },
+            {
+              "number": " "
+            },
+            {
+              "number": " "
+            },
+            {
+              "number": " "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "datepicker": [
+    {
+      "basicInput": [
+        {
+          "ariaLabel": "enter date",
+          "id": "calendarSelector",
+          "placeholder": "10/01/2016"
+        }
+      ],
+      "icon": [
+        {
+          "icon": "calendar-18",
+          "label": "enter date"
+        }
+      ]
+    }
+  ],
+  "timepicker": [
+    {
+
+      "basicInput": [
+        {
+          "ariaLabel": "enter time",
+          "id": "timeSelector",
+          "placeholder": "10:30 AM"
+        }
+      ],
+      "icon": [
+        {
+          "icon": "clock-18",
+          "label": "enter time"
+        }
+      ],
+      "menu": [
+        {
+          "menuList": [
+            {
+              "label": "10:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "11:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "12:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "1:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "2:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "3:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "4:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "5:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "6:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "7:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "8:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "9:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "10:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "11:00 PM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "12:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "1:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "2:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "3:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "4:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "5:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "6:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "7:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "8:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "9:00 AM",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "table": [
     {
       "th": [
