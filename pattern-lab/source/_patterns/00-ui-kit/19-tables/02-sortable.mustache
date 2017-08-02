@@ -1,0 +1,25 @@
+{{#tableSort}}
+	<table class="sortable" aria-label="{{tableName}}">
+		<thead>
+		<tr>
+			{{#th}}
+				<th scope="col" aria-sort="none" tabindex="0">{{label}}
+					{{#icons}}
+						<span class="{{direction}}">{{>ui-kit-single-icon}}</span>
+					{{/icons}}
+				</th>
+			{{/th}}
+		</tr>
+		</thead>
+		<tbody>
+		{{#tr}}
+			<tr>
+				{{#td}}
+					<td>{{label}}</td>
+				{{/td}}
+			</tr>
+		{{/tr}}
+		</tbody>
+	</table>
+{{/tableSort}}
+
