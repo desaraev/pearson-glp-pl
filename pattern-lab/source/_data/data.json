@@ -355,6 +355,7 @@
   ],
   "table": [
     {
+      "tableName": "basic table example",
       "th": [
         {
           "label": "First Name",
@@ -446,6 +447,7 @@
   ],
   "tableSort": [
     {
+      "tableName": "sorting table example",
       "th": [
         {
           "label": "First Name",
@@ -626,6 +628,7 @@
   ],
   "selecTable": [
     {
+      "tableName": "selectable table example",
       "checkBox": [
         {
           "id": "selectAll",

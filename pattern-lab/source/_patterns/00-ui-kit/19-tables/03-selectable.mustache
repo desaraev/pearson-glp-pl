@@ -1,5 +1,5 @@
 {{#selecTable}}
-	<table class="selectable">
+	<table class="selectable" aria-label="{{tableName}}">
 		<thead>
 		<tr>
 			<th width="50" scope="col">{{> ui-kit-checkboxes }}</th>
@@ -10,7 +10,7 @@
 		</thead>
 		<tbody>
 		{{#tr}}
-			<tr{{#selected}} class="selected"{{/selected}}>
+			<tr{{#selected}} class="selected"{{/selected}} tabindex="0">
 				<td width="50" scope="row">{{> ui-kit-checkboxes }}</td>
 				{{#td}}
 					<td>{{label}}</td>

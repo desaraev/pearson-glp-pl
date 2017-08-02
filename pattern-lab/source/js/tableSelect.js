@@ -14,12 +14,11 @@
 
        tableRow.forEach(row => {
           row.addEventListener('click', event => {
-              const row = [];
+              const rowArr = [];
 
               function isSelected (element) {
-                 return element === 'selected'
+                  return element === 'selected'
               }
-
               event.currentTarget.classList.toggle('selected');
               const checkbox = event.currentTarget.querySelector('input'),
                     checkAllInput = checkAll.querySelector('input');
@@ -27,16 +26,26 @@
               toggleCheck(checkbox);
 
               tableRow.forEach(rowItem => {
-                row.push(rowItem.classList.value)
+                rowArr.push(rowItem.classList.value)
               });
 
 
-              if (row.every(isSelected))
+              if (rowArr.every(isSelected))
                   checkAllInput.checked = true;
               else
                   checkAllInput.checked = false
 
+              console.log(
+                  rowArr
+              )
+
           });
+
+           row.addEventListener('keydown', function(event){
+               if (event.keyCode ===  32) {
+                   row.click();
+               }
+           })
 
        });
 
@@ -63,8 +72,15 @@
                 })
             }
 
-
         });
+
+        checkAll.addEventListener('keydown', function(event){
+            console.log('pressed');
+            if (event.keyCode ===  32) {
+                checkAll.click();
+            }
+            event.stopImmediatePropagation();
+        })
 
     })
 

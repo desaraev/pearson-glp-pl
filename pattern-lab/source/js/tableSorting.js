@@ -55,7 +55,7 @@
                 else if (ariaSort === 'ascending')
                     btn.setAttribute('aria-sort', 'descending');
                 else
-                    btn.setAttribute('aria-sort', 'ascending');git add .
+                    btn.setAttribute('aria-sort', 'ascending');
 
                 if (btn.classList.contains('selected') === false) {
                     sortBtns.forEach(btn => {
