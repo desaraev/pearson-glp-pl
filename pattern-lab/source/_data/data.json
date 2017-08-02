@@ -691,6 +691,7 @@
             {
               "id": "selectAll2",
               "checked": false,
+              "ariaLabel": "Gordon Cole",
               "icon": [
                 {
                   "icon": "check-sm-18",
@@ -723,6 +724,7 @@
             {
               "id": "selectAll3",
               "checked": true,
+              "ariaLabel": "Dale Cooper",
               "icon": [
                 {
                   "icon": "check-sm-18",

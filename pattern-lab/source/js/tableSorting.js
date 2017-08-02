@@ -2,10 +2,6 @@
 (function(){
     const sortableTable = document.querySelectorAll('table.sortable');
 
-    function hasClass (el, className) {
-        return el.classList.contains(className)
-    }
-
     sortableTable.forEach(table => {
         const sortBtns = table.querySelectorAll('th');
 
@@ -48,6 +44,19 @@
 
         sortBtns.forEach((btn, index) => {
             btn.addEventListener('click', event => {
+                const ariaSort = btn.getAttribute('aria-sort');
+                console.log(ariaSort);
+
+                sortBtns.forEach(btn => {
+                    btn.setAttribute('aria-sort', 'none');
+                });
+                if (ariaSort === 'none')
+                    btn.setAttribute('aria-sort', 'ascending');
+                else if (ariaSort === 'ascending')
+                    btn.setAttribute('aria-sort', 'descending');
+                else
+                    btn.setAttribute('aria-sort', 'ascending');git add .
+
                 if (btn.classList.contains('selected') === false) {
                     sortBtns.forEach(btn => {
                         btn.classList.remove('selected');
@@ -59,7 +68,16 @@
                     btn.classList.add('selected');
 
                 sortTable(index);
+            });
+
+            btn.addEventListener('keydown', function(event){
+                const ariaSort = btn.getAttribute('aria-sort');
+                if (event.keyCode ===  32) {
+                    btn.click();
+                }
             })
         })
+
+
     })
 })();
