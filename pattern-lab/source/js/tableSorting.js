@@ -71,7 +71,6 @@
             });
 
             btn.addEventListener('keydown', function(event){
-                const ariaSort = btn.getAttribute('aria-sort');
                 if (event.keyCode ===  32) {
                     btn.click();
                 }
