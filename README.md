@@ -1,4 +1,4 @@
-# Pearson GLP Patternlab - v0.5
+# Pearson GLP Patternlab - v0.6
 http://45.55.127.237/pearson-glp-pl/
 
 ## Pattern Lab & Elements Boilerplate
