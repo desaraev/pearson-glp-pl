@@ -14,14 +14,27 @@
 
        tableRow.forEach(row => {
           row.addEventListener('click', event => {
+              const row = [];
+
+              function isSelected (element) {
+                 return element === 'selected'
+              }
+
               event.currentTarget.classList.toggle('selected');
               const checkbox = event.currentTarget.querySelector('input'),
                     checkAllInput = checkAll.querySelector('input');
 
               toggleCheck(checkbox);
 
-              if (checkAllInput.checked)
-                  checkAllInput.checked = false;
+              tableRow.forEach(rowItem => {
+                row.push(rowItem.classList.value)
+              });
+
+
+              if (row.every(isSelected))
+                  checkAllInput.checked = true;
+              else
+                  checkAllInput.checked = false
 
           });
 
@@ -30,6 +43,7 @@
         checkAll.addEventListener('click', event => {
             const checkbox = event.currentTarget.querySelector('input'),
                   allCheck = table.querySelectorAll('input');
+
 
             toggleCheck(checkbox);
 
@@ -48,7 +62,9 @@
                     row.classList.remove('selected');
                 })
             }
-        })
+
+
+        });
 
     })
 
