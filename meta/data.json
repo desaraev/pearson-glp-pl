@@ -266,39 +266,23 @@
       "list": [
         {
           "selected": true,
-          "linkBtn": [
-            {
-              "label": "1"
-            }
-          ]
+          "label": "1"
         },
         {
-          "linkBtn": [
-            {
-              "label": "2"
-            }
-          ]
+          "selected": false,
+          "label": "2"
         },
         {
-          "linkBtn": [
-            {
-              "label": "3"
-            }
-          ]
+          "selected": false,
+          "label": "3"
         },
         {
-          "linkBtn": [
-            {
-              "label": "4"
-            }
-          ]
+          "selected": false,
+          "label": "4"
         },
         {
-          "linkBtn": [
-            {
-              "label": "5"
-            }
-          ]
+          "selected": false,
+          "label": "5"
         }
       ]
     }
@@ -810,6 +794,7 @@
   ],
   "table": [
     {
+      "tableName": "basic table example",
       "th": [
         {
           "label": "First Name",
@@ -901,6 +886,7 @@
   ],
   "tableSort": [
     {
+      "tableName": "sorting table example",
       "th": [
         {
           "label": "First Name",
@@ -1081,6 +1067,7 @@
   ],
   "selecTable": [
     {
+      "tableName": "selectable table example",
       "checkBox": [
         {
           "id": "selectAll",
@@ -1146,6 +1133,7 @@
             {
               "id": "selectAll2",
               "checked": false,
+              "ariaLabel": "Gordon Cole",
               "icon": [
                 {
                   "icon": "check-sm-18",
@@ -1178,6 +1166,7 @@
             {
               "id": "selectAll3",
               "checked": true,
+              "ariaLabel": "Dale Cooper",
               "icon": [
                 {
                   "icon": "check-sm-18",
