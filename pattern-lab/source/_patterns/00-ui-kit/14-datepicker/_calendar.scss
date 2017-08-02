@@ -1,0 +1,52 @@
+.calendar {
+  max-width:320px;
+  border:1px solid $neutral;
+  padding:1em 20px 20px 20px;
+  .header {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0 0.8em;
+	height:40px;
+	button {
+	  &:first-child {
+		margin-right:1em;
+	  }
+	}
+	svg {
+	  fill: $neutral-three;
+	}
+  }
+  .days-of-week {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top:1em;
+	span {
+	  text-align: center;
+	  height:40px;
+	  width:40px;
+	  display:flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+  }
+  .weeks {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	button {
+	  height:40px;
+	  width:40px;
+	  text-decoration: none;
+	  border-radius:50%;
+	  &:hover {
+		background-color:$neutral-five
+	  }
+	  &.selected {
+		background:$secondary-four;
+		color: white;
+	  }
+	}
+  }
+}
