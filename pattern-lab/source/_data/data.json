@@ -167,7 +167,7 @@
           "label": "Green Eggs",
           "disabled": true
         }
-       ]
+      ]
     }
   ],
   "textArea": [
@@ -1654,6 +1654,8 @@
   "header": [
     {
       "avatar": true,
+      "name": "Dale Cooper",
+      "image": "avatar-dale.jpg",
       "buttons": [
         {
           "className": "notification",
