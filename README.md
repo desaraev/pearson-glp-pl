@@ -41,6 +41,10 @@ For more information on patternlab
 10 The files and your project should now be included in the UI folder
 11. NOTE: on occassion you will randomly run into console errors, if this is the case, terminate and run again.  These errors will not harm your files, it will just prevent the export.  We are working on a way to eliminate them.
 
+## Automatic Deployment
+We're using Travis CI to test for build failures and automatic deployment.  This will remove the need for FTP.
+1. Details coming soon.
+
 ## Copy files to ftp http://159.182.11.87
 1. open up the ftp.js file in the _tasks folder
 2. on line 10 replace the project folder name, with a name of your choice, that accurately reflects you project.
