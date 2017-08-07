@@ -167,7 +167,7 @@
           "label": "Green Eggs",
           "disabled": true
         }
-       ]
+      ]
     }
   ],
   "textArea": [
@@ -1645,6 +1645,92 @@
                   "label": "selected"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "header": [
+    {
+      "avatar": true,
+      "name": "Dale Cooper",
+      "image": "avatar-dale.jpg",
+      "buttons": [
+        {
+          "className": "notification",
+          "notification":{
+            "icon": [
+              {
+                "icon": "new-notification-9",
+                "label": "notifications"
+              }
+            ]
+          },
+          "icon": [
+            {
+              "icon": "notification-18",
+              "label": "notifications"
+            }
+          ]
+        },
+        {
+          "className": "help",
+          "notification": false,
+          "icon": [
+            {
+              "icon": "help-fill-18",
+              "label": "help"
+            }
+          ]
+        }
+      ],
+      "icon": [
+        {
+          "icon": "person-18",
+          "label": "user"
+        }
+      ]
+    }
+  ],
+  "headerNoImage": [
+    {
+      "header": [
+        {
+          "avatar": false,
+          "buttons": [
+            {
+              "className": "notification",
+              "notification":{
+                "icon": [
+                  {
+                    "icon": "new-notification-9",
+                    "label": "notifications"
+                  }
+                ]
+              },
+              "icon": [
+                {
+                  "icon": "notification-18",
+                  "label": "notifications"
+                }
+              ]
+            },
+            {
+              "className": "help",
+              "notification": false,
+              "icon": [
+                {
+                  "icon": "help-fill-18",
+                  "label": "help"
+                }
+              ]
+            }
+          ],
+          "icon": [
+            {
+              "icon": "person-18",
+              "label": "user"
             }
           ]
         }
