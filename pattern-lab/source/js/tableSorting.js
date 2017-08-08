@@ -3,7 +3,7 @@
     const sortableTable = document.querySelectorAll('table.sortable');
 
     sortableTable.forEach(table => {
-        const sortBtns = table.querySelectorAll('th');
+        const sortBtns = table.querySelectorAll('th.sort');
 
         function sortTable(n) {
             let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
