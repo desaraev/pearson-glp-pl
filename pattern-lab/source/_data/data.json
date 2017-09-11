@@ -1736,5 +1736,21 @@
         }
       ]
     }
+  ],
+  "tabNavigation": [
+    {
+      "tabList": [
+        {
+          "label": "Tab One"
+        },
+        {
+          "label": "Tab Two",
+          "active": true
+        },
+        {
+          "label": "Tab Three"
+        }
+      ]
+    }
   ]
 }

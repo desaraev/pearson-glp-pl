@@ -1,0 +1,48 @@
+.tabbed-navigation {
+  ul {
+	padding:0;
+	margin:0;
+  }
+  li {
+	list-style-type: none;
+	display:inline-block;
+	&.active {
+	  a {
+		border-bottom: 3px solid $secondary-four;
+		color: $neutral-two;
+	  }
+	}
+	&:hover:not(.active) {
+	  a {
+		border-bottom: 3px solid $neutral;
+		color: $neutral-two;
+	  }
+	}
+  }
+  a {
+	padding: .5em 0;
+	margin:.5em 1em;
+	text-decoration: none;
+	cursor:pointer;
+	display:block;
+  }
+  &.dark {
+	background-color: $primary-two;
+	a {
+	  color:$neutral-four;
+	}
+	li {
+	  &.active {
+		a {
+		  color:white;
+		}
+	  }
+	  &:hover:not(.active) {
+		a {
+		  border-bottom: 3px solid $neutral-four;
+		  color: white;
+		}
+	  }
+	}
+  }
+}
