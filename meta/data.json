@@ -37,6 +37,7 @@
   ],
   "dropdown": [
     {
+      "label": "dropdown",
       "icon": [
         {
           "icon": "dropdown-open-sm-18",
@@ -1276,6 +1277,73 @@
             {
               "icon": "person-18",
               "label": "user"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tabNavigation": [
+    {
+      "tabList": [
+        {
+          "label": "Tab One",
+          "active-label": "false"
+        },
+        {
+          "label": "Tab Two",
+          "active-label": "true",
+          "active": true
+        },
+        {
+          "label": "Tab Three",
+          "active-label": "false"
+        }
+      ],
+      "dropdown": [
+        {
+          "label": "More",
+          "icon": [
+            {
+              "icon": "dropdown-open-sm-18",
+              "label": "selected"
+            }
+          ]
+        }
+      ],
+      "menu": [
+        {
+          "menuList": [
+            {
+              "label": "Option One",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "Option Two",
+              "link": "#",
+              "divider": true,
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "Option Three",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
             }
           ]
         }
