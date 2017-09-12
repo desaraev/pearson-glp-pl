@@ -15,7 +15,7 @@
   			
   			&:after {
   				content: "|";
-  				margin:10px;
+  				margin:5px;
   				@media only screen and (max-width: 480px) {
   					content: "•";
   				}
@@ -28,23 +28,29 @@
   		
   	}
 	
-	@media only screen and (max-width: 480px) {
+	@media (max-width: 800px) {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
 		text-align: center;
 		
+			ul {
+				width: 100%;
+				text-align:center;
+				margin-bottom: 1em;
+			}
+			
+			p {
+				font-size: 0.875em;
+			}
+		}
+	@media only screen and (max-width: 480px) {	
 		p {
 			font-size: 0.714em;
 			line-height: 1.57143em;
 		}
-		ul {
-			width: 100%;
-			text-align:center;
-			margin-bottom: 1em;
-		}
+		
 		li {
 			font-size: 0.851em;
-			
 			
 			&.standalone {display: block;}
 			&:nth-child(3):after {
