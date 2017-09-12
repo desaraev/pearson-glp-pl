@@ -1,0 +1,15 @@
+{{#coachmark}}
+<div class="pe-proto coachmark">
+    <div class="arrow {{location}}"></div>
+    <div class="content">
+        <div class="title-container">
+            <div class="pe-label pe-label--bold">{{title}}</div>
+            {{#button}}{{> ui-kit-icon }}{{/button}}
+        </div>
+        <p class="pe-label">
+            {{content}}
+        </p>
+        {{#link}}<a class="coach-link" href="{{url}}" aria-label="Close {{location}} coach mark">{{text}}</a>{{/link}}
+    </div>
+</div>
+{{/coachmark}}
