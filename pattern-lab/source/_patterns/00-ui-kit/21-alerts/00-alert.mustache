@@ -1,0 +1,12 @@
+{{#alert}}
+<div class="pe-proto alert-box {{#success}}success{{/success}} {{#error}}error{{/error}}" role="alert">
+	{{#button}}<div class="close-title">{{> ui-kit-icon }}</div>{{/button}}
+    <div class="alert-content-container">
+        {{#showIcon}}{{> ui-kit-single-icon }}{{/showIcon}}
+        <div class="alert-content">
+        	<h2 class="pe-label alert-title"><strong>{{title}}</strong></h2>
+        	<p class="pe-paragraph alert-text">{{content}}</p>
+        </div>
+    </div>
+</div>
+{{/alert}}
