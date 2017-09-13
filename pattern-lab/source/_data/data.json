@@ -1422,5 +1422,47 @@
         }
       ]
     }
+  ],
+  "alert": [
+    {
+    "button": [
+        {
+          "label": "Close success dialog",
+	  "icon": [
+            {
+              "icon": "remove-sm-24",
+              "label": "Close success dialog"
+            }
+          ]
+        }
+      ],
+    "showIcon": [
+	{
+	  "icon": [
+	    {
+	      "icon": "check-lg-18",
+	      "label": "Success"
+	    }
+          ]
+	}
+      ],
+      "title": "Lorem ipsom dolor sit amet.",
+      "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
+    }
+  ],
+  "coachmark": [
+    {
+    "location": "top",
+    "title": "Ready to invite students?",
+    "button": false,
+      "content": "Open the course menu to access invite instructions.",
+    "link": [
+	{
+	"url": "#",
+	"location": "top",
+	"text": "Got it"
+	}
+      ]
+    }
   ]
 }
