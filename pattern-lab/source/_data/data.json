@@ -1282,6 +1282,73 @@
       ]
     }
   ],
+  "tabNavigation": [
+    {
+      "tabList": [
+        {
+          "label": "Tab One",
+          "active-label": "false"
+        },
+        {
+          "label": "Tab Two",
+          "active-label": "true",
+          "active": true
+        },
+        {
+          "label": "Tab Three",
+          "active-label": "false"
+        }
+      ],
+      "dropdown": [
+        {
+          "label": "More",
+          "icon": [
+            {
+              "icon": "dropdown-open-sm-18",
+              "label": "selected"
+            }
+          ]
+        }
+      ],
+      "menu": [
+        {
+          "menuList": [
+            {
+              "label": "Option One",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "Option Two",
+              "link": "#",
+              "divider": true,
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            },
+            {
+              "label": "Option Three",
+              "link": "#",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "alert": [
     {
     "button": [
@@ -1306,7 +1373,7 @@
 	}
       ],
       "title": "Lorem ipsom dolor sit amet.",
-      "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."    
+      "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
     }
   ]
 }
