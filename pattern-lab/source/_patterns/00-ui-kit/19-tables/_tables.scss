@@ -87,3 +87,14 @@ table {
   }
 }
 
+.controls {
+  margin-bottom:28px;
+  display:flex;
+  justify-content: flex-end;
+  
+  .control {
+	&:first-child {
+	  margin-right:1em;
+	}
+  }
+}

@@ -1390,5 +1390,156 @@
 	}
       ]
     }
+  ],
+  "tableWithControls": [
+    {
+      "id": "send_message",
+      "ariaLabel": "Search By",
+      "icon": [
+        {
+          "icon": "dropdown-open-sm-18",
+          "label": "selected"
+        }
+      ],
+      "basicInput": [
+        {
+          "placeholder": "Search",
+          "id": "search",
+          "icon": [
+            {
+              "icon": "search-sm-18",
+              "label": "search"
+            }
+          ]
+        }
+      ],
+      "tableName": "Advanced table controls",
+      "checkBox": [
+        {
+          "id": "selectAll",
+          "checked": false,
+          "icon": [
+            {
+              "icon": "check-sm-18",
+              "label": "selected"
+            }
+          ]
+        }
+      ],
+      "th": [
+        {
+          "label": "First Name",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Last Name",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Position",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Age",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        },
+        {
+          "label": "Role",
+          "icon": [
+            {
+              "icon": "sort-down-18",
+              "label": "sort ascending"
+            }
+          ]
+        }
+      ],
+      "tr": [
+        {
+          "checkBox": [
+            {
+              "id": "selectAll2",
+              "checked": false,
+              "ariaLabel": "Gordon Cole",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ],
+          "td": [
+            {
+              "label": "Gordon"
+            },
+            {
+              "label": "Cole"
+            },
+            {
+              "label": "FBI Director"
+            },
+            {
+              "label": "70"
+            },
+            {
+              "label": "Instructor"
+            }
+          ]
+        },
+        {
+          "selected": true,
+          "checkBox": [
+            {
+              "id": "selectAll3",
+              "checked": true,
+              "ariaLabel": "Dale Cooper",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ],
+          "td": [
+            {
+              "label": "Cooper"
+            },
+            {
+              "label": "Dale"
+            },
+            {
+              "label": "Special Agent"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "Investigator"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
