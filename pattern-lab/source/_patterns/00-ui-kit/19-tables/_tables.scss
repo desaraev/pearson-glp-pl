@@ -47,6 +47,11 @@ table {
 	  padding:1em 20px;
 	}
 	border-bottom: 1px solid $neutral-four;
+	&[data-match ="true"] {
+	  .no-match {
+		display:none;
+	  }
+	}
   }
   
   &.hoverable {

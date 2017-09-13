@@ -1538,6 +1538,39 @@
               "label": "Investigator"
             }
           ]
+        },
+        {
+          "selected": false,
+          "checkBox": [
+            {
+              "id": "selectAll4",
+              "checked": false,
+              "ariaLabel": "Diane Evens",
+              "icon": [
+                {
+                  "icon": "check-sm-18",
+                  "label": "selected"
+                }
+              ]
+            }
+          ],
+          "td": [
+            {
+              "label": "Evens"
+            },
+            {
+              "label": "Diane"
+            },
+            {
+              "label": "Special Agent"
+            },
+            {
+              "label": "55"
+            },
+            {
+              "label": "Investigator"
+            }
+          ]
         }
       ]
     }
