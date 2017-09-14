@@ -1204,6 +1204,7 @@
       "image": "avatar-dale.jpg",
       "buttons": [
         {
+          "drawerId": "notifications",
           "className": "notification",
           "notification":{
             "icon": [
@@ -1236,8 +1237,29 @@
           "icon": "person-18",
           "label": "user"
         }
+      ],
+      "showDrawerButton": false,
+      "drawer": [
+        {
+          "showButton": true,
+          "drawerId": "notifications",
+          "title": "Notifications",
+          "icon": [
+            {
+              "icon": "remove-sm-24",
+              "label": "close"
+            }
+          ],
+          "topics": [
+            {
+              "dataId": "one",
+              "title": "",
+              "content": "You havent received any notificaitions yet."
+            }
+          ]
+        }
       ]
-    }
+    },
   ],
   "headerNoImage": [
     {
@@ -1461,6 +1483,27 @@
           "url": "#",
           "location": "top",
           "text": "Got it"
+        }
+      ]
+    }
+  ],
+  "showDrawerButton": true,
+  "drawer": [
+    {
+      "showButton": true,
+      "drawerId": "one",
+      "title": "Notifications",
+      "icon": [
+        {
+          "icon": "remove-sm-24",
+          "label": "close"
+        }
+      ],
+      "topics": [
+        {
+          "dataId": "one",
+          "title": "",
+          "content": "You havent received any notificaitions yet."
         }
       ]
     }

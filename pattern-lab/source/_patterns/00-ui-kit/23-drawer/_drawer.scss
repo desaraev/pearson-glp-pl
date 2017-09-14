@@ -1,0 +1,41 @@
+.drawer {
+  @include box-shadow;
+  width:320px;
+  max-width:320px;
+  background-color:white;
+  min-height: 600px;
+  right:-320px;
+  top:70px;
+  position:fixed;
+  padding:30px;
+  overflow:hidden;
+  height:100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+  
+  &.open {
+    right:0;
+  }
+  .title {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $neutral-four;
+    padding-bottom:25px;
+  }
+  
+  .notifications {
+    height:100%;
+    padding-top:25px;
+    overflow: scroll;
+    padding-bottom:60px;
+    
+  }
+  
+  h3 {
+    margin:0;
+  }
+  .topic {
+    margin-bottom:25px;
+  }
+}

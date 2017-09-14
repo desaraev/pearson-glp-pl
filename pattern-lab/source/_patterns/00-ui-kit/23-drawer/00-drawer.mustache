@@ -1,0 +1,28 @@
+<!--
+Button is for example only -
+You can use any button you want -
+Just make sure the data-drawer-id is present and matches the drawer you want to open
+-->
+{{#showDrawerButton}}
+	<button class="pe-btn pe-btn--btn_large" data-drawer-id="one">Toggle Drawer</button>
+{{/showDrawerButton}}
+
+{{#drawer}}
+	<div class="drawer" data-drawer-open="{{drawerId}}">
+		<div class="title">
+			<h3 class="pe-title">{{title}}</h3>
+			{{> ui-kit-icon }}
+		</div>
+		<div class="notifications">
+			{{#topics}}
+				<div class="topic" data-drawer-id="{{dataId}}">
+					<span class="pe-label pe-label--bold">{{title}}</span>
+					<p>{{content}}</p>
+				</div>
+			{{/topics}}
+			<div class="actions text-center">
+				<button class="pe-btn pe-btn--btn_large">View Archive</button>
+			</div>
+		</div>
+	</div>
+{{/drawer}}
