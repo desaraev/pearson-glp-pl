@@ -1262,14 +1262,32 @@
           ],
           "topics": [
             {
-              "dataId": "one",
-              "title": "",
-              "content": "You havent received any notificaitions yet."
+              "title": "Notification One",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Two",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Three",
+              "content": "You haven't received any notifications yet."
+            }
+          ],
+          "archive": [
+            {
+              "title": "Archive",
+              "topics": [
+                {
+                  "title": "Previous notification",
+                  "content": "This is an old notification"
+                }
+              ]
             }
           ]
         }
       ]
-    },
+    }
   ],
   "headerNoImage": [
     {
@@ -1278,6 +1296,7 @@
           "avatar": false,
           "buttons": [
             {
+              "drawerId": "notifications",
               "className": "notification",
               "notification":{
                 "icon": [
@@ -1309,6 +1328,45 @@
             {
               "icon": "person-18",
               "label": "user"
+            }
+          ]
+        }
+      ],
+      "showDrawerButton": false,
+      "drawer": [
+        {
+          "showButton": true,
+          "drawerId": "notifications",
+          "title": "Notifications",
+          "icon": [
+            {
+              "icon": "remove-sm-24",
+              "label": "close"
+            }
+          ],
+          "topics": [
+            {
+              "title": "Notification One",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Two",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Three",
+              "content": "You haven't received any notifications yet."
+            }
+          ],
+          "archive": [
+            {
+              "title": "Archive",
+              "topics": [
+                {
+                  "title": "Previous notification",
+                  "content": "This is an old notification"
+                }
+              ]
             }
           ]
         }
@@ -1513,7 +1571,18 @@
         {
           "dataId": "one",
           "title": "",
-          "content": "You havent received any notificaitions yet."
+          "content": "You haven't received any notifications yet."
+        }
+      ],
+      "archive": [
+        {
+          "title": "Archive",
+          "topics": [
+            {
+              "title": "Previous notification",
+              "content": "This is an old notification"
+            }
+          ]
         }
       ]
     }

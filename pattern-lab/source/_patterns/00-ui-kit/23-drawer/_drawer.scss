@@ -32,10 +32,33 @@
     
   }
   
+  .archive {
+    overflow: scroll;
+    height:auto;
+    h3 {
+      margin: 25px 0;
+    }
+  }
   h3 {
     margin:0;
   }
   .topic {
     margin-bottom:25px;
+    p {
+      color:$neutral-three;
+    }
+  }
+  .notification-content {
+    color:$condition-three;
+    span {
+      color:$neutral-two;
+    }
+    svg {
+      position: absolute;
+      left: 15px;
+      margin-top: 4px;
+      fill: currentColor;
+      
+    }
   }
 }
