@@ -1,0 +1,19 @@
+{{#modal}}
+	<button class="pe-btn pe-btn--btn_large" data-modal-id="{{modalId}}">Open Basic Modal</button>
+	<div class="overlay hidden"></div>
+	<div class="modal hidden" aria-labelledby="modalTitle" aria-hidden="true" data-modal-open="{{modalId}}" role="dialog">
+		<div class="close">
+			{{> ui-kit-icon }}
+		</div>
+		<h2 class="pe-title pe-title--large" id="modalTitle">{{title}}</h2>
+		{{#paragraphs}}
+			<p>{{text}}</p>
+		{{/paragraphs}}
+		{{#showButtons}}
+			<div class="actions">
+				<button class="pe-btn pe-btn--btn_large">Dismissive Action</button>
+				<button class="pe-btn__primary--btn_large">Affirmative Action</button>
+			</div>
+		{{/showButtons}}
+	</div>
+{{/modal}}

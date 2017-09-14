@@ -37,6 +37,7 @@
   ],
   "dropdown": [
     {
+      "label": "dropdown",
       "icon": [
         {
           "icon": "dropdown-open-sm-18",
@@ -1349,12 +1350,85 @@
       ]
     }
   ],
+  "modal": [
+    {
+      "title": "Modal Title",
+      "modalId": "one",
+      "showButtons": true,
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        }
+      ],
+      "icon": [
+        {
+          "icon": "remove-sm-24"
+        }
+      ]
+    }
+  ],
+  "scrollModal": [
+    {
+      "title": "Modal Title",
+      "modalId": "two",
+      "showButtons": true,
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+        }
+      ],
+      "icon": [
+        {
+          "icon": "remove-sm-24"
+        }
+      ]
+    }
+  ],
   "alert": [
     {
-    "button": [
+      "button": [
         {
           "label": "Close success dialog",
-	  "icon": [
+          "icon": [
             {
               "icon": "remove-sm-24",
               "label": "Close success dialog"
@@ -1362,15 +1436,15 @@
           ]
         }
       ],
-    "showIcon": [
-	{
-	  "icon": [
-	    {
-	      "icon": "check-lg-18",
-	      "label": "Success"
-	    }
+      "showIcon": [
+        {
+          "icon": [
+            {
+              "icon": "check-lg-18",
+              "label": "Success"
+            }
           ]
-	}
+        }
       ],
       "title": "Lorem ipsom dolor sit amet.",
       "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
@@ -1378,16 +1452,16 @@
   ],
   "coachmark": [
     {
-    "location": "top",
-    "title": "Ready to invite students?",
-    "button": false,
+      "location": "top",
+      "title": "Ready to invite students?",
+      "button": false,
       "content": "Open the course menu to access invite instructions.",
-    "link": [
-	{
-	"url": "#",
-	"location": "top",
-	"text": "Got it"
-	}
+      "link": [
+        {
+          "url": "#",
+          "location": "top",
+          "text": "Got it"
+        }
       ]
     }
   ]
