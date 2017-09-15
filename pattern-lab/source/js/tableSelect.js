@@ -36,10 +36,6 @@
               else
                   checkAllInput.checked = false
 
-              console.log(
-                  rowArr
-              )
-
           });
 
            row.addEventListener('keydown', function(event){
@@ -76,7 +72,6 @@
         });
 
         checkAll.addEventListener('keydown', function(event){
-            console.log('pressed');
             if (event.keyCode ===  32) {
                 checkAll.click();
             }

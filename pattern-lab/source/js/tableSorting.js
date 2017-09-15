@@ -19,7 +19,6 @@
                     if (dir === "asc") {
                         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                             shouldSwitch= true;
-                            console.log(dir)
                             break;
                         }
                     } else if (dir === "desc") {
@@ -45,7 +44,6 @@
         sortBtns.forEach((btn, index) => {
             btn.addEventListener('click', event => {
                 const ariaSort = btn.getAttribute('aria-sort');
-                console.log(ariaSort);
 
                 sortBtns.forEach(btn => {
                     btn.setAttribute('aria-sort', 'none');
