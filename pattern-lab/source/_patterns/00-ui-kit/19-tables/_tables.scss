@@ -85,6 +85,7 @@ table {
 	@extend .hoverable;
 	.selected {
 	  background-color: $secondary-three;
+	  outline: 1px solid $secondary-four;
 	  &:hover {
 		outline: 1px solid $primary;
 	  }
