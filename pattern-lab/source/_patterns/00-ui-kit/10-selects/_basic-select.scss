@@ -8,8 +8,8 @@
   }
   select {
 	  &:focus {
-		border: 1px solid #19a6a4;
-		box-shadow: 0px 0px 5px 0px #19a6a4;
+		border: 1px solid $secondary-four;
+		box-shadow: 0px 0px 5px 0px $secondary-four;
 	}
   }
 }
