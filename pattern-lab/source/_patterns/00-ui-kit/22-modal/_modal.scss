@@ -63,6 +63,7 @@
     }
     .content {
       padding-top:20px;
+      border-top: 1px solid $neutral;
       @media(min-width:640px) {
         max-height:500px;
         overflow: auto;
