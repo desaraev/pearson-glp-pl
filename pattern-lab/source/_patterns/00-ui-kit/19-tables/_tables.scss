@@ -90,17 +90,18 @@ table {
 		outline: 1px solid $primary;
 	  }
 	}
-  }
-}
-
-.controls {
-  margin-bottom:28px;
-  display:flex;
-  justify-content: flex-end;
-  
-  .control {
-	&:first-child {
-	  margin-right:1em;
+	.controls {
+	  margin-bottom:28px;
+	  display:flex;
+	  justify-content: flex-end;
+	
+	  .control {
+		&:first-child {
+		  margin-right:1em;
+		}
+	  }
 	}
   }
 }
+
+
