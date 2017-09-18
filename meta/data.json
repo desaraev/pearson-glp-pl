@@ -5,6 +5,16 @@
       "label": "remove"
     }
   ],
+  "backBtn": [
+    {
+      "icon": [
+        {
+          "icon": "chevron-back-18",
+          "label": "back"
+        }
+      ]
+    }
+  ],
   "textIconBtn": [
     {
       "label": "Button with Calendar Icon",
@@ -1204,6 +1214,7 @@
       "image": "avatar-dale.jpg",
       "buttons": [
         {
+          "drawerId": "notifications",
           "className": "notification",
           "notification":{
             "icon": [
@@ -1236,6 +1247,45 @@
           "icon": "person-18",
           "label": "user"
         }
+      ],
+      "showDrawerButton": false,
+      "drawer": [
+        {
+          "showButton": true,
+          "drawerId": "notifications",
+          "title": "Notifications",
+          "icon": [
+            {
+              "icon": "remove-sm-24",
+              "label": "close"
+            }
+          ],
+          "topics": [
+            {
+              "title": "Notification One",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Two",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Three",
+              "content": "You haven't received any notifications yet."
+            }
+          ],
+          "archive": [
+            {
+              "title": "Archive",
+              "topics": [
+                {
+                  "title": "Previous notification",
+                  "content": "This is an old notification"
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
@@ -1246,6 +1296,7 @@
           "avatar": false,
           "buttons": [
             {
+              "drawerId": "notifications",
               "className": "notification",
               "notification":{
                 "icon": [
@@ -1277,6 +1328,45 @@
             {
               "icon": "person-18",
               "label": "user"
+            }
+          ]
+        }
+      ],
+      "showDrawerButton": false,
+      "drawer": [
+        {
+          "showButton": true,
+          "drawerId": "notifications",
+          "title": "Notifications",
+          "icon": [
+            {
+              "icon": "remove-sm-24",
+              "label": "close"
+            }
+          ],
+          "topics": [
+            {
+              "title": "Notification One",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Two",
+              "content": "You haven't received any notifications yet."
+            },
+            {
+              "title": "Notification Three",
+              "content": "You haven't received any notifications yet."
+            }
+          ],
+          "archive": [
+            {
+              "title": "Archive",
+              "topics": [
+                {
+                  "title": "Previous notification",
+                  "content": "This is an old notification"
+                }
+              ]
             }
           ]
         }
@@ -1461,6 +1551,38 @@
           "url": "#",
           "location": "top",
           "text": "Got it"
+        }
+      ]
+    }
+  ],
+  "showDrawerButton": true,
+  "drawer": [
+    {
+      "showButton": true,
+      "drawerId": "one",
+      "title": "Notifications",
+      "icon": [
+        {
+          "icon": "remove-sm-24",
+          "label": "close"
+        }
+      ],
+      "topics": [
+        {
+          "dataId": "one",
+          "title": "",
+          "content": "You haven't received any notifications yet."
+        }
+      ],
+      "archive": [
+        {
+          "title": "Archive",
+          "topics": [
+            {
+              "title": "Previous notification",
+              "content": "This is an old notification"
+            }
+          ]
         }
       ]
     }

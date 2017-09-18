@@ -3,7 +3,11 @@
 		<div class="logo" role="img" aria-label="Pearson"></div>
 		<div class="actions">
 			{{#buttons}}
-				<span class="{{className}}">{{#notification}} {{> ui-kit-single-icon}} {{/notification}} {{> ui-kit-icon }}</span>
+				<span class="{{className}}">{{#notification}} {{> ui-kit-single-icon}} {{/notification}}
+					<button type="button" class="pe-icon--btn" aria-label="open notifications" data-drawer-id="{{drawerId}}" >
+						{{>ui-kit-single-icon}}
+					</button>
+				</span>
 			{{/buttons}}
 			<div class="username">
 				{{#avatar}}<span class="avatar"><img src="../../images/{{image}}" alt="avatar"></span>{{/avatar}}
@@ -12,4 +16,5 @@
 			</div>
 		</div>
 	</header>
+	{{> ui-kit-drawer}}
 {{/header}}
