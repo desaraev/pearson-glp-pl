@@ -12,7 +12,6 @@
 
         input.addEventListener('blur', ()=> {
             let inputRound = (Math.round(input.value / 25) * 25);
-            //console.log(inputRound);
             if (parseInt(inputRound) > maxValue)
                 return inputRound = maxValue + '%'
 

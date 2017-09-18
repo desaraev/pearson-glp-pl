@@ -1,11 +1,12 @@
 .pe-proto {
   &.alert-box {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+    @include box-shadow;
     padding: 8px;
     border: 1px solid $neutral;
     border-left: 3px solid;
     margin-bottom: 1em;
     max-width: 580px;
+	transition: all 0.2s ease;
     
     @media (max-width: 480px) {
     	max-width: 440px;
