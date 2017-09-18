@@ -47,6 +47,11 @@ table {
 	  padding:1em 20px;
 	}
 	border-bottom: 1px solid $neutral-four;
+	&[data-match ="true"] {
+	  .no-match {
+		display:none;
+	  }
+	}
   }
   
   &.hoverable {
@@ -80,6 +85,7 @@ table {
 	@extend .hoverable;
 	.selected {
 	  background-color: $secondary-three;
+	  outline: 1px solid $secondary-four;
 	  &:hover {
 		outline: 1px solid $primary;
 	  }
@@ -87,3 +93,14 @@ table {
   }
 }
 
+.controls {
+  margin-bottom:28px;
+  display:flex;
+  justify-content: flex-end;
+  
+  .control {
+	&:first-child {
+	  margin-right:1em;
+	}
+  }
+}
