@@ -1,5 +1,5 @@
-# Pearson GLP Patternlab - v0.5
-http://159.182.11.87/pearson-glp-pl
+# Pearson GLP Patternlab - v0.6
+http://45.55.127.237/pearson-glp-pl/
 
 ## Pattern Lab & Elements Boilerplate
 This setup will get you started with running a basic Pattern Lab integrated with elements.  Perfect for prototyping HTML and SCSS in an atomic environment. To get started, install all the necessary dependencies and load configuration folders and files.
@@ -40,6 +40,10 @@ For more information on patternlab
 9. in the command line from the root of the project type: ```$ gulp bundle```
 10 The files and your project should now be included in the UI folder
 11. NOTE: on occassion you will randomly run into console errors, if this is the case, terminate and run again.  These errors will not harm your files, it will just prevent the export.  We are working on a way to eliminate them.
+
+## Automatic Deployment
+We're using Travis CI to test for build failures and automatic deployment.  This will remove the need for FTP.
+1. Details coming soon.
 
 ## Copy files to ftp http://159.182.11.87
 1. open up the ftp.js file in the _tasks folder
