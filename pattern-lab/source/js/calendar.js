@@ -91,10 +91,13 @@
                         disabled += " disabled";
                     }
 
-                    if (isSelected || isToday){
+                    if (isSelected){
                         dayClasses += " selected";
-
                     }
+
+                   if (isToday){
+                       dayClasses += " today";
+                   }
                     return '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                 });
 
