@@ -15,7 +15,8 @@
         year,
         month,
         GetCalendar = {},
-        dayList = [];
+        dayList = [],
+        renderDays = [];
 
     GetCalendar = {
         build: (year, month) => {
@@ -23,9 +24,7 @@
             firstDay = moment(startDate).startOf('month');
             endDay = moment(startDate).endOf('month');
             monthRange = moment.range(firstDay, endDay);
-
             weeks = [];
-
             monthRange.by('days', function (moment) {
                 let ref;
                 if (ref = moment.week(), [].indexOf.call(weeks, ref) < 0) {
@@ -70,7 +69,8 @@
                 isToday,
                 isSelected,
                 dayClasses,
-                disabled;
+                disabled,
+                elements = "";
 
                 CalendarState.calendar.map(date => {
                     weekCount++;
@@ -98,7 +98,7 @@
                    if (isToday){
                        dayClasses += " today";
                    }
-                    return '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
+                    return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                });
 
         }
@@ -113,6 +113,7 @@
         selected: moment().format('DD-MM-YYYY')
     };
 
+    renderDays = GetCalendar.render();
 
     calendars.forEach((calendar)=> {
         const monthHTML = calendar.querySelector('.month'),
@@ -120,7 +121,6 @@
               weekHTML = calendar.querySelector('.days-of-week'),
               daysHTML = calendar.querySelector('.days'),
               weeks = ['S','M','T','W','T','F','S'],
-              renderDays = GetCalendar.render(),
               weekArr = [];
 
         monthHTML.innerHTML = CalendarState.monthName;
@@ -130,7 +130,6 @@
         weeks.forEach(week => {
             weekHTML.innerHTML += '<span class="pe-label pe-label--small neutral-three">'+ week +'</span>'
         });
-
 
         // group the days into items of 7
         for(let i = 0; i < renderDays.length; i+=7) {
@@ -142,6 +141,7 @@
             daysHTML.innerHTML += '<div class="weeks">'+ days.join('')+'</div>';
         });
 
+
         // add event handlers to the buttons
         const dayBtns = calendar.querySelectorAll('.weeks button');
         dayBtns.forEach((button => {
@@ -152,5 +152,6 @@
                 event.currentTarget.classList.add('selected');
             })
         }))
+        weekArr.length = 0;
     });
 })();
