@@ -1,7 +1,10 @@
 {{#calendar}}
 <div class="calendar">
 	<div class="header">
-		<span class="pe-title pe-title--small neutral-two">{{month}} {{year}}</span>
+		<span class="pe-title pe-title--small neutral-two">
+			<span class="month"></span>
+			<span class="year"></span>
+		</span>
 		<div class="button-group">
 			{{#buttons}}
 				{{> ui-kit-icon}}
@@ -9,16 +12,8 @@
 		</div>
 	</div>
 	<div class="days-of-week">
-		{{#days}}
-			<span class="pe-label pe-label--small neutral-three">{{day}}</span>
-		{{/days}}
 	</div>
-	{{#week}}
-		<div class="weeks">
-			{{#numbers}}
-				<button type="button" class="pe-link--btn pe-label neutral-two" aria-label="{{month}} {{number}}">{{number}}</button>
-			{{/numbers}}
-		</div>
-	{{/week}}
+	<div class="days">
+	</div>
 </div>
 {{/calendar}}

@@ -44,6 +44,15 @@
 		background:$secondary-four;
 		color: white;
 	  }
+	  &.muted {
+		color:$neutral-four;
+	  }
+	  &:disabled {
+		&:hover {
+		  background:none;
+		  cursor:default;
+		}
+	  }
 	}
   }
 }
