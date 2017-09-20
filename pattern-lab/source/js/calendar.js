@@ -66,7 +66,6 @@
         },
         render: () => {
             let weekCount = 0,
-                days,
                 isCurrentMonth,
                 isToday,
                 isSelected,
@@ -86,6 +85,7 @@
                     isSelected = day.format('DD-MM-YYYY') === CalendarState.selected;
                     dayClasses = 'pe-link--btn pe-label neutral-two';
                     disabled = "";
+
                     if (!isCurrentMonth){
                         dayClasses += " muted";
                         disabled += " disabled";
@@ -99,9 +99,7 @@
                        dayClasses += " today";
                    }
                     return '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
-                });
-
-
+               });
 
         }
     };
@@ -123,7 +121,6 @@
               daysHTML = calendar.querySelector('.days'),
               weeks = ['S','M','T','W','T','F','S'],
               renderDays = GetCalendar.render(),
-              dayArr = [],
               weekArr = [];
 
         monthHTML.innerHTML = CalendarState.monthName;
