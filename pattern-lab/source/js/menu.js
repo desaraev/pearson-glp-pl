@@ -1,36 +1,46 @@
 'use strict';
 (function() {
     
-    const menubutton = document.querySelector('button[aria-haspopup]'),
+    const menubuttons = document.querySelectorAll('button[aria-haspopup]'),
         menu = document.querySelector('[role=menu]'),
         menuitems = document.querySelectorAll('[role=menuitemcheckbox]');
-    
-        menubutton.addEventListener('click', event => {
-            const target = event.currentTarget,
-                menu = document.querySelector('[role=menu]'),
-                _this = menubutton,
-                isExpanded = _this.getAttribute('aria-expanded');
 
-            if (isExpanded === 'true') {
-                _this.setAttribute('aria-expanded', 'false'); 
-                menu.classList.add('hidden');
-                _this.focus();
-            }
-            if (isExpanded === 'false') {
-                _this.setAttribute('aria-expanded', 'true');
-                menu.classList.remove('hidden');
-                menu.focus();
-            }
-            event.stopPropagation();
-        })
-        var mouseEnteredMenuButton = false;    
+    var mouseIsOverMenuButton = false;    
+    var mouseIsOverMenu = false;
+
+    var menuButtonExists = document.getElementsByClassName("menubutton");
+    if (menuButtonExists.length == 0){
+        console.log('THER ARE NO menubuttons');
+        menu.classList.remove('hidden');
+    }
+
+        menubuttons.forEach(menubutton => {
+            menubutton.addEventListener('click', event => {
+                const target = event.currentTarget,
+                    menu = document.querySelector('[role=menu]'),
+                    _this = menubutton,
+                    isExpanded = _this.getAttribute('aria-expanded');
+
+                if (isExpanded === 'true') {
+                    _this.setAttribute('aria-expanded', 'false'); 
+                    menu.classList.add('hidden');
+                    _this.focus();
+                }
+                if (isExpanded === 'false') {
+                    _this.setAttribute('aria-expanded', 'true');
+                    menu.classList.remove('hidden');
+                    menu.focus();
+                }
+                event.stopPropagation();
+            })
+
         menubutton.addEventListener('mouseenter', event => {
             const target = event.currentTarget,
                 menu = document.querySelector('[role=menu]'),
                 _this = menubutton,
                 isExpanded = _this.getAttribute('aria-expanded');
             event.stopPropagation();
-            mouseEnteredMenuButton = true;
+            mouseIsOverMenuButton = true;
 
             if (isExpanded === 'false') {
                 _this.setAttribute('aria-expanded', 'true');
@@ -38,6 +48,40 @@
                 menu.focus();
             }
         })
+
+        menubutton.addEventListener('keyup', event => {
+            const target = event.currentTarget,
+                menu = document.querySelector('[role=menu]'),
+                _this = menubutton,
+                isExpanded = _this.getAttribute('aria-expanded');
+                
+            if (event.keyCode == 40) { //down arrow
+                console.log('down key pressed');
+                _this.setAttribute('aria-expanded', 'true');
+                menu.classList.remove('hidden');
+                menu.focus();
+                event.stopPropagation();
+
+            }
+        })
+
+    menubutton.addEventListener('mouseleave', event => {
+            const menu = document.querySelector('[role=menu]'), 
+                            _this = menubutton;
+            mouseIsOverMenuButton = false;
+            event.stopPropagation();
+            setTimeout(function(){ 
+                if (!mouseIsOverMenu) {
+                _this.setAttribute('aria-expanded', 'false'); 
+                menu.classList.toggle('hidden');
+                }
+             }, 100);
+    })
+
+
+
+
+        });
 
     var itemCount = 1;
     menuitems.forEach(item => {
@@ -59,21 +103,6 @@
         itemCount += 1;
     });
         resetActiveDescendant();
-        menubutton.addEventListener('keyup', event => {
-            const target = event.currentTarget,
-                menu = document.querySelector('[role=menu]'),
-                _this = menubutton,
-                isExpanded = _this.getAttribute('aria-expanded');
-                
-            if (event.keyCode == 40) { //down arrow
-                console.log('down key pressed');
-                _this.setAttribute('aria-expanded', 'true');
-                menu.classList.remove('hidden');
-                menu.focus();
-                event.stopPropagation();
-
-            }
-        })
     
 
     function resetActiveDescendant() {
@@ -98,31 +127,18 @@
                             _this = menu;
             event.stopPropagation();
             setTimeout(function(){ 
-                if (!mouseEnteredMenuButton) {
+                if (!mouseIsOverMenuButton) {
                 menubutton.setAttribute('aria-expanded', 'false'); 
                 menu.classList.toggle('hidden');
                 }
              }, 100);
-            mouseEnteredMenu = false;
+            mouseIsOverMenu = false;
     })
-    var mouseEnteredMenu = false;
     menu.addEventListener('mouseenter', event => {
             const menubutton = document.querySelector('button[aria-haspopup]'), 
                             _this = menu;
             event.stopPropagation();
-            mouseEnteredMenu = true;
-    })
-    menubutton.addEventListener('mouseleave', event => {
-            const menu = document.querySelector('[role=menu]'), 
-                            _this = menubutton;
-            mouseEnteredMenuButton = false;
-            event.stopPropagation();
-            setTimeout(function(){ 
-                if (!mouseEnteredMenu) {
-                _this.setAttribute('aria-expanded', 'false'); 
-                menu.classList.toggle('hidden');
-                }
-             }, 100);
+            mouseIsOverMenu = true;
     })
 
         menu.addEventListener('keydown', event => {
