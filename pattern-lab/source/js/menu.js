@@ -3,16 +3,26 @@
     
     const menubuttons = document.querySelectorAll('button[aria-haspopup]'),
         menu = document.querySelector('[role=menu]'),
-        menuitems = document.querySelectorAll('[role=menuitemcheckbox]');
+        menuitems = document.querySelectorAll('[role=menuitemcheckbox]'),
+        html = document.getElementsByTagName('html')[0];
 
     var mouseIsOverMenuButton = false;    
     var mouseIsOverMenu = false;
 
     var menuButtonExists = document.getElementsByClassName("menubutton");
     if (menuButtonExists.length == 0){
-        console.log('THER ARE NO menubuttons');
         menu.classList.remove('hidden');
     }
+    menu.style.outline = "none";
+    html.addEventListener('click', event => {
+                menubuttons.forEach(menubutton => {
+                    var isExpanded = menubutton.getAttribute('aria-expanded');
+                    if (isExpanded === 'true') {
+                    menubutton.setAttribute('aria-expanded', 'false'); 
+                    menu.classList.add('hidden');
+                    }
+                });
+    });
 
         menubuttons.forEach(menubutton => {
             menubutton.addEventListener('click', event => {
@@ -20,6 +30,7 @@
                     menu = document.querySelector('[role=menu]'),
                     _this = menubutton,
                     isExpanded = _this.getAttribute('aria-expanded');
+                event.stopPropagation();
 
                 if (isExpanded === 'true') {
                     _this.setAttribute('aria-expanded', 'false'); 
@@ -31,23 +42,7 @@
                     menu.classList.remove('hidden');
                     menu.focus();
                 }
-                event.stopPropagation();
             })
-
-        menubutton.addEventListener('mouseenter', event => {
-            const target = event.currentTarget,
-                menu = document.querySelector('[role=menu]'),
-                _this = menubutton,
-                isExpanded = _this.getAttribute('aria-expanded');
-            event.stopPropagation();
-            mouseIsOverMenuButton = true;
-
-            if (isExpanded === 'false') {
-                _this.setAttribute('aria-expanded', 'true');
-                menu.classList.remove('hidden');
-                menu.focus();
-            }
-        })
 
         menubutton.addEventListener('keyup', event => {
             const target = event.currentTarget,
@@ -65,18 +60,6 @@
             }
         })
 
-    menubutton.addEventListener('mouseleave', event => {
-            const menu = document.querySelector('[role=menu]'), 
-                            _this = menubutton;
-            mouseIsOverMenuButton = false;
-            event.stopPropagation();
-            setTimeout(function(){ 
-                if (!mouseIsOverMenu) {
-                _this.setAttribute('aria-expanded', 'false'); 
-                menu.classList.toggle('hidden');
-                }
-             }, 100);
-    })
 
 
 
@@ -88,6 +71,7 @@
         item.addEventListener('click', event => {
             const target = event.currentTarget,
                 isChecked = target.getAttribute('aria-checked');
+            event.stopPropagation();
 
             if (isChecked === 'true' )
                 target.setAttribute('aria-checked', 'false');
@@ -96,7 +80,7 @@
             const menu = document.querySelector('[role=menu]');
             menu.setAttribute('aria-activedescendant',target.id);
             changeActiveDescendant();
-            event.stopPropagation();
+            menu.focus();
 
         })
         item.setAttribute('id', 'menuitem' + itemCount);
@@ -119,27 +103,10 @@
 
             var activeDescendantID = document.querySelector('[aria-activedescendant]').getAttribute('aria-activedescendant');
             var activeDescendant = document.getElementById(activeDescendantID);
-            activeDescendant.style.outline = "3px solid navy";
+            activeDescendant.style.outline = "2px solid navy";
             activeDescendant.style.backgroundColor = "#E9E9E9";
     }
-    menu.addEventListener('mouseleave', event => {
-            const menubutton = document.querySelector('button[aria-haspopup]'), 
-                            _this = menu;
-            event.stopPropagation();
-            setTimeout(function(){ 
-                if (!mouseIsOverMenuButton) {
-                menubutton.setAttribute('aria-expanded', 'false'); 
-                menu.classList.toggle('hidden');
-                }
-             }, 100);
-            mouseIsOverMenu = false;
-    })
-    menu.addEventListener('mouseenter', event => {
-            const menubutton = document.querySelector('button[aria-haspopup]'), 
-                            _this = menu;
-            event.stopPropagation();
-            mouseIsOverMenu = true;
-    })
+
 
         menu.addEventListener('keydown', event => {
             var activeDescendantID = document.querySelector('[aria-activedescendant]').getAttribute('aria-activedescendant');
