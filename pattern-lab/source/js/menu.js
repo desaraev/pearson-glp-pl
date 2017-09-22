@@ -27,7 +27,7 @@
         menubuttons.forEach(menubutton => {
             menubutton.addEventListener('click', event => {
                 const target = event.currentTarget,
-                    menu = document.querySelector('[role=menu]'),
+                    menu = target.nextElementSibling.querySelector('[role=menu]'),
                     _this = menubutton,
                     isExpanded = _this.getAttribute('aria-expanded');
                 event.stopPropagation();
@@ -46,7 +46,7 @@
 
         menubutton.addEventListener('keyup', event => {
             const target = event.currentTarget,
-                menu = document.querySelector('[role=menu]'),
+                menu = target.nextElementSibling.querySelector('[role=menu]'),
                 _this = menubutton,
                 isExpanded = _this.getAttribute('aria-expanded');
                 
@@ -77,6 +77,7 @@
                 target.setAttribute('aria-checked', 'false');
             else
                 target.setAttribute('aria-checked', 'true');
+
             const menu = document.querySelector('[role=menu]');
             menu.setAttribute('aria-activedescendant',target.id);
             changeActiveDescendant();
