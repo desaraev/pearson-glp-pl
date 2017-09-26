@@ -2,28 +2,22 @@
 (function() {
     
     const menubuttons = document.querySelectorAll('button[aria-haspopup]'),
-        menu = document.querySelector('[role=menu]'),
+        menus = document.querySelectorAll('[role=menu]'),
         menuitems = document.querySelectorAll('[role=menuitemcheckbox]'),
         html = document.getElementsByTagName('html')[0];
 
-    var mouseIsOverMenuButton = false;    
-    var mouseIsOverMenu = false;
 
-    var menuButtonExists = document.getElementsByClassName("menubutton");
-    if (menuButtonExists.length == 0){
-        menu.classList.remove('hidden');
-    }
-    menu.style.outline = "none";
     html.addEventListener('click', event => {
                 menubuttons.forEach(menubutton => {
                     var isExpanded = menubutton.getAttribute('aria-expanded');
                     if (isExpanded === 'true') {
                     menubutton.setAttribute('aria-expanded', 'false'); 
-                    menu.classList.add('hidden');
+                    menubutton.nextElementSibling.querySelector('[role=menu]').classList.add('hidden');
                     }
                 });
     });
 
+        var menuButtonsCount = 1;
         menubuttons.forEach(menubutton => {
             menubutton.addEventListener('click', event => {
                 const target = event.currentTarget,
@@ -60,6 +54,8 @@
             }
         })
 
+        menubutton.setAttribute('id', 'menubutton' + menuButtonsCount);
+        menuButtonsCount += 1;
 
 
 
@@ -78,91 +74,141 @@
             else
                 target.setAttribute('aria-checked', 'true');
 
-            const menu = document.querySelector('[role=menu]');
+            const menu = target.parentElement;
             menu.setAttribute('aria-activedescendant',target.id);
-            changeActiveDescendant();
+               restyleMenuItems();
+
+                var activeDescendantID = menu.getAttribute('aria-activedescendant');
+                var activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
+
             menu.focus();
 
         })
         item.setAttribute('id', 'menuitem' + itemCount);
         itemCount += 1;
-    });
-        resetActiveDescendant();
-    
 
-    function resetActiveDescendant() {
-            const menu = document.querySelector('[role=menu]');
-            menu.setAttribute('aria-activedescendant','menuitem1');
-            changeActiveDescendant();
-    }
-    function changeActiveDescendant() {
+    });
+    function restyleMenuItems() {
             menuitems.forEach(item => {
                 item.style.outline = "none";
                 item.style.backgroundColor = "white";
                 item.style.padding = "7px 10px"
             });
+            menus.forEach(menu => {    
+                var activeDescendantID = menu.getAttribute('aria-activedescendant');
+                var activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
+            });
+}
 
-            var activeDescendantID = document.querySelector('[aria-activedescendant]').getAttribute('aria-activedescendant');
+    var menuCount = 1;
+    menus.forEach(menu => {
+            menu.setAttribute('id', 'menu' + menuCount);
+            menuCount += 1;
+            menu.setAttribute('aria-labelledby', menu.parentElement.previousElementSibling.id);
+            menu.setAttribute('aria-activedescendant', menu.firstElementChild.id);
+            menuitems.forEach(item => {
+                item.style.padding = "7px 10px"
+            });
+            var activeDescendantID = menu.getAttribute('aria-activedescendant');
             var activeDescendant = document.getElementById(activeDescendantID);
             activeDescendant.style.outline = "2px solid navy";
             activeDescendant.style.backgroundColor = "#E9E9E9";
-    }
+
+            if (!menu.parentElement.classList.contains('dropdown-menu')) {
+                menu.classList.remove('hidden');
+                menu.removeAttribute('aria-labelledby');
+            }
 
 
-        menu.addEventListener('keydown', event => {
-            var activeDescendantID = document.querySelector('[aria-activedescendant]').getAttribute('aria-activedescendant');
+            menu.addEventListener('keydown', event => {
+            const target = event.currentTarget;
+            var activeDescendantID = menu.getAttribute('aria-activedescendant');
             var activeDescendant = document.getElementById(activeDescendantID);
-            const target = event.currentTarget,
-             menubutton = document.querySelector('button[aria-haspopup]'),
-                _this = menu;
-                
+
                 switch(event.which || event.keyCode) {
 
                 case 9: //tab
-                menubutton.setAttribute('aria-expanded', 'false'); 
-                _this.classList.toggle('hidden');
+                if (menu.parentElement.classList.contains('dropdown-menu')) {
+                    menu.parentElement.previousElementSibling.setAttribute('aria-expanded', 'false'); 
+                    target.classList.toggle('hidden');
+                }
+
                 return;
                 break;
 
 
                 case 38: // up
-                if (activeDescendant == _this.firstElementChild) {
-                    _this.setAttribute('aria-activedescendant',_this.lastElementChild.id);
+                if (activeDescendant == menu.firstElementChild) {
+                    menu.setAttribute('aria-activedescendant',menu.lastElementChild.id);
                 } else {
-                    _this.setAttribute('aria-activedescendant',activeDescendant.previousElementSibling.id);
+                    menu.setAttribute('aria-activedescendant',activeDescendant.previousElementSibling.id);
                 }
-                changeActiveDescendant();
+                restyleMenuItems();
+
+                activeDescendantID = menu.getAttribute('aria-activedescendant');
+                activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
+
                 break;
 
 
                 case 40: // down
-                if (activeDescendant == _this.lastElementChild) {
-                    _this.setAttribute('aria-activedescendant',_this.firstElementChild.id);
+                if (activeDescendant == menu.lastElementChild) {
+                    menu.setAttribute('aria-activedescendant',menu.firstElementChild.id);
                 } else {
-                    _this.setAttribute('aria-activedescendant',activeDescendant.nextElementSibling.id);
+                    menu.setAttribute('aria-activedescendant',activeDescendant.nextElementSibling.id);
                 }
-                changeActiveDescendant();
+
+                restyleMenuItems();
+
+                activeDescendantID = menu.getAttribute('aria-activedescendant');
+                activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
+
+
+
                 break;
                 
                 case 27: // ESC
-                menubutton.setAttribute('aria-expanded', 'false'); 
-                _this.classList.toggle('hidden');
-                menubutton.focus();
+                menu.parentElement.previousElementSibling.setAttribute('aria-expanded', 'false'); 
+                target.classList.toggle('hidden');
+                menu.parentElement.previousElementSibling.focus();
                 break;
 
                 case 13:
                 case 32: // enter space
-                changeActiveDescendant();
+                restyleMenuItems();
+
+                activeDescendantID = menu.getAttribute('aria-activedescendant');
+                activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
                 activeDescendant.click();
                 break;
                 case 36: // home
-                _this.setAttribute('aria-activedescendant',_this.firstElementChild.id);
-                changeActiveDescendant();
+                target.setAttribute('aria-activedescendant',target.firstElementChild.id);
+                restyleMenuItems();
+
+                activeDescendantID = menu.getAttribute('aria-activedescendant');
+                activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
                 break;
 
                 case 35: // end
-                _this.setAttribute('aria-activedescendant',_this.lastElementChild.id);
-                changeActiveDescendant();
+                target.setAttribute('aria-activedescendant',target.lastElementChild.id);
+                restyleMenuItems();
+
+                activeDescendantID = menu.getAttribute('aria-activedescendant');
+                activeDescendant = document.getElementById(activeDescendantID);
+                activeDescendant.style.outline = "2px solid navy";
+                activeDescendant.style.backgroundColor = "#E9E9E9";
                 break;
 
 
@@ -172,6 +218,20 @@
 
             
         })
+
+    });
+
+
+
+        menubuttons.forEach(menubutton => {
+   
+
+        var menuID = menubutton.nextElementSibling.firstElementChild.id;
+        menubutton.setAttribute('aria-controls',menuID);
+
+
+
+        });
 
 
 
