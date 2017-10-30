@@ -13,10 +13,15 @@
 @import 'helpers';
 @import 'flex';
 
+
+//Loads CITE fonts
+@import 'cite-fonts';
+
 // Start project files located in the 'pattern-lab/source/_patterns' folders
 @import '../source/_patterns/00-ui-kit/01-typography/ui-mobile-page-heading';
 @import '../source/_patterns/00-ui-kit/04-buttons/drop-text-btn';
 @import '../source/_patterns/00-ui-kit/04-buttons/system-back-btn';
+@import '../source/_patterns/00-ui-kit/04-buttons/glp-btn';
 @import '../source/_patterns/00-ui-kit/05-dropdown/menu';
 @import '../source/_patterns/00-ui-kit/05-dropdown/dropdown';
 @import '../source/_patterns/00-ui-kit/07-basic-inputs/inputIcon';
@@ -37,5 +42,4 @@
 @import '../source/_patterns/00-ui-kit/23-coachmarks/coachmark';
 @import '../source/_patterns/00-ui-kit/22-modal/modal';
 @import '../source/_patterns/00-ui-kit/23-drawer/drawer';
-
 

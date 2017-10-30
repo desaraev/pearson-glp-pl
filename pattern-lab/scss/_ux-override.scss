@@ -38,19 +38,6 @@
 		}
 	  }
 	}
-	&:focus {
-	  ~ span {
-		border: 1px solid #19a6a4;
-	  }
-	  &:checked {
-		~ span {
-		  background:white;
-		  svg {
-			fill: #19a6a4;
-		  }
-		}
-	  }
-	}
 	&:disabled {
 	  &:checked {
 		~ span {
@@ -106,4 +93,10 @@
 	  border: 1px solid #DB0020;
 	}
   }
+}
+
+button {
+  text-overflow: unset !important;
+  overflow:initial !important;
+
 }

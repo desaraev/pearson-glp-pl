@@ -1,13 +1,15 @@
 {{#menu}}
-	<ul role="menu" class="menu hidden pe-label" tabindex="0">
+	<ul role="menu" class="menu pe-label">
 		{{#menuList}}
-			<li role="menuitemcheckbox" aria-checked="false" tabindex="-1">
-					<span aria-hidden="true">{{> ui-kit-single-icon }}</span>
+			<li role="menuitemcheckbox" aria-checked="false">
+				<a href="{{link}}">
+					{{> ui-kit-single-icon }}
 					{{label}}
+				</a>
 			</li>
-			<!-- {{#divider}}
+			{{#divider}}
 				<li class="divider" role="separator"></li>
-			{{/divider}} -->
+			{{/divider}}
 		{{/menuList}}
 	</ul>
 {{/menu}}

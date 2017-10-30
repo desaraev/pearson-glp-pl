@@ -6,11 +6,11 @@
     "button": false,
       "content": "Open the course menu to access invite instructions.",
     "link": [
-	{
-	"url": "#",
-	"location": "top",
-	"text": "Got it"
-	}
+        {
+        "url": "#",
+        "location": "top",
+        "text": "Got it"
+        }
       ]  
     }
   ]

@@ -1,0 +1,13 @@
+/* GLP button styles */
+
+[class^='pe-btn--'], [class*=' pe-btn--'],[class^='pe-btn__'], [class*=' pe-btn__'] {
+	border-radius: 22px;
+	padding: 0 30px;
+    height:40px;
+    line-height:0;
+    font-size:16px;
+}
+
+[class^='pe-btn__cta'], [class*='pe-btn__cta'],[class^='pe-btn__primary'], [class*='pe-btn__primary'] {
+	border:0;
+}

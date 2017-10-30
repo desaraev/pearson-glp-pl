@@ -24,7 +24,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
+  
   @media (max-width:640px) {
     margin:1em;
     padding:24px;
@@ -73,5 +73,17 @@
       border-top: 1px solid $neutral;
       padding-top:20px;
     }
+  }
+}
+
+/* blur modal content -- guess that there's a div afterwards */
+.modal:not(.hidden) + div,
+.modal.show-on-load + div {
+	filter: blur(4px);
+}
+
+.unbox {
+  .show-on-load {
+    display:block !important;
   }
 }

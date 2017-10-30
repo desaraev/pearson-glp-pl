@@ -44,22 +44,6 @@
 		background:$secondary-four;
 		color: white;
 	  }
-	  &.selected.today {
-		background:$secondary-four;
-		color: white;
-	  }
-	  &.today {
-		background-color:$secondary-three;
-	  }
-	  &.muted {
-		color:$neutral-four;
-	  }
-	  &:disabled {
-		&:hover {
-		  background:none;
-		  cursor:default;
-		}
-	  }
 	}
   }
 }

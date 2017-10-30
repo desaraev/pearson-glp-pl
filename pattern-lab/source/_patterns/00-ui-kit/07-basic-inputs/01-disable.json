@@ -2,7 +2,7 @@
   "basicInput": [
     {
       "label": "First Name",
-      "placeholder": "weee I'm placeholder",
+      "placeholder": "weee I’m placeholder",
       "id": "basicTwo"
     }
   ]
