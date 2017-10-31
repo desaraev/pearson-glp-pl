@@ -8,6 +8,10 @@ gulp.task('configure', ['install-elements'], function() {
         .pipe(rename('./_01-foot.mustache'))
         .pipe(gulp.dest('node_modules/edition-node-gulp/source/_meta/'));
 
+    gulp.src("meta/00-head.mustache")
+        .pipe(rename('./_00-head.mustache'))
+        .pipe(gulp.dest('node_modules/edition-node-gulp/source/_meta/'));
+
     gulp.src("node_modules/edition-node-gulp/source/**/*")
         .pipe(gulp.dest('pattern-lab/source/'));
 
