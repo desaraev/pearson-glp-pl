@@ -19,7 +19,7 @@
   overflow: auto;
   @media(min-width:768px) {
     max-height:700px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -73,17 +73,5 @@
       border-top: 1px solid $neutral;
       padding-top:20px;
     }
-  }
-}
-
-/* blur modal content -- guess that there's a div afterwards */
-.modal:not(.hidden) + div,
-.modal.show-on-load + div {
-	filter: blur(4px);
-}
-
-.unbox {
-  .show-on-load {
-    display:block !important;
   }
 }
