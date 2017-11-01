@@ -21,10 +21,6 @@ gulp.task('configure', ['install-elements'], function() {
     gulp.src("./meta/data.json")
         .pipe(gulp.dest('pattern-lab/source/_data/'));
 
-    gulp.src("meta/00-head.mustache")
-        .pipe(rename('./_00-head.mustache'))
-        .pipe(gulp.dest('pattern-lab/source/_meta/'));
-
     gulp.src("meta/styleguide.min.css")
         .pipe(gulp.dest('node_modules/edition-node-gulp/node_modules/styleguidekit-assets-default/dist/styleguide/css/'));
 
