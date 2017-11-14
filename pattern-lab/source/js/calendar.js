@@ -1,8 +1,13 @@
 'use strict';
 (function() {
-    const calendars = document.querySelectorAll('.calendar');
+    const calendars = document.querySelectorAll('.calendar'),
+          buttons = [];
+    for (let i = 0; i < calendars.length; i ++){
+        buttons[i] = calendars[i].querySelectorAll('.pe-icon--btn');
+    }
 
     let startDate,
+        displayDate,
         i,
         firstDay,
         endDay,
@@ -52,17 +57,30 @@
             return calendar;
         },
 
-        getInitialState: () => {
-            month = moment().month();
-            year = moment().year();
+        setState: (buttonClicked) => {
+            if (buttonClicked === "none") {
+                displayDate = moment([moment().year(), moment().month()]);
+            } else {
+                if (buttonClicked === "next") {
+                    displayDate = moment(displayDate).add(1, 'months'); 
 
+                } else if (buttonClicked === "prev") {
+                    displayDate = moment(displayDate).subtract(1, 'months');
+                } 
+            };
+            month = moment(displayDate).month();
+            year = moment(displayDate).year(); 
+        }, 
+
+        getState: () => {
             return {
-                month: month,
-                monthName: moment.months()[month],
-                year: year,
-                calendar: GetCalendar.build(year, month)
-            }
+                month: moment(displayDate).month(),
+                monthName: moment.months()[moment(displayDate).month()],
+                year: moment(displayDate).year(),
+                calendar: GetCalendar.build(moment(displayDate).year(), moment(displayDate).month())
+            }  
         },
+
         render: () => {
             let weekCount = 0,
                 isCurrentMonth,
@@ -72,6 +90,7 @@
                 disabled,
                 elements = "";
 
+                dayList = [];
                 CalendarState.calendar.map(date => {
                     weekCount++;
                     date.by('days', function(day){
@@ -100,50 +119,44 @@
                    }
                     return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                });
-
-        }
-    };
+            }
+        };
 
     // calendar object that will render all the data
-    let CalendarState = {
-        year: GetCalendar.getInitialState().year,
-        month: GetCalendar.getInitialState().month,
-        monthName: GetCalendar.getInitialState().monthName,
-        calendar: GetCalendar.getInitialState().calendar,
-        selected: moment().format('DD-MM-YYYY')
-    };
-
-    renderDays = GetCalendar.render();
-
-    calendars.forEach((calendar)=> {
-        const monthHTML = calendar.querySelector('.month'),
-              yearHTML = calendar.querySelector('.year'),
-              weekHTML = calendar.querySelector('.days-of-week'),
-              daysHTML = calendar.querySelector('.days'),
-              weeks = ['S','M','T','W','T','F','S'],
-              weekArr = [];
-
+    let CalendarState = {};
+    let renderCalendar = (buttonClicked, calendarNumber) => {
+        GetCalendar.setState(buttonClicked);
+        CalendarState = {
+            year: GetCalendar.getState().year,
+            month: GetCalendar.getState().month,
+            monthName: GetCalendar.getState().monthName,
+            calendar: GetCalendar.getState().calendar,
+            selected: moment().format('DD-MM-YYYY')
+        };
+    
+        renderDays = GetCalendar.render();
+    
+        const monthHTML = calendars[calendarNumber].querySelector('.month'),
+                yearHTML = calendars[calendarNumber].querySelector('.year'),
+                daysHTML = calendars[calendarNumber].querySelector('.days'),
+                weekArr = [];
+        
+        daysHTML.innerHTML = "";
         monthHTML.innerHTML = CalendarState.monthName;
         yearHTML.innerHTML = CalendarState.year;
-
-        //render days of week
-        weeks.forEach(week => {
-            weekHTML.innerHTML += '<span class="pe-label pe-label--small neutral-three">'+ week +'</span>'
-        });
 
         // group the days into items of 7
         for(let i = 0; i < renderDays.length; i+=7) {
             weekArr.push(renderDays.slice(i, i+7));
         }
-
+        
         // wrap each item of 7 with a div and render
         weekArr.forEach(days => {
             daysHTML.innerHTML += '<div class="weeks">'+ days.join('')+'</div>';
         });
 
-
         // add event handlers to the buttons
-        const dayBtns = calendar.querySelectorAll('.weeks button');
+        const dayBtns = calendars[calendarNumber].querySelectorAll('.weeks button');
         dayBtns.forEach((button => {
             button.addEventListener('click', event => {
                 dayBtns.forEach((button) => {
@@ -151,7 +164,20 @@
                 });
                 event.currentTarget.classList.add('selected');
             })
-        }))
+        }));
         weekArr.length = 0;
-    });
+    };
+
+    for (let i = 0; i < calendars.length; i ++){
+        renderCalendar("none", i);
+    }
+
+    for (let i = 0; i < buttons.length; i ++){
+        buttons[i][0].addEventListener('click', event => {
+            renderCalendar("prev", i);
+        });
+        buttons[i][1].addEventListener('click', event => {
+            renderCalendar("next", i);
+        });
+    }
 })();
