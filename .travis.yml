@@ -10,4 +10,7 @@ before_script:
   - npm install -g gulp-cli
 script:
   - gulp deploy
+branches:
+  only:
+  - master
 
