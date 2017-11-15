@@ -10,6 +10,7 @@
   "author": "Pearson Prototyping Team",
   "license": "ISC",
   "dependencies": {
+    "@pearson-components/elements-sdk": "^1.4.3",
     "browserslist": "^2.4.0",
     "edition-node-gulp": "^1.4.0",
     "gulp": "3.9.1",
