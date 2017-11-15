@@ -26,7 +26,6 @@
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sftp": "^0.1.5",
     "gulp-strip-comments": "^2.5.1",
-    "pearson-elements": "^1.14.9",
     "require-dir": "^0.3.0"
   }
 }
