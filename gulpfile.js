@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     exec = require('child_process').exec;
 
 // Installs and configures setup
-gulp.task('install', ['install-pattern-lab', 'install-elements', 'configure']);
+gulp.task('install', ['install-pattern-lab', 'configure']);
 
 // Runs Patternlab
 gulp.task('default', function(cb) {
