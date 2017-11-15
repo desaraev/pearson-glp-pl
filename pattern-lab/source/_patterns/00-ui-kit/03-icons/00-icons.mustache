@@ -1,7 +1,13 @@
 <ul class="d-icon-list">
-	{{#icon-list}}
-	<li>
-		{{> ui-kit-single-icon }}
-	</li>
-	{{/icon-list}}
+    {{#icon-list}}  
+    <li>
+    {{#showlabel}}
+        <p class="pe-label">{{icon}}</p>
+        <p class="pe-label">{{label}}</p>
+    {{/showlabel}}
+    {{#showicon}}
+        {{> ui-kit-single-icon }}
+    {{/showicon}}
+    </li>
+    {{/icon-list}}
 </ul>
