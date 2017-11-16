@@ -4,39 +4,23 @@
     const selectableTable = document.querySelectorAll('table.selectable');
     selectableTable.forEach(table => {
        const tableRow = table.querySelectorAll('tbody tr'),
-             checkAll = table.querySelector('thead th:first-child');
-
-       function toggleCheck (checkbox) {
-           if (!checkbox.checked)
-               checkbox.checked = true;
-           else
-               checkbox.checked = false
-       }
+             checkAll = table.querySelector('thead th:first-child'),
+             checkAllInput = checkAll.querySelector('input'),
+             allCheckInput = table.querySelectorAll('input');
 
        tableRow.forEach(row => {
           row.addEventListener('click', event => {
-              const rowArr = [];
+              const checkbox = event.currentTarget.querySelector('input');
+              let allInputChecked = true;
 
-              function isSelected (element) {
-                  return element === 'selected'
-              }
               event.currentTarget.classList.toggle('selected');
-              const checkbox = event.currentTarget.querySelector('input'),
-                    checkAllInput = checkAll.querySelector('input');
-
-              toggleCheck(checkbox);
-
+              checkbox.checked = !checkbox.checked;
+            
               tableRow.forEach(rowItem => {
-                rowArr.push(rowItem.classList.value)
-              });
-
-
-              if (rowArr.every(isSelected))
-                  checkAllInput.checked = true;
-              else
-                  checkAllInput.checked = false
-
-          });
+                allInputChecked &= (rowItem.classList.value === 'selected');
+              })
+              checkAllInput.checked = allInputChecked;
+          })
 
            row.addEventListener('keydown', function(event){
                if (event.keyCode ===  32) {
@@ -44,32 +28,29 @@
                }
            })
 
-       });
+       })
 
         checkAll.addEventListener('click', event => {
-            const checkbox = event.currentTarget.querySelector('input'),
-                  allCheck = table.querySelectorAll('input');
 
+            checkAllInput.checked = !checkAllInput.checked;
 
-            toggleCheck(checkbox);
-
-            if (checkbox.checked) {
-                allCheck.forEach(checkbox => {
-                    checkbox.checked = true
-                });
+            if (checkAllInput.checked) {
+                allCheckInput.forEach(check => {
+                    check.checked = true;   
+                })
                 tableRow.forEach(row => {
                     row.classList.add('selected');
                 })
             } else {
-                allCheck.forEach(checkbox => {
-                    checkbox.checked = false
+                allCheckInput.forEach(check => {
+                    check.checked = false
                 });
                 tableRow.forEach(row => {
                     row.classList.remove('selected');
                 })
             }
 
-        });
+        })
 
         checkAll.addEventListener('keydown', function(event){
             if (event.keyCode ===  32) {
@@ -81,4 +62,3 @@
     })
 
 })();
-
