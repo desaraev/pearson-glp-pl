@@ -54,7 +54,7 @@
                 calendar.push(weekRange);
             });
 
-            return calendar;
+            return calendar
         },
 
         setState: (buttonClicked) => {
@@ -67,7 +67,7 @@
                 } else if (buttonClicked === "prev") {
                     displayDate = moment(displayDate).subtract(1, 'months');
                 } 
-            };
+            }
             month = moment(displayDate).month();
             year = moment(displayDate).year(); 
         }, 
@@ -96,7 +96,7 @@
                     date.by('days', function(day){
                         dayList.push(day)
                     });
-                });
+                })
 
                return dayList.map(day => {
                     isCurrentMonth = day.month() === CalendarState.month;
@@ -118,14 +118,14 @@
                        dayClasses += " today";
                    }
                     return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
-               });
+               })
             }
         };
 
     // calendar object that will render all the data
     let CalendarState = {};
     let renderCalendar = (buttonClicked, calendarNumber) => {
-        GetCalendar.setState(buttonClicked);
+        GetCalendar.setState(buttonClicked)
         CalendarState = {
             year: GetCalendar.getState().year,
             month: GetCalendar.getState().month,
@@ -163,7 +163,7 @@
                     button.classList.remove('selected');
                 });
                 event.currentTarget.classList.add('selected');
-            })
+            });
         }));
         weekArr.length = 0;
     };
@@ -172,12 +172,13 @@
         renderCalendar("none", i);
     }
 
-    for (let i = 0; i < buttons.length; i ++){
-        buttons[i][0].addEventListener('click', event => {
-            renderCalendar("prev", i);
+    buttons.forEach(button =>{
+        button[0].addEventListener('click', event => {
+            renderCalendar("prev", buttons.indexOf(button));
         });
-        buttons[i][1].addEventListener('click', event => {
-            renderCalendar("next", i);
-        });
-    }
+        button[1].addEventListener('click', event => {
+            renderCalendar("next", buttons.indexOf(button));
+        });   
+    });
+
 })();
