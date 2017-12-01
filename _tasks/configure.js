@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 
 // Copies the assetts from the pearson elements library and brings them into UI / Pattern Lab.
-gulp.task('configure', ['install-elements'], function() {
+gulp.task('configure', ['install-pattern-lab'], function() {
     gulp.src("meta/01-foot.mustache")
         .pipe(rename('./_01-foot.mustache'))
         .pipe(gulp.dest('node_modules/edition-node-gulp/source/_meta/'));
@@ -24,15 +24,15 @@ gulp.task('configure', ['install-elements'], function() {
     gulp.src("meta/styleguide.min.css")
         .pipe(gulp.dest('node_modules/edition-node-gulp/node_modules/styleguidekit-assets-default/dist/styleguide/css/'));
 
-    gulp.src("node_modules/pearson-elements/dist/fonts/**")
+    gulp.src("node_modules/@pearson-components/elements-sdk/build/fonts/**")
         .pipe(gulp.dest('ui/fonts/'))
         .pipe(gulp.dest('pattern-lab/source/fonts/'));
 
-    gulp.src("node_modules/pearson-elements/dist/images/**")
+    gulp.src("node_modules/@pearson-components/elements-sdk/build/images/**")
         .pipe(gulp.dest('ui/images/'))
         .pipe(gulp.dest('pattern-lab/source/images/'));
 
-    gulp.src("node_modules/pearson-elements/dist/icons/**")
+    gulp.src("node_modules/@pearson-components/elements-sdk/build/icons/**")
         .pipe(gulp.dest('ui/images/'))
         .pipe(gulp.dest('pattern-lab/source/images/'));
 

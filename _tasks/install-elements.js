@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 // Installs Elements
 gulp.task('install-elements', ['install-pattern-lab'], function(cb) {
-    exec('npm --prefix ./node_modules/pearson-elements install ./node_modules/pearson-elements', function (err, stdout, stderr) {
+    exec('npm --prefix ./node_modules/@pearson-components/elements-sdk install ./node_modules/@pearson-components/elements-sdk', function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
