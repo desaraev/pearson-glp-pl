@@ -1,8 +1,13 @@
 'use strict';
 (function() {
-    const calendars = document.querySelectorAll('.calendar');
+    const calendars = document.querySelectorAll('.calendar'),
+          buttons = [];
+    calendars.forEach((calendar, index) => {
+        buttons[index] = calendar.querySelectorAll('.pe-icon--btn');
+    });
 
     let startDate,
+        displayDate=[],
         i,
         firstDay,
         endDay,
@@ -49,20 +54,33 @@
                 calendar.push(weekRange);
             });
 
-            return calendar;
+            return calendar
         },
 
-        getInitialState: () => {
-            month = moment().month();
-            year = moment().year();
+        setState: (buttonClicked, calendarNumber) => {
+            if (buttonClicked === "none") {
+                displayDate[calendarNumber] = moment([moment().year(), moment().month()]);
+            } else {
+                if (buttonClicked === "next") {
+                    displayDate[calendarNumber] = moment(displayDate[calendarNumber]).add(1, 'months'); 
 
-            return {
-                month: month,
-                monthName: moment.months()[month],
-                year: year,
-                calendar: GetCalendar.build(year, month)
+                } else if (buttonClicked === "prev") {
+                    displayDate[calendarNumber] = moment(displayDate[calendarNumber]).subtract(1, 'months');
+                } 
             }
+            month = moment(displayDate[calendarNumber]).month();
+            year = moment(displayDate[calendarNumber]).year(); 
+        }, 
+
+        getState: (calendarNumber) => {
+            return {
+                month: moment(displayDate[calendarNumber]).month(),
+                monthName: moment.months()[moment(displayDate[calendarNumber]).month()],
+                year: moment(displayDate[calendarNumber]).year(),
+                calendar: GetCalendar.build(moment(displayDate[calendarNumber]).year(), moment(displayDate[calendarNumber]).month())
+            }  
         },
+
         render: () => {
             let weekCount = 0,
                 isCurrentMonth,
@@ -72,12 +90,13 @@
                 disabled,
                 elements = "";
 
+                dayList = [];
                 CalendarState.calendar.map(date => {
                     weekCount++;
                     date.by('days', function(day){
                         dayList.push(day)
                     });
-                });
+                })
 
                return dayList.map(day => {
                     isCurrentMonth = day.month() === CalendarState.month;
@@ -99,59 +118,70 @@
                        dayClasses += " today";
                    }
                     return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
-               });
-
-        }
-    };
+               })
+            }
+        };
 
     // calendar object that will render all the data
-    let CalendarState = {
-        year: GetCalendar.getInitialState().year,
-        month: GetCalendar.getInitialState().month,
-        monthName: GetCalendar.getInitialState().monthName,
-        calendar: GetCalendar.getInitialState().calendar,
-        selected: moment().format('DD-MM-YYYY')
-    };
-
-    renderDays = GetCalendar.render();
-
-    calendars.forEach((calendar)=> {
-        const monthHTML = calendar.querySelector('.month'),
-              yearHTML = calendar.querySelector('.year'),
-              weekHTML = calendar.querySelector('.days-of-week'),
-              daysHTML = calendar.querySelector('.days'),
-              weeks = ['S','M','T','W','T','F','S'],
-              weekArr = [];
-
+    let CalendarState = {};
+    let renderCalendar = (buttonClicked, calendarNumber) => {
+        GetCalendar.setState(buttonClicked, calendarNumber);
+        CalendarState = {
+            year: GetCalendar.getState(calendarNumber).year,
+            month: GetCalendar.getState(calendarNumber).month,
+            monthName: GetCalendar.getState(calendarNumber).monthName,
+            calendar: GetCalendar.getState(calendarNumber).calendar,
+            selected: moment().format('DD-MM-YYYY')
+        };
+    
+        renderDays = GetCalendar.render();
+    
+        const monthHTML = calendars[calendarNumber].querySelector('.month'),
+                yearHTML = calendars[calendarNumber].querySelector('.year'),
+                daysHTML = calendars[calendarNumber].querySelector('.days'),
+                weekArr = [];
+        
+        daysHTML.innerHTML = "";
         monthHTML.innerHTML = CalendarState.monthName;
         yearHTML.innerHTML = CalendarState.year;
 
-        //render days of week
-        weeks.forEach(week => {
-            weekHTML.innerHTML += '<span class="pe-label pe-label--small neutral-three">'+ week +'</span>'
-        });
-
         // group the days into items of 7
-        for(let i = 0; i < renderDays.length; i+=7) {
-            weekArr.push(renderDays.slice(i, i+7));
+        for (let i = 0; i < 6; i++){
+            weekArr[i]=[];
         }
-
+        renderDays.forEach((day, index) => {
+            weekArr[Math.floor(index/7)].push(day);
+        });
+        
         // wrap each item of 7 with a div and render
         weekArr.forEach(days => {
             daysHTML.innerHTML += '<div class="weeks">'+ days.join('')+'</div>';
         });
 
-
         // add event handlers to the buttons
-        const dayBtns = calendar.querySelectorAll('.weeks button');
+        const dayBtns = calendars[calendarNumber].querySelectorAll('.weeks button');
         dayBtns.forEach((button => {
             button.addEventListener('click', event => {
                 dayBtns.forEach((button) => {
                     button.classList.remove('selected');
                 });
                 event.currentTarget.classList.add('selected');
-            })
-        }))
+            });
+        }));
         weekArr.length = 0;
+    };
+
+    for (let i = 0; i < calendars.length; i ++){
+        renderCalendar("none", i);
+    }
+
+    buttons.forEach((button,index) =>{
+        button[0].addEventListener('click', event => {
+            renderCalendar("prev", buttons.indexOf(button));
+        });
+        button[1].addEventListener('click', event => {
+            renderCalendar("next", buttons.indexOf(button));
+        });   
     });
+
 })();
