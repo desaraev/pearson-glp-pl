@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/pearson-ux/pearson-glp-pl.svg?token=yRiZW31ciCX2AwmRD34E&branch=master)](https://travis-ci.com/pearson-ux/pearson-glp-pl)
+
 # Pearson GLP Patternlab - v0.6
 http://45.55.127.237/pearson-glp-pl/
 
