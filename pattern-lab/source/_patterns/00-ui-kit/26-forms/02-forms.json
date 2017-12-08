@@ -1,0 +1,121 @@
+{
+    "form":[
+        {
+            "formHeader":[
+                {
+                    "name": "Form Name Example",
+                    "formInstruction":[
+                        {
+                            "instruction": "This information applies to the entire form. It is optional"
+                        }
+                    ],
+                    "formErrorMsg":[
+                        {
+                            "alert": [
+                              {
+                              "error": true,
+                              "button": [
+                                  {
+                                    "label": "Close error dialog",
+                                "icon": [
+                                      {
+                                        "icon": "remove-sm-24",
+                                        "label": "Close error dialog"
+                                      }
+                                    ]
+                                  }
+                                ],
+                              "showIcon": [
+                              {
+                                "icon": [
+                                  {
+                                    "icon": "warning-18",
+                                    "label": "Error"
+                                  }
+                                    ]
+                              }
+                                ],
+                                "title": "Lorem ipsom dolor sit amet.",
+                                "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."    
+                              }
+                            ]
+                          }
+                    ]
+                }
+            ],
+            "formBlockInput":[
+                {
+                    "input": "<label class='pe-textLabelInput__label'>Character</label><input type='text' class='pe-textInput--basic' placeholder='Hulk'><span class='pe-input--info_message'>The strongest avenger</span>"
+                },
+                {
+                    "input": "<label class='pe-textLabelInput__label'>Alter Ego</label><input type='text' class='pe-textInput--basic' placeholder='Robert Bruce Banner'>"
+                },
+                {
+                    "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Created By</label><input type='text' class='pe-textInput' placeholder='Stan Lee'><span class='pe-input--error_message'>There are two creators.</span></div>"
+                }
+            ],
+            "formInlineInput":[
+                {
+                    "inline":[
+                        {
+                            "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Ability One</label><input type='text' class='pe-textInput' placeholder='Superhuman Strength'></div>"
+                        },
+                        {
+                            "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Ability Two</label><input type='text' class='pe-textInput' placeholder='Superhuman durability'></div>"
+                        }
+                    ]
+                }
+            ],
+            "button":[
+                {
+                    "class": "pe-btn__primary",
+                    "label": "Primary"
+                },
+                {
+                    "class": "pe-btn--btn_large",
+                    "label": "Secondary"
+                }
+            ]
+        },
+        {
+            "formSection":[
+                {
+                    "name": "Section Name Example"
+                }
+            ],
+            "formBlockInput":[
+                {
+                    "input": "<label class='pe-textLabelInput__label'>Character</label><input type='text' class='pe-textInput--basic' placeholder='Hulk'><span class='pe-input--info_message'>The strongest avenger</span>"
+                },
+                {
+                    "input": "<label class='pe-textLabelInput__label'>Alter Ego</label><input type='text' class='pe-textInput--basic' placeholder='Robert Bruce Banner'>"
+                },
+                {
+                    "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Created By</label><input type='text' class='pe-textInput' placeholder='Stan Lee'><span class='pe-input--error_message'>There are two creators.</span></div>"
+                }
+            ],
+            "formInlineInput":[
+                {
+                    "inline":[
+                        {
+                            "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Ability One</label><input type='text' class='pe-textInput' placeholder='Superhuman Strength'></div>"
+                        },
+                        {
+                            "input": "<div class='fancy-input'><label class='pe-textLabelInput__label'>Ability Two</label><input type='text' class='pe-textInput' placeholder='Superhuman durability'></div>"
+                        }
+                    ]
+                }
+            ],
+            "button":[
+                {
+                    "class": "pe-btn__primary",
+                    "label": "Primary"
+                },
+                {
+                    "class": "pe-btn--btn_large",
+                    "label": "Secondary"
+                }
+            ]
+        }
+    ]
+}
