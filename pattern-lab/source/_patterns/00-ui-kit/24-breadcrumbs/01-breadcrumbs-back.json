@@ -1,0 +1,14 @@
+{
+    "breadcrumbsBack":[
+        {
+            "icon":[
+                {
+                    "icon": "chevron-back-sm-18", 
+                    "label": "chevron"
+                }
+            ],
+            "link": "#",
+            "label": "Back to previous level"
+        }
+    ]
+}

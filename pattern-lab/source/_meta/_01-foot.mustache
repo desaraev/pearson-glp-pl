@@ -15,6 +15,12 @@
 		pe_ajax.send();
 	}
 </script>
+<script>
+	(function () {
+		if ( typeof NodeList.prototype.forEach === "function" ) return false;
+		NodeList.prototype.forEach = Array.prototype.forEach;
+	})();
+</script>
 <!-- Load Babel -->
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
@@ -36,6 +42,7 @@
 <script type="text/babel" src="../../js/alert.js"></script>
 <script type="text/babel" src="../../js/drawer.js"></script>
 <script type="text/babel" src="../../js/coachmarks.js"></script>
+<script type="text/babel" src="../../js/accordion.js"></script>
 
 </body>
 </html>
