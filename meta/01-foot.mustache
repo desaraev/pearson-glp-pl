@@ -19,6 +19,9 @@
 	(function () {
 		if ( typeof NodeList.prototype.forEach === "function" ) return false;
 		NodeList.prototype.forEach = Array.prototype.forEach;
+
+		if (!Element.prototype.matches)
+			Element.prototype.matches = Element.prototype.msMatchesSelector;
 	})();
 </script>
 <!-- Load Babel -->
