@@ -61,26 +61,6 @@
             }
           ]
         }
-      ],
-      "inputInline": [
-        {
-          "basicInput": [
-            {
-              "id": "blockInputOne",
-              "label": "Character",
-              "placeholder": "Hulk"
-            }
-          ]
-        },
-        {
-          "basicInput": [
-            {
-              "id": "blockInputTwo",
-              "label": "Alter Ego",
-              "placeholder": "Robert Bruce Banner"
-            }
-          ]
-        }
       ]
     }
   ]
