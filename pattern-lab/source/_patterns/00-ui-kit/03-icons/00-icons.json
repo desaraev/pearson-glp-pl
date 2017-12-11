@@ -2398,6 +2398,71 @@
           ]
         }
       ]
+    },
+    {
+      "showlabel": [
+        {
+          "icon":"\"icon\": \"link-18\", \"icon\":  \"link-24\",",
+          "label":"\"label\": \"link\""
+        }
+      ]    
+    },
+    {
+    "showicon": [
+      {
+          "icon":[
+            {
+              "icon":"link-18",
+              "label":"link"
+            }
+          ]
+        }
+      ]
+  },
+    {
+    "showicon": [
+      {
+          "icon":[
+            {
+              "icon":"link-24",
+              "label":"link"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "showlabel": [
+        {
+          "icon":"\"icon\": \"breadcrumb-18\", \"icon\":  \"breadcrumb-24\",",
+          "label":"\"label\": \"breadcrumb\""
+        }
+      ]    
+    },
+    {
+    "showicon": [
+      {
+          "icon":[
+            {
+              "icon":"breadcrumb-18",
+              "label":"breadcrumb"
+            }
+          ]
+        }
+      ]
+},
+    {
+    "showicon": [
+      {
+          "icon":[
+            {
+              "icon":"breadcrumb-24",
+              "label":"breadcrumb"
+            }
+          ]
+        }
+      ]
 
     }
   ]
