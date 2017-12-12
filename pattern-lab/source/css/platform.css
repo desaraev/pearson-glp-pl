@@ -2544,7 +2544,7 @@ input[type="radio"]:checked ~ span svg {
 /* Variables for the forms styles */
 /* mixins for the forms styles */
 /* line 4, node_modules/@pearson-components/elements-sdk/src/styles/elements/forms/_forms.scss */
-.pe-form .pe-form--name, .pe-form .pe-form--name-bold {
+.pe-form .pe-form--name, .pe-form .pe-form--name-bold, .pe-form .pe-form--section {
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 20px;
@@ -13280,6 +13280,125 @@ table.selectable .selected:hover {
 /* line 65, pattern-lab/source/_patterns/00-ui-kit/23-drawer/_drawer.scss */
 .drawer .drawer-actions button {
   width: 100%;
+}
+
+/* Variables for the forms styles */
+/* line 7, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--name, .pe-form .pe-form--name-bold, .pe-form .pe-form--section {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* line 14, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--name {
+  margin-bottom: 29px;
+}
+/* line 19, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--section {
+  margin-bottom: 13px;
+}
+/* line 24, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--instr {
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+/* line 29, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group {
+  margin-bottom: 34px;
+}
+/* line 31, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group:first-child {
+  margin-top: 22px;
+}
+/* line 34, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group:last-child {
+  margin-bottom: 50px;
+}
+/* line 39, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+/* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--button-group button:last-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--button-group button:last-child {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--button-group button:last-child {
+    margin-right: 10px;
+  }
+}
+/* line 55, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 57, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group > div {
+  width: 100%;
+}
+/* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group > div:first-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--inline-group > div:first-child {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--inline-group > div:first-child {
+    margin-right: 10px;
+  }
+}
+/* line 71, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form hr {
+  border: 0;
+  border-top: 1px solid #C7C7C7;
+  margin-bottom: 34px;
+}
+/* line 77, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .datepicker {
+  max-width: 100%;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-path {
+  margin-right: 4px;
+  text-decoration: none;
+}
+/* line 4, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-path ~ svg {
+  margin-right: 4px;
+  color: #6A7070;
+}
+
+/* line 11, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-back a {
+  margin-left: 4px;
+  text-decoration: none;
+}
+/* line 16, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-back svg {
+  color: #6A7070;
 }
 
 /* line 2, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
