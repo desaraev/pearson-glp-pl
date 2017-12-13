@@ -52,7 +52,7 @@
 		}
 	}
 	input:checked + label {
-		background: darken($secondary-five, 5%);
+		background: $primary;
 		&:before {
 			left: 31px;
 		}

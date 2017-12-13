@@ -12600,7 +12600,7 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
 }
 /* line 54, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label {
-  background: #147f83;
+  background: #047A9C;
 }
 /* line 56, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label:before {
