@@ -9,7 +9,7 @@
 	}
   }
 	input + label {
-		background: $neutral-five;
+		background: $neutral-three;
 		position: relative;
 		padding: 8px;
 		border-radius: 100px;
@@ -52,7 +52,7 @@
 		}
 	}
 	input:checked + label {
-		background: $secondary-four;
+		background: darken($secondary-five, 5%);
 		&:before {
 			left: 31px;
 		}
