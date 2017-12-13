@@ -12644,92 +12644,97 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
   }
 }
 
-/* line 3, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 1, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+table {
+  min-width: 640px;
+  margin-bottom: 0;
+}
+/* line 5, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto thead {
   background-color: #D9D9D9;
   border: 1px solid #C7C7C7;
 }
-/* line 8, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 10, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto tr {
   border-bottom: 1px solid #C7C7C7;
 }
-/* line 10, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 12, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto tr:nth-child(even) {
   background-color: #F5F5F5;
 }
-/* line 15, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 17, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto th {
   padding: 0.75em 1.25em;
   border-right: 1px solid #C7C7C7;
 }
-/* line 19, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 21, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto th.sortable svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 25, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 27, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto td {
   padding: 0.875em 1.25em;
   vertical-align: middle;
 }
-/* line 31, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 33, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto.small th, table.pe-proto.small td {
   padding: 5px 20px;
 }
-/* line 37, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 39, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table thead {
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
 }
-/* line 41, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 43, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table thead th {
   padding: 1em 20px;
 }
-/* line 45, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 47, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody {
   border-bottom: 1px solid #D9D9D9;
 }
-/* line 46, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 48, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody td {
   padding: 1em 20px;
 }
-/* line 51, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 53, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody[data-match="true"] .no-match {
   display: none;
 }
-/* line 59, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 61, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.hoverable tbody tr:hover, table.selectable tbody tr:hover {
   background-color: #E9E9E9;
   cursor: pointer;
 }
-/* line 67, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 69, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th:hover {
   background-color: #E9E9E9;
   cursor: pointer;
 }
-/* line 71, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 73, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th .up {
   display: none;
 }
-/* line 75, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 77, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th.selected .up {
   display: inline;
 }
-/* line 78, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 80, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th.selected .down {
   display: none;
 }
-/* line 86, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 88, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.selectable .selected {
   background-color: #DAF0ED;
   outline: 1px solid #19A6A4;
 }
-/* line 89, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 91, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.selectable .selected:hover {
   outline: 1px solid #047A9C;
 }
 
-/* line 97, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 99, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 .table-with-controls .controls {
   margin-bottom: 28px;
   display: -webkit-box;
@@ -12741,9 +12746,42 @@ table.selectable .selected:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 103, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+@media (max-width: 480px) {
+  /* line 99, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* line 108, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 .table-with-controls .controls .control:first-child {
   margin-right: 1em;
+}
+@media (max-width: 480px) {
+  /* line 108, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls .control:first-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 117, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls .control:last-child .basic-input svg {
+    right: 13px;
+  }
+}
+
+/* line 126, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+.responsive-table {
+  margin-bottom: 35px;
+}
+@media (max-width: 640px) {
+  /* line 126, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .responsive-table {
+    overflow: scroll;
+  }
 }
 
 /* line 2, pattern-lab/source/_patterns/00-ui-kit/21-alerts/_alert.scss */
