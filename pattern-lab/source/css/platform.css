@@ -625,8 +625,8 @@ mark {
 
 /* line 205, node_modules/@pearson-components/elements-sdk/src/styles/base/_html-tags.scss */
 small {
-  font-size: 0.85714rem;
-  line-height: 1.14286rem;
+  font-size: 0.8571428571rem;
+  line-height: 1.1428571429rem;
 }
 
 /* line 209, node_modules/@pearson-components/elements-sdk/src/styles/base/_html-tags.scss */
@@ -707,7 +707,7 @@ body, .pe-fontstack {
 /* line 14, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-copy {
   font-size: 1rem;
-  line-height: 1.57143rem;
+  line-height: 1.5714285714rem;
   color: #252525;
 }
 
@@ -718,23 +718,23 @@ body, .pe-fontstack {
 
 /* line 23, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-copy--small {
-  font-size: 0.85714rem;
-  line-height: 1.42857rem;
+  font-size: 0.8571428571rem;
+  line-height: 1.4285714286rem;
   color: #252525;
 }
 
 /* line 28, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-copy--large, .pe-heading-level6, h6, header h5 + .subtitle {
-  font-size: 1.14286rem;
-  line-height: 1.71429rem;
+  font-size: 1.1428571429rem;
+  line-height: 1.7142857143rem;
   color: #252525;
 }
 
 /* line 33, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-paragraph, p {
   font-size: 1rem;
-  line-height: 1.57143rem;
-  margin-bottom: 0.85714rem;
+  line-height: 1.5714285714rem;
+  margin-bottom: 0.8571428571rem;
   margin-top: 0;
   color: #252525;
 }
@@ -747,7 +747,7 @@ body, .pe-fontstack {
 
 /* line 46, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-lead {
-  font-size: 1.42857rem;
+  font-size: 1.4285714286rem;
   line-height: 2rem;
   font-weight: lighter;
   color: #252525;
@@ -755,8 +755,8 @@ body, .pe-fontstack {
 
 /* line 54, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-page-title {
-  font-size: 2.71429rem;
-  line-height: 3.71429rem;
+  font-size: 2.7142857143rem;
+  line-height: 3.7142857143rem;
   font-weight: lighter;
   color: #252525;
 }
@@ -764,30 +764,30 @@ body, .pe-fontstack {
 /* line 60, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-page-title--small, .pe-heading-level1, h1 {
   font-size: 2rem;
-  line-height: 2.71429rem;
+  line-height: 2.7142857143rem;
   font-weight: lighter;
   color: #252525;
 }
 
 /* line 68, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-title, .pe-heading-level3, h3, header h2 + .subtitle, .pe-heading-level4, h4, header h3 + .subtitle {
-  font-size: 1.42857rem;
-  line-height: 1.85714rem;
+  font-size: 1.4285714286rem;
+  line-height: 1.8571428571rem;
   font-weight: normal;
   color: #252525;
 }
 
 /* line 74, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-title--small, .pe-heading-level5, h5, header h4 + .subtitle {
-  font-size: 1.28571rem;
-  line-height: 1.57143rem;
+  font-size: 1.2857142857rem;
+  line-height: 1.5714285714rem;
   font-weight: normal;
   color: #252525;
 }
 
 /* line 80, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-title--large, .pe-heading-level2, h2, header h1 + .subtitle {
-  font-size: 1.71429rem;
+  font-size: 1.7142857143rem;
   line-height: 2rem;
   font-weight: normal;
   color: #252525;
@@ -802,7 +802,7 @@ body, .pe-fontstack {
 /* line 94, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-label {
   font-size: 1rem;
-  line-height: 1.28571rem;
+  line-height: 1.2857142857rem;
 }
 /* line 97, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-label.pe-label--inverse {
@@ -816,14 +816,14 @@ body, .pe-fontstack {
 
 /* line 110, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-label--small {
-  font-size: 0.85714rem;
-  line-height: 1.14286rem;
+  font-size: 0.8571428571rem;
+  line-height: 1.1428571429rem;
 }
 
 /* line 114, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-label--large {
-  font-size: 1.14286rem;
-  line-height: 1.42857rem;
+  font-size: 1.1428571429rem;
+  line-height: 1.4285714286rem;
 }
 
 /* line 118, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
@@ -835,19 +835,19 @@ body, .pe-fontstack {
 /* line 125, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list {
   margin: 12px 0;
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 /* line 129, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list li {
   font-size: 1rem;
-  line-height: 1.57143rem;
-  margin-bottom: 0.85714rem;
-  margin-bottom: 0.42857rem;
+  line-height: 1.5714285714rem;
+  margin-bottom: 0.8571428571rem;
+  margin-bottom: 0.4285714286rem;
 }
 /* line 132, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list li > ol,
 .pe-list li > ul {
-  margin-top: 0.42857rem;
+  margin-top: 0.4285714286rem;
 }
 /* line 138, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists--ordered {
@@ -856,7 +856,7 @@ body, .pe-fontstack {
 /* line 140, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists--ordered ol {
   list-style-type: lower-alpha;
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 /* line 143, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists--ordered ol ol {
@@ -869,7 +869,7 @@ body, .pe-fontstack {
 /* line 151, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists--unordered ul {
   list-style-type: circle;
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 /* line 154, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists--unordered ul ul {
@@ -883,7 +883,7 @@ body, .pe-fontstack {
 /* line 163, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists-heading--ordered ol {
   list-style-type: lower-alpha;
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 /* line 166, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists-heading--ordered ol ol {
@@ -897,7 +897,7 @@ body, .pe-fontstack {
 /* line 175, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists-heading--unordered ul {
   list-style-type: circle;
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 /* line 178, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list.pe-styled-lists-heading--unordered ul ul {
@@ -911,7 +911,7 @@ body, .pe-fontstack {
 }
 /* line 188, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
 .pe-list--unstyled ul {
-  padding-left: 1.85714rem;
+  padding-left: 1.8571428571rem;
 }
 
 /* line 195, node_modules/@pearson-components/elements-sdk/src/styles/elements/typography/_type.scss */
@@ -955,7 +955,7 @@ body, .pe-fontstack {
   font-family: Monaco, "Lucida Console", monospace;
   color: #F5F5F5;
   font-size: 1rem;
-  line-height: 1.42857rem;
+  line-height: 1.4285714286rem;
   background: #005A70;
   padding: 30px 50px;
 }
@@ -2797,12 +2797,12 @@ input[type="radio"]:checked ~ span svg {
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-1 {
-  width: 8.33333%;
+  width: 8.3333333333%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-2 {
-  width: 16.66667%;
+  width: 16.6666666667%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
@@ -2812,12 +2812,12 @@ input[type="radio"]:checked ~ span svg {
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-4 {
-  width: 33.33333%;
+  width: 33.3333333333%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-5 {
-  width: 41.66667%;
+  width: 41.6666666667%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
@@ -2827,12 +2827,12 @@ input[type="radio"]:checked ~ span svg {
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-7 {
-  width: 58.33333%;
+  width: 58.3333333333%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-8 {
-  width: 66.66667%;
+  width: 66.6666666667%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
@@ -2842,12 +2842,12 @@ input[type="radio"]:checked ~ span svg {
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-10 {
-  width: 83.33333%;
+  width: 83.3333333333%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
 .pe-col-11 {
-  width: 91.66667%;
+  width: 91.6666666667%;
 }
 
 /* line 34, node_modules/@pearson-components/elements-sdk/src/styles/elements/grid/_mixins.scss */
@@ -3184,7 +3184,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 480px) {
   /* line 132, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__static-small {
-    width: 83.33333%;
+    width: 83.3333333333%;
   }
 }
 @media (min-width: 1024px) {
@@ -3244,7 +3244,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 480px) {
   /* line 68, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__static-large {
-    width: 83.33333%;
+    width: 83.3333333333%;
   }
 }
 @media (min-width: 1024px) {
@@ -3381,7 +3381,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 1px) {
   /* line 42, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__single-10-col {
-    width: 83.33333%;
+    width: 83.3333333333%;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -3404,7 +3404,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 480px) {
   /* line 42, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__single-10-col {
-    width: 83.33333%;
+    width: 83.3333333333%;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -3427,7 +3427,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 768px) {
   /* line 42, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__single-10-col {
-    width: 83.33333%;
+    width: 83.3333333333%;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -3450,7 +3450,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 1024px) {
   /* line 42, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__single-10-col {
-    width: 83.33333%;
+    width: 83.3333333333%;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -3473,7 +3473,7 @@ input[type="radio"]:checked ~ span svg {
 @media (min-width: 1140px) {
   /* line 42, node_modules/@pearson-components/elements-sdk/src/styles/elements/templates/_mixins.scss */
   .pe-template__single-10-col {
-    width: 83.33333%;
+    width: 83.3333333333%;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -3569,7 +3569,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 }
 @media (min-width: 1140px) {
@@ -3578,7 +3578,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 }
 
@@ -3625,7 +3625,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 }
 @media (min-width: 1140px) {
@@ -3634,7 +3634,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 }
 
@@ -3668,7 +3668,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
 }
 @media (min-width: 1140px) {
@@ -3677,7 +3677,7 @@ input[type="radio"]:checked ~ span svg {
     padding-right: 40px;
     padding-left: 40px;
     float: left;
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
 }
 
@@ -4689,19 +4689,19 @@ input[type="checkbox"] ~ span {
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-1 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 8.33333%;
-      -ms-flex: 0 0 8.33333%;
-          flex: 0 0 8.33333%;
-  max-width: 8.33333%;
+  -webkit-flex: 0 0 8.3333333333%;
+      -ms-flex: 0 0 8.3333333333%;
+          flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-2 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 16.66667%;
-      -ms-flex: 0 0 16.66667%;
-          flex: 0 0 16.66667%;
-  max-width: 16.66667%;
+  -webkit-flex: 0 0 16.6666666667%;
+      -ms-flex: 0 0 16.6666666667%;
+          flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4716,19 +4716,19 @@ input[type="checkbox"] ~ span {
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-4 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 33.33333%;
-      -ms-flex: 0 0 33.33333%;
-          flex: 0 0 33.33333%;
-  max-width: 33.33333%;
+  -webkit-flex: 0 0 33.3333333333%;
+      -ms-flex: 0 0 33.3333333333%;
+          flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-5 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 41.66667%;
-      -ms-flex: 0 0 41.66667%;
-          flex: 0 0 41.66667%;
-  max-width: 41.66667%;
+  -webkit-flex: 0 0 41.6666666667%;
+      -ms-flex: 0 0 41.6666666667%;
+          flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4743,19 +4743,19 @@ input[type="checkbox"] ~ span {
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-7 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 58.33333%;
-      -ms-flex: 0 0 58.33333%;
-          flex: 0 0 58.33333%;
-  max-width: 58.33333%;
+  -webkit-flex: 0 0 58.3333333333%;
+      -ms-flex: 0 0 58.3333333333%;
+          flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-8 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 66.66667%;
-      -ms-flex: 0 0 66.66667%;
-          flex: 0 0 66.66667%;
-  max-width: 66.66667%;
+  -webkit-flex: 0 0 66.6666666667%;
+      -ms-flex: 0 0 66.6666666667%;
+          flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4770,19 +4770,19 @@ input[type="checkbox"] ~ span {
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-10 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 83.33333%;
-      -ms-flex: 0 0 83.33333%;
-          flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  -webkit-flex: 0 0 83.3333333333%;
+      -ms-flex: 0 0 83.3333333333%;
+          flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .col-11 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 91.66667%;
-      -ms-flex: 0 0 91.66667%;
-          flex: 0 0 91.66667%;
-  max-width: 91.66667%;
+  -webkit-flex: 0 0 91.6666666667%;
+      -ms-flex: 0 0 91.6666666667%;
+          flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
 }
 
 /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4900,12 +4900,12 @@ input[type="checkbox"] ~ span {
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-1 {
-  margin-left: 8.33333%;
+  margin-left: 8.3333333333%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-2 {
-  margin-left: 16.66667%;
+  margin-left: 16.6666666667%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4915,12 +4915,12 @@ input[type="checkbox"] ~ span {
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-4 {
-  margin-left: 33.33333%;
+  margin-left: 33.3333333333%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-5 {
-  margin-left: 41.66667%;
+  margin-left: 41.6666666667%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4930,12 +4930,12 @@ input[type="checkbox"] ~ span {
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-7 {
-  margin-left: 58.33333%;
+  margin-left: 58.3333333333%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-8 {
-  margin-left: 66.66667%;
+  margin-left: 66.6666666667%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -4945,12 +4945,12 @@ input[type="checkbox"] ~ span {
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-10 {
-  margin-left: 83.33333%;
+  margin-left: 83.3333333333%;
 }
 
 /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
 .offset-11 {
-  margin-left: 91.66667%;
+  margin-left: 91.6666666667%;
 }
 
 @media (min-width: 576px) {
@@ -4979,19 +4979,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.33333%;
-        -ms-flex: 0 0 8.33333%;
-            flex: 0 0 8.33333%;
-    max-width: 8.33333%;
+    -webkit-flex: 0 0 8.3333333333%;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-2 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.66667%;
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-    max-width: 16.66667%;
+    -webkit-flex: 0 0 16.6666666667%;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5006,19 +5006,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-        -ms-flex: 0 0 33.33333%;
-            flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    -webkit-flex: 0 0 33.3333333333%;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-5 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.66667%;
-        -ms-flex: 0 0 41.66667%;
-            flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+    -webkit-flex: 0 0 41.6666666667%;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5033,19 +5033,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-7 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.33333%;
-        -ms-flex: 0 0 58.33333%;
-            flex: 0 0 58.33333%;
-    max-width: 58.33333%;
+    -webkit-flex: 0 0 58.3333333333%;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.66667%;
-        -ms-flex: 0 0 66.66667%;
-            flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    -webkit-flex: 0 0 66.6666666667%;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5060,19 +5060,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-10 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.33333%;
-        -ms-flex: 0 0 83.33333%;
-            flex: 0 0 83.33333%;
-    max-width: 83.33333%;
+    -webkit-flex: 0 0 83.3333333333%;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-sm-11 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.66667%;
-        -ms-flex: 0 0 91.66667%;
-            flex: 0 0 91.66667%;
-    max-width: 91.66667%;
+    -webkit-flex: 0 0 91.6666666667%;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5195,12 +5195,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5210,12 +5210,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5225,12 +5225,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5240,12 +5240,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-sm-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 }
 @media (min-width: 768px) {
@@ -5274,19 +5274,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.33333%;
-        -ms-flex: 0 0 8.33333%;
-            flex: 0 0 8.33333%;
-    max-width: 8.33333%;
+    -webkit-flex: 0 0 8.3333333333%;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-2 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.66667%;
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-    max-width: 16.66667%;
+    -webkit-flex: 0 0 16.6666666667%;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5301,19 +5301,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-        -ms-flex: 0 0 33.33333%;
-            flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    -webkit-flex: 0 0 33.3333333333%;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-5 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.66667%;
-        -ms-flex: 0 0 41.66667%;
-            flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+    -webkit-flex: 0 0 41.6666666667%;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5328,19 +5328,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-7 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.33333%;
-        -ms-flex: 0 0 58.33333%;
-            flex: 0 0 58.33333%;
-    max-width: 58.33333%;
+    -webkit-flex: 0 0 58.3333333333%;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.66667%;
-        -ms-flex: 0 0 66.66667%;
-            flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    -webkit-flex: 0 0 66.6666666667%;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5355,19 +5355,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-10 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.33333%;
-        -ms-flex: 0 0 83.33333%;
-            flex: 0 0 83.33333%;
-    max-width: 83.33333%;
+    -webkit-flex: 0 0 83.3333333333%;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-md-11 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.66667%;
-        -ms-flex: 0 0 91.66667%;
-            flex: 0 0 91.66667%;
-    max-width: 91.66667%;
+    -webkit-flex: 0 0 91.6666666667%;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5490,12 +5490,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5505,12 +5505,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5520,12 +5520,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5535,12 +5535,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-md-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 }
 @media (min-width: 992px) {
@@ -5569,19 +5569,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.33333%;
-        -ms-flex: 0 0 8.33333%;
-            flex: 0 0 8.33333%;
-    max-width: 8.33333%;
+    -webkit-flex: 0 0 8.3333333333%;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-2 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.66667%;
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-    max-width: 16.66667%;
+    -webkit-flex: 0 0 16.6666666667%;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5596,19 +5596,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-        -ms-flex: 0 0 33.33333%;
-            flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    -webkit-flex: 0 0 33.3333333333%;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-5 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.66667%;
-        -ms-flex: 0 0 41.66667%;
-            flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+    -webkit-flex: 0 0 41.6666666667%;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5623,19 +5623,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-7 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.33333%;
-        -ms-flex: 0 0 58.33333%;
-            flex: 0 0 58.33333%;
-    max-width: 58.33333%;
+    -webkit-flex: 0 0 58.3333333333%;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.66667%;
-        -ms-flex: 0 0 66.66667%;
-            flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    -webkit-flex: 0 0 66.6666666667%;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5650,19 +5650,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-10 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.33333%;
-        -ms-flex: 0 0 83.33333%;
-            flex: 0 0 83.33333%;
-    max-width: 83.33333%;
+    -webkit-flex: 0 0 83.3333333333%;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-lg-11 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.66667%;
-        -ms-flex: 0 0 91.66667%;
-            flex: 0 0 91.66667%;
-    max-width: 91.66667%;
+    -webkit-flex: 0 0 91.6666666667%;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5785,12 +5785,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5800,12 +5800,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5815,12 +5815,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5830,12 +5830,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-lg-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 }
 @media (min-width: 1200px) {
@@ -5864,19 +5864,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.33333%;
-        -ms-flex: 0 0 8.33333%;
-            flex: 0 0 8.33333%;
-    max-width: 8.33333%;
+    -webkit-flex: 0 0 8.3333333333%;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-2 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.66667%;
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-    max-width: 16.66667%;
+    -webkit-flex: 0 0 16.6666666667%;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5891,19 +5891,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-        -ms-flex: 0 0 33.33333%;
-            flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    -webkit-flex: 0 0 33.3333333333%;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-5 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.66667%;
-        -ms-flex: 0 0 41.66667%;
-            flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+    -webkit-flex: 0 0 41.6666666667%;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5918,19 +5918,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-7 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.33333%;
-        -ms-flex: 0 0 58.33333%;
-            flex: 0 0 58.33333%;
-    max-width: 58.33333%;
+    -webkit-flex: 0 0 58.3333333333%;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.66667%;
-        -ms-flex: 0 0 66.66667%;
-            flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    -webkit-flex: 0 0 66.6666666667%;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -5945,19 +5945,19 @@ input[type="checkbox"] ~ span {
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-10 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.33333%;
-        -ms-flex: 0 0 83.33333%;
-            flex: 0 0 83.33333%;
-    max-width: 83.33333%;
+    -webkit-flex: 0 0 83.3333333333%;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .col-xl-11 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.66667%;
-        -ms-flex: 0 0 91.66667%;
-            flex: 0 0 91.66667%;
-    max-width: 91.66667%;
+    -webkit-flex: 0 0 91.6666666667%;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
   }
 
   /* line 44, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -6080,12 +6080,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -6095,12 +6095,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -6110,12 +6110,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
@@ -6125,12 +6125,12 @@ input[type="checkbox"] ~ span {
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 62, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/mixins/_grid-framework-bs.scss */
   .offset-xl-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 }
 /* line 11, node_modules/@pearson-components/elements-sdk/src/styles/bootstrap/utils/_flex-bs.scss */
@@ -7351,7 +7351,7 @@ button {
 /* makes the font 33% larger relative to the icon container */
 /* line 5, pattern-lab/scss/font-awesome/_larger.scss */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -7378,14 +7378,14 @@ button {
 
 /* line 3, pattern-lab/scss/font-awesome/_fixed-width.scss */
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center;
 }
 
 /* line 4, pattern-lab/scss/font-awesome/_list.scss */
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none;
 }
 /* line 8, pattern-lab/scss/font-awesome/_list.scss */
@@ -7396,14 +7396,14 @@ button {
 /* line 10, pattern-lab/scss/font-awesome/_list.scss */
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center;
 }
 /* line 16, pattern-lab/scss/font-awesome/_list.scss */
 .fa-li.fa-lg {
-  left: -1.85714em;
+  left: -1.8571428571em;
 }
 
 /* line 4, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
@@ -11334,115 +11334,465 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #DA0474;
 }
 
-/* line 103, pattern-lab/scss/_helpers.scss */
+/* line 102, pattern-lab/scss/_helpers.scss */
+.d3-10-array00-bg {
+  background-color: #047A9C;
+}
+
+/* line 106, pattern-lab/scss/_helpers.scss */
+.d3-10-array01-bg {
+  background-color: #EA7600;
+}
+
+/* line 110, pattern-lab/scss/_helpers.scss */
+.d3-10-array02-bg {
+  background-color: #038238;
+}
+
+/* line 114, pattern-lab/scss/_helpers.scss */
+.d3-10-array03-bg {
+  background-color: #DB0020;
+}
+
+/* line 118, pattern-lab/scss/_helpers.scss */
+.d3-10-array04-bg {
+  background-color: #9e007e;
+}
+
+/* line 122, pattern-lab/scss/_helpers.scss */
+.d3-10-array05-bg {
+  background-color: #bb5e00;
+}
+
+/* line 126, pattern-lab/scss/_helpers.scss */
+.d3-10-array06-bg {
+  background-color: #DA0474;
+}
+
+/* line 129, pattern-lab/scss/_helpers.scss */
+.d3-10-array07-bg {
+  background-color: #6A7070;
+}
+
+/* line 132, pattern-lab/scss/_helpers.scss */
+.d3-10-array08-bg {
+  background-color: #a8af0b;
+}
+
+/* line 135, pattern-lab/scss/_helpers.scss */
+.d3-10-array09-bg {
+  background-color: #19a5a3;
+}
+
+/* line 142, pattern-lab/scss/_helpers.scss */
+.d3-20-array00-bg {
+  background-color: #047A9C;
+}
+
+/* line 146, pattern-lab/scss/_helpers.scss */
+.d3-20-array01-bg {
+  background-color: #80BDCF;
+}
+
+/* line 150, pattern-lab/scss/_helpers.scss */
+.d3-20-array02-bg {
+  background-color: #EA7600;
+}
+
+/* line 154, pattern-lab/scss/_helpers.scss */
+.d3-20-array03-bg {
+  background-color: #F5BB7A;
+}
+
+/* line 158, pattern-lab/scss/_helpers.scss */
+.d3-20-array04-bg {
+  background-color: #038238;
+}
+
+/* line 162, pattern-lab/scss/_helpers.scss */
+.d3-20-array05-bg {
+  background-color: #7FC19A;
+}
+
+/* line 166, pattern-lab/scss/_helpers.scss */
+.d3-20-array06-bg {
+  background-color: #DB0020;
+}
+
+/* line 170, pattern-lab/scss/_helpers.scss */
+.d3-20-array07-bg {
+  background-color: #EF7E8E;
+}
+
+/* line 174, pattern-lab/scss/_helpers.scss */
+.d3-20-array08-bg {
+  background-color: #9E007E;
+}
+
+/* line 178, pattern-lab/scss/_helpers.scss */
+.d3-20-array09-bg {
+  background-color: #CF7DBF;
+}
+
+/* line 182, pattern-lab/scss/_helpers.scss */
+.d3-20-array10-bg {
+  background-color: #BB5E00;
+}
+
+/* line 186, pattern-lab/scss/_helpers.scss */
+.d3-20-array11-bg {
+  background-color: #DEAF7C;
+}
+
+/* line 190, pattern-lab/scss/_helpers.scss */
+.d3-20-array12-bg {
+  background-color: #DA0474;
+}
+
+/* line 194, pattern-lab/scss/_helpers.scss */
+.d3-20-array13-bg {
+  background-color: #EE7FBA;
+}
+
+/* line 198, pattern-lab/scss/_helpers.scss */
+.d3-20-array14-bg {
+  background-color: #6A7070;
+}
+
+/* line 202, pattern-lab/scss/_helpers.scss */
+.d3-20-array15-bg {
+  background-color: #B4B7B7;
+}
+
+/* line 206, pattern-lab/scss/_helpers.scss */
+.d3-20-array16-bg {
+  background-color: #A8AF0B;
+}
+
+/* line 210, pattern-lab/scss/_helpers.scss */
+.d3-20-array17-bg {
+  background-color: #D3D880;
+}
+
+/* line 214, pattern-lab/scss/_helpers.scss */
+.d3-20-array18-bg {
+  background-color: #19A6A4;
+}
+
+/* line 219, pattern-lab/scss/_helpers.scss */
+.d3-20-array19-bg {
+  background-color: #89D2D2;
+}
+
+/* line 226, pattern-lab/scss/_helpers.scss */
+.d3-20b-array00-bg {
+  background-color: #6E0057;
+}
+
+/* line 230, pattern-lab/scss/_helpers.scss */
+.d3-20b-array01-bg {
+  background-color: #8C307A;
+}
+
+/* line 234, pattern-lab/scss/_helpers.scss */
+.d3-20b-array02-bg {
+  background-color: #A9649B;
+}
+
+/* line 238, pattern-lab/scss/_helpers.scss */
+.d3-20b-array03-bg {
+  background-color: #C698BD;
+}
+
+/* line 242, pattern-lab/scss/_helpers.scss */
+.d3-20b-array04-bg {
+  background-color: #025a27;
+}
+
+/* line 246, pattern-lab/scss/_helpers.scss */
+.d3-20b-array05-bg {
+  background-color: #327C51;
+}
+
+/* line 250, pattern-lab/scss/_helpers.scss */
+.d3-20b-array06-bg {
+  background-color: #659D7C;
+}
+
+/* line 254, pattern-lab/scss/_helpers.scss */
+.d3-20b-array07-bg {
+  background-color: #99BDA9;
+}
+
+/* line 258, pattern-lab/scss/_helpers.scss */
+.d3-20b-array08-bg {
+  background-color: #BB5E00;
+}
+
+/* line 262, pattern-lab/scss/_helpers.scss */
+.d3-20b-array09-bg {
+  background-color: #CB7F28;
+}
+
+/* line 266, pattern-lab/scss/_helpers.scss */
+.d3-20b-array10-bg {
+  background-color: #D79F61;
+}
+
+/* line 270, pattern-lab/scss/_helpers.scss */
+.d3-20b-array11-bg {
+  background-color: #E5BF96;
+}
+
+/* line 274, pattern-lab/scss/_helpers.scss */
+.d3-20b-array12-bg {
+  background-color: #af0019;
+}
+
+/* line 278, pattern-lab/scss/_helpers.scss */
+.d3-20b-array13-bg {
+  background-color: #C13144;
+}
+
+/* line 282, pattern-lab/scss/_helpers.scss */
+.d3-20b-array14-bg {
+  background-color: #D16574;
+}
+
+/* line 286, pattern-lab/scss/_helpers.scss */
+.d3-20b-array15-bg {
+  background-color: #E098A2;
+}
+
+/* line 290, pattern-lab/scss/_helpers.scss */
+.d3-20b-array16-bg {
+  background-color: #ae035c;
+}
+
+/* line 294, pattern-lab/scss/_helpers.scss */
+.d3-20b-array17-bg {
+  background-color: #C0317D;
+}
+
+/* line 298, pattern-lab/scss/_helpers.scss */
+.d3-20b-array18-bg {
+  background-color: #D0669E;
+}
+
+/* line 303, pattern-lab/scss/_helpers.scss */
+.d3-20b-array19-bg {
+  background-color: #E099BF;
+}
+
+/* line 310, pattern-lab/scss/_helpers.scss */
+.d3-20c-array00-bg {
+  background-color: #047A9C;
+}
+
+/* line 314, pattern-lab/scss/_helpers.scss */
+.d3-20c-array01-bg {
+  background-color: #3095B2;
+}
+
+/* line 318, pattern-lab/scss/_helpers.scss */
+.d3-20c-array02-bg {
+  background-color: #65AFC5;
+}
+
+/* line 322, pattern-lab/scss/_helpers.scss */
+.d3-20c-array03-bg {
+  background-color: #99CAD8;
+}
+
+/* line 326, pattern-lab/scss/_helpers.scss */
+.d3-20c-array04-bg {
+  background-color: #ea7600;
+}
+
+/* line 330, pattern-lab/scss/_helpers.scss */
+.d3-20c-array05-bg {
+  background-color: #F09222;
+}
+
+/* line 334, pattern-lab/scss/_helpers.scss */
+.d3-20c-array06-bg {
+  background-color: #F4AE5F;
+}
+
+/* line 338, pattern-lab/scss/_helpers.scss */
+.d3-20c-array07-bg {
+  background-color: #F8C996;
+}
+
+/* line 342, pattern-lab/scss/_helpers.scss */
+.d3-20c-array08-bg {
+  background-color: #038238;
+}
+
+/* line 346, pattern-lab/scss/_helpers.scss */
+.d3-20c-array09-bg {
+  background-color: #2F9C5E;
+}
+
+/* line 350, pattern-lab/scss/_helpers.scss */
+.d3-20c-array10-bg {
+  background-color: #65B587;
+}
+
+/* line 354, pattern-lab/scss/_helpers.scss */
+.d3-20c-array11-bg {
+  background-color: #98CEAE;
+}
+
+/* line 358, pattern-lab/scss/_helpers.scss */
+.d3-20c-array12-bg {
+  background-color: #9e007e;
+}
+
+/* line 362, pattern-lab/scss/_helpers.scss */
+.d3-20c-array13-bg {
+  background-color: #B32D99;
+}
+
+/* line 366, pattern-lab/scss/_helpers.scss */
+.d3-20c-array14-bg {
+  background-color: #C763B3;
+}
+
+/* line 370, pattern-lab/scss/_helpers.scss */
+.d3-20c-array15-bg {
+  background-color: #D998CC;
+}
+
+/* line 374, pattern-lab/scss/_helpers.scss */
+.d3-20c-array16-bg {
+  background-color: #6A7070;
+}
+
+/* line 378, pattern-lab/scss/_helpers.scss */
+.d3-20c-array17-bg {
+  background-color: #888D8D;
+}
+
+/* line 382, pattern-lab/scss/_helpers.scss */
+.d3-20c-array18-bg {
+  background-color: #A6A9A9;
+}
+
+/* line 387, pattern-lab/scss/_helpers.scss */
+.d3-20c-array19-bg {
+  background-color: #C3C6C6;
+}
+
+/* line 396, pattern-lab/scss/_helpers.scss */
 .black {
   color: #000;
   fill: #000;
 }
 
-/* line 107, pattern-lab/scss/_helpers.scss */
+/* line 400, pattern-lab/scss/_helpers.scss */
 .white {
   color: #fff;
   fill: #fff;
 }
 
-/* line 111, pattern-lab/scss/_helpers.scss */
+/* line 404, pattern-lab/scss/_helpers.scss */
 .primary {
   color: #047A9C;
   fill: #047A9C;
 }
 
-/* line 115, pattern-lab/scss/_helpers.scss */
+/* line 408, pattern-lab/scss/_helpers.scss */
 .main-two {
   color: #005A70;
   fill: #005A70;
 }
 
-/* line 119, pattern-lab/scss/_helpers.scss */
+/* line 412, pattern-lab/scss/_helpers.scss */
 .main-three {
   color: #FFFFFF;
   fill: #FFFFFF;
 }
 
-/* line 123, pattern-lab/scss/_helpers.scss */
+/* line 416, pattern-lab/scss/_helpers.scss */
 .main-four {
   color: #F5F5F5;
   fill: #F5F5F5;
 }
 
-/* line 127, pattern-lab/scss/_helpers.scss */
+/* line 420, pattern-lab/scss/_helpers.scss */
 .secondary {
   color: #FFB81C;
   fill: #FFB81C;
 }
 
-/* line 131, pattern-lab/scss/_helpers.scss */
+/* line 424, pattern-lab/scss/_helpers.scss */
 .secondary-two {
   color: #FF9A19;
   fill: #FF9A19;
 }
 
-/* line 135, pattern-lab/scss/_helpers.scss */
+/* line 428, pattern-lab/scss/_helpers.scss */
 .secondary-three {
   color: #DAF0ED;
   fill: #DAF0ED;
 }
 
-/* line 139, pattern-lab/scss/_helpers.scss */
+/* line 432, pattern-lab/scss/_helpers.scss */
 .secondary-four {
   color: #19A6A4;
   fill: #19A6A4;
 }
 
-/* line 143, pattern-lab/scss/_helpers.scss */
+/* line 436, pattern-lab/scss/_helpers.scss */
 .neutral {
   color: #C7C7C7;
   fill: #C7C7C7;
 }
 
-/* line 147, pattern-lab/scss/_helpers.scss */
+/* line 440, pattern-lab/scss/_helpers.scss */
 .neutral-two {
   color: #252525;
   fill: #252525;
 }
 
-/* line 151, pattern-lab/scss/_helpers.scss */
+/* line 444, pattern-lab/scss/_helpers.scss */
 .neutral-three {
   color: #6A7070;
   fill: #6A7070;
 }
 
-/* line 155, pattern-lab/scss/_helpers.scss */
+/* line 448, pattern-lab/scss/_helpers.scss */
 .neutral-four {
   color: #D9D9D9;
   fill: #D9D9D9;
 }
 
-/* line 159, pattern-lab/scss/_helpers.scss */
+/* line 452, pattern-lab/scss/_helpers.scss */
 .neutral-five {
   color: #E9E9E9;
   fill: #E9E9E9;
 }
 
-/* line 163, pattern-lab/scss/_helpers.scss */
+/* line 456, pattern-lab/scss/_helpers.scss */
 .condition-one {
   color: #DB0020;
   fill: #DB0020;
 }
 
-/* line 167, pattern-lab/scss/_helpers.scss */
+/* line 460, pattern-lab/scss/_helpers.scss */
 .condition-two {
   color: #038238;
   fill: #038238;
 }
 
-/* line 171, pattern-lab/scss/_helpers.scss */
+/* line 464, pattern-lab/scss/_helpers.scss */
 .condition-three {
   color: #DA0474;
   fill: #DA0474;
 }
 
-/* line 176, pattern-lab/scss/_helpers.scss */
+/* line 469, pattern-lab/scss/_helpers.scss */
 .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11462,7 +11812,7 @@ input[type=number]::-webkit-outer-spin-button {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 178, pattern-lab/scss/_helpers.scss */
+/* line 471, pattern-lab/scss/_helpers.scss */
 .flex-container.justify-flex-start {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -11474,44 +11824,44 @@ input[type=number]::-webkit-outer-spin-button {
           justify-content: flex-start;
 }
 
-/* line 184, pattern-lab/scss/_helpers.scss */
+/* line 477, pattern-lab/scss/_helpers.scss */
 .hidden {
   display: none;
 }
 
-/* line 188, pattern-lab/scss/_helpers.scss */
+/* line 481, pattern-lab/scss/_helpers.scss */
 .center {
   text-align: center;
 }
 
-/* line 193, pattern-lab/scss/_helpers.scss */
+/* line 486, pattern-lab/scss/_helpers.scss */
 .circle-image img {
   border-radius: 50%;
 }
 
-/* line 198, pattern-lab/scss/_helpers.scss */
+/* line 491, pattern-lab/scss/_helpers.scss */
 .circle-image li {
   list-style: none;
   width: 50%;
   float: left;
 }
 
-/* line 204, pattern-lab/scss/_helpers.scss */
+/* line 497, pattern-lab/scss/_helpers.scss */
 img {
   max-width: 100%;
 }
 
-/* line 208, pattern-lab/scss/_helpers.scss */
+/* line 501, pattern-lab/scss/_helpers.scss */
 .margin-sides {
   margin: 0 1em;
 }
 
-/* line 211, pattern-lab/scss/_helpers.scss */
+/* line 504, pattern-lab/scss/_helpers.scss */
 .margin-right {
   margin-right: 1em;
 }
 
-/* line 215, pattern-lab/scss/_helpers.scss */
+/* line 508, pattern-lab/scss/_helpers.scss */
 .justify-end {
   -webkit-box-pack: end !important;
   -webkit-justify-content: flex-end !important;
@@ -11519,34 +11869,34 @@ img {
           justify-content: flex-end !important;
 }
 
-/* line 219, pattern-lab/scss/_helpers.scss */
+/* line 512, pattern-lab/scss/_helpers.scss */
 .pad-top-4 {
   padding-top: 4em;
 }
 
-/* line 223, pattern-lab/scss/_helpers.scss */
+/* line 516, pattern-lab/scss/_helpers.scss */
 .pad-top-2 {
   padding-top: 2em;
 }
 
-/* line 227, pattern-lab/scss/_helpers.scss */
+/* line 520, pattern-lab/scss/_helpers.scss */
 .badge {
   max-width: 125px;
   margin-bottom: 1em;
 }
 
-/* line 232, pattern-lab/scss/_helpers.scss */
+/* line 525, pattern-lab/scss/_helpers.scss */
 .stars {
   max-width: 250px;
   margin-bottom: 1em;
 }
 
-/* line 237, pattern-lab/scss/_helpers.scss */
+/* line 530, pattern-lab/scss/_helpers.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 241, pattern-lab/scss/_helpers.scss */
+/* line 534, pattern-lab/scss/_helpers.scss */
 .light {
   font-weight: lighter;
 }
