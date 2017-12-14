@@ -12285,15 +12285,15 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
   padding: 0 0.8em;
   height: 40px;
 }
-/* line 14, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 15, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .header button:first-child {
   margin-right: 1em;
 }
-/* line 18, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 19, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .header svg {
   fill: #6A7070;
 }
-/* line 22, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 23, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .days-of-week {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12314,7 +12314,7 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
           flex-direction: row;
   margin-top: 1em;
 }
-/* line 26, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 27, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .days-of-week span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12337,7 +12337,7 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
   height: 40px;
   text-align: center;
 }
-/* line 32, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 33, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12357,21 +12357,45 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 35, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 36, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button {
+  color: #252525;
   width: 40px;
   height: 40px;
   text-decoration: none;
   border-radius: 50%;
 }
-/* line 40, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 42, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button:hover {
   background-color: #E9E9E9;
 }
-/* line 43, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 45, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button.today {
+  border-radius: 0;
+  border: 1px solid #C7C7C7;
+}
+/* line 48, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button.today.selected {
+  background: transparent;
+  color: #6A7070;
+}
+/* line 53, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button.selected {
-  background: #19A6A4;
+  background: #6A7070;
   color: white;
+}
+/* line 57, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button:disabled {
+  color: #E9E9E9;
+}
+/* line 60, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button:disabled:hover {
+  background: none;
+  cursor: default;
+}
+/* line 67, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .muted {
+  visibility: hidden;
 }
 
 /* line 1, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_datepicker.scss */

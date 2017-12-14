@@ -11,6 +11,7 @@
 	height:40px;
 	
 	button {
+	  
 	  &:first-child {
 		margin-right:1em;
 	  }
@@ -33,6 +34,7 @@
 	@include flex;
 	
 	button {
+	  color: $neutral-two;
 	  @include box-size (40px, 40px);
 	  text-decoration: none;
 	  border-radius:50%;
@@ -40,10 +42,30 @@
 	  &:hover {
 		background-color:$neutral-five
 	  }
+	  &.today {
+		border-radius: 0;
+		border:1px solid $neutral;
+		&.selected {
+		  background:transparent;
+		  color: $neutral-three;
+		}
+	  }
 	  &.selected {
-		background:$secondary-four;
+		background:$neutral-three;
 		color: white;
+	  }
+	  &:disabled {
+		color:$neutral-five;
+		
+		&:hover {
+		  background:none;
+		  cursor:default;
+		}
 	  }
 	}
   }
+  .muted {
+	visibility: hidden;
+  }
 }
+
