@@ -2544,7 +2544,7 @@ input[type="radio"]:checked ~ span svg {
 /* Variables for the forms styles */
 /* mixins for the forms styles */
 /* line 4, node_modules/@pearson-components/elements-sdk/src/styles/elements/forms/_forms.scss */
-.pe-form .pe-form--name, .pe-form .pe-form--name-bold {
+.pe-form .pe-form--name, .pe-form .pe-form--name-bold, .pe-form .pe-form--section {
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 20px;
@@ -7266,60 +7266,51 @@ input[type="checkbox"] ~ span {
           box-shadow: 0px 0px 5px 0px #19a6a4;
 }
 
-/* line 32, pattern-lab/scss/_ux-override.scss */
+/* line 31, pattern-lab/scss/_ux-override.scss */
 .pe-checkbox input:checked ~ span {
   background: #19a6a4;
   border: 1px solid #19a6a4;
+  color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 36, pattern-lab/scss/_ux-override.scss */
-.pe-checkbox input:checked ~ span svg {
-  fill: white;
+/* line 37, pattern-lab/scss/_ux-override.scss */
+.pe-checkbox input:checked:focus ~ span {
+  border: 1px solid #000000;
 }
-/* line 43, pattern-lab/scss/_ux-override.scss */
+/* line 41, pattern-lab/scss/_ux-override.scss */
 .pe-checkbox input:disabled:checked ~ span {
   background-color: #e9e9e9;
   border: 1px solid #c7c7c7;
-}
-/* line 46, pattern-lab/scss/_ux-override.scss */
-.pe-checkbox input:disabled:checked ~ span svg {
-  fill: #C7C7C7;
+  color: #c7c7c7;
 }
 
-/* line 58, pattern-lab/scss/_ux-override.scss */
+/* line 52, pattern-lab/scss/_ux-override.scss */
 .pe-radio input:checked ~ span {
+  color: #19a6a4;
   border: 1px solid #c7c7c7;
 }
-/* line 60, pattern-lab/scss/_ux-override.scss */
-.pe-radio input:checked ~ span svg {
-  fill: #19a6a4;
-}
-/* line 66, pattern-lab/scss/_ux-override.scss */
-.pe-radio input:focus ~ span {
-  border: 1px solid #19a6a4;
-}
-/* line 73, pattern-lab/scss/_ux-override.scss */
-.pe-radio input:disabled:checked ~ span svg {
-  fill: #C7C7C7;
+/* line 57, pattern-lab/scss/_ux-override.scss */
+.pe-radio input:disabled:checked ~ span {
+  color: #C7C7C7;
 }
 
-/* line 85, pattern-lab/scss/_ux-override.scss */
+/* line 67, pattern-lab/scss/_ux-override.scss */
 .textarea .pe-multiLineText:focus, .textarea .pe-multiLineText--error:focus {
   border: 1px solid #19a6a4;
   -webkit-box-shadow: 0px 0px 5px 0px #19a6a4;
           box-shadow: 0px 0px 5px 0px #19a6a4;
 }
-/* line 91, pattern-lab/scss/_ux-override.scss */
+/* line 73, pattern-lab/scss/_ux-override.scss */
 .textarea .pe-multiLineText--error:focus {
   -webkit-box-shadow: 0px 0px 4px 0px #DB0020;
           box-shadow: 0px 0px 4px 0px #DB0020;
   border: 1px solid #DB0020;
 }
 
-/* line 98, pattern-lab/scss/_ux-override.scss */
+/* line 80, pattern-lab/scss/_ux-override.scss */
 button {
   text-overflow: unset !important;
   overflow: initial !important;
@@ -11207,93 +11198,6 @@ a.active {
   text-decoration: none;
 }
 
-/* line 1, pattern-lab/scss/_pattern-lab.scss */
-.swatch {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-bottom: 0.3em;
-  border-radius: 5px;
-}
-
-/* line 9, pattern-lab/scss/_pattern-lab.scss */
-.swatch > div {
-  padding: 1em;
-  min-width: 20%;
-}
-@media (max-width: 640px) {
-  /* line 9, pattern-lab/scss/_pattern-lab.scss */
-  .swatch > div {
-    width: 100%;
-  }
-}
-
-/* line 18, pattern-lab/scss/_pattern-lab.scss */
-.o-header--fixed {
-  position: absolute !important;
-}
-
-/* line 22, pattern-lab/scss/_pattern-lab.scss */
-.ux-boilerplate:before {
-  content: "• ";
-  color: deepskyblue !important;
-}
-
-/* line 27, pattern-lab/scss/_pattern-lab.scss */
-.elements:before {
-  content: "• ";
-  color: greenyellow !important;
-}
-
-/* line 32, pattern-lab/scss/_pattern-lab.scss */
-.custom:before {
-  content: "• ";
-  color: hotpink !important;
-}
-
-/* line 37, pattern-lab/scss/_pattern-lab.scss */
-.compounds:before {
-  content: "• ";
-  color: mediumpurple !important;
-}
-
-/* line 42, pattern-lab/scss/_pattern-lab.scss */
-.inprogress:before {
-  content: "• ";
-  color: #ff4136 !important;
-}
-
-/* line 47, pattern-lab/scss/_pattern-lab.scss */
-.d-icon-list {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-/* line 53, pattern-lab/scss/_pattern-lab.scss */
-.d-icon-list li {
-  padding: 1em;
-  width: 30%;
-}
-
-/* line 59, pattern-lab/scss/_pattern-lab.scss */
-button {
-  cursor: pointer;
-}
-
 /* line 1, pattern-lab/scss/_ie11.scss */
 input:-ms-input-placeholder {
   /* IE 10+ */
@@ -11742,32 +11646,449 @@ button[aria-haspopup="true"] {
   color: #252525;
 }
 
-/* GLP button styles */
-/* line 3, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
-[class^='pe-btn--'], [class*=' pe-btn--'], [class^='pe-btn__'], [class*=' pe-btn__'] {
-  border-radius: 22px;
-  padding: 0 30px;
-  height: 40px;
-  line-height: 0;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: .5em;
-}
-/* line 13, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
-[class^='pe-btn--'] svg, [class*=' pe-btn--'] svg, [class^='pe-btn__'] svg, [class*=' pe-btn__'] svg {
-  margin-left: .5em;
+/* line 1, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn, .pe-btn--btn_large, .pe-btn--btn_small, .pe-btn--btn_xlarge, .pe-btn__primary, .pe-btn__primary--btn_large, .pe-btn__primary--btn_small, .pe-btn__primary--btn_xlarge, .pe-btn__cta, .pe-btn__cta--btn_large, .pe-btn__cta--btn_small, .pe-btn__cta--btn_xlarge, .pe-btn__tertiary, .pe-btn__tertiary--btn_large, .pe-btn__tertiary--btn_small, .pe-btn__tertiary--btn_xlarge {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
 }
 
-/* line 18, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
-[class^='pe-btn__cta'], [class*='pe-btn__cta'], [class^='pe-btn__primary'], [class*='pe-btn__primary'] {
+/* line 15, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_small, .pe-btn__primary--btn_small, .pe-btn__cta--btn_small, .pe-btn__tertiary--btn_small {
+  height: 32px;
+  border-radius: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 23, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_xlarge, .pe-btn__primary--btn_xlarge, .pe-btn__cta--btn_xlarge, .pe-btn__tertiary--btn_xlarge {
+  height: 40px;
+  border-radius: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 31, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-icon--btn {
+  padding: 0;
+  background-color: transparent;
   border: 0;
+}
+
+/* line 37, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link, .pe-link--btn {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 44, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link {
+  color: #047A9C;
+  padding: 0;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link:hover, .pe-link:focus {
+  color: #005A70;
+  text-decoration: none;
+}
+
+/* line 53, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link--btn {
+  color: #047A9C;
+  padding: 4px;
+}
+
+/* line 57, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link--btn:hover, .pe-link--btn:focus {
+  text-decoration: none;
+}
+
+/* line 60, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-link--btn:disabled {
+  color: #6A7070;
+  text-decoration: none;
+}
+
+/* line 65, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn, .pe-btn--btn_large {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #C7C7C7;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 74, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn:hover, .pe-btn:active, .pe-btn:focus, .pe-btn--btn_large:hover, .pe-btn--btn_large:active, .pe-btn--btn_large:focus {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #505759;
+}
+
+/* line 79, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn:disabled, .pe-btn.pe-btn--disabled, .pe-btn.pe-btn--disabled:hover, .pe-btn--btn_large:disabled, .pe-btn--btn_large.pe-btn--disabled, .pe-btn--btn_large.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 88, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btngroup button:first-child {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/* line 92, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btngroup button:last-child {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+/* line 96, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btngroup button:not(:first-child):not(:last-child) {
+  border-radius: 0px !important;
+}
+
+/* line 100, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_small {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #C7C7C7;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 109, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_small:hover, .pe-btn--btn_small:active, .pe-btn--btn_small:focus {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #505759;
+}
+
+/* line 114, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_small:disabled, .pe-btn--btn_small.pe-btn--disabled, .pe-btn--btn_small.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 123, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_xlarge {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #C7C7C7;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 132, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_xlarge:hover, .pe-btn--btn_xlarge:active, .pe-btn--btn_xlarge:focus {
+  color: #505759;
+  background-color: transparent;
+  border: 1px solid #505759;
+}
+
+/* line 137, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn--btn_xlarge:disabled, .pe-btn--btn_xlarge.pe-btn--disabled, .pe-btn--btn_xlarge.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 146, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary, .pe-btn__primary--btn_large {
+  color: #FFFFFF;
+  background-color: #047A9C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 154, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary:hover, .pe-btn__primary:active, .pe-btn__primary:focus, .pe-btn__primary--btn_large:hover, .pe-btn__primary--btn_large:active, .pe-btn__primary--btn_large:focus {
+  color: #FFFFFF;
+  background-color: #005A70;
+}
+
+/* line 158, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary:disabled, .pe-btn__primary.pe-btn--disabled, .pe-btn__primary.pe-btn--disabled:hover, .pe-btn__primary--btn_large:disabled, .pe-btn__primary--btn_large.pe-btn--disabled, .pe-btn__primary--btn_large.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 167, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_small {
+  color: #FFFFFF;
+  background-color: #047A9C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 175, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_small:hover, .pe-btn__primary--btn_small:active, .pe-btn__primary--btn_small:focus {
+  color: #FFFFFF;
+  background-color: #005A70;
+}
+
+/* line 179, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_small:disabled, .pe-btn__primary--btn_small.pe-btn--disabled, .pe-btn__primary--btn_small.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 188, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_xlarge {
+  color: #FFFFFF;
+  background-color: #047A9C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 196, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_xlarge:hover, .pe-btn__primary--btn_xlarge:active, .pe-btn__primary--btn_xlarge:focus {
+  color: #FFFFFF;
+  background-color: #005A70;
+}
+
+/* line 200, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary--btn_xlarge:disabled, .pe-btn__primary--btn_xlarge.pe-btn--disabled, .pe-btn__primary--btn_xlarge.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 209, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta, .pe-btn__cta--btn_large {
+  color: #252525;
+  background-color: #FFB81C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 217, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta:hover, .pe-btn__cta:active, .pe-btn__cta:focus, .pe-btn__cta--btn_large:hover, .pe-btn__cta--btn_large:active, .pe-btn__cta--btn_large:focus {
+  color: #252525;
+  background-color: #FF9A19;
+}
+
+/* line 221, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta:disabled, .pe-btn__cta.pe-btn--disabled, .pe-btn__cta.pe-btn--disabled:hover, .pe-btn__cta--btn_large:disabled, .pe-btn__cta--btn_large.pe-btn--disabled, .pe-btn__cta--btn_large.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 230, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_small {
+  color: #252525;
+  background-color: #FFB81C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 238, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_small:hover, .pe-btn__cta--btn_small:active, .pe-btn__cta--btn_small:focus {
+  color: #252525;
+  background-color: #FF9A19;
+}
+
+/* line 242, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_small:disabled, .pe-btn__cta--btn_small.pe-btn--disabled, .pe-btn__cta--btn_small.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 251, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_xlarge {
+  color: #252525;
+  background-color: #FFB81C;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 259, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_xlarge:hover, .pe-btn__cta--btn_xlarge:active, .pe-btn__cta--btn_xlarge:focus {
+  color: #252525;
+  background-color: #FF9A19;
+}
+
+/* line 263, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__cta--btn_xlarge:disabled, .pe-btn__cta--btn_xlarge.pe-btn--disabled, .pe-btn__cta--btn_xlarge.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 272, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary, .pe-btn__tertiary--btn_large {
+  color: #505759;
+  background-color: #E9E9E9;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 280, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary:hover, .pe-btn__tertiary:active, .pe-btn__tertiary:focus, .pe-btn__tertiary--btn_large:hover, .pe-btn__tertiary--btn_large:active, .pe-btn__tertiary--btn_large:focus {
+  color: #505759;
+  background-color: #ededed;
+}
+
+/* line 284, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary:disabled, .pe-btn__tertiary.pe-btn--disabled, .pe-btn__tertiary.pe-btn--disabled:hover, .pe-btn__tertiary--btn_large:disabled, .pe-btn__tertiary--btn_large.pe-btn--disabled, .pe-btn__tertiary--btn_large.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 293, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_small {
+  color: #505759;
+  background-color: #E9E9E9;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 301, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_small:hover, .pe-btn__tertiary--btn_small:active, .pe-btn__tertiary--btn_small:focus {
+  color: #505759;
+  background-color: #ededed;
+}
+
+/* line 305, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_small:disabled, .pe-btn__tertiary--btn_small.pe-btn--disabled, .pe-btn__tertiary--btn_small.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 314, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_xlarge {
+  color: #505759;
+  background-color: #E9E9E9;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 322, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_xlarge:hover, .pe-btn__tertiary--btn_xlarge:active, .pe-btn__tertiary--btn_xlarge:focus {
+  color: #505759;
+  background-color: #ededed;
+}
+
+/* line 326, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__tertiary--btn_xlarge:disabled, .pe-btn__tertiary--btn_xlarge.pe-btn--disabled, .pe-btn__tertiary--btn_xlarge.pe-btn--disabled:hover {
+  cursor: default;
+  border: 0;
+  color: #C7C7C7;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+/* line 335, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+div [class$='--btn_xlarge'], a [class$='--btn_xlarge'] {
+  line-height: 40px !important;
+}
+
+/* line 339, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+div [class$='--btn_large'], a [class$='--btn_large'] {
+  line-height: 36px !important;
+}
+
+/* line 343, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+.pe-btn__primary, .pe-btn__cta, .pe-btn__tertiary, .pe-btn {
+  line-height: 36px !important;
+}
+
+/* line 347, pattern-lab/source/_patterns/00-ui-kit/04-buttons/_glp-btn.scss */
+div [class$='--btn_small'], a [class$='--btn_small'] {
+  line-height: 32px !important;
 }
 
 /* line 1, pattern-lab/source/_patterns/00-ui-kit/05-dropdown/_menu.scss */
@@ -11964,15 +12285,15 @@ button[aria-haspopup="true"] {
   padding: 0 0.8em;
   height: 40px;
 }
-/* line 14, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 15, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .header button:first-child {
   margin-right: 1em;
 }
-/* line 18, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 19, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .header svg {
   fill: #6A7070;
 }
-/* line 22, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 23, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .days-of-week {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11993,7 +12314,7 @@ button[aria-haspopup="true"] {
           flex-direction: row;
   margin-top: 1em;
 }
-/* line 26, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 27, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .days-of-week span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12016,7 +12337,7 @@ button[aria-haspopup="true"] {
   height: 40px;
   text-align: center;
 }
-/* line 32, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 33, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12036,21 +12357,45 @@ button[aria-haspopup="true"] {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 35, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 36, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button {
+  color: #252525;
   width: 40px;
   height: 40px;
   text-decoration: none;
   border-radius: 50%;
 }
-/* line 40, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 42, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button:hover {
   background-color: #E9E9E9;
 }
-/* line 43, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+/* line 45, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button.today {
+  border-radius: 0;
+  border: 1px solid #C7C7C7;
+}
+/* line 48, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button.today.selected {
+  background: transparent;
+  color: #6A7070;
+}
+/* line 53, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
 .calendar .weeks button.selected {
-  background: #19A6A4;
+  background: #6A7070;
   color: white;
+}
+/* line 57, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button:disabled {
+  color: #E9E9E9;
+}
+/* line 60, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .weeks button:disabled:hover {
+  background: none;
+  cursor: default;
+}
+/* line 67, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_calendar.scss */
+.calendar .muted {
+  visibility: hidden;
 }
 
 /* line 1, pattern-lab/source/_patterns/00-ui-kit/14-datepicker/_datepicker.scss */
@@ -12230,7 +12575,7 @@ button[aria-haspopup="true"] {
 }
 /* line 11, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input + label {
-  background: #E9E9E9;
+  background: #6A7070;
   position: relative;
   padding: 8px;
   border-radius: 100px;
@@ -12279,7 +12624,7 @@ button[aria-haspopup="true"] {
 }
 /* line 54, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label {
-  background: #19A6A4;
+  background: #047A9C;
 }
 /* line 56, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label:before {
@@ -12323,92 +12668,97 @@ button[aria-haspopup="true"] {
   }
 }
 
-/* line 3, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 1, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+table {
+  min-width: 640px;
+  margin-bottom: 0;
+}
+/* line 5, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto thead {
   background-color: #D9D9D9;
   border: 1px solid #C7C7C7;
 }
-/* line 8, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 10, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto tr {
   border-bottom: 1px solid #C7C7C7;
 }
-/* line 10, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 12, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto tr:nth-child(even) {
   background-color: #F5F5F5;
 }
-/* line 15, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 17, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto th {
   padding: 0.75em 1.25em;
   border-right: 1px solid #C7C7C7;
 }
-/* line 19, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 21, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto th.sortable svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 25, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 27, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto td {
   padding: 0.875em 1.25em;
   vertical-align: middle;
 }
-/* line 31, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 33, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.pe-proto.small th, table.pe-proto.small td {
   padding: 5px 20px;
 }
-/* line 37, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 39, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table thead {
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
 }
-/* line 41, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 43, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table thead th {
   padding: 1em 20px;
 }
-/* line 45, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 47, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody {
   border-bottom: 1px solid #D9D9D9;
 }
-/* line 46, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 48, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody td {
   padding: 1em 20px;
 }
-/* line 51, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 53, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table tbody[data-match="true"] .no-match {
   display: none;
 }
-/* line 59, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 61, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.hoverable tbody tr:hover, table.selectable tbody tr:hover {
   background-color: #E9E9E9;
   cursor: pointer;
 }
-/* line 67, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 69, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th:hover {
   background-color: #E9E9E9;
   cursor: pointer;
 }
-/* line 71, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 73, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th .up {
   display: none;
 }
-/* line 75, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 77, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th.selected .up {
   display: inline;
 }
-/* line 78, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 80, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.sortable th.selected .down {
   display: none;
 }
-/* line 86, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 88, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.selectable .selected {
   background-color: #DAF0ED;
   outline: 1px solid #19A6A4;
 }
-/* line 89, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 91, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 table.selectable .selected:hover {
   outline: 1px solid #047A9C;
 }
 
-/* line 97, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+/* line 99, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 .table-with-controls .controls {
   margin-bottom: 28px;
   display: -webkit-box;
@@ -12420,9 +12770,42 @@ table.selectable .selected:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 103, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+@media (max-width: 480px) {
+  /* line 99, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* line 108, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
 .table-with-controls .controls .control:first-child {
   margin-right: 1em;
+}
+@media (max-width: 480px) {
+  /* line 108, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls .control:first-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 117, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .table-with-controls .controls .control:last-child .basic-input svg {
+    right: 13px;
+  }
+}
+
+/* line 126, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+.responsive-table {
+  margin-bottom: 35px;
+}
+@media (max-width: 640px) {
+  /* line 126, pattern-lab/source/_patterns/00-ui-kit/19-tables/_tables.scss */
+  .responsive-table {
+    overflow: scroll;
+  }
 }
 
 /* line 2, pattern-lab/source/_patterns/00-ui-kit/21-alerts/_alert.scss */
@@ -12959,6 +13342,202 @@ table.selectable .selected:hover {
 /* line 65, pattern-lab/source/_patterns/00-ui-kit/23-drawer/_drawer.scss */
 .drawer .drawer-actions button {
   width: 100%;
+}
+
+/* Variables for the forms styles */
+/* line 7, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--name, .pe-form .pe-form--name-bold, .pe-form .pe-form--section {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* line 14, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--name {
+  margin-bottom: 29px;
+}
+/* line 19, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--section {
+  margin-bottom: 13px;
+}
+/* line 24, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--instr {
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+/* line 29, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group {
+  margin-bottom: 34px;
+}
+/* line 31, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group:first-child {
+  margin-top: 22px;
+}
+/* line 34, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--group:last-child {
+  margin-bottom: 50px;
+}
+/* line 39, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+/* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--button-group button:last-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--button-group button:last-child {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 43, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--button-group button:last-child {
+    margin-right: 10px;
+  }
+}
+/* line 55, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 57, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group > div {
+  width: 100%;
+}
+/* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .pe-form--inline-group > div:first-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--inline-group > div:first-child {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 59, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+  .pe-form .pe-form--inline-group > div:first-child {
+    margin-right: 10px;
+  }
+}
+/* line 71, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form hr {
+  border: 0;
+  border-top: 1px solid #C7C7C7;
+  margin-bottom: 34px;
+}
+/* line 77, pattern-lab/source/_patterns/00-ui-kit/26-forms/_forms.scss */
+.pe-form .datepicker {
+  max-width: 100%;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-path {
+  margin-right: 4px;
+  text-decoration: none;
+}
+/* line 4, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-path ~ svg {
+  margin-right: 4px;
+  color: #6A7070;
+}
+
+/* line 11, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-back a {
+  margin-left: 4px;
+  text-decoration: none;
+}
+/* line 16, pattern-lab/source/_patterns/00-ui-kit/24-breadcrumbs/_breadcrumbs.scss */
+.breadcrumbs-back svg {
+  color: #6A7070;
+}
+
+/* line 2, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2em;
+}
+/* line 9, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section.disabled {
+  color: #6A7070;
+}
+/* line 11, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section.disabled span {
+  color: #6A7070;
+}
+/* line 14, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .grouped > div {
+  margin-right: 2em;
+}
+/* line 18, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .grouped {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 23, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .section-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 26, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .section-header svg {
+  margin-right: 0.5em;
+}
+/* line 31, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .section-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.2em;
+  margin-left: -webkit-calc(18px + 2em);
+  margin-left: calc(18px + 2em);
+}
+/* line 38, pattern-lab/source/_patterns/00-ui-kit/25-accordion/_accordion.scss */
+.accordion .section .section-content .section-item {
+  margin-top: 1em;
 }
 
 /* line 1, pattern-lab/scss/_epub.scss */

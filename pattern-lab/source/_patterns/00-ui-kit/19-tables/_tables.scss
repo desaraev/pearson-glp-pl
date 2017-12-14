@@ -1,4 +1,6 @@
 table {
+  min-width:640px;
+  margin-bottom:0;
   &.pe-proto {
 	thead {
       background-color:$neutral-four;
@@ -99,12 +101,32 @@ table {
 	display:flex;
 	justify-content: flex-end;
 	
+	@media (max-width:480px) {
+	  flex-direction: column;
+	}
 	.control {
 	  &:first-child {
 		margin-right:1em;
+		@media(max-width:480px) {
+		  margin-right:0;
+		}
+	  }
+	  
+	  &:last-child {
+		@media(max-width:480px) {
+		  .basic-input svg {
+			right:13px;
+		  }
+		}
 	  }
 	}
   }
 }
 
+.responsive-table {
+  margin-bottom:35px;
+  @media(max-width:640px) {
+	overflow:scroll;
+  }
+}
 

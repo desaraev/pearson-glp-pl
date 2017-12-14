@@ -5,8 +5,7 @@ gulp.task('travis-success', ['default'], function () {
     return gulp.src('pattern-lab/public/**/*')
         .pipe(sftp({
             host: '159.203.121.101',
-            user: 'thejimmy',
-            pass: 'jrp009SSPw&&',
+            user: 'root',
             remotePath: '/home/webroot/pearson-glp-pl'
         }));
 });
