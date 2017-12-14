@@ -1,22 +1,24 @@
 {{#selecTable}}
-	<table class="selectable" aria-label="{{tableName}}">
-		<thead>
-		<tr>
-			<th width="50" scope="col">{{> ui-kit-checkboxes }}</th>
-			{{#th}}
-				<th scope="col">{{label}}</th>
-			{{/th}}
-		</tr>
-		</thead>
-		<tbody>
-		{{#tr}}
-			<tr{{#selected}} class="selected"{{/selected}} tabindex="0">
-				<td width="50" scope="row">{{> ui-kit-checkboxes }}</td>
-				{{#td}}
-					<td>{{label}}</td>
-				{{/td}}
+	<div class="responsive-table">
+		<table class="selectable" aria-label="{{tableName}}">
+			<thead>
+			<tr>
+				<th width="50" scope="col">{{> ui-kit-checkboxes }}</th>
+				{{#th}}
+					<th scope="col">{{label}}</th>
+				{{/th}}
 			</tr>
-		{{/tr}}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+			{{#tr}}
+				<tr{{#selected}} class="selected"{{/selected}} tabindex="0">
+					<td width="50" scope="row">{{> ui-kit-checkboxes }}</td>
+					{{#td}}
+						<td>{{label}}</td>
+					{{/td}}
+				</tr>
+			{{/tr}}
+			</tbody>
+		</table>
+	</div>
 {{/selecTable}}

@@ -15,16 +15,10 @@
 		pe_ajax.send();
 	}
 
-	(function () {
-		if ( typeof NodeList.prototype.forEach === "function" ) return false;
-		NodeList.prototype.forEach = Array.prototype.forEach;
 
-		if (!Element.prototype.matches)
-			Element.prototype.matches = Element.prototype.msMatchesSelector;
-	})();
 
 </script>
-
+<script src="../../js/iePolyfill.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-range/2.0.3/moment-range.min.js"></script>
 
