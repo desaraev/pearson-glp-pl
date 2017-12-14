@@ -12551,7 +12551,7 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
 }
 /* line 11, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input + label {
-  background: #E9E9E9;
+  background: #6A7070;
   position: relative;
   padding: 8px;
   border-radius: 100px;
@@ -12600,7 +12600,7 @@ div [class$='--btn_small'], a [class$='--btn_small'] {
 }
 /* line 54, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label {
-  background: #19A6A4;
+  background: #047A9C;
 }
 /* line 56, pattern-lab/source/_patterns/00-ui-kit/18-toggle/_toggle.scss */
 .toggle input:checked + label:before {
