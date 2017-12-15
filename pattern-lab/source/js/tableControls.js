@@ -29,7 +29,7 @@
                 const tdValue = value.querySelectorAll('td');
                 tdValue.forEach(td => {
                     if (td.getAttribute('data-col') !== null  && td.getAttribute('data-col') === searchObj.searchBy) {
-                        if (searchObj.inputValue === td.innerHTML) {
+                        if (searchObj.inputValue.toLowerCase() === td.innerHTML.toLowerCase()) {
                             searchObj.isMatch.push('true');
                             td.parentNode.classList.add('match');
                             td.parentNode.classList.remove('no-match');
@@ -38,8 +38,6 @@
                             td.parentNode.classList.add('no-match');
                             td.parentNode.classList.remove('match');
                         }
-
-                        console.log(searchObj.isMatch.find(isTrue));
 
                     }
                 });

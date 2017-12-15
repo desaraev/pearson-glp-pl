@@ -1,20 +1,22 @@
 {{#table}}
-	<table class="{{styleModifier}}" aria-label="{{tableName}}">
-		<thead>
-		<tr>
-			{{#th}}
-				<th scope="col">{{label}}</th>
-			{{/th}}
-		</tr>
-		</thead>
-		<tbody>
-		{{#tr}}
+	<div class="responsive-table">
+		<table class="{{styleModifier}}" aria-label="{{tableName}}">
+			<thead>
 			<tr>
-				{{#td}}
-					<td>{{label}}</td>
-				{{/td}}
+				{{#th}}
+					<th scope="col">{{label}}</th>
+				{{/th}}
 			</tr>
-		{{/tr}}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+			{{#tr}}
+				<tr>
+					{{#td}}
+						<td>{{label}}</td>
+					{{/td}}
+				</tr>
+			{{/tr}}
+			</tbody>
+		</table>
+	</div>
 {{/table}}
