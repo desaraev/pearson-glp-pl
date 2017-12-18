@@ -35,28 +35,30 @@
                 if (ref = moment.week(), [].indexOf.call(weeks, ref) < 0) {
                     return weeks.push(moment.week());
                 }
-            });
 
+            });
             calendar = [];
 
             weeks.forEach(week => {
                 if (i > 0 && week < weeks[i - 1]) {
 
                     // We have switched to the next year
-                    firstWeekDay = moment([year, month]).add(1, "year").week(week).day(1);
-                    lastWeekDay = moment([year, month]).add(1, "year").week(week).day(7);
+                    firstWeekDay = moment([year, month]).add(1, "year").week(week).day(0);
+                    lastWeekDay = moment([year, month]).add(1, "year").week(week).day(6);
                 }
                 else {
-                    firstWeekDay = moment([year, month]).week(week).day(1);
-                    lastWeekDay = moment([year, month]).week(week).day(7);
+                    firstWeekDay = moment([year, month]).week(week).day(0);
+                    lastWeekDay = moment([year, month]).week(week).day(6);
                 }
+
                 weekRange = moment.range(firstWeekDay, lastWeekDay);
+
                 calendar.push(weekRange);
             });
 
+
             return calendar
         },
-
         setState: (buttonClicked, calendarNumber) => {
             if (buttonClicked === "none") {
                 displayDate[calendarNumber] = moment([moment().year(), moment().month()]);
@@ -85,25 +87,32 @@
             let weekCount = 0,
                 isCurrentMonth,
                 isToday,
+                beforeToday,
                 isSelected,
                 dayClasses,
                 disabled,
-                elements = "";
+                elements = "",
+                formattedMonth;
 
                 dayList = [];
+
                 CalendarState.calendar.map(date => {
+
                     weekCount++;
                     date.by('days', function(day){
                         dayList.push(day)
                     });
                 })
 
+
                return dayList.map(day => {
                     isCurrentMonth = day.month() === CalendarState.month;
+                    beforeToday = day.format('DD-MM-YYYY') < moment().format('DD-MM-YYYY');
                     isToday = day.format('DD-MM-YYYY') === moment().format('DD-MM-YYYY');
                     isSelected = day.format('DD-MM-YYYY') === CalendarState.selected;
                     dayClasses = 'pe-link--btn pe-label neutral-two';
                     disabled = "";
+                    formattedMonth = CalendarState.month + 1;
 
                     if (!isCurrentMonth){
                         dayClasses += " muted";
@@ -117,15 +126,27 @@
                    if (isToday){
                        dayClasses += " today";
                    }
+
+                    if (formattedMonth < parseInt(moment().format("MM")) &&
+                        CalendarState.year <= parseInt(moment().format("YYYY")) ||
+                        CalendarState.year < parseInt(moment().format("YYYY")) ||
+                        moment().format("MMMM") === CalendarState.monthName &&
+                        CalendarState.year <= parseInt(moment().format("YYYY")) &&
+                        beforeToday) {
+                        disabled = "disabled"
+                    }
+
                     return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                })
             }
         };
 
+
     // calendar object that will render all the data
     let CalendarState = {};
     let renderCalendar = (buttonClicked, calendarNumber) => {
         GetCalendar.setState(buttonClicked, calendarNumber);
+
         CalendarState = {
             year: GetCalendar.getState(calendarNumber).year,
             month: GetCalendar.getState(calendarNumber).month,
@@ -183,5 +204,6 @@
             renderCalendar("next", buttons.indexOf(button));
         });   
     });
+
 
 })();

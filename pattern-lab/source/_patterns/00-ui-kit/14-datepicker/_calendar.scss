@@ -6,17 +6,24 @@
   z-index: 1;
   
   .header {
-	@include flex;
-	padding:0 0.8em;
-	height:40px;
-	
-	button {
-	  &:first-child {
-		margin-right:1em;
-	  }
+		@include flex;
+		padding: 0 0 0 8px;
+		height: 40px;
+		border-bottom: 0;
+
+	.month{
+		margin-right: 0.3em;
 	}
+
+	
 	svg {
-	  fill: $neutral-three;
+		fill: $neutral-three;
+		&:hover{
+			fill: $neutral-two;
+		}
+		&:disabled{
+			fill: $neutral-four;
+		}
 	}
   }
   .days-of-week {
@@ -33,6 +40,7 @@
 	@include flex;
 	
 	button {
+	  color: $neutral-two;
 	  @include box-size (40px, 40px);
 	  text-decoration: none;
 	  border-radius:50%;
@@ -40,10 +48,30 @@
 	  &:hover {
 		background-color:$neutral-five
 	  }
+	  &.today {
+		border-radius: 0;
+		border:1px solid $neutral;
+		&.selected {
+		  background:transparent;
+		  color: $neutral-three;
+		}
+	  }
 	  &.selected {
-		background:$secondary-four;
+		background:$neutral-three;
 		color: white;
+	  }
+	  &:disabled {
+		color:$neutral;
+		
+		&:hover {
+		  background:none;
+		  cursor:default;
+		}
 	  }
 	}
   }
+  .muted {
+	visibility: hidden;
+  }
 }
+
