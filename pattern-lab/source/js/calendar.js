@@ -51,7 +51,6 @@
                     lastWeekDay = moment([year, month]).week(week).day(6);
                 }
 
-                console.log(firstWeekDay, lastWeekDay)
                 weekRange = moment.range(firstWeekDay, lastWeekDay);
 
                 calendar.push(weekRange);
@@ -104,8 +103,6 @@
                         dayList.push(day)
                     });
                 })
-
-            console.log(CalendarState.calendar);
 
 
                return dayList.map(day => {
