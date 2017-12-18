@@ -38,7 +38,6 @@
 
             });
             calendar = [];
-
             weeks.forEach(week => {
                 if (i > 0 && week < weeks[i - 1]) {
 
@@ -92,7 +91,8 @@
                 dayClasses,
                 disabled,
                 elements = "",
-                formattedMonth;
+                formattedMonth,
+                date;
 
                 dayList = [];
 
@@ -113,6 +113,7 @@
                     dayClasses = 'pe-link--btn pe-label neutral-two';
                     disabled = "";
                     formattedMonth = CalendarState.month + 1;
+                    date = day.format('dddd, MMMM Do YYYY');
 
                     if (!isCurrentMonth){
                         dayClasses += " muted";
@@ -136,7 +137,7 @@
                         disabled = "disabled"
                     }
 
-                    return elements = '<button type="button" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
+                    return elements = '<button aria-label="'+date+'" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                })
             }
         };
@@ -152,9 +153,10 @@
             month: GetCalendar.getState(calendarNumber).month,
             monthName: GetCalendar.getState(calendarNumber).monthName,
             calendar: GetCalendar.getState(calendarNumber).calendar,
-            selected: moment().format('DD-MM-YYYY')
+            selected: moment().format('DD-MM-YYYY'),
+            previousMonth: GetCalendar.getState(calendarNumber - 1).monthName
         };
-    
+
         renderDays = GetCalendar.render();
     
         const monthHTML = calendars[calendarNumber].querySelector('.month'),
@@ -196,11 +198,27 @@
         renderCalendar("none", i);
     }
 
+    let returnMonthNames = (type, number = '') => {
+        if (type === "previous") {
+            return "Previous Month " + moment().month(CalendarState.month - number).format("MMMM")
+        } else if (type === "next") {
+            return "Next Month " + moment().month(CalendarState.month + number).format("MMMM")
+        }
+    };
+
     buttons.forEach((button,index) =>{
+        button[0].setAttribute('aria-label', returnMonthNames('previous', 1));
+        button[1].setAttribute('aria-label', returnMonthNames('next', 1));
+
         button[0].addEventListener('click', event => {
+            button[0].setAttribute('aria-label', returnMonthNames('previous', 2));
+            button[1].setAttribute('aria-label', returnMonthNames('next'));
             renderCalendar("prev", buttons.indexOf(button));
         });
+
         button[1].addEventListener('click', event => {
+            button[0].setAttribute('aria-label', returnMonthNames('previous'));
+            button[1].setAttribute('aria-label', returnMonthNames('next', 2));
             renderCalendar("next", buttons.indexOf(button));
         });   
     });
