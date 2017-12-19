@@ -11,13 +11,14 @@
         input.value = input.value + '%';
 
         input.addEventListener('blur', ()=> {
-            if (parseInt(input.value) > maxValue)
-                return input.value = maxValue + '%'
+            let inputRound = (Math.round(input.value / 25) * 25);
+            if (parseInt(inputRound) > maxValue)
+                return inputRound = maxValue + '%'
 
-            if (input.value === '') {
-                return input.value = '100%'
+            if (inputRound === '') {
+                return inputRound = '100%'
             }
-            input.value = input.value + '%';
+            input.value = inputRound + '%';
         });
 
         increaseValue.addEventListener('click', ()=> {

@@ -1,5 +1,5 @@
 {{#menu}}
-	<ul role="menu" class="menu pe-label">
+	<ul role="menu" class="menu pe-label hidden">
 		{{#menuList}}
 			<li role="menuitemcheckbox" aria-checked="false">
 				<a href="{{link}}">
@@ -8,7 +8,7 @@
 				</a>
 			</li>
 			{{#divider}}
-				<li class="divider"></li>
+				<li class="divider" role="separator"></li>
 			{{/divider}}
 		{{/menuList}}
 	</ul>

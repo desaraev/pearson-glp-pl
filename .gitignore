@@ -6,4 +6,5 @@ dist/
 ui/
 pattern-lab/source/css/style.css
 .DS_store
+pattern-lab/source/css/platform.css
 

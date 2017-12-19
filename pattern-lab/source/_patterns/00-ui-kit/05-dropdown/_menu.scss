@@ -1,8 +1,7 @@
-// TODO Change the colors over to Variables once the Colors have been complete
-.menu {
+.menu, .fib-menu {
   list-style-type: none;
   padding:1em 0;
-  border: 1px solid #c7c7c7;
+  border: 1px solid $neutral;
   border-radius:2px;
   width:220px;
   margin-top: 0;
@@ -15,9 +14,9 @@
       text-decoration: none;
       padding: 4px 24px 4px 34px;
       width:100%;
-      color: #252525;
+      color: $neutral-two;
       &:hover {
-        background-color: #e9e9e9;
+        background-color: $neutral-five;
       }
       svg {
           position: absolute;
@@ -35,7 +34,7 @@
       }
     }
     &.divider {
-      border-bottom:1px solid #c7c7c7;
+      border-bottom:1px solid $neutral;
       padding-bottom:8px;
       margin:0 25px;
       + li {

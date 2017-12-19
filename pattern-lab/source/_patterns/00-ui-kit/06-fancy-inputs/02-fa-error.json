@@ -2,7 +2,7 @@
   "fancyInput": [
     {
       "label": "First Name",
-      "placeholder": "weee I'm placeholder",
+      "placeholder": "weee I’m placeholder",
       "id": "fancyThree",
       "error": "This is the error message"
     }
