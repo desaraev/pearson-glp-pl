@@ -15,6 +15,9 @@
 		margin-right: 0.3em;
 	}
 
+	h1 {
+	  display:flex;
+	}
 	
 	svg {
 		fill: $neutral-three;
@@ -72,6 +75,9 @@
   }
   .muted {
 	visibility: hidden;
+  }
+  h1, h2 {
+	margin:0;
   }
 }
 
