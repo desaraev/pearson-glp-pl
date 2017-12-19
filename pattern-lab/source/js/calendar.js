@@ -92,6 +92,7 @@
                 disabled,
                 elements = "",
                 formattedMonth,
+                isPressed = "false",
                 date;
 
                 dayList = [];
@@ -122,6 +123,9 @@
 
                     if (isSelected){
                         dayClasses += " selected";
+                        isPressed = "true"
+                    } else {
+                        isPressed = "false"
                     }
 
                    if (isToday){
@@ -137,7 +141,7 @@
                         disabled = "disabled"
                     }
 
-                    return elements = '<button aria-label="'+date+'" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
+                    return elements = '<button role="button" aria-pressed="'+isPressed+'" aria-label="'+date+'" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
                })
             }
         };
@@ -187,8 +191,10 @@
             button.addEventListener('click', event => {
                 dayBtns.forEach((button) => {
                     button.classList.remove('selected');
+                    button.setAttribute('aria-pressed', 'false')
                 });
                 event.currentTarget.classList.add('selected');
+                event.currentTarget.setAttribute('aria-pressed', 'true')
             });
         }));
         weekArr.length = 0;
