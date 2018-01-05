@@ -1,0 +1,18 @@
+{
+    "icon":[
+        {
+          "icon":"archive-18",
+          "decorative": true
+        },
+        {
+            "icon":"archive-18",
+            "decorative": false,
+            "label":[
+                {
+                    "label":"archive files"
+                }  
+            ]
+        }
+      ]
+
+}
