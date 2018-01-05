@@ -1,0 +1,31 @@
+{
+  "label": "First Name",
+  "placeholder": "weee I’m placeholder",
+  "id": "basicTwo", 
+  "icon": [
+    {
+      "icon": "info-fill-18",
+      "label": "information"
+    }
+],
+"paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat.",
+  "coachmark": [
+      {
+      "location": "top",
+      "title": "Section Code",
+      "button": [
+          {
+            "label": "Close coachmark",
+        "icon": [
+              {
+                "icon": "remove-sm-24",
+                "label": "Close coachmark"
+              }
+            ]
+          }
+        ],
+        "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
+      "link": false  
+      }
+    ]
+  }

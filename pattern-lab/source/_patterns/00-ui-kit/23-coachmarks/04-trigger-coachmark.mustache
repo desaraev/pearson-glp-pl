@@ -1,0 +1,23 @@
+<div class="pe-form--group">
+	<div class="basic-input">
+		<label class="pe-textLabelInput__label" for="{{id}}">{{label}}{{> ui-kit-single-icon }}</label>
+		<input type="text" class="pe-textInput--basic" id="{{id}}" placeholder="{{placeholder}}">
+	</div>
+</div>
+<p>{{paragraph}}</p>
+{{#coachmark}}
+<div class="pe-proto coachmark info-coachmark hidden">
+    <div class="arrow {{location}}"></div>
+    <div class="content">
+        <div class="title-container">
+            <div class="pe-label pe-label--bold">{{title}}</div>
+            {{#button}}{{> ui-kit-icon }}{{/button}}
+        </div>
+        <p class="pe-label">
+            {{content}}
+        </p>
+        {{#link}}<a class="coach-link" href="{{path}}{{url}}" aria-label="Close {{location}} coach mark">{{text}}</a>{{/link}}
+    </div>
+</div>
+{{/coachmark}}
+
