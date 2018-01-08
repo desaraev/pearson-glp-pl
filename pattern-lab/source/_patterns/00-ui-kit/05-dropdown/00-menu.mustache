@@ -1,15 +1,14 @@
 {{#menu}}
-	<ul role="menu" class="menu pe-label hidden">
-		{{#menuList}}
-			<li role="menuitemcheckbox" aria-checked="false">
-				<a href="{{link}}">
+<ul role="menu" class="menu pe-label hidden">
+    {{#menuList}}
+    <li role="menuitemcheckbox" aria-checked="false">
+        <a href="{{link}}">
 					{{> ui-kit-single-icon }}
 					{{label}}
 				</a>
-			</li>
-			{{#divider}}
-				<li class="divider" role="separator"></li>
-			{{/divider}}
-		{{/menuList}}
-	</ul>
+    </li>
+    {{#divider}}
+    <li class="divider" role="separator"></li>
+    {{/divider}} {{/menuList}}
+</ul>
 {{/menu}}

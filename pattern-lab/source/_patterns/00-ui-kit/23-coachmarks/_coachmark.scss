@@ -1,73 +1,75 @@
 .pe-proto {
   &.coachmark {
     @include box-size(280px, 100%);
+
     @include box-shadow;
-    
+
     position: relative;
     background-color: $secondary-three;
-    border-radius:2px;
+    border-radius: 2px;
     z-index: 2;
-    
+
     .content {
-      width:100%;
-      border-radius:2px;
-      padding:em(23) em(28);
-      background:$secondary-three;
-      position:relative;
-      z-index:2;
-      
-      p {margin-bottom: 0;}
-      
+      width: 100%;
+      border-radius: 2px;
+      padding: em(23) em(28);
+      background: $secondary-three;
+      position: relative;
+      z-index: 2;
+
+      p {
+        margin-bottom: 0;
+      }
+
       .coach-link {
-        display:flex;
-        justify-content:flex-end;
+        display: flex;
+        justify-content: flex-end;
         color: $neutral-two;
         margin-top: em(28);
       }
     }
+
     .title-container {
       @include flex;
+
       margin-bottom: 0.25em;
-      
+
       button {
-      	color: $neutral-three;
+        color: $neutral-three;
       }
     }
   }
-  
 }
-
 
 .arrow {
   @include box-size(0, 0);
+
   position: absolute;
-  
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid $secondary-three;
   z-index: -1;
-  
+
   &.top {
     top: -8px;
     right: 32px;
   }
-  
+
   &.bottom {
     transform: rotate(180deg);
     filter: drop-shadow(0 2px 5px #000);
     bottom: -8px;
     left: 32px;
   }
+
   &.center {
-	filter: drop-shadow(0 2px 5px #000);
-	transform: rotate(180deg);
+    filter: drop-shadow(0 2px 5px #000);
+    transform: rotate(180deg);
     bottom: -8px;
     left: calc(50% - 8px);
   }
-  
-  @media (max-width:480px){
-    display:none;
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
-
-

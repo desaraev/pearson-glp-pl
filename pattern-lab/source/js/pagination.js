@@ -3,14 +3,14 @@
 
     // single pagination
     const paginators = document.querySelectorAll('.pagination.basic');
-    paginators.forEach( paginator => {
-       const listItems = paginator.querySelectorAll('.items li');
+    paginators.forEach(paginator => {
+        const listItems = paginator.querySelectorAll('.items li');
         listItems.forEach(item => {
             item.addEventListener('click', event => {
-               listItems.forEach(item => {
-                   item.classList.remove('current');
-                   item.setAttribute('aria-current', 'false');
-               });
+                listItems.forEach(item => {
+                    item.classList.remove('current');
+                    item.setAttribute('aria-current', 'false');
+                });
                 event.currentTarget.classList.add('current');
                 event.currentTarget.setAttribute('aria-current', 'true');
             })
@@ -24,7 +24,7 @@
     const groupPaginators = document.querySelectorAll('.pagination.group');
     groupPaginators.forEach(groupPaginator => {
         const prevBtn = groupPaginator.querySelector('.control.left button'),
-              nextBtn = groupPaginator.querySelector('.control.right button');
+            nextBtn = groupPaginator.querySelector('.control.right button');
 
         let startingNumberStr = groupPaginator.querySelector('.first').innerHTML,
             endingNumberStr = groupPaginator.querySelector('.last').innerHTML,
@@ -34,8 +34,8 @@
             endingNumber = parseInt(endingNumberStr),
             total = parseInt(totalStr);
 
-        function changeValues () {
-            let newEndingNumber =  startingNumber + 4;
+        function changeValues() {
+            let newEndingNumber = startingNumber + 4;
             if (newEndingNumber <= total) {
                 groupPaginator.querySelector('.first').innerHTML = startingNumber.toString();
                 groupPaginator.querySelector('.last').innerHTML = newEndingNumber.toString();
@@ -69,7 +69,7 @@
     const pagePaginators = document.querySelectorAll('.pagination.page');
     pagePaginators.forEach(pagePaginator => {
         const prevBtn = pagePaginator.querySelector('.control.left button'),
-              nextBtn = pagePaginator.querySelector('.control.right button');
+            nextBtn = pagePaginator.querySelector('.control.right button');
 
         let startingNumberStr = pagePaginator.querySelector('.first').innerHTML,
             totalStr = pagePaginator.querySelector('.total').innerHTML,
@@ -92,7 +92,7 @@
 
         nextBtn.addEventListener('click', () => {
             if (startingNumber < total) {
-                startingNumber ++;
+                startingNumber++;
                 pagePaginator.querySelector('.first').innerHTML = startingNumber;
             }
             if (startingNumber > 1) {

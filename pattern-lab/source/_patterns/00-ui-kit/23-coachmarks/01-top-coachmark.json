@@ -1,17 +1,13 @@
 {
-  "coachmark": [
-    {
-    "location": "top",
-    "title": "Ready to invite students?",
-    "button": false,
-      "content": "Open the course menu to access invite instructions.",
-    "link": [
-        {
-        "url": "#",
+    "coachmark": [{
         "location": "top",
-        "text": "Got it"
-        }
-      ]  
-    }
-  ]
+        "title": "Ready to invite students?",
+        "button": false,
+        "content": "Open the course menu to access invite instructions.",
+        "link": [{
+            "url": "#",
+            "location": "top",
+            "text": "Got it"
+        }]
+    }]
 }

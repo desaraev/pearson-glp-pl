@@ -21,11 +21,11 @@
                         button.classList.remove('selected');
                     });
                     event.currentTarget.classList.add('selected');
-                    input.value = moment().month(currentMonth).format("M") + "/" + event.currentTarget.innerHTML + "/"+ currentYear;
+                    input.value = moment().month(currentMonth).format("M") + "/" + event.currentTarget.innerHTML + "/" + currentYear;
                     calendar.classList.add('hidden');
                 })
             }));
-    
+
         };
 
         setCalendarFunction();

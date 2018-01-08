@@ -1,34 +1,34 @@
 'use strict';
-(function(){
+(function() {
     // TODO This code really needs to be refactored way too much duplication
     const selectableTable = document.querySelectorAll('table.selectable');
     selectableTable.forEach(table => {
-       const tableRow = table.querySelectorAll('tbody tr'),
-             checkAll = table.querySelector('thead th:first-child'),
-             checkAllInput = checkAll.querySelector('input'),
-             allCheckInput = table.querySelectorAll('input');
+        const tableRow = table.querySelectorAll('tbody tr'),
+            checkAll = table.querySelector('thead th:first-child'),
+            checkAllInput = checkAll.querySelector('input'),
+            allCheckInput = table.querySelectorAll('input');
 
-       tableRow.forEach(row => {
-          row.addEventListener('click', event => {
-              const checkbox = event.currentTarget.querySelector('input');
-              let allInputChecked = true;
+        tableRow.forEach(row => {
+            row.addEventListener('click', event => {
+                const checkbox = event.currentTarget.querySelector('input');
+                let allInputChecked = true;
 
-              event.currentTarget.classList.toggle('selected');
-              checkbox.checked = !checkbox.checked;
-            
-              tableRow.forEach(rowItem => {
-                allInputChecked &= (rowItem.classList.value === 'selected');
-              })
-              checkAllInput.checked = allInputChecked;
-          })
+                event.currentTarget.classList.toggle('selected');
+                checkbox.checked = !checkbox.checked;
 
-           row.addEventListener('keydown', function(event){
-               if (event.keyCode ===  32) {
-                   row.click();
-               }
-           })
+                tableRow.forEach(rowItem => {
+                    allInputChecked &= (rowItem.classList.value === 'selected');
+                })
+                checkAllInput.checked = allInputChecked;
+            })
 
-       })
+            row.addEventListener('keydown', function(event) {
+                if (event.keyCode === 32) {
+                    row.click();
+                }
+            })
+
+        })
 
         checkAll.addEventListener('click', event => {
 
@@ -36,7 +36,7 @@
 
             if (checkAllInput.checked) {
                 allCheckInput.forEach(check => {
-                    check.checked = true;   
+                    check.checked = true;
                 })
                 tableRow.forEach(row => {
                     row.classList.add('selected');
@@ -52,8 +52,8 @@
 
         })
 
-        checkAll.addEventListener('keydown', function(event){
-            if (event.keyCode ===  32) {
+        checkAll.addEventListener('keydown', function(event) {
+            if (event.keyCode === 32) {
                 checkAll.click();
             }
             event.stopImmediatePropagation();

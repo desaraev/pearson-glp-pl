@@ -4,6 +4,7 @@
   "description": "Patternlab setup with Pearson Elements CSS",
   "main": "index.js",
   "scripts": {
+    "precommit": "gulp format",
     "test": "echo \"Error: no test specified.\"",
     "postinstall": "gulp configure"
   },
@@ -15,6 +16,7 @@
     "edition-node-gulp": "^1.4.0",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-beautify": "^2.0.1",
     "gulp-exec": "^2.1.2",
     "gulp-header-footer": "0.0.3",
     "gulp-html-prettify": "0.0.1",
@@ -23,10 +25,13 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
-    "gulp-ruby-sass": "^2.0.6",
+    "gulp-ruby-sass": "^2.1.1",
     "gulp-sftp": "^0.1.5",
     "gulp-ssh": "^0.6.0",
     "gulp-strip-comments": "^2.5.1",
     "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp-sassbeautify": "^0.1.0"
   }
 }

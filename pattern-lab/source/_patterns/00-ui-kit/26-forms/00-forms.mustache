@@ -1,22 +1,21 @@
 {{#form}}
 <form class="pe-form">
-	<h1 class="pe-form--name">{{name}}</h1>
-	<p class="pe-form--instr">{{instruction}}</p>
-	{{> ui-kit-alert}}
-	<div>
-		{{#inputBlock}}
-		<div class="pe-form--group">
-			{{> ui-kit-placeholder }}
-		</div>
-		{{/inputBlock}}
-		<div class="pe-form--group  pe-form--inline-group">
-			{{> ui-kit-datepicker }}
-			{{> ui-kit-datepicker }}
-		</div>
-	</div>
-	<div class="pe-form--button-group">
-		<button class="pe-btn__primary">{{primaryBtnLabel}}</button>
-		<button class="pe-btn--btn__large">{{defaultBtnLabel}}</button>
-	</div>
+    <h1 class="pe-form--name">{{name}}</h1>
+    <p class="pe-form--instr">{{instruction}}</p>
+    {{> ui-kit-alert}}
+    <div>
+        {{#inputBlock}}
+        <div class="pe-form--group">
+            {{> ui-kit-placeholder }}
+        </div>
+        {{/inputBlock}}
+        <div class="pe-form--group  pe-form--inline-group">
+            {{> ui-kit-datepicker }} {{> ui-kit-datepicker }}
+        </div>
+    </div>
+    <div class="pe-form--button-group">
+        <button class="pe-btn__primary">{{primaryBtnLabel}}</button>
+        <button class="pe-btn--btn__large">{{defaultBtnLabel}}</button>
+    </div>
 </form>
 {{/form}}

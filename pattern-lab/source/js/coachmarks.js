@@ -1,10 +1,10 @@
 'use strict';
 
-(function () {
+(function() {
     const coachmarks = document.querySelectorAll('.coachmark');
     coachmarks.forEach(coachmark => {
         const eventArea = coachmark.querySelector('.content');
-        eventArea.addEventListener('click', event=> {
+        eventArea.addEventListener('click', event => {
             if (event.target && event.target.matches('a.coach-link') ||
                 event.target && event.target.matches('button') ||
                 event.target.matches('svg') ||
