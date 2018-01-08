@@ -56,23 +56,21 @@
   }
 }
 
-.d-icon-test-list {
-  list-style-type: none;
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  
-  li {
-    padding: 1em;
-    width:14.25%;
-    text-align: center;
-    svg {
-      vertical-align: bottom;
-      margin-bottom: 1em;
-    }
+.d-icon-test-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 5px 1fr);
+}
 
+.d-icon-test-cell{
+  p {
+    margin-left: 24px;
+  }
+  svg {
+    vertical-align: bottom;
+    margin-bottom: 1em;
   }
 }
+
 
 button {
   cursor: pointer;

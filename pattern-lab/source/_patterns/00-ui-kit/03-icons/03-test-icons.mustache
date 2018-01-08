@@ -1,9 +1,8 @@
-<ul class="d-icon-test-list">
+<div class="d-icon-test-grid">
     {{#icon-list}}  
-    <li>
+    <div class="d-icon-test-cell">
         {{> ui-kit-test-icon }}
-        <br>
-        {{#label}}<span class="pe-label">{{label}}</span><br>{{/label}}
-    </li>
+        {{#label}}<p class="pe-label">{{label}}</p>{{/label}}
+    </div>
     {{/icon-list}}
-</ul>
+</div>
