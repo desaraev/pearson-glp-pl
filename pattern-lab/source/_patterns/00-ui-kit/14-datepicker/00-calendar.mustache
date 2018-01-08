@@ -1,8 +1,10 @@
 {{#calendar}}
-<div class="calendar">
+<section class="calendar">
 	<div class="header">
-		<span><span class="pe-title pe-title--small neutral-two month">{{month}}</span>
-		<span class="pe-title pe-title--small neutral-two year">{{year}}</span></span>
+		<h1>
+			<span class="pe-title pe-title--small neutral-two month">{{month}}</span>
+			<span class="pe-title pe-title--small neutral-two year">{{year}}</span>
+		</h1>
 		<div class="button-group">
 			{{#buttons}}
 				{{> ui-kit-icon}}
@@ -19,5 +21,5 @@
 
 		</div>
 	{{/week}}
-</div>
+</section>
 {{/calendar}}
