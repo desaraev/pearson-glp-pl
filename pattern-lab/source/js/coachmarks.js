@@ -18,7 +18,4 @@
     infoTrigger.addEventListener('mouseenter', event => {
         infoCoachmark.classList.remove('hidden');
     })
-    infoTrigger.addEventListener('mouseleave', event => {
-        infoCoachmark.classList.add('hidden');
-    })
 })();

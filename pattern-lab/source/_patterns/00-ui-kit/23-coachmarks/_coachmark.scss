@@ -1,9 +1,14 @@
+.coachmark-space {
+  height: 150px;
+  width: 200px;
+}
+
 .pe-proto {
   &.coachmark {
-    @include box-size(280px, 100%);
+    width: 280px;
     @include box-shadow;
     
-    position: relative;
+    position: absolute;
     background-color: $secondary-three;
     border-radius:2px;
     z-index: 2;
@@ -34,7 +39,61 @@
       }
     }
   }
+}
+
+@mixin arrow {
+  content: "";
+  @include box-size(0, 0);
+  position: absolute;
   
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid $secondary-three;
+  z-index: -1;
+
+  @media (max-width:480px){
+    display:none;
+  }
+}
+
+.pe-proto {
+  &.coachmark {
+    &.top-right {
+      &::after {
+        @include arrow;
+        top: -8px;
+        right: 32px; 
+      }
+    }
+  }
+}
+
+.pe-proto {
+  &.coachmark {
+    &.btm-left {
+      &::after {
+        @include arrow;
+        transform: rotate(180deg);
+        filter: drop-shadow(0 2px 5px #000);
+        bottom: -8px;
+        left: 32px;
+      }
+    }
+  }
+}
+
+.pe-proto {
+  &.coachmark {
+    &.btm-center {
+      &::after {
+        @include arrow;
+        filter: drop-shadow(0 2px 5px #000);
+	      transform: rotate(180deg);
+        bottom: -8px;
+        left: calc(50% - 8px);
+      }
+    }
+  }
 }
 
 
@@ -68,6 +127,11 @@
   @media (max-width:480px){
     display:none;
   }
+}
+
+.info-coachmark {
+  left: 33px;
+  bottom: 75px;
 }
 
 

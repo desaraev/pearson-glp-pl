@@ -1,7 +1,7 @@
 {
   "coachmark": [
     {
-    "location": "center",
+    "location": "btm-center",
     "title": "Section Code",
     "button": [
         {
@@ -15,7 +15,8 @@
         }
       ],
       "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
-    "link": false  
+    "link": false,
+    "space": true 
     }
   ]
 }
