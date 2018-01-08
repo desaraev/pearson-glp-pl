@@ -96,42 +96,16 @@
   }
 }
 
-
-.arrow {
-  @include box-size(0, 0);
-  position: absolute;
-  
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid $secondary-three;
-  z-index: -1;
-  
-  &.top {
-    top: -8px;
-    right: 32px;
-  }
-  
-  &.bottom {
-    transform: rotate(180deg);
-    filter: drop-shadow(0 2px 5px #000);
-    bottom: -8px;
-    left: 32px;
-  }
-  &.center {
-	filter: drop-shadow(0 2px 5px #000);
-	transform: rotate(180deg);
-    bottom: -8px;
-    left: calc(50% - 8px);
-  }
-  
-  @media (max-width:480px){
-    display:none;
-  }
+.info-coachmark {
+  left: 43px;
+  bottom: 75px;
 }
 
-.info-coachmark {
-  left: 33px;
-  bottom: 75px;
+.pe-textLabelInput__label {
+  .pe-icon--info-fill-18 {
+    margin-left: 10px;
+    vertical-align: bottom;
+  }
 }
 
 
