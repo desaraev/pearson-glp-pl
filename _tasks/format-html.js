@@ -28,4 +28,4 @@ gulp.task('format-scss', function () {
 	gulp.src('./pattern-lab/**/*.scss')
 		.pipe(sassbeautify({indent_char: ' ', indent_size: 2}))
 		.pipe(gulp.dest('./pattern-lab/'))
-})
+});
