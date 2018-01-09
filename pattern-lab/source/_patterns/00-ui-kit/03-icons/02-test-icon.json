@@ -7,9 +7,9 @@
         {
             "icon":"archive-18",
             "decorative": false,
-            "label":[
+            "accessibilityLabel":[
                 {
-                    "label":"archive files"
+                    "label":"archive"
                 }  
             ]
         }
