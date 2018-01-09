@@ -3,7 +3,19 @@
   flex-wrap: wrap;
   margin-bottom: 0.3em;
   border-radius: 5px;
+	&.d3 {
+		> div {
+			min-width:12%;
+			border:5px solid white;
+			p {
+				font-size:.5em;
+				margin:0;
+				font-weight:bold;
+			}
+		}
+	}
 }
+
 
 .swatch > div {
   padding: 1em;
@@ -12,6 +24,8 @@
   @media (max-width: 640px) {
     width: 100%;
   }
+
+
 }
 
 .o-header--fixed {
