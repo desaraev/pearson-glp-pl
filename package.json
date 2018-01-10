@@ -10,7 +10,7 @@
   "author": "Pearson Prototyping Team",
   "license": "ISC",
   "dependencies": {
-    "@pearson-components/elements-sdk": "^1.4.3",
+    "@pearson-components/elements-sdk": "git+https://github.com/Pearson-Higher-Ed/elements-sdk.git#unstable-2.0-GLP",
     "browserslist": "^2.4.0",
     "edition-node-gulp": "^1.4.0",
     "gulp": "3.9.1",
