@@ -7,7 +7,7 @@
         {
             "icon":"archive-18",
             "decorative": false,
-            "accessibilityLabel":[
+            "a11yLabel":[
                 {
                     "label":"archive"
                 }  

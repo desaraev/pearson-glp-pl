@@ -8,7 +8,8 @@
                 }
             ],
             "label": "archive-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -18,7 +19,8 @@
                 }
             ],
             "label": "audio-high-24",
-            "instr": "Also available in 18x18 pixels size by 'audio-high-18'. The suggested accessibility label is 'audio high'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -28,7 +30,8 @@
                 }
             ],
             "label": "audio-low-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -38,7 +41,8 @@
                 }
             ],
             "label": "audio-off-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -48,7 +52,8 @@
                 }
             ],
             "label": "ban-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -58,7 +63,8 @@
                 }
             ],
             "label": "book-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. Suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -68,7 +74,8 @@
                 }
             ],
             "label": "bookmark-off-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -78,7 +85,8 @@
                 }
             ],
             "label": "bookmark-on-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -88,7 +96,8 @@
                 }
             ],
             "label": "calendar-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -98,7 +107,8 @@
                 }
             ],
             "label": "camera-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -108,7 +118,8 @@
                 }
             ],
             "label": "camera-video-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         },
         {
             "icon":[
@@ -118,7 +129,8 @@
                 }
             ],
             "label": "capslock-24",
-            "instr": "Also available in 18x18 pixels size by 'archive-18'. The suggested accessibility label is 'archive'."
+            "size": "archive-18",
+            "a11y": "archive"
         }
     ]
 }
