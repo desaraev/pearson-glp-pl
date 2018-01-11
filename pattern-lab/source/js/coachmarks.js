@@ -2,8 +2,7 @@
 
 (function () {
     const coachmarks = document.querySelectorAll('.coachmark');
-    const infoTrigger = document.querySelector('.pe-icon--info-fill-18');
-    const infoCoachmark = document.querySelector('.info-coachmark');
+    const cmTriggers = document.querySelectorAll("[data-name='coachmark-trigger'");
     coachmarks.forEach(coachmark => {
         const eventArea = coachmark.querySelector('.content');
         eventArea.addEventListener('click', event=> {
@@ -15,7 +14,9 @@
             }
         })
     })
-    infoTrigger.addEventListener('mouseenter', event => {
-        infoCoachmark.classList.remove('hidden');
+    cmTriggers.forEach(cmTrigger => {
+        cmTrigger.addEventListener('mouseenter', event => {
+            cmTrigger.nextElementSibling.classList.remove('hidden');
+        }) 
     })
 })();

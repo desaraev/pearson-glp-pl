@@ -1422,6 +1422,7 @@
   ],
   "coachmark": [
     {
+      "initHidden":true,
       "location": "top-right",
       "title": "Ready to invite students?",
       "button": false,

@@ -3,29 +3,30 @@
   "label": "First Name",
   "placeholder": "weee I’m placeholder",
   "id": "basicTwo", 
-  "icon": [
-    {
-      "icon": "info-fill-18",
-      "label": "information"
-    }
-  ],
   "coachmark": [
       {
-      "location": "btm-left",
-      "title": "Section Code",
-      "button": [
+        "trigger": [
           {
-            "label": "Close coachmark",
-        "icon": [
-              {
-                "icon": "remove-sm-24",
-                "label": "Close coachmark"
-              }
-            ]
+            "icon": "info-fill-18",
+            "label": "information coachmark"
           }
         ],
-        "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
-      "link": false  
+        "initHidden": true,
+        "location": "btm-left",
+        "title": "Section Code",
+        "button": [
+            {
+              "label": "Close coachmark",
+          "icon": [
+                {
+                  "icon": "remove-sm-24",
+                  "label": "Close coachmark"
+                }
+              ]
+            }
+          ],
+          "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
+        "link": false  
       }
     ]
   }

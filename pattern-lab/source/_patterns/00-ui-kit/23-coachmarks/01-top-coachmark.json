@@ -1,18 +1,26 @@
 {
+  "span": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat.",
   "coachmark": [
     {
-    "location": "top-right",
-    "title": "Ready to invite students?",
-    "button": false,
-      "content": "Open the course menu to access invite instructions.",
-    "link": [
+      "trigger": [
         {
-        "url": "#",
-        "location": "top",
-        "text": "Got it"
+          "icon": "info-outline-24",
+          "label": "information coachmark"
         }
       ],
-      "space": true  
+      "initHidden": true,
+      "location": "top-right",
+      "title": "Ready to invite students?",
+      "button": false,
+        "content": "Open the course menu to access invite instructions.",
+      "link": [
+          {
+          "url": "#",
+          "location": "top",
+          "text": "Got it"
+          }
+        ]
     }
   ]
 }

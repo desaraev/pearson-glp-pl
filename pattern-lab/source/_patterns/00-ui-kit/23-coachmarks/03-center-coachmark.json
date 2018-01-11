@@ -1,22 +1,28 @@
 {
   "coachmark": [
     {
-    "location": "btm-center",
-    "title": "Section Code",
-    "button": [
+      "trigger": [
         {
-          "label": "Close coachmark",
-	  "icon": [
-            {
-              "icon": "remove-sm-24",
-              "label": "Close coachmark"
-            }
-          ]
+          "icon": "info-fill-18",
+          "label": "information coachmark"
         }
       ],
-      "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
-    "link": false,
-    "space": true 
+      "initHidden": true,
+      "location": "btm-center",
+      "title": "Section Code",
+      "button": [
+          {
+            "label": "Close coachmark",
+      "icon": [
+              {
+                "icon": "remove-sm-24",
+                "label": "Close coachmark"
+              }
+            ]
+          }
+        ],
+        "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
+      "link": false
     }
   ]
 }

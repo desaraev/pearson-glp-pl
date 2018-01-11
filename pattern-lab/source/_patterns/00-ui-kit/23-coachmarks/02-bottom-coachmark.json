@@ -1,18 +1,24 @@
 {
   "coachmark": [
     {
-    "location": "btm-left",
-    "title": "Ready to invite students?",
-    "button": false,
-      "content": "Open the course menu to access invite instructions.",
-    "link": [
-      {
-      "url": "#",
-      "location": "bottom",
-      "text": "Got it"
-      }
+      "trigger": [
+        {
+          "icon": "info-fill-24",
+          "label": "information coachmark"
+        }
       ],
-      "space": true
+      "initHidden": true,
+      "location": "btm-left",
+      "title": "Ready to invite students?",
+      "button": false,
+      "content": "Open the course menu to access invite instructions.",
+      "link": [
+        {
+        "url": "#",
+        "location": "bottom",
+        "text": "Got it"
+        }
+        ]
     }
   ]
 }
