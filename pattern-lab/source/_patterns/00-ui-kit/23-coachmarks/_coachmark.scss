@@ -59,8 +59,8 @@
 .pe-proto {
   &.coachmark {
     &.top-right {
-      left: -225px;
-      top: 35px;
+      left: calc(50% - 240px);
+      top: calc(100% + 10px);
       &::after {
         @include arrow;
         top: -8px;
@@ -73,7 +73,7 @@
 .pe-proto {
   &.coachmark {
     &.btm-left {
-      left: -29px;
+      left: calc(50% - 40px);
       bottom: calc(100% + 10px);
       &::after {
         @include arrow;
@@ -89,7 +89,7 @@
 .pe-proto {
   &.coachmark {
     &.btm-center {
-      left: -130px;
+      left: calc(50% - 140px);
       bottom: calc(100% + 10px);
       &::after {
         @include arrow;
@@ -102,13 +102,17 @@
   }
 }
 
-.pe-textLabelInput__label {
-  .pe-icon--info-fill-18 {
-    vertical-align: bottom;
-  }
-}
-
 .coachmark-container {
   display: inline-block;
   position: relative;
 }
+
+.pe-textLabelInput__label, .pe-form--name {
+  .coachmark-container {
+    margin-left: 10px;
+    .pe-icon--info-fill-18, .pe-icon--info-fill-24 {
+      vertical-align: bottom;
+    }
+  }
+}
+

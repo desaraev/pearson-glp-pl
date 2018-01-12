@@ -1,24 +1,63 @@
 {
-  "coachmark": [
+  "name": "A Form To Demonstrate Coachmarks",
+  "basicInput": [
     {
-      "trigger": [
-        {
-          "icon": "info-fill-24",
-          "label": "information coachmark"
-        }
-      ],
-      "initHidden": true,
-      "location": "btm-left",
-      "title": "Ready to invite students?",
-      "button": false,
-      "content": "Open the course menu to access invite instructions.",
-      "link": [
-        {
-        "url": "#",
-        "location": "bottom",
-        "text": "Got it"
-        }
-        ]
+      "id": "basicOne",
+      "label": "First Name",
+      "placeholder": "weee I’m placeholder"
     }
-  ]
-}
+  ],
+  "label": "Last Name",
+  "placeholder": "weee I’m placeholder",
+  "id": "basicTwo", 
+  "coachmark": [
+      {
+        "trigger": [
+          {
+            "icon": "info-fill-18",
+            "label": "information coachmark"
+          }
+        ],
+        "initHidden": true,
+        "location": "btm-left",
+        "title": "Section Code",
+        "button": [
+            {
+              "label": "Close coachmark",
+          "icon": [
+                {
+                  "icon": "remove-sm-24",
+                  "label": "Close coachmark"
+                }
+              ]
+            }
+          ],
+          "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
+        "link": false  
+      },
+      {
+        "trigger": [
+          {
+            "icon": "info-fill-24",
+            "label": "information coachmark"
+          }
+        ],
+        "initHidden": true,
+        "location": "btm-left",
+        "title": "Section Code",
+        "button": [
+            {
+              "label": "Close coachmark",
+          "icon": [
+                {
+                  "icon": "remove-sm-24",
+                  "label": "Close coachmark"
+                }
+              ]
+            }
+          ],
+          "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
+        "link": false  
+      }
+    ]
+  }

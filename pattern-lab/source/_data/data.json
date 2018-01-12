@@ -1422,8 +1422,8 @@
   ],
   "coachmark": [
     {
-      "initHidden":true,
-      "location": "top-right",
+      "initHidden": true,
+      "location": "btm-center",
       "title": "Ready to invite students?",
       "button": false,
       "content": "Open the course menu to access invite instructions.",
@@ -1433,8 +1433,7 @@
           "location": "top",
           "text": "Got it"
         }
-      ],
-      "space": true
+      ]
     }
   ],
   "showDrawerButton": true,
