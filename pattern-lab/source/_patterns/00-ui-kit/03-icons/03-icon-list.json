@@ -1,0 +1,454 @@
+{
+    "iconList":[
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "archive-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"archive-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "archive-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"archive-18",
+                    "label": "archive"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-high-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-high-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-high-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-high-18",
+                    "label": "audio high"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-low-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-low-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-low-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-low-18",
+                    "label": "audio low"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-off-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-off-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "audio-off-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"audio-off-18",
+                    "label": "audio off"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "ban-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"ban-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "ban-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"ban-18",
+                    "label": "ban"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "book-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"book-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "book-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"book-18",
+                    "label": "book"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "bookmark-off-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"bookmark-off-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "bookmark-off-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"bookmark-off-18",
+                    "label": "bookmark off"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "bookmark-on-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"bookmark-on-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "bookmark-on-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"bookmark-on-18",
+                    "label": "bookmark on"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "calendar-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"calendar-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "calendar-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"calendar-18",
+                    "label": "calendar"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "camera-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"camera-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "camera-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"camera-18",
+                    "label": "camera"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "camera-video-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"camera-video-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "camera-video-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"camera-video-18",
+                    "label": "video camera"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "capslock-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"capslock-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "capslock-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"capslock-18",
+                    "label": "capslock"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "check-lg-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"check-lg-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "check-lg-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"check-lg-18",
+                    "label": "check"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "check-sm-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"check-sm-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "check-sm-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"check-sm-18",
+                    "label": "check"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-off-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-off-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-off-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-off-18",
+                    "label": "checkbox off"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-on-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-on"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-on-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-on-18",
+                    "label": "checkbox on"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-tristate-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-tristate-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "checkbox-tristate-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"checkbox-tristate-18",
+                    "label": "checkbox tristate"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "chevron-back-sm-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"chevron-back-sm-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "chevron-back-sm-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"chevron-back-sm-18",
+                    "label": "back"
+                }
+            ]  
+        }
+    ]
+}
