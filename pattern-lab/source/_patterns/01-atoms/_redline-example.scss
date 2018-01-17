@@ -1,0 +1,94 @@
+.redline-target {
+    margin: 20px 20px;
+}
+
+.PRISMprezeplin {
+    z-index:2147483646;
+    pointer-events:none;
+    border:1px solid #E61414;
+    box-sizing:border-box;
+    border-color:rgba(255,0,0,.5);
+    box-shadow:0 0 0 1px rgba(255,0,0,.5);
+    position:absolute;
+    line-height:16px;
+}
+
+.PRISMprezeplin::before {
+    content:attr(data-value);
+    position:absolute;color:rgba(255,0,0,.65);
+    font-weight:bold;top:-2px;left:-4px;
+    transform:translate(0, -100%);
+    padding:0 4px;
+    border-radius:2px;
+    font-size:11px;
+    white-space:nowrap;
+    background:rgba(255,255,255,.98);
+    border-radius:2px;
+  }
+
+.PRISMdistance2 {
+    background:rgba(255,0,0,.5);
+    width:2px;position:absolute;
+    z-index:2147483646;
+    pointer-events:none;
+    line-height:16px;
+}
+
+.PRISMy::after {
+    content:attr(data-value);
+    position:absolute;top:50%;
+    left:6px;
+    color:#F53C3C;
+    font-size:12px;
+    transform:translateY(-50%);
+    padding:0 4px;
+    border-radius:2px;
+    background:rgba(255,255,255,.95);
+    font-weight:bold;
+}
+
+.PRISMy > div {
+    position:absolute;
+    top:0;
+    left:-3px;
+    width:8px;
+    height:2px;
+    background:rgba(255,0,0,.5);
+}
+
+.PRISMy > div:last-child {
+    bottom:0;
+    top:auto;
+}
+
+.PRISMx {
+    height:2px;
+    width:auto;
+}
+
+.PRISMx::after {
+    content:attr(data-value);
+    position:absolute;
+    top:6px;
+    left:50%;
+    color:#FF6969;
+    font-size:12px;
+    transform:translateX(-50%);
+    padding:0 4px;
+    border-radius:2px;
+    background:rgba(255,255,255,.95);
+    font-weight:bold;
+}
+
+.PRISMx > div {
+    position:absolute;
+    left:0;top:-3px;
+    width:2px;
+    height:8px;
+    background:rgba(255,0,0,.5);
+}
+
+.PRISMx > div:last-child {
+    right:0;
+    left:auto;
+}
