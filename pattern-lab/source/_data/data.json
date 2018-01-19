@@ -1422,7 +1422,7 @@
   ],
   "coachmark": [
     {
-      "initHidden": true,
+      "demo": true,
       "location": "btm-center",
       "title": "Ready to invite students?",
       "button": false,

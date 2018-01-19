@@ -1422,7 +1422,8 @@
   ],
   "coachmark": [
     {
-      "location": "top",
+      "demo": true,
+      "location": "btm-center",
       "title": "Ready to invite students?",
       "button": false,
       "content": "Open the course menu to access invite instructions.",
