@@ -1,8 +1,13 @@
 {
-  "icon": [
+  "icon":[
     {
-      "icon": "remove-lg-18",
-      "label": "remove"
+        "icon": "book-24",
+        "decorative": false,
+        "a11yLabel":[
+            {
+                "label": "book seats"
+            }
+        ]
     }
   ],
   "backBtn": [
