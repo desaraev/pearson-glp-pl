@@ -1,12 +1,12 @@
 {
     "icon":[
       {
-        "icon":"archive-24",
-        "decorative":"true"
+        "icon": "archive-24",
+        "decorative": true
       },
         {
-          "icon":"book-24",
-          "decorative":"false",
+          "icon": "book-24",
+          "decorative": false,
           "a11yLabel":[
               {
                   "label": "book seats"
