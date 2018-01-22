@@ -3,7 +3,10 @@ var prettify = require('gulp-html-prettify');
 var beautify = require('gulp-beautify');
 var sassbeautify = require('gulp-sassbeautify');
 
-gulp.task('format', ['format-html', 'format-js', 'format-json', 'format-scss']);
+gulp.task('format', ['format-html', 'format-js', 'format-json', 'format-scss'],function (err, stdout, stderr) {
+	console.log(stdout);
+	console.log(stderr);
+});
 
 
 gulp.task('format-html', function() {
