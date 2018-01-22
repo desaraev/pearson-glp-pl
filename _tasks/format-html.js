@@ -3,9 +3,10 @@ var prettify = require('gulp-html-prettify');
 var beautify = require('gulp-beautify');
 var sassbeautify = require('gulp-sassbeautify');
 
-gulp.task('format', ['format-html', 'format-js', 'format-json', 'format-scss'],function (err, stdout, stderr) {
-	console.log(stdout);
-	console.log(stderr);
+gulp.task('format', ['format-html', 'format-js', 'format-json'], function () {
+	gulp.src('./pattern-lab/**/*.scss')
+		.pipe(sassbeautify({indent_char: ' ', indent_size: 4}))
+		.pipe(gulp.dest('./pattern-lab/'))
 });
 
 
