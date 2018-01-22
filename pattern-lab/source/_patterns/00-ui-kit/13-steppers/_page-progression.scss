@@ -21,6 +21,15 @@
     padding:.5em;
     width:70px;
   }
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
 }
 
 .zoom {
@@ -28,3 +37,4 @@
     width:90px;
   }
 }
+
