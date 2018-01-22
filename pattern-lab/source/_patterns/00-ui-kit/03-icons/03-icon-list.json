@@ -1924,6 +1924,256 @@
                     "label": "breadcrumb"
                 }
             ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "flip-card-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"flip-card-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "flip-card-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"flip-card-18",
+                    "label": "flip"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-word-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-word-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-word-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-word-18",
+                    "label": "word file"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-powerpoint-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-powerpoint-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-powerpoint-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-powerpoint-18",
+                    "label": "powerpoint file"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-pdf-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-pdf-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-pdf-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-pdf-18",
+                    "label": "pdf file"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-excel-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-excel-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "file-excel-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"file-excel-18",
+                    "label": "excel file"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "adobe-acrobat-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"adobe-acrobat-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "adobe-acrobat-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"adobe-acrobat-18",
+                    "label": "adobe acrobat"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "upload-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"upload-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "upload-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"upload-18",
+                    "label": "upload"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "download-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"download-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "download-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"download-18",
+                    "label": "download"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "shopping-cart-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"shopping-cart-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "shopping-cart-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"shopping-cart-18",
+                    "label": "shopping cart"
+                }
+            ]  
+        },
+        {
+            "front":[
+                {
+                    "icon":[
+                        {
+                            "icon": "comment-24",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"comment-24"
+                }
+            ],
+            "back":[
+                {
+                    "icon":[
+                        {
+                            "icon": "comment-18",
+                            "decorative": true
+                        }
+                    ],
+                    "size":"comment-18",
+                    "label": "comment"
+                }
+            ]  
         }
     ]
 }
