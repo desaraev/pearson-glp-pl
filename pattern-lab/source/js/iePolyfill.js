@@ -1,9 +1,9 @@
 'use strict';
 
-(function () {
+(function() {
     // these are polyfills for ES6 support in IE11
     // .forEach polyfill
-    if ( typeof NodeList.prototype.forEach === "function" ) return false;
+    if (typeof NodeList.prototype.forEach === "function") return false;
     NodeList.prototype.forEach = Array.prototype.forEach;
 
     // .matches polyfill
@@ -56,5 +56,3 @@
     }
 
 })();
-
-

@@ -1,13 +1,13 @@
 'use strict';
 (function() {
     const calendars = document.querySelectorAll('.calendar'),
-          buttons = [];
+        buttons = [];
     calendars.forEach((calendar, index) => {
         buttons[index] = calendar.querySelectorAll('.pe-icon--btn');
     });
 
     let startDate,
-        displayDate=[],
+        displayDate = [],
         i,
         firstDay,
         endDay,
@@ -30,7 +30,7 @@
             endDay = moment(startDate).endOf('month');
             monthRange = moment.range(firstDay, endDay);
             weeks = [];
-            monthRange.by('days', function (moment) {
+            monthRange.by('days', function(moment) {
                 let ref;
                 if (ref = moment.week(), [].indexOf.call(weeks, ref) < 0) {
                     return weeks.push(moment.week());
@@ -44,8 +44,7 @@
                     // We have switched to the next year
                     firstWeekDay = moment([year, month]).add(1, "year").week(week).day(0);
                     lastWeekDay = moment([year, month]).add(1, "year").week(week).day(6);
-                }
-                else {
+                } else {
                     firstWeekDay = moment([year, month]).week(week).day(0);
                     lastWeekDay = moment([year, month]).week(week).day(6);
                 }
@@ -63,15 +62,15 @@
                 displayDate[calendarNumber] = moment([moment().year(), moment().month()]);
             } else {
                 if (buttonClicked === "next") {
-                    displayDate[calendarNumber] = moment(displayDate[calendarNumber]).add(1, 'months'); 
+                    displayDate[calendarNumber] = moment(displayDate[calendarNumber]).add(1, 'months');
 
                 } else if (buttonClicked === "prev") {
                     displayDate[calendarNumber] = moment(displayDate[calendarNumber]).subtract(1, 'months');
-                } 
+                }
             }
             month = moment(displayDate[calendarNumber]).month();
-            year = moment(displayDate[calendarNumber]).year(); 
-        }, 
+            year = moment(displayDate[calendarNumber]).year();
+        },
 
         getState: (calendarNumber) => {
             return {
@@ -79,7 +78,7 @@
                 monthName: moment.months()[moment(displayDate[calendarNumber]).month()],
                 year: moment(displayDate[calendarNumber]).year(),
                 calendar: GetCalendar.build(moment(displayDate[calendarNumber]).year(), moment(displayDate[calendarNumber]).month())
-            }  
+            }
         },
 
         render: () => {
@@ -95,56 +94,56 @@
                 isPressed = "false",
                 date;
 
-                dayList = [];
+            dayList = [];
 
-                CalendarState.calendar.map(date => {
+            CalendarState.calendar.map(date => {
 
-                    weekCount++;
-                    date.by('days', function(day){
-                        dayList.push(day)
-                    });
-                })
+                weekCount++;
+                date.by('days', function(day) {
+                    dayList.push(day)
+                });
+            })
 
 
-               return dayList.map(day => {
-                    isCurrentMonth = day.month() === CalendarState.month;
-                    beforeToday = day.format('DD-MM-YYYY') < moment().format('DD-MM-YYYY');
-                    isToday = day.format('DD-MM-YYYY') === moment().format('DD-MM-YYYY');
-                    isSelected = day.format('DD-MM-YYYY') === CalendarState.selected;
-                    dayClasses = 'pe-link--btn pe-label neutral-two';
-                    disabled = "";
-                    formattedMonth = CalendarState.month + 1;
-                    date = day.format('dddd, MMMM Do YYYY');
+            return dayList.map(day => {
+                isCurrentMonth = day.month() === CalendarState.month;
+                beforeToday = day.format('DD-MM-YYYY') < moment().format('DD-MM-YYYY');
+                isToday = day.format('DD-MM-YYYY') === moment().format('DD-MM-YYYY');
+                isSelected = day.format('DD-MM-YYYY') === CalendarState.selected;
+                dayClasses = 'pe-link--btn pe-label neutral-two';
+                disabled = "";
+                formattedMonth = CalendarState.month + 1;
+                date = day.format('dddd, MMMM Do YYYY');
 
-                    if (!isCurrentMonth){
-                        dayClasses += " muted";
-                        disabled += " disabled";
-                    }
+                if (!isCurrentMonth) {
+                    dayClasses += " muted";
+                    disabled += " disabled";
+                }
 
-                    if (isSelected){
-                        dayClasses += " selected";
-                        isPressed = "true"
-                    } else {
-                        isPressed = "false"
-                    }
+                if (isSelected) {
+                    dayClasses += " selected";
+                    isPressed = "true"
+                } else {
+                    isPressed = "false"
+                }
 
-                   if (isToday){
-                       dayClasses += " today";
-                   }
+                if (isToday) {
+                    dayClasses += " today";
+                }
 
-                    if (formattedMonth < parseInt(moment().format("MM")) &&
-                        CalendarState.year <= parseInt(moment().format("YYYY")) ||
-                        CalendarState.year < parseInt(moment().format("YYYY")) ||
-                        moment().format("MMMM") === CalendarState.monthName &&
-                        CalendarState.year <= parseInt(moment().format("YYYY")) &&
-                        beforeToday) {
-                        disabled = "disabled"
-                    }
+                if (formattedMonth < parseInt(moment().format("MM")) &&
+                    CalendarState.year <= parseInt(moment().format("YYYY")) ||
+                    CalendarState.year < parseInt(moment().format("YYYY")) ||
+                    moment().format("MMMM") === CalendarState.monthName &&
+                    CalendarState.year <= parseInt(moment().format("YYYY")) &&
+                    beforeToday) {
+                    disabled = "disabled"
+                }
 
-                    return elements = '<button role="button" aria-pressed="'+isPressed+'" aria-label="'+date+'" class="'+ dayClasses + '"'+disabled+'>'+day.format('D')+'</button>'
-               })
-            }
-        };
+                return elements = '<button role="button" aria-pressed="' + isPressed + '" aria-label="' + date + '" class="' + dayClasses + '"' + disabled + '>' + day.format('D') + '</button>'
+            })
+        }
+    };
 
 
     // calendar object that will render all the data
@@ -162,27 +161,27 @@
         };
 
         renderDays = GetCalendar.render();
-    
+
         const monthHTML = calendars[calendarNumber].querySelector('.month'),
-                yearHTML = calendars[calendarNumber].querySelector('.year'),
-                daysHTML = calendars[calendarNumber].querySelector('.days'),
-                weekArr = [];
-        
+            yearHTML = calendars[calendarNumber].querySelector('.year'),
+            daysHTML = calendars[calendarNumber].querySelector('.days'),
+            weekArr = [];
+
         daysHTML.innerHTML = "";
         monthHTML.innerHTML = CalendarState.monthName;
         yearHTML.innerHTML = CalendarState.year;
 
         // group the days into items of 7
-        for (let i = 0; i < 6; i++){
-            weekArr[i]=[];
+        for (let i = 0; i < 6; i++) {
+            weekArr[i] = [];
         }
         renderDays.forEach((day, index) => {
-            weekArr[Math.floor(index/7)].push(day);
+            weekArr[Math.floor(index / 7)].push(day);
         });
-        
+
         // wrap each item of 7 with a div and render
         weekArr.forEach(days => {
-            daysHTML.innerHTML += '<div class="weeks">'+ days.join('')+'</div>';
+            daysHTML.innerHTML += '<div class="weeks">' + days.join('') + '</div>';
         });
 
         // add event handlers to the buttons
@@ -200,7 +199,7 @@
         weekArr.length = 0;
     };
 
-    for (let i = 0; i < calendars.length; i ++){
+    for (let i = 0; i < calendars.length; i++) {
         renderCalendar("none", i);
     }
 
@@ -212,7 +211,7 @@
         }
     };
 
-    buttons.forEach((button,index) =>{
+    buttons.forEach((button, index) => {
         button[0].setAttribute('aria-label', returnMonthNames('previous', 1));
         button[1].setAttribute('aria-label', returnMonthNames('next', 1));
 
@@ -226,7 +225,7 @@
             button[0].setAttribute('aria-label', returnMonthNames('previous'));
             button[1].setAttribute('aria-label', returnMonthNames('next', 2));
             renderCalendar("next", buttons.indexOf(button));
-        });   
+        });
     });
 
 
