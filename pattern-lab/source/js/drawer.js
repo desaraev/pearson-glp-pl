@@ -2,13 +2,13 @@
 
 (function() {
     const drawerButtons = document.querySelectorAll("button[data-drawer-id]"),
-          drawers = document.querySelectorAll('.drawer'),
-          actionButton = document.querySelector('.drawer-actions button');
+        drawers = document.querySelectorAll('.drawer'),
+        actionButton = document.querySelector('.drawer-actions button');
 
     drawerButtons.forEach(button => {
         button.addEventListener('click', event => {
             const drawerId = event.currentTarget.getAttribute('data-drawer-id'),
-                drawerToOpen = document.querySelector('.drawer[data-drawer-open='+drawerId+']');
+                drawerToOpen = document.querySelector('.drawer[data-drawer-open=' + drawerId + ']');
             drawerToOpen.classList.toggle('open');
             drawerToOpen.setAttribute('aria-hidden', 'false');
         });
@@ -16,11 +16,11 @@
 
     drawers.forEach(drawer => {
         const button = drawer.querySelector('.title > button'),
-              title = drawer.querySelector('.title .pe-title'),
-              backBtnContainer = drawer.querySelector('.title > div'),
-              backBtn = backBtnContainer.querySelector('button'),
-              archiveContent = drawer.querySelector('.archive'),
-              notificationContent = drawer.querySelector('.notifications');
+            title = drawer.querySelector('.title .pe-title'),
+            backBtnContainer = drawer.querySelector('.title > div'),
+            backBtn = backBtnContainer.querySelector('button'),
+            archiveContent = drawer.querySelector('.archive'),
+            notificationContent = drawer.querySelector('.notifications');
 
         button.addEventListener('click', event => {
             event.currentTarget.parentNode.parentNode.classList.toggle('open');
