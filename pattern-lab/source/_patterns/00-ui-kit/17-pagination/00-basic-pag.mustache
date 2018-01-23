@@ -1,19 +1,16 @@
 {{#pagination}}
-	<div class="pagination basic">
-		<div class="control left">
-			{{#controlLeft}}
-				{{> ui-kit-icon }}
-			{{/controlLeft}}
-		</div>
-		<ul class="items">
-			{{#list}}
-				<li{{#selected}} class="current"{{/selected}} aria-current="false"><a href="#">{{label}}</a></li>
-			{{/list}}
-		</ul>
-		<div class="control right">
-			{{#controlRight}}
-				{{> ui-kit-icon }}
-			{{/controlRight}}
-		</div>
-	</div>
+<div class="pagination basic">
+    <div class="control left">
+        {{#controlLeft}} {{> ui-kit-icon }} {{/controlLeft}}
+    </div>
+    <ul class="items">
+        {{#list}}
+        <li{{#selected}} class="current" {{/selected}} aria-current="false"><a href="#">{{label}}</a>
+            </li>
+            {{/list}}
+    </ul>
+    <div class="control right">
+        {{#controlRight}} {{> ui-kit-icon }} {{/controlRight}}
+    </div>
+</div>
 {{/pagination}}

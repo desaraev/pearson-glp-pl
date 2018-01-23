@@ -1,8 +1,8 @@
 'use strict';
 
-(function(){
+(function() {
     const tablesWithControls = document.querySelectorAll('.table-with-controls'),
-          searchObj = {};
+        searchObj = {};
 
     searchObj.searchByCollection = [];
 
@@ -17,10 +17,10 @@
 
     tablesWithControls.forEach(table => {
         const searchByValues = table.querySelectorAll('th'),
-              tableCellValues = table.querySelectorAll('tr'),
-              selectValues = table.querySelectorAll('select option'),
-              selectBox = table.querySelector('select'),
-              searchValue = table.querySelector('.control input');
+            tableCellValues = table.querySelectorAll('tr'),
+            selectValues = table.querySelectorAll('select option'),
+            selectBox = table.querySelector('select'),
+            searchValue = table.querySelector('.control input');
 
         searchValue.addEventListener('keyup', event => {
             searchObj.inputValue = searchValue.value;
@@ -28,7 +28,7 @@
             tableCellValues.forEach(value => {
                 const tdValue = value.querySelectorAll('td');
                 tdValue.forEach(td => {
-                    if (td.getAttribute('data-col') !== null  && td.getAttribute('data-col') === searchObj.searchBy) {
+                    if (td.getAttribute('data-col') !== null && td.getAttribute('data-col') === searchObj.searchBy) {
                         if (searchObj.inputValue.toLowerCase() === td.innerHTML.toLowerCase()) {
                             searchObj.isMatch.push('true');
                             td.parentNode.classList.add('match');
@@ -60,7 +60,7 @@
         });
 
         selectValues.forEach(option => {
-           option.value = option.value.split(' ').join('_');
+            option.value = option.value.split(' ').join('_');
         });
 
         // TH Values

@@ -1,9 +1,7 @@
 {
-  "fancyInput": [
-    {
-      "label": "First Name",
-      "placeholder": "weee I’m placeholder",
-      "id": "fancyTwo"
-    }
-  ]
+    "fancyInput": [{
+        "label": "First Name",
+        "placeholder": "weee I’m placeholder",
+        "id": "fancyTwo"
+    }]
 }
