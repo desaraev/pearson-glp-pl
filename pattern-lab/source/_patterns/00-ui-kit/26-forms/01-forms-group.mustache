@@ -1,17 +1,17 @@
 {{#form}}
 <form class="pe-form">
-    <h1 class="pe-form--section">{{name}}</h1>
+    <h1 class="pe-form--name">{{name}}</h1>
     <hr/>
     <div>
         {{#inputBlock}}
-        <div class="pe-form--group">
-            {{> ui-kit-placeholder }}
-        </div>
+        <div class="pe-form--input">	
+			      {{> ui-kit-placeholder }}
+		    </div>
         {{/inputBlock}}
     </div>
     <div class="pe-form--button-group">
         <button class="pe-btn__primary">{{primaryBtnLabel}}</button>
-        <button class="pe-btn--btn__large">{{defaultBtnLabel}}</button>
-    </div>
+        <button class="pe-btn--btn_large">{{defaultBtnLabel}}</button>
+	</div>
 </form>
 {{/form}}
