@@ -52,8 +52,9 @@
     text-align: right;
 
     @media (max-width: 768px) {
-      display: flex; 
+      display: flex;
       flex-wrap: wrap;
+
       button {
         flex: 1 0 auto;
         margin: 6px 4px 6px 4px;

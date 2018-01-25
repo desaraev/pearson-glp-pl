@@ -2,9 +2,9 @@
 
 (function() {
     const modalButtons = document.querySelectorAll("button[data-modal-id]"),
-          overlay = document.querySelector('.overlay'),
-          actionButtons = document.querySelectorAll('.actions button'),
-          closeButtons = document.querySelectorAll('.close button');
+        overlay = document.querySelector('.overlay'),
+        actionButtons = document.querySelectorAll('.actions button'),
+        closeButtons = document.querySelectorAll('.close button');
 
     modalButtons.forEach(button => {
         button.addEventListener('click', event => {
