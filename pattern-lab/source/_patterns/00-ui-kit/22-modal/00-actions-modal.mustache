@@ -1,18 +1,21 @@
-{{#modal}} {{#showOpenButton}}
-<button class="pe-btn pe-btn--btn_large" data-modal-id="{{modalId}}">Open Basic Modal</button>{{/showOpenButton}}
+{{#actionsModal}} {{#showOpenButton}}
+<button class="pe-btn pe-btn--btn_large" data-modal-id="{{modalId}}">Open Modal with Actions</button>{{/showOpenButton}}
 <div class="overlay hidden {{#showOnLoad}}show-on-load{{/showOnLoad}}" aria-hidden="true"></div>
-<div class="modal hidden {{#showOnLoad}}show-on-load{{/showOnLoad}}" aria-labelledby="modalTitle" aria-describedby="modalText" data-modal-open="{{modalId}}" role="dialog" aria-modal="true">
+<div class="modal  scroll hidden {{#showOnLoad}}show-on-load{{/showOnLoad}}" aria-labelledby="modalTitle" aria-describedby="modalText" data-modal-open="{{modalId}}" role="dialog" aria-modal="true">
+    {{#closeButton}}
     <div class="close">
         {{> ui-kit-icon }}
     </div>
+    {{/closeButton}}
     <h2 class="pe-title pe-title--large" id="modalTitle">{{title}}</h2>
-    {{#paragraphs}}
-    <p id="modalText">{{text}}</p>
-    {{/paragraphs}} {{#showButtons}}
+    <div class="content">
+        {{#paragraphs}}
+        <p id="modalText">{{text}}</p>
+        {{/paragraphs}}
+    </div>
     <div class="actions">
         <button class="pe-btn pe-btn--btn_large {{#hideDefault}}hidden{{/hideDefault}}">{{defaultLabel}}</button>
         <button class="pe-btn__primary--btn_large" {{#goToNewPage}}onclick="location.href = '{{path}}{{url}}'{{/goToNewPage}}">{{primaryLabel}}</button>
     </div>
-    {{/showButtons}}
 </div>
-{{/modal}}
+{{/actionsModal}}
