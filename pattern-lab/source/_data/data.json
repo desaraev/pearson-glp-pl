@@ -1104,17 +1104,22 @@
         "title": "Lorem ipsom dolor sit amet.",
         "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
     }],
-    "coachmark": [{
-        "location": "top",
+    "coachmark": [
+      {
+        "demo": true,
+        "location": "btm-center",
         "title": "Ready to invite students?",
         "button": false,
         "content": "Open the course menu to access invite instructions.",
-        "link": [{
+        "link": [
+          {
             "url": "#",
             "location": "top",
             "text": "Got it"
-        }]
-    }],
+          }
+        ]
+      }
+    ],
     "showDrawerButton": true,
     "drawer": [{
         "showButton": true,
