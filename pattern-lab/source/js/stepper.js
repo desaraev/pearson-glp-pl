@@ -5,9 +5,9 @@
 
     stepper.forEach(controller => {
         const maxValue = parseInt(controller.querySelector('.number').innerHTML),
-              input = controller.querySelector('input'),
-              increaseValue = controller.querySelector('.controls button:first-child'),
-              decreaseValue = controller.querySelector('.controls button:last-child');
+            input = controller.querySelector('input'),
+            increaseValue = controller.querySelector('.controls button:first-child'),
+            decreaseValue = controller.querySelector('.controls button:last-child');
 
         input.setAttribute('max', maxValue.toString());
 
@@ -22,7 +22,7 @@
 
         increaseValue.addEventListener('click', () => {
             const inputValueNumber = parseInt(input.value);
-            if (inputValueNumber  < maxValue)
+            if (inputValueNumber < maxValue)
                 return input.value++
         });
 

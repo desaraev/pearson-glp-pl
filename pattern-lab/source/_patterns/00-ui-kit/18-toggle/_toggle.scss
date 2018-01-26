@@ -1,84 +1,94 @@
 .toggle {
-  
   input {
-	&:focus {
-	  +label {
-		outline: 1px dotted #212121;
-		outline: 5px auto -webkit-focus-ring-color;
-	  }
-	}
+    &:focus {
+      + label {
+        outline: 1px dotted #212121;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
   }
-	input + label {
-		background: $neutral-three;
-		position: relative;
-		padding: 8px;
-		border-radius: 100px;
-		display: inline-block;
-		width: 55px;
-		height: 25px;
-		color: #fff;
-		font-size: 14px;
-		text-transform: uppercase;
-		transition: background .3s;
-		cursor: pointer;
-	  border:1px solid $neutral;
-		&:before {
-			content: "";
-			background: #fff;
-			display: block;
-			position: absolute;
-			left: -1px;
-			top: 0;
-			border-radius: 100%;
-			width: 23px;
-			height: 23px;
-			transition: left .3s;
-		    border:1px solid $neutral-three;
-		}
-		.pe-toggle--on,
-		.pe-toggle--off {
-			position: absolute;
-		 
-		}
-	  	.pe-toggle--on {
-		  right: 27px;
-		  top: 3px;
-		  font-size: .8em;
-		}
-		.pe-toggle--off {
-		  right: 7px;
-		  top: 3px;
-		  font-size: .8em;
-		}
-	}
-	input:checked + label {
-		background: $primary;
-		&:before {
-			left: 31px;
-		}
-	}
-	
-	input + label .pe-toggle--on {
-		display: none;
-	}
-	input + label .pe-toggle--off {
-		display: block;
-	}
-	input:checked + label .pe-toggle--off {
-		display: none;
-	}
-	input:checked + label .pe-toggle--on {
-		display: block;
-	}
-  	.feedback {
-	  display:flex;
-	  align-items: center;
-	  
-	  .form-control {
-		padding-left:25px;
-		@media(max-width:600px) {
-		  padding-left:0;
-		}
-	  }
-	}
+
+  input + label {
+    background: $neutral-three;
+    position: relative;
+    padding: 8px;
+    border-radius: 100px;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background .3s;
+    cursor: pointer;
+    border: 1px solid $neutral;
+
+    &:before {
+      content: "";
+      background: #fff;
+      display: block;
+      position: absolute;
+      left: -1px;
+      top: 0;
+      border-radius: 100%;
+      width: 23px;
+      height: 23px;
+      transition: left .3s;
+      border: 1px solid $neutral-three;
+    }
+
+    .pe-toggle--on,
+    .pe-toggle--off {
+      position: absolute;
+    }
+
+    .pe-toggle--on {
+      right: 27px;
+      top: 3px;
+      font-size: .8em;
+    }
+
+    .pe-toggle--off {
+      right: 7px;
+      top: 3px;
+      font-size: .8em;
+    }
+  }
+
+  input:checked + label {
+    background: $primary;
+
+    &:before {
+      left: 31px;
+    }
+  }
+
+  input + label .pe-toggle--on {
+    display: none;
+  }
+
+  input + label .pe-toggle--off {
+    display: block;
+  }
+
+  input:checked + label .pe-toggle--off {
+    display: none;
+  }
+
+  input:checked + label .pe-toggle--on {
+    display: block;
+  }
+
+  .feedback {
+    display: flex;
+    align-items: center;
+
+    .form-control {
+      padding-left: 25px;
+
+      @media (max-width: 600px) {
+        padding-left: 0;
+      }
+    }
+  }
 }

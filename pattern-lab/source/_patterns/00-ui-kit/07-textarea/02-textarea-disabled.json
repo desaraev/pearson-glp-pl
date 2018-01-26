@@ -1,8 +1,6 @@
 {
-  "textArea": [
-    {
-      "id": "textareaId3",
-      "label": "Basic Input"
-    }
-  ]
+    "textArea": [{
+        "id": "textareaId3",
+        "label": "Basic Input"
+    }]
 }
