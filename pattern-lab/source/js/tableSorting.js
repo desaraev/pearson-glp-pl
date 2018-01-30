@@ -1,5 +1,5 @@
 'use strict';
-(function(){
+(function() {
     const sortableTable = document.querySelectorAll('table.sortable');
 
     sortableTable.forEach(table => {
@@ -18,12 +18,12 @@
                     y = rows[i + 1].getElementsByTagName("TD")[n];
                     if (dir === "asc") {
                         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                            shouldSwitch= true;
+                            shouldSwitch = true;
                             break;
                         }
                     } else if (dir === "desc") {
                         if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                            shouldSwitch= true;
+                            shouldSwitch = true;
                             break;
                         }
                     }
@@ -31,7 +31,7 @@
                 if (shouldSwitch) {
                     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                     switching = true;
-                    switchcount ++;
+                    switchcount++;
                 } else {
                     if (switchcount === 0 && dir === "asc") {
                         dir = "desc";
@@ -68,8 +68,8 @@
                 sortTable(index);
             });
 
-            btn.addEventListener('keydown', function(event){
-                if (event.keyCode ===  32) {
+            btn.addEventListener('keydown', function(event) {
+                if (event.keyCode === 32) {
                     btn.click();
                 }
             })

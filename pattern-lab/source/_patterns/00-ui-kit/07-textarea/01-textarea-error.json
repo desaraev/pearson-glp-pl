@@ -1,11 +1,9 @@
 {
-  "textArea": [
-    {
-      "id": "textareaId2",
-      "label": "Tell me who you are",
-      "ariaId": "aria",
-      "error": "You are not the good cooper",
-      "value": "I am the good cooper"
-    }
-  ]
+    "textArea": [{
+        "id": "textareaId2",
+        "label": "Tell me who you are",
+        "ariaId": "aria",
+        "error": "You are not the good cooper",
+        "value": "I am the good cooper"
+    }]
 }
