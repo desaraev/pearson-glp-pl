@@ -1,22 +1,16 @@
 {
-  "coachmark": [
-    {
-      "demo": true,
-      "location": "btm-center",
-      "title": "Section Code",
-      "button": [
-          {
+    "coachmark": [{
+        "demo": true,
+        "location": "btm-center",
+        "title": "Section Code",
+        "button": [{
             "label": "Close coachmark",
-      "icon": [
-              {
+            "icon": [{
                 "icon": "remove-sm-24",
                 "label": "Close coachmark"
-              }
-            ]
-          }
-        ],
+            }]
+        }],
         "content": "Enter the labeling convention used by your institution to identify the course code, call number, class section, or session. Example: 53155 BUS 001",
-      "link": false  
-    }
-  ]
+        "link": false
+    }]
 }

@@ -4,26 +4,24 @@
 
 {{#calendar}}
 <section class="calendar redline-example redline-target">
-	<div class="header">
-		<h1>
+    <div class="header">
+        <h1>
 			<span class="pe-title pe-title--small neutral-two month">{{month}}</span>
 			<span class="pe-title pe-title--small neutral-two year">{{year}}</span>
 		</h1>
-		<div class="button-group redline-target">
-			{{#buttons}}
-				{{> ui-kit-icon}}
-			{{/buttons}}
-		</div>
-	</div>
-	<div class="days-of-week">
-		{{#days}}
-			<span class="pe-label pe-label--small">{{day}}</span>
-		{{/days}}
-	</div>
-	{{#week}}
-		<div class="days">
+        <div class="button-group redline-target">
+            {{#buttons}} {{> ui-kit-icon}} {{/buttons}}
+        </div>
+    </div>
+    <div class="days-of-week">
+        {{#days}}
+        <span class="pe-label pe-label--small">{{day}}</span>
+        {{/days}}
+    </div>
+    {{#week}}
+    <div class="days">
 
-		</div>
-	{{/week}}
+    </div>
+    {{/week}}
 </section>
 {{/calendar}}

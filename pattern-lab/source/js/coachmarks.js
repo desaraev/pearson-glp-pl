@@ -24,6 +24,6 @@
                 }
             })
             //cmTrigger.nextElementSibling.classList.remove('hidden');
-        }) 
+        })
     })
 })();
