@@ -9,18 +9,18 @@
     modalButtons.forEach(button => {
         button.addEventListener('click', event => {
             const modalId = event.currentTarget.getAttribute('data-modal-id'),
-                  modalToOpen = document.querySelector('.modal-body[data-modal-open=' + modalId + ']'),
-                  overlayToOpen = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
+                modalToOpen = document.querySelector('.modal-body[data-modal-open=' + modalId + ']'),
+                overlayToOpen = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
             overlayToOpen.classList.remove('hidden');
             modalToOpen.classList.remove('hidden');
             modalToOpen.setAttribute('aria-hidden', 'false');
-            if (overlayToOpen.classList.contains('content-scroll')){
+            if (overlayToOpen.classList.contains('content-scroll')) {
                 const content = modalToOpen.querySelector('.modal-content');
                 if (content.scrollHeight > content.clientHeight) {
                     content.classList.add('content-border');
                     content.nextElementSibling.classList.add('actions-scroll-style');
                 }
-            }  
+            }
         })
     })
 
@@ -36,14 +36,14 @@
         overlay.addEventListener('click', event => {
             const modalId = overlay.getAttribute('data-overlay-open');
             overlay.classList.add('hidden');
-            closeModalBody(modalId); 
+            closeModalBody(modalId);
         })
     })
 
     function closeModal(button) {
         button.addEventListener('click', event => {
             const modalId = button.getAttribute('data-button-close'),
-                  overlayToClose = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
+                overlayToClose = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
             overlayToClose.classList.add('hidden');
             closeModalBody(modalId);
         })

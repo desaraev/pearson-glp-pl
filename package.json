@@ -29,10 +29,10 @@
     "gulp-sftp": "^0.1.5",
     "gulp-ssh": "^0.6.0",
     "gulp-strip-comments": "^2.5.1",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+	"gulp-sassbeautify": "^0.1.0"
   },
   "devDependencies": {
-    "gulp-sassbeautify": "^0.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0"
   },

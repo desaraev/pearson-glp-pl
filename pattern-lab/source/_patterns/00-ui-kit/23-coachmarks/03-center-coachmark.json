@@ -1,6 +1,7 @@
 {
     "coachmark": [{
-        "location": "center",
+        "demo": true,
+        "location": "btm-center",
         "title": "Section Code",
         "button": [{
             "label": "Close coachmark",
