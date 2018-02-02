@@ -1,6 +1,8 @@
 {
     "actionsModal": [{
-        "title": "Modal Title",
+        "heading": [{
+            "title": "Modal Title"
+        }],
         "showOpenButton": true,
         "modalId": "three",
         "defaultLabel": "Default Action",

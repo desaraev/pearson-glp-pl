@@ -1022,7 +1022,9 @@
         }]
     }],
     "actionsModal": [{
-        "title": "Modal Title",
+        "heading": [{
+            "title": "Modal Title"
+        }],
         "showOpenButton": true,
         "modalId": "one",
         "defaultLabel": "Default Action",
@@ -1042,7 +1044,9 @@
         }]
     }],
     "noActionModal": [{
-        "title": "Modal Title",
+        "heading": [{
+            "title": "Modal Title"
+        }],
         "showOpenButton": true,
         "modalId": "two",
         "paragraphs": [{
