@@ -1,0 +1,26 @@
+body.wireframe {
+
+	// changes the font on all selectors
+	& * {
+		font-family: serif;
+	}
+
+	// inline mark
+	mark {
+		background: yellow;
+	}
+
+	// code block
+	.pe-code{
+		background: grayscale($primary)
+	}
+
+	// links
+	a {
+		color: blue
+	}
+
+
+}
+
+

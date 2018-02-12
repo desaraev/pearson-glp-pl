@@ -69,3 +69,11 @@ $browser-context: 16;
 @mixin grid($col) {
   width: 8.33333% * $col;
 }
+
+@mixin setcolor($background) {
+	background-color: $background;
+}
+
+@mixin setfontcolor($color) {
+	color: $color;
+}
