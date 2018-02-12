@@ -96,6 +96,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .condition-two-bg {
 	@include setcolor($condition-two);
+}
 
 .condition-three-bg {
 	@include setcolor($condition-three);
