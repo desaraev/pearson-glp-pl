@@ -16,7 +16,7 @@ body.wireframe {
 
   // links
   a {
-    color: blue;
+    color: blue !important;
   }
 
   // colors
@@ -469,6 +469,12 @@ body.wireframe {
     color: white;
   }
 
+  div [class$='--btn_xlarge'], a [class$='--btn_xlarge'] {
+    @include setcolor(grayscale($secondary));
+
+    color: white;
+  }
+
   // inputs
 
   /* line 10, pattern-lab/scss/_ux-override.scss */
@@ -597,5 +603,13 @@ body.wireframe {
     border-right: 8px solid transparent;
     border-bottom: 8px solid $neutral;
     filter: none;
+  }
+
+  img {
+    display: none;
+  }
+
+  ul {
+    list-style-type: initial !important;
   }
 }
