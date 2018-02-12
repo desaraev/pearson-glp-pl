@@ -71,9 +71,9 @@ $browser-context: 16;
 }
 
 @mixin setcolor($background) {
-	background-color: $background;
+  background-color: $background;
 }
 
 @mixin setfontcolor($color) {
-	color: $color;
+  color: $color;
 }
