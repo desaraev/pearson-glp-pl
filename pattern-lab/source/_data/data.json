@@ -1021,11 +1021,12 @@
             ]
         }]
     }],
-    "modal": [{
-        "title": "Modal Title",
+    "actionsModal": [{
+        "heading": [{
+            "title": "Modal Title"
+        }],
         "showOpenButton": true,
         "modalId": "one",
-        "showButtons": true,
         "defaultLabel": "Default Action",
         "primaryLabel": "Primary Action",
         "paragraphs": [{
@@ -1042,38 +1043,13 @@
             "icon": "remove-sm-24"
         }]
     }],
-    "scrollModal": [{
-        "title": "Modal Title",
+    "noActionModal": [{
+        "heading": [{
+            "title": "Modal Title"
+        }],
+        "showOpenButton": true,
         "modalId": "two",
-        "showButtons": true,
         "paragraphs": [{
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-            },
-            {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
             },
             {
@@ -1105,7 +1081,8 @@
         "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
     }],
     "coachmark": [{
-        "location": "top",
+        "demo": true,
+        "location": "btm-center",
         "title": "Ready to invite students?",
         "button": false,
         "content": "Open the course menu to access invite instructions.",
