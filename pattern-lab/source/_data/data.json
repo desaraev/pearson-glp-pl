@@ -1258,5 +1258,21 @@
                 ]
             }
         ]
-    }]
+    }],
+	"progressSlider": [{
+		"icon": [{
+			"icon": "radio-button-on-24",
+			"label": "back"
+		}]
+	}],
+	"revelFooter" : [
+		{
+
+		}
+	],
+	"revelHeader" : [
+		{
+
+		}
+	]
 }
