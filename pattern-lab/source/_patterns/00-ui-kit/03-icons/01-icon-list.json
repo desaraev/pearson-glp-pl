@@ -1477,6 +1477,91 @@
                 "size": "breadcrumb-18",
                 "label": "breadcrumb"
             }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "warning-sm-24",
+                    "decorative": true
+                }],
+                "size": "warning-sm-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "warning-sm-18",
+                    "decorative": true
+                }],
+                "size": "warning-sm-18",
+                "label": "warning small"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "text-bold-24",
+                    "decorative": true
+                }],
+                "size": "text-bold-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "text-bold-18",
+                    "decorative": true
+                }],
+                "size": "text-bold-18",
+                "label": "text bold"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "text-italic-24",
+                    "decorative": true
+                }],
+                "size": "text-italic-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "text-italic-18",
+                    "decorative": true
+                }],
+                "size": "text-italic-18",
+                "label": "text italic"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "attachment-24",
+                    "decorative": true
+                }],
+                "size": "attachment-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "attachment-18",
+                    "decorative": true
+                }],
+                "size": "attachment-18",
+                "label": "attachment"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "number-list-24",
+                    "decorative": true
+                }],
+                "size": "number-list-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "number-list-18",
+                    "decorative": true
+                }],
+                "size": "number-list-18",
+                "label": "number list"
+            }]
         }
     ]
 }
