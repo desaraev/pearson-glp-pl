@@ -1,0 +1,143 @@
+{
+    "iconList": [{
+            "icon": [{
+                "icon": "achieved-check-18",
+                "decorative": true
+            }],
+            "size": "achieved-check-18"
+        },
+        {
+            "icon": [{
+                "icon": "achieved-check-24",
+                "decorative": true
+            }],
+            "size": "achieved-check-24"
+        },
+        {
+            "icon": [{
+                "icon": "circle-bullet-18",
+                "decorative": true
+            }],
+            "size": "circle-bullet-18"
+        },
+        {
+            "icon": [{
+                "icon": "circle-bullet-24",
+                "decorative": true
+            }],
+            "size": "cirlce-bullet-24"
+        },
+        {
+            "icon": [{
+                "icon": "dot-18",
+                "decorative": true
+            }],
+            "size": "dot-18"
+        },
+        {
+            "icon": [{
+                "icon": "dot-24",
+                "decorative": true
+            }],
+            "size": "dot-24"
+        },
+        {
+            "icon": [{
+                "icon": "eye-18",
+                "decorative": true
+            }],
+            "size": "eye-18"
+        },
+        {
+            "icon": [{
+                "icon": "eye-24",
+                "decorative": true
+            }],
+            "size": "eye-24"
+        },
+        {
+            "icon": [{
+                "icon": "incorrect-18",
+                "decorative": true
+            }],
+            "size": "incorrect-18"
+        },
+        {
+            "icon": [{
+                "icon": "incorrect-24",
+                "decorative": true
+            }],
+            "size": "incorrect-24"
+        },
+        {
+            "icon": [{
+                "icon": "infinity-18",
+                "decorative": true
+            }],
+            "size": "infinity-18"
+        },
+        {
+            "icon": [{
+                "icon": "infinity-24",
+                "decorative": true
+            }],
+            "size": "infinity-24"
+        },
+        {
+            "icon": [{
+                "icon": "information-18",
+                "decorative": true
+            }],
+            "size": "information-18"
+        },
+        {
+            "icon": [{
+                "icon": "information-24",
+                "decorative": true
+            }],
+            "size": "information-24"
+        },
+        {
+            "icon": [{
+                "icon": "popin-18",
+                "decorative": true
+            }],
+            "size": "popin-18"
+        },
+        {
+            "icon": [{
+                "icon": "popin-24",
+                "decorative": true
+            }],
+            "size": "popin-24"
+        },
+        {
+            "icon": [{
+                "icon": "popout-18",
+                "decorative": true
+            }],
+            "size": "popout-18"
+        },
+        {
+            "icon": [{
+                "icon": "popout-24",
+                "decorative": true
+            }],
+            "size": "popout-24"
+        },
+        {
+            "icon": [{
+                "icon": "star-18",
+                "decorative": true
+            }],
+            "size": "star-18"
+        },
+        {
+            "icon": [{
+                "icon": "star-24",
+                "decorative": true
+            }],
+            "size": "star-24"
+        }
+    ]
+}

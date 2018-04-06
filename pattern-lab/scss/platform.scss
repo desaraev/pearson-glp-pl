@@ -42,6 +42,11 @@
 @import "../source/_patterns/00-ui-kit/26-forms/forms";
 @import "../source/_patterns/00-ui-kit/24-breadcrumbs/breadcrumbs";
 @import "../source/_patterns/00-ui-kit/25-accordion/accordion";
-@import "../source/_patterns/01-atoms/redline-example";
+@import "../source/_patterns/01-atoms/00-redlines/redline-example";
 
-@import "epub";
+// Revel styles from add on.
+@import "../../_add-ons/epubs/epub";
+@import "../../_add-ons/epubs/feldman/chapter-8/source/_patterns/01-atoms/00-progress/progress";
+@import "../../_add-ons/epubs/feldman/chapter-8/source/_patterns/02-molecules/00-progress/progress-bar";
+@import "../../_add-ons/epubs/feldman/chapter-8/source/_patterns/03-organisms/00-revel-footer/revel-footer";
+@import "../../_add-ons/epubs/feldman/chapter-8/source/_patterns/03-organisms/01-revel-header/revel-header";
