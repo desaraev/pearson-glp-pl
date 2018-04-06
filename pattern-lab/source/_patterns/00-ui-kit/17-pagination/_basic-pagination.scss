@@ -7,6 +7,7 @@
   &.basic {
     @media (max-width: 768px) {
       justify-content: center;
+
       li:nth-child(4), li:nth-child(5) {
         display: none;
         visibility: hidden;
@@ -30,6 +31,7 @@
       border: 1px solid $neutral-three;
       min-width: 28px;
       min-height: 28px;
+      cursor: pointer;
 
       svg {
         fill: currentColor;
