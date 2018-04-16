@@ -10,7 +10,26 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
+
+  position: relative; //Anne added
+  z-index: 10;  //Anne added
+  &:focus {
+    outline: 0;
+    &:after {
+    content: "";
+    border: 1px solid $pe-color-hot-pink;
+    position: absolute;
+    border-radius: $pe-btn-border-radius;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    top: -3px;
+	left: -3px;
+    z-index: -100;
+  	}
+   }
 }
+
+
 
 .pe-btn--btn_small, .pe-btn__primary--btn_small, .pe-btn__cta--btn_small, .pe-btn__tertiary--btn_small {
   height: 32px;
