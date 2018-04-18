@@ -430,7 +430,7 @@
                     "icon": "checkbox-on-24",
                     "decorative": true
                 }],
-                "size": "checkbox-on"
+                "size": "checkbox-on-24"
             }],
             "back": [{
                 "icon": [{
@@ -1124,6 +1124,23 @@
         {
             "front": [{
                 "icon": [{
+                    "icon": "print-24",
+                    "decorative": true
+                }],
+                "size": "print-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "print-18",
+                    "decorative": true
+                }],
+                "size": "print-18",
+                "label": "print"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
                     "icon": "radio-button-on-24",
                     "decorative": true
                 }],
@@ -1561,6 +1578,23 @@
                 }],
                 "size": "number-list-18",
                 "label": "number list"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
+                    "icon": "link-out-24",
+                    "decorative": true
+                }],
+                "size": "link-out-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "link-out-18",
+                    "decorative": true
+                }],
+                "size": "link-out-18",
+                "label": "link out"
             }]
         }
     ]
