@@ -16,7 +16,7 @@
                 listItem.forEach((item) => {
                     item.setAttribute('aria-checked', 'false');
                 });
-                input.value = event.currentTarget.querySelector('a').textContent.replace(/\s/g, '');
+                input.value = event.currentTarget.querySelector('a').textContent.replace(/\s(?!AM|PM|am|pm)/g, '').toUpperCase();
                 menu.classList.add('hidden');
                 item.setAttribute('aria-checked', 'true');
             })

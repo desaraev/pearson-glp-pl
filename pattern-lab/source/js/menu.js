@@ -109,7 +109,7 @@
     menus.forEach(menu => {
         menu.setAttribute('id', 'menu' + menuCount);
         menuCount += 1;
-        menu.setAttribute('aria-labelledby', menu.parentElement.previousElementSibling.id);
+        //menu.setAttribute('aria-labelledby', menu.parentElement.previousElementSibling.id);
         menu.setAttribute('aria-activedescendant', menu.firstElementChild.id);
         menuitems.forEach(item => {
             item.style.padding = "7px 10px"

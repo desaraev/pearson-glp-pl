@@ -1,0 +1,47 @@
+.course-dates {
+	margin:0;
+	.row {
+		margin:0;
+	}
+	.pe-form--group {
+		margin-bottom: 20px;
+	}
+	.col-xs-5 {
+		width: 41.66667%;
+	}
+	.col-xs-2 {
+		width: 16.66667%;
+	}
+	.col-xs-offset-2 {
+		margin-left: 16.66667%;
+	}
+	.start-end-times {
+		display: flex;
+		align-items: center;
+
+		.timepicker-container .timepicker {
+			max-width: unset;
+		}
+	}
+	.to-time {
+		text-align: center;
+	}
+
+	.add-row {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		.add-day {
+			color: $secondary-four;
+		}
+	}
+
+	.pe-select-container {
+		min-width: unset;
+	}
+
+	input[aria-invalid="true"], textarea[aria-invalid="true"] {
+  		border: 1px solid #f00;
+  		box-shadow: 0 0 4px 0 #f00;
+	}
+}
