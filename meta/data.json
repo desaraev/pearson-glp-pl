@@ -1,1430 +1,1109 @@
 {
-  "icon":[
-    {
-        "icon": "book-24",
-        "decorative": false,
-        "a11yLabel":[
-            {
-                "label": "book seats"
-            }
-        ]
-    }
-  ],
-  "backBtn": [
-    {
-      "icon": [
-        {
+  "icon": [{
+      "icon": "book-24",
+      "decorative": false,
+      "a11yLabel": [{
+          "label": "book seats"
+      }]
+  }],
+  "backBtn": [{
+      "icon": [{
           "icon": "chevron-back-18",
           "label": "back"
-        }
-      ]
-    }
-  ],
-  "textIconBtn": [
-    {
+      }]
+  }],
+  "textIconBtn": [{
       "label": "Button with Calendar Icon",
-      "icon": [
-        {
+      "icon": [{
           "icon": "calendar-18",
           "label": "calendar"
-        }
-      ]
-    }
-  ],
-  "linkBtn": [
-    {
+      }]
+  }],
+  "linkBtn": [{
       "label": "text link"
-    }
-  ],
-  "fancyInput": [
-    {
+  }],
+  "fancyInput": [{
       "label": "First Name",
       "placeholder": "weee I'm placeholder",
       "id": "fancyOne"
-    }
-  ],
-  "basicInput": [
-    {
+  }],
+  "basicInput": [{
       "label": "First Name",
       "placeholder": "weee I'm placeholder",
       "id": "basicOne"
-    }
-  ],
-  "dropdown": [
-    {
+  }],
+  "dropdown": [{
       "label": "dropdown",
-      "icon": [
-        {
+      "icon": [{
           "icon": "dropdown-open-sm-18",
           "label": "selected"
-        }
+      }]
+  }],
+  "menu": [{
+      "menuList": [{
+              "label": "Option One",
+              "link": "#",
+              "icon": [{
+                  "icon": "check-sm-18",
+                  "label": "selected"
+              }]
+          },
+          {
+              "label": "Option Two",
+              "link": "#",
+              "divider": true,
+              "icon": [{
+                  "icon": "check-sm-18",
+                  "label": "selected"
+              }]
+          },
+          {
+              "label": "Option Three",
+              "link": "#",
+              "icon": [{
+                  "icon": "check-sm-18",
+                  "label": "selected"
+              }]
+          }
       ]
-    }
-  ],
-  "menu": [
-    {
-      "menuList": [
-        {
-          "label": "Option One",
-          "link": "#",
-          "icon": [
-            {
-              "icon": "check-sm-18",
-              "label": "selected"
-            }
-          ]
-        },
-        {
-          "label": "Option Two",
-          "link": "#",
-          "divider": true,
-          "icon": [
-            {
-              "icon": "check-sm-18",
-              "label": "selected"
-            }
-          ]
-        },
-        {
-          "label": "Option Three",
-          "link": "#",
-          "icon": [
-            {
-              "icon": "check-sm-18",
-              "label": "selected"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "select": [
-    {
+  }],
+  "select": [{
       "id": "send_message",
       "label": "Send message to",
-      "optionList": [
-        {
-          "value": "this_one",
-          "label": "Option one"
-        },
-        {
-          "value": "this_two",
-          "label": "Option two"
-        },
-        {
-          "value": "this_three",
-          "label": "Option three"
-        }
+      "optionList": [{
+              "value": "this_one",
+              "label": "Option one"
+          },
+          {
+              "value": "this_two",
+              "label": "Option two"
+          },
+          {
+              "value": "this_three",
+              "label": "Option three"
+          }
       ],
-      "icon": [
-        {
+      "icon": [{
           "icon": "dropdown-open-sm-18",
           "label": "selected"
-        }
-      ]
-    }
-  ],
-  "checkBox": [
-    {
-      "id": "checkBoxId",
-      "label": "Bacon",
-      "checked": true,
-      "icon": [
-        {
-          "icon": "check-sm-18",
-          "label": "selected"
-        }
-      ]
-    },
-    {
-      "id": "checkBoxId2",
-      "label": "Bacon Disabled",
-      "disabled": true,
-      "checked": false,
-      "icon": [
-        {
-          "icon": "check-sm-18",
-          "label": "selected"
-        }
-      ]
-    },
-    {
-      "id": "checkBoxId3",
-      "label": "Bacon Checked Disabled",
-      "disabled": true,
-      "checked": true,
-      "icon": [
-        {
-          "icon": "check-sm-18",
-          "label": "selected"
-        }
-      ]
-    }
-  ],
-  "radios": [
-    {
-      "legend": "I am Legend",
-      "radioList": [
-        {
-          "id": "radioId1",
+      }]
+  }],
+  "checkBox": [{
+          "id": "checkBoxId",
           "label": "Bacon",
-          "checked": true
-        },
-        {
-          "id": "radioId2",
-          "label": "Eggs"
-        },
-        {
-          "id": "radioId3",
-          "label": "Sausage"
-        },
-        {
-          "id": "radioId3",
-          "label": "Green Eggs",
-          "disabled": true
-        }
-      ]
-    }
+          "checked": true,
+          "icon": [{
+              "icon": "check-sm-18",
+              "label": "selected"
+          }]
+      },
+      {
+          "id": "checkBoxId2",
+          "label": "Bacon Disabled",
+          "disabled": true,
+          "checked": false,
+          "icon": [{
+              "icon": "check-sm-18",
+              "label": "selected"
+          }]
+      },
+      {
+          "id": "checkBoxId3",
+          "label": "Bacon Checked Disabled",
+          "disabled": true,
+          "checked": true,
+          "icon": [{
+              "icon": "check-sm-18",
+              "label": "selected"
+          }]
+      }
   ],
-  "textArea": [
-    {
+  "radios": [{
+      "legend": "I am Legend",
+      "radioList": [{
+              "id": "radioId1",
+              "label": "Bacon",
+              "checked": true
+          },
+          {
+              "id": "radioId2",
+              "label": "Eggs"
+          },
+          {
+              "id": "radioId3",
+              "label": "Sausage"
+          },
+          {
+              "id": "radioId3",
+              "label": "Green Eggs",
+              "disabled": true
+          }
+      ]
+  }],
+  "textArea": [{
       "id": "textareaId",
       "label": "Basic Textarea"
-    }
-  ],
-  "stepper": [
-    {
-      "uiControls": [
-        {
-          "label": "increase value",
-          "icon": [
-            {
-              "icon": "dropdown-close-18",
-              "label": "increase value"
-            }
-          ]
-        },
-        {
-          "label": "decrease value",
-          "icon": [
-            {
-              "icon": "dropdown-open-18",
-              "label": "decrease value"
-            }
-          ]
-        }
+  }],
+  "stepper": [{
+      "uiControls": [{
+              "label": "increase value",
+              "icon": [{
+                  "icon": "dropdown-close-18",
+                  "label": "increase value"
+              }]
+          },
+          {
+              "label": "decrease value",
+              "icon": [{
+                  "icon": "dropdown-open-18",
+                  "label": "decrease value"
+              }]
+          }
       ],
-      "basicInput": [
-        {
+      "basicInput": [{
           "type": "number",
           "value": "1",
           "id": "pageStepper"
-        }
-      ],
+      }],
       "number": "102"
-    }
-  ],
-  "zoom": [
-    {
-      "uiControls": [
-        {
-          "label": "increase value",
-          "icon": [
-            {
-              "icon": "dropdown-close-18",
-              "label": "increase value"
-            }
-          ]
-        },
-        {
-          "label": "decrease value",
-          "icon": [
-            {
-              "icon": "dropdown-open-18",
-              "label": "decrease value"
-            }
-          ]
-        }
+  }],
+  "zoom": [{
+      "uiControls": [{
+              "label": "increase value",
+              "icon": [{
+                  "icon": "dropdown-close-18",
+                  "label": "increase value"
+              }]
+          },
+          {
+              "label": "decrease value",
+              "icon": [{
+                  "icon": "dropdown-open-18",
+                  "label": "decrease value"
+              }]
+          }
       ],
-      "basicInput": [
-        {
+      "basicInput": [{
           "maxValue": "1000",
           "type": "text",
           "value": "100",
           "id": "zoomStepper"
-        }
-      ]
-    }
-  ],
-  "pagination": [
-    {
-      "controlLeft": [
-        {
+      }]
+  }],
+  "pagination": [{
+      "controlLeft": [{
           "disable": true,
-          "icon": [
-            {
+          "icon": [{
               "icon": "chevron-back-sm-18",
               "label": "previous 5 items"
-            }
-          ]
-        }
-      ],
-      "controlRight": [
-        {
-          "icon": [
-            {
+          }]
+      }],
+      "controlRight": [{
+          "icon": [{
               "icon": "chevron-next-sm-18",
               "label": "next 5 items"
-            }
-          ]
-        }
-      ],
-      "list": [
-        {
-          "selected": true,
-          "label": "1"
-        },
-        {
-          "selected": false,
-          "label": "2"
-        },
-        {
-          "selected": false,
-          "label": "3"
-        },
-        {
-          "selected": false,
-          "label": "4"
-        },
-        {
-          "selected": false,
-          "label": "5"
-        }
+          }]
+      }],
+      "list": [{
+              "selected": true,
+              "label": "1"
+          },
+          {
+              "selected": false,
+              "label": "2"
+          },
+          {
+              "selected": false,
+              "label": "3"
+          },
+          {
+              "selected": false,
+              "label": "4"
+          },
+          {
+              "selected": false,
+              "label": "5"
+          }
       ]
-    }
-  ],
+  }],
   "paginationGroup": [
 
-    {
-      "total": "25",
-      "controlLeft": [
-        {
-          "disable": true,
-          "icon": [
-            {
-              "icon": "chevron-back-sm-18",
-              "label": "previous 5 items"
-            }
-          ]
-        }
-      ],
-      "controlRight": [
-        {
-          "icon": [
-            {
-              "icon": "chevron-next-sm-18",
-              "label": "next 5 items"
-            }
-          ]
-        }
-      ]
-    }
+      {
+          "total": "25",
+          "controlLeft": [{
+              "disable": true,
+              "icon": [{
+                  "icon": "chevron-back-sm-18",
+                  "label": "previous 5 items"
+              }]
+          }],
+          "controlRight": [{
+              "icon": [{
+                  "icon": "chevron-next-sm-18",
+                  "label": "next 5 items"
+              }]
+          }]
+      }
   ],
-  "loader": [
-    {
+  "loader": [{
       "label": "Loading...",
       "light": true
-    }
-  ],
-  "loaderDark": [
-    {
-      "loader": [
-        {
+  }],
+  "loaderDark": [{
+      "loader": [{
           "label": "Loading...",
           "dark": true,
           "light": false
-        }
-      ]
-    }
-  ],
-  "toggle": [
-    {
+      }]
+  }],
+  "toggle": [{
       "id": "feedbackToggle",
       "labelId": "labelToggle"
-    }
-  ],
-  "calendar": [
-    {
+  }],
+  "calendar": [{
       "month": "October",
       "year": "2016",
-      "buttons": [
-        {
-          "icon": [
-            {
-              "icon": "chevron-back-18",
-              "label": "previous value"
-            }
-          ]
-        },
-        {
-          "icon": [
-            {
-              "icon": "chevron-next-18",
-              "label": "next value"
-            }
-          ]
-        }
+      "buttons": [{
+              "icon": [{
+                  "icon": "chevron-back-18",
+                  "label": "previous value"
+              }]
+          },
+          {
+              "icon": [{
+                  "icon": "chevron-next-18",
+                  "label": "next value"
+              }]
+          }
       ],
-      "days":[
-        {
-          "day": "S"
-        },
-        {
-          "day": "M"
-        },
-        {
-          "day": "T"
-        },
-        {
-          "day": "W"
-        },
-        {
-          "day": "T"
-        },
-        {
-          "day": "F"
-        },
-        {
-          "day": "S"
-        }
+      "days": [{
+              "day": "S"
+          },
+          {
+              "day": "M"
+          },
+          {
+              "day": "T"
+          },
+          {
+              "day": "W"
+          },
+          {
+              "day": "T"
+          },
+          {
+              "day": "F"
+          },
+          {
+              "day": "S"
+          }
       ],
-      "week": [
-        {
-        }
-      ]
-    }
-  ],
-  "datepicker": [
-    {
-      "basicInput": [
-        {
+      "week": [{}]
+  }],
+  "datepicker": [{
+      "basicInput": [{
           "ariaLabel": "enter date",
           "id": "calendarSelector",
           "placeholder": ""
-        }
-      ],
-      "icon": [
-        {
+      }],
+      "icon": [{
           "icon": "calendar-18",
           "label": "enter date"
-        }
-      ]
-    }
-  ],
-  "timepicker": [
-    {
+      }]
+  }],
+  "timepicker": [{
 
-      "basicInput": [
-        {
+      "basicInput": [{
           "ariaLabel": "enter time",
           "id": "timeSelector",
           "placeholder": "10:30 AM"
-        }
-      ],
-      "icon": [
-        {
+      }],
+      "icon": [{
           "icon": "clock-18",
           "label": "enter time"
-        }
-      ],
-      "menu": [
-        {
-          "menuList": [
-            {
-              "label": "10:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "11:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "12:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "1:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "2:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "3:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "4:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "5:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "6:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "7:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "8:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "9:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "10:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "11:00 PM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "12:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "1:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "2:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "3:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "4:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "5:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "6:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "7:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "8:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "9:00 AM",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            }
+      }],
+      "menu": [{
+          "menuList": [{
+                  "label": "10:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "11:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "12:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "1:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "2:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "3:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "4:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "5:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "6:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "7:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "8:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "9:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "10:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "11:00 PM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "12:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "1:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "2:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "3:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "4:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "5:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "6:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "7:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "8:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "9:00 AM",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }
           ]
-        }
-      ]
-    }
-  ],
-  "table": [
-    {
+      }]
+  }],
+  "table": [{
       "tableName": "basic table example",
-      "th": [
-        {
-          "label": "First Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Last Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Position",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Age",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Role",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        }
+      "th": [{
+              "label": "First Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Last Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Position",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Age",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Role",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          }
       ],
-      "tr": [
-        {
-          "td": [
-            {
-              "label": "Gordon"
-            },
-            {
-              "label": "Cole"
-            },
-            {
-              "label": "FBI Director"
-            },
-            {
-              "label": "70"
-            },
-            {
-              "label": "Instructor"
-            }
-          ]
-        },
-        {
-          "td": [
-            {
-              "label": "Cooper"
-            },
-            {
-              "label": "Dale"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "60"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        }
+      "tr": [{
+              "td": [{
+                      "label": "Gordon"
+                  },
+                  {
+                      "label": "Cole"
+                  },
+                  {
+                      "label": "FBI Director"
+                  },
+                  {
+                      "label": "70"
+                  },
+                  {
+                      "label": "Instructor"
+                  }
+              ]
+          },
+          {
+              "td": [{
+                      "label": "Cooper"
+                  },
+                  {
+                      "label": "Dale"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "60"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
+              ]
+          }
       ]
-    }
-  ],
-  "tableSort": [
-    {
+  }],
+  "tableSort": [{
       "tableName": "sorting table example",
-      "th": [
-        {
-          "label": "First Name",
-          "icons": [
-            {
-              "direction": "down",
-              "icon": [
-                {
-                  "icon": "sort-down-18",
-                  "label": "sort descending"
-                }
+      "th": [{
+              "label": "First Name",
+              "icons": [{
+                      "direction": "down",
+                      "icon": [{
+                          "icon": "sort-down-18",
+                          "label": "sort descending"
+                      }]
+                  },
+                  {
+                      "direction": "up",
+                      "icon": [{
+                          "icon": "sort-up-18",
+                          "label": "sort ascending"
+                      }]
+                  }
               ]
-            },
-            {
-              "direction": "up",
-              "icon": [
-                {
-                  "icon": "sort-up-18",
-                  "label": "sort ascending"
-                }
+          },
+          {
+              "label": "Last Name",
+              "icons": [{
+                      "direction": "down",
+                      "icon": [{
+                          "icon": "sort-down-18",
+                          "label": "sort descending"
+                      }]
+                  },
+                  {
+                      "direction": "up",
+                      "icon": [{
+                          "icon": "sort-up-18",
+                          "label": "sort ascending"
+                      }]
+                  }
               ]
-            }
-          ]
-        },
-        {
-          "label": "Last Name",
-          "icons": [
-            {
-              "direction": "down",
-              "icon": [
-                {
-                  "icon": "sort-down-18",
-                  "label": "sort descending"
-                }
+          },
+          {
+              "label": "Position",
+              "icons": [{
+                      "direction": "down",
+                      "icon": [{
+                          "icon": "sort-down-18",
+                          "label": "sort descending"
+                      }]
+                  },
+                  {
+                      "direction": "up",
+                      "icon": [{
+                          "icon": "sort-up-18",
+                          "label": "sort ascending"
+                      }]
+                  }
               ]
-            },
-            {
-              "direction": "up",
-              "icon": [
-                {
-                  "icon": "sort-up-18",
-                  "label": "sort ascending"
-                }
+          },
+          {
+              "label": "Age",
+              "icons": [{
+                      "direction": "down",
+                      "icon": [{
+                          "icon": "sort-down-18",
+                          "label": "sort descending"
+                      }]
+                  },
+                  {
+                      "direction": "up",
+                      "icon": [{
+                          "icon": "sort-up-18",
+                          "label": "sort ascending"
+                      }]
+                  }
               ]
-            }
-          ]
-        },
-        {
-          "label": "Position",
-          "icons": [
-            {
-              "direction": "down",
-              "icon": [
-                {
-                  "icon": "sort-down-18",
-                  "label": "sort descending"
-                }
+          },
+          {
+              "label": "Role",
+              "icons": [{
+                      "direction": "down",
+                      "icon": [{
+                          "icon": "sort-down-18",
+                          "label": "sort descending"
+                      }]
+                  },
+                  {
+                      "direction": "up",
+                      "icon": [{
+                          "icon": "sort-up-18",
+                          "label": "sort ascending"
+                      }]
+                  }
               ]
-            },
-            {
-              "direction": "up",
-              "icon": [
-                {
-                  "icon": "sort-up-18",
-                  "label": "sort ascending"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Age",
-          "icons": [
-            {
-              "direction": "down",
-              "icon": [
-                {
-                  "icon": "sort-down-18",
-                  "label": "sort descending"
-                }
-              ]
-            },
-            {
-              "direction": "up",
-              "icon": [
-                {
-                  "icon": "sort-up-18",
-                  "label": "sort ascending"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Role",
-          "icons": [
-            {
-              "direction": "down",
-              "icon": [
-                {
-                  "icon": "sort-down-18",
-                  "label": "sort descending"
-                }
-              ]
-            },
-            {
-              "direction": "up",
-              "icon": [
-                {
-                  "icon": "sort-up-18",
-                  "label": "sort ascending"
-                }
-              ]
-            }
-          ]
-        }
+          }
       ],
-      "tr": [
-        {
-          "td": [
-            {
-              "label": "Gordon"
-            },
-            {
-              "label": "Cole"
-            },
-            {
-              "label": "FBI Director"
-            },
-            {
-              "label": "70"
-            },
-            {
-              "label": "Instructor"
-            }
-          ]
-        },
-        {
-          "td": [
-            {
-              "label": "Cooper"
-            },
-            {
-              "label": "Dale"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "60"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        },
-        {
-          "td": [
-            {
-              "label": "Cooper"
-            },
-            {
-              "label": "Dale"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "60"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        }
+      "tr": [{
+              "td": [{
+                      "label": "Gordon"
+                  },
+                  {
+                      "label": "Cole"
+                  },
+                  {
+                      "label": "FBI Director"
+                  },
+                  {
+                      "label": "70"
+                  },
+                  {
+                      "label": "Instructor"
+                  }
+              ]
+          },
+          {
+              "td": [{
+                      "label": "Cooper"
+                  },
+                  {
+                      "label": "Dale"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "60"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
+              ]
+          },
+          {
+              "td": [{
+                      "label": "Cooper"
+                  },
+                  {
+                      "label": "Dale"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "60"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
+              ]
+          }
       ]
-    }
-  ],
-  "selecTable": [
-    {
+  }],
+  "selecTable": [{
       "tableName": "selectable table example",
-      "checkBox": [
-        {
+      "checkBox": [{
           "id": "selectAll",
           "checked": false,
-          "icon": [
-            {
+          "icon": [{
               "icon": "check-sm-18",
               "label": "selected"
-            }
-          ]
-        }
+          }]
+      }],
+      "th": [{
+              "label": "First Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Last Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Position",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Age",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Role",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          }
       ],
-      "th": [
-        {
-          "label": "First Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Last Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Position",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Age",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Role",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        }
-      ],
-      "tr": [
-        {
-          "checkBox": [
-            {
-              "id": "selectAll2",
-              "checked": false,
-              "ariaLabel": "Gordon Cole",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
+      "tr": [{
+              "checkBox": [{
+                  "id": "selectAll2",
+                  "checked": false,
+                  "ariaLabel": "Gordon Cole",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }],
+              "td": [{
+                      "label": "Gordon"
+                  },
+                  {
+                      "label": "Cole"
+                  },
+                  {
+                      "label": "FBI Director"
+                  },
+                  {
+                      "label": "70"
+                  },
+                  {
+                      "label": "Instructor"
+                  }
               ]
-            }
-          ],
-          "td": [
-            {
-              "label": "Gordon"
-            },
-            {
-              "label": "Cole"
-            },
-            {
-              "label": "FBI Director"
-            },
-            {
-              "label": "70"
-            },
-            {
-              "label": "Instructor"
-            }
-          ]
-        },
-        {
-          "selected": true,
-          "checkBox": [
-            {
-              "id": "selectAll3",
-              "checked": true,
-              "ariaLabel": "Dale Cooper",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
+          },
+          {
+              "selected": true,
+              "checkBox": [{
+                  "id": "selectAll3",
+                  "checked": true,
+                  "ariaLabel": "Dale Cooper",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }],
+              "td": [{
+                      "label": "Cooper"
+                  },
+                  {
+                      "label": "Dale"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "60"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
               ]
-            }
-          ],
-          "td": [
-            {
-              "label": "Cooper"
-            },
-            {
-              "label": "Dale"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "60"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        }
+          }
       ]
-    }
-  ],
-  "header": [
-    {
+  }],
+  "header": [{
       "avatar": true,
       "name": "Dale Cooper",
       "image": "avatar-dale.jpg",
-      "buttons": [
-        {
-          "drawerId": "notifications",
-          "className": "notification",
-          "notification":{
-            "icon": [
-              {
-                "icon": "new-notification-9",
-                "label": "notifications"
-              }
-            ]
-          },
-          "icon": [
-            {
-              "icon": "notification-18",
-              "label": "notifications"
-            }
-          ]
-        },
-        {
-          "className": "help",
-          "notification": false,
-          "icon": [
-            {
-              "icon": "help-fill-18",
-              "label": "help"
-            }
-          ]
-        }
-      ],
-      "icon": [
-        {
-          "icon": "person-18",
-          "label": "user"
-        }
-      ],
-      "showDrawerButton": false,
-      "drawer": [
-        {
-          "showButton": true,
-          "drawerId": "notifications",
-          "title": "Notifications",
-          "icon": [
-            {
-              "icon": "remove-sm-24",
-              "label": "close"
-            }
-          ],
-          "topics": [
-            {
-              "title": "Notification One",
-              "content": "You haven't received any notifications yet."
-            },
-            {
-              "title": "Notification Two",
-              "content": "You haven't received any notifications yet."
-            },
-            {
-              "title": "Notification Three",
-              "content": "You haven't received any notifications yet."
-            }
-          ],
-          "archive": [
-            {
-              "title": "Archive",
-              "topics": [
-                {
-                  "title": "Previous notification",
-                  "content": "This is an old notification"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "headerNoImage": [
-    {
-      "header": [
-        {
-          "avatar": false,
-          "buttons": [
-            {
+      "buttons": [{
               "drawerId": "notifications",
               "className": "notification",
-              "notification":{
-                "icon": [
-                  {
-                    "icon": "new-notification-9",
-                    "label": "notifications"
-                  }
-                ]
+              "notification": {
+                  "icon": [{
+                      "icon": "new-notification-9",
+                      "label": "notifications"
+                  }]
               },
-              "icon": [
-                {
+              "icon": [{
                   "icon": "notification-18",
                   "label": "notifications"
-                }
-              ]
-            },
-            {
+              }]
+          },
+          {
               "className": "help",
               "notification": false,
-              "icon": [
-                {
+              "icon": [{
                   "icon": "help-fill-18",
                   "label": "help"
-                }
-              ]
-            }
-          ],
-          "icon": [
-            {
-              "icon": "person-18",
-              "label": "user"
-            }
-          ]
-        }
+              }]
+          }
       ],
+      "icon": [{
+          "icon": "person-18",
+          "label": "user"
+      }],
       "showDrawerButton": false,
-      "drawer": [
-        {
+      "drawer": [{
           "showButton": true,
           "drawerId": "notifications",
           "title": "Notifications",
-          "icon": [
-            {
+          "icon": [{
               "icon": "remove-sm-24",
               "label": "close"
-            }
+          }],
+          "topics": [{
+                  "title": "Notification One",
+                  "content": "You haven't received any notifications yet."
+              },
+              {
+                  "title": "Notification Two",
+                  "content": "You haven't received any notifications yet."
+              },
+              {
+                  "title": "Notification Three",
+                  "content": "You haven't received any notifications yet."
+              }
           ],
-          "topics": [
-            {
-              "title": "Notification One",
-              "content": "You haven't received any notifications yet."
-            },
-            {
-              "title": "Notification Two",
-              "content": "You haven't received any notifications yet."
-            },
-            {
-              "title": "Notification Three",
-              "content": "You haven't received any notifications yet."
-            }
-          ],
-          "archive": [
-            {
+          "archive": [{
               "title": "Archive",
-              "topics": [
-                {
+              "topics": [{
                   "title": "Previous notification",
                   "content": "This is an old notification"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "tabNavigation": [
-    {
-      "tabList": [
-        {
-          "label": "Tab One",
-          "active-label": "false"
-        },
-        {
-          "label": "Tab Two",
-          "active-label": "true",
-          "active": true
-        },
-        {
-          "label": "Tab Three",
-          "active-label": "false"
-        }
+              }]
+          }]
+      }]
+  }],
+  "headerNoImage": [{
+      "header": [{
+          "avatar": false,
+          "buttons": [{
+                  "drawerId": "notifications",
+                  "className": "notification",
+                  "notification": {
+                      "icon": [{
+                          "icon": "new-notification-9",
+                          "label": "notifications"
+                      }]
+                  },
+                  "icon": [{
+                      "icon": "notification-18",
+                      "label": "notifications"
+                  }]
+              },
+              {
+                  "className": "help",
+                  "notification": false,
+                  "icon": [{
+                      "icon": "help-fill-18",
+                      "label": "help"
+                  }]
+              }
+          ],
+          "icon": [{
+              "icon": "person-18",
+              "label": "user"
+          }]
+      }],
+      "showDrawerButton": false,
+      "drawer": [{
+          "showButton": true,
+          "drawerId": "notifications",
+          "title": "Notifications",
+          "icon": [{
+              "icon": "remove-sm-24",
+              "label": "close"
+          }],
+          "topics": [{
+                  "title": "Notification One",
+                  "content": "You haven't received any notifications yet."
+              },
+              {
+                  "title": "Notification Two",
+                  "content": "You haven't received any notifications yet."
+              },
+              {
+                  "title": "Notification Three",
+                  "content": "You haven't received any notifications yet."
+              }
+          ],
+          "archive": [{
+              "title": "Archive",
+              "topics": [{
+                  "title": "Previous notification",
+                  "content": "This is an old notification"
+              }]
+          }]
+      }]
+  }],
+  "tabNavigation": [{
+      "tabList": [{
+              "label": "Tab One",
+              "active-label": "false"
+          },
+          {
+              "label": "Tab Two",
+              "active-label": "true",
+              "active": true
+          },
+          {
+              "label": "Tab Three",
+              "active-label": "false"
+          }
       ],
-      "dropdown": [
-        {
+      "dropdown": [{
           "label": "More",
-          "icon": [
-            {
+          "icon": [{
               "icon": "dropdown-open-sm-18",
               "label": "selected"
-            }
+          }]
+      }],
+      "menu": [{
+          "menuList": [{
+                  "label": "Option One",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "Option Two",
+                  "link": "#",
+                  "divider": true,
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              },
+              {
+                  "label": "Option Three",
+                  "link": "#",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }
           ]
-        }
-      ],
-      "menu": [
-        {
-          "menuList": [
-            {
-              "label": "Option One",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "Option Two",
-              "link": "#",
-              "divider": true,
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            },
-            {
-              "label": "Option Three",
-              "link": "#",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "modal": [
-    {
+      }]
+  }],
+  "modal": [{
       "title": "Modal Title",
       "showOpenButton": true,
       "modalId": "one",
       "showButtons": true,
       "defaultLabel": "Default Action",
       "primaryLabel": "Primary Action",
-      "paragraphs": [
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        }
+      "paragraphs": [{
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          }
       ],
-      "icon": [
-        {
+      "icon": [{
           "icon": "remove-sm-24"
-        }
-      ]
-    }
-  ],
-  "scrollModal": [
-    {
+      }]
+  }],
+  "scrollModal": [{
       "title": "Modal Title",
       "modalId": "two",
       "showButtons": true,
-      "paragraphs": [
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        },
-        {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
-        }
+      "paragraphs": [{
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          },
+          {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum luctus dui, a accumsan velit pulvinar et. In hac habitasse platea dictumst."
+          }
       ],
-      "icon": [
-        {
+      "icon": [{
           "icon": "remove-sm-24"
-        }
-      ]
-    }
-  ],
-  "alert": [
-    {
-      "button": [
-        {
+      }]
+  }],
+  "alert": [{
+      "button": [{
           "label": "Close success dialog",
-          "icon": [
-            {
+          "icon": [{
               "icon": "remove-sm-24",
               "label": "Close success dialog"
-            }
-          ]
-        }
-      ],
-      "showIcon": [
-        {
-          "icon": [
-            {
+          }]
+      }],
+      "showIcon": [{
+          "icon": [{
               "icon": "check-lg-18",
               "label": "Success"
-            }
-          ]
-        }
-      ],
+          }]
+      }],
       "title": "Lorem ipsom dolor sit amet.",
       "content": "Ronsectetuer adipiscing elit. Aene eoo rjgieo roi an commodo ligula eget dolor enean massa."
-    }
-  ],
+  }],
   "coachmark": [
     {
       "demo": true,
@@ -1442,219 +1121,170 @@
     }
   ],
   "showDrawerButton": true,
-  "drawer": [
-    {
+  "drawer": [{
       "showButton": true,
       "drawerId": "one",
       "title": "Notifications",
-      "icon": [
-        {
+      "icon": [{
           "icon": "remove-sm-24",
           "label": "close"
-        }
-      ],
-      "topics": [
-        {
+      }],
+      "topics": [{
           "dataId": "one",
           "title": "",
           "content": "You haven't received any notifications yet."
-        }
-      ],
-      "archive": [
-        {
+      }],
+      "archive": [{
           "title": "Archive",
-          "topics": [
-            {
+          "topics": [{
               "title": "Previous notification",
               "content": "This is an old notification"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "tableWithControls": [
-    {
+          }]
+      }]
+  }],
+  "tableWithControls": [{
       "id": "send_message",
       "ariaLabel": "Search By",
-      "icon": [
-        {
+      "icon": [{
           "icon": "dropdown-open-sm-18",
           "label": "selected"
-        }
-      ],
-      "basicInput": [
-        {
+      }],
+      "basicInput": [{
           "placeholder": "Search",
           "id": "search",
-          "icon": [
-            {
+          "icon": [{
               "icon": "search-sm-18",
               "label": "search"
-            }
-          ]
-        }
-      ],
+          }]
+      }],
       "tableName": "Advanced table controls",
-      "checkBox": [
-        {
+      "checkBox": [{
           "id": "selectAll",
           "checked": false,
-          "icon": [
-            {
+          "icon": [{
               "icon": "check-sm-18",
               "label": "selected"
-            }
-          ]
-        }
+          }]
+      }],
+      "th": [{
+              "label": "First Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Last Name",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Position",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Age",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          },
+          {
+              "label": "Role",
+              "icon": [{
+                  "icon": "sort-down-18",
+                  "label": "sort ascending"
+              }]
+          }
       ],
-      "th": [
-        {
-          "label": "First Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Last Name",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Position",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Age",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        },
-        {
-          "label": "Role",
-          "icon": [
-            {
-              "icon": "sort-down-18",
-              "label": "sort ascending"
-            }
-          ]
-        }
-      ],
-      "tr": [
-        {
-          "checkBox": [
-            {
-              "id": "selectAll2",
-              "checked": false,
-              "ariaLabel": "Gordon Cole",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
+      "tr": [{
+              "checkBox": [{
+                  "id": "selectAll2",
+                  "checked": false,
+                  "ariaLabel": "Gordon Cole",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }],
+              "td": [{
+                      "label": "Gordon"
+                  },
+                  {
+                      "label": "Cole"
+                  },
+                  {
+                      "label": "FBI Director"
+                  },
+                  {
+                      "label": "70"
+                  },
+                  {
+                      "label": "Instructor"
+                  }
               ]
-            }
-          ],
-          "td": [
-            {
-              "label": "Gordon"
-            },
-            {
-              "label": "Cole"
-            },
-            {
-              "label": "FBI Director"
-            },
-            {
-              "label": "70"
-            },
-            {
-              "label": "Instructor"
-            }
-          ]
-        },
-        {
-          "selected": true,
-          "checkBox": [
-            {
-              "id": "selectAll3",
-              "checked": true,
-              "ariaLabel": "Dale Cooper",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
+          },
+          {
+              "selected": true,
+              "checkBox": [{
+                  "id": "selectAll3",
+                  "checked": true,
+                  "ariaLabel": "Dale Cooper",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }],
+              "td": [{
+                      "label": "Cooper"
+                  },
+                  {
+                      "label": "Dale"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "60"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
               ]
-            }
-          ],
-          "td": [
-            {
-              "label": "Cooper"
-            },
-            {
-              "label": "Dale"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "60"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        },
-        {
-          "selected": false,
-          "checkBox": [
-            {
-              "id": "selectAll4",
-              "checked": false,
-              "ariaLabel": "Diane Evens",
-              "icon": [
-                {
-                  "icon": "check-sm-18",
-                  "label": "selected"
-                }
+          },
+          {
+              "selected": false,
+              "checkBox": [{
+                  "id": "selectAll4",
+                  "checked": false,
+                  "ariaLabel": "Diane Evens",
+                  "icon": [{
+                      "icon": "check-sm-18",
+                      "label": "selected"
+                  }]
+              }],
+              "td": [{
+                      "label": "Evens"
+                  },
+                  {
+                      "label": "Diane"
+                  },
+                  {
+                      "label": "Special Agent"
+                  },
+                  {
+                      "label": "55"
+                  },
+                  {
+                      "label": "Investigator"
+                  }
               ]
-            }
-          ],
-          "td": [
-            {
-              "label": "Evens"
-            },
-            {
-              "label": "Diane"
-            },
-            {
-              "label": "Special Agent"
-            },
-            {
-              "label": "55"
-            },
-            {
-              "label": "Investigator"
-            }
-          ]
-        }
+          }
       ]
-    }
-  ]
+  }]
 }

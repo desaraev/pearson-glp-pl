@@ -3,15 +3,17 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  @media(max-width:640px) {
-    overflow-x:hidden;
+  @media (max-width: 640px) {
+    overflow-x: hidden;
   }
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -29,7 +31,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .main-bg {
-  background-color:$primary;
+  background-color: $primary;
 }
 
 .main-two-bg {
@@ -65,23 +67,23 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .neutral-bg {
-  background-color:$neutral;
+  background-color: $neutral;
 }
 
 .neutral-two-bg {
-  background-color:$neutral-two;
+  background-color: $neutral-two;
 }
 
 .neutral-three-bg {
-  background-color:$neutral-three;
+  background-color: $neutral-three;
 }
 
 .neutral-four-bg {
-  background-color:$neutral-four;
+  background-color: $neutral-four;
 }
 
 .neutral-five-bg {
-  background-color:$neutral-five;
+  background-color: $neutral-five;
 }
 
 .condition-one-bg {
@@ -89,307 +91,304 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .condition-two-bg {
-  background-color:$condition-two;
+  background-color: $condition-two;
 }
 
 .condition-three-bg {
-  background-color:$condition-three;
+  background-color: $condition-three;
 }
 
 // D3 Colors 10 Array //////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
 .d3-10-array00-bg {
-	background-color:$d3-10-array00;
+  background-color: $d3-10-array00;
 }
 
 .d3-10-array01-bg {
-	background-color:$d3-10-array01;
+  background-color: $d3-10-array01;
 }
 
 .d3-10-array02-bg {
-	background-color: $condition-two;
+  background-color: $condition-two;
 }
 
 .d3-10-array03-bg {
-	background-color: $condition-one;
+  background-color: $condition-one;
 }
 
 .d3-10-array04-bg {
-	background-color: #9e007e;
+  background-color: #9e007e;
 }
 
 .d3-10-array05-bg {
-	background-color: #bb5e00;
+  background-color: #bb5e00;
 }
 
 .d3-10-array06-bg {
-	background-color: $condition-three;
+  background-color: $condition-three;
 }
+
 .d3-10-array07-bg {
-	background-color: $neutral-three;
+  background-color: $neutral-three;
 }
+
 .d3-10-array08-bg {
-	background-color: #a8af0b;
+  background-color: #a8af0b;
 }
+
 .d3-10-array09-bg {
-	background-color: #19a5a3;
+  background-color: #19a5a3;
 }
 
 // D3 Colors 20 Array //////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
 .d3-20-array00-bg {
-	background-color:$d3-20-array00;
+  background-color: $d3-20-array00;
 }
 
 .d3-20-array01-bg {
-	background-color:$d3-20-array01;
+  background-color: $d3-20-array01;
 }
 
 .d3-20-array02-bg {
-	background-color:$d3-20-array02;
+  background-color: $d3-20-array02;
 }
 
 .d3-20-array03-bg {
-	background-color:$d3-20-array03;
+  background-color: $d3-20-array03;
 }
 
 .d3-20-array04-bg {
-	background-color:$d3-20-array04;
+  background-color: $d3-20-array04;
 }
 
 .d3-20-array05-bg {
-	background-color:$d3-20-array05;
+  background-color: $d3-20-array05;
 }
 
 .d3-20-array06-bg {
-	background-color:$d3-20-array06;
+  background-color: $d3-20-array06;
 }
 
 .d3-20-array07-bg {
-	background-color:$d3-20-array07;
+  background-color: $d3-20-array07;
 }
 
 .d3-20-array08-bg {
-	background-color:$d3-20-array08;
+  background-color: $d3-20-array08;
 }
 
 .d3-20-array09-bg {
-	background-color:$d3-20-array09;
+  background-color: $d3-20-array09;
 }
 
 .d3-20-array10-bg {
-	background-color:$d3-20-array10;
+  background-color: $d3-20-array10;
 }
 
 .d3-20-array11-bg {
-	background-color:$d3-20-array11;
+  background-color: $d3-20-array11;
 }
 
 .d3-20-array12-bg {
-	background-color:$d3-20-array12;
+  background-color: $d3-20-array12;
 }
 
 .d3-20-array13-bg {
-	background-color:$d3-20-array13;
+  background-color: $d3-20-array13;
 }
 
 .d3-20-array14-bg {
-	background-color:$d3-20-array14;
+  background-color: $d3-20-array14;
 }
 
 .d3-20-array15-bg {
-	background-color:$d3-20-array15;
+  background-color: $d3-20-array15;
 }
 
 .d3-20-array16-bg {
-	background-color:$d3-20-array16;
+  background-color: $d3-20-array16;
 }
 
 .d3-20-array17-bg {
-	background-color:$d3-20-array17;
+  background-color: $d3-20-array17;
 }
 
 .d3-20-array18-bg {
-	background-color:$d3-20-array18;
+  background-color: $d3-20-array18;
 }
 
-
 .d3-20-array19-bg {
-	background-color:$d3-20-array19;
+  background-color: $d3-20-array19;
 }
 
 // D3 Colors 20b Array //////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
 .d3-20b-array00-bg {
-	background-color:$d3-20b-array00;
+  background-color: $d3-20b-array00;
 }
 
 .d3-20b-array01-bg {
-	background-color:$d3-20b-array01;
+  background-color: $d3-20b-array01;
 }
 
 .d3-20b-array02-bg {
-	background-color:$d3-20b-array02;
+  background-color: $d3-20b-array02;
 }
 
 .d3-20b-array03-bg {
-	background-color:$d3-20b-array03;
+  background-color: $d3-20b-array03;
 }
 
 .d3-20b-array04-bg {
-	background-color:$d3-20b-array04;
+  background-color: $d3-20b-array04;
 }
 
 .d3-20b-array05-bg {
-	background-color:$d3-20b-array05;
+  background-color: $d3-20b-array05;
 }
 
 .d3-20b-array06-bg {
-	background-color:$d3-20b-array06;
+  background-color: $d3-20b-array06;
 }
 
 .d3-20b-array07-bg {
-	background-color:$d3-20b-array07;
+  background-color: $d3-20b-array07;
 }
 
 .d3-20b-array08-bg {
-	background-color:$d3-20b-array08;
+  background-color: $d3-20b-array08;
 }
 
 .d3-20b-array09-bg {
-	background-color:$d3-20b-array09;
+  background-color: $d3-20b-array09;
 }
 
 .d3-20b-array10-bg {
-	background-color:$d3-20b-array10;
+  background-color: $d3-20b-array10;
 }
 
 .d3-20b-array11-bg {
-	background-color:$d3-20b-array11;
+  background-color: $d3-20b-array11;
 }
 
 .d3-20b-array12-bg {
-	background-color:$d3-20b-array12;
+  background-color: $d3-20b-array12;
 }
 
 .d3-20b-array13-bg {
-	background-color:$d3-20b-array13;
+  background-color: $d3-20b-array13;
 }
 
 .d3-20b-array14-bg {
-	background-color:$d3-20b-array14;
+  background-color: $d3-20b-array14;
 }
 
 .d3-20b-array15-bg {
-	background-color:$d3-20b-array15;
+  background-color: $d3-20b-array15;
 }
 
 .d3-20b-array16-bg {
-	background-color:$d3-20b-array16;
+  background-color: $d3-20b-array16;
 }
 
 .d3-20b-array17-bg {
-	background-color:$d3-20b-array17;
+  background-color: $d3-20b-array17;
 }
 
 .d3-20b-array18-bg {
-	background-color:$d3-20b-array18;
+  background-color: $d3-20b-array18;
 }
 
-
 .d3-20b-array19-bg {
-	background-color:$d3-20b-array19;
+  background-color: $d3-20b-array19;
 }
 
 // D3 Colors 20c Array //////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
 .d3-20c-array00-bg {
-	background-color:$d3-20c-array00;
+  background-color: $d3-20c-array00;
 }
 
 .d3-20c-array01-bg {
-	background-color:$d3-20c-array01;
+  background-color: $d3-20c-array01;
 }
 
 .d3-20c-array02-bg {
-	background-color:$d3-20c-array02;
+  background-color: $d3-20c-array02;
 }
 
 .d3-20c-array03-bg {
-	background-color:$d3-20c-array03;
+  background-color: $d3-20c-array03;
 }
 
 .d3-20c-array04-bg {
-	background-color:$d3-20c-array04;
+  background-color: $d3-20c-array04;
 }
 
 .d3-20c-array05-bg {
-	background-color:$d3-20c-array05;
+  background-color: $d3-20c-array05;
 }
 
 .d3-20c-array06-bg {
-	background-color:$d3-20c-array06;
+  background-color: $d3-20c-array06;
 }
 
 .d3-20c-array07-bg {
-	background-color:$d3-20c-array07;
+  background-color: $d3-20c-array07;
 }
 
 .d3-20c-array08-bg {
-	background-color:$d3-20c-array08;
+  background-color: $d3-20c-array08;
 }
 
 .d3-20c-array09-bg {
-	background-color:$d3-20c-array09;
+  background-color: $d3-20c-array09;
 }
 
 .d3-20c-array10-bg {
-	background-color:$d3-20c-array10;
+  background-color: $d3-20c-array10;
 }
 
 .d3-20c-array11-bg {
-	background-color:$d3-20c-array11;
+  background-color: $d3-20c-array11;
 }
 
 .d3-20c-array12-bg {
-	background-color:$d3-20c-array12;
+  background-color: $d3-20c-array12;
 }
 
 .d3-20c-array13-bg {
-	background-color:$d3-20c-array13;
+  background-color: $d3-20c-array13;
 }
 
 .d3-20c-array14-bg {
-	background-color:$d3-20c-array14;
+  background-color: $d3-20c-array14;
 }
 
 .d3-20c-array15-bg {
-	background-color:$d3-20c-array15;
+  background-color: $d3-20c-array15;
 }
 
 .d3-20c-array16-bg {
-	background-color:$d3-20c-array16;
+  background-color: $d3-20c-array16;
 }
 
 .d3-20c-array17-bg {
-	background-color:$d3-20c-array17;
+  background-color: $d3-20c-array17;
 }
 
 .d3-20c-array18-bg {
-	background-color:$d3-20c-array18;
+  background-color: $d3-20c-array18;
 }
-
 
 .d3-20c-array19-bg {
-	background-color:$d3-20c-array19;
+  background-color: $d3-20c-array19;
 }
-
-
-
 
 // Font Color Helpers - Targets color and fill color for SVG ///
 ////////////////////////////////////////////////////////////////
@@ -409,7 +408,7 @@ input[type=number]::-webkit-outer-spin-button {
   @include font-color($primary-two);
 }
 
-.main-three{
+.main-three {
   @include font-color($primary-three);
 }
 
@@ -465,9 +464,9 @@ input[type=number]::-webkit-outer-spin-button {
   @include font-color($condition-three);
 }
 
-
 .flex-container {
   @include flex;
+
   &.justify-flex-start {
     align-items: center;
     justify-content: flex-start;
@@ -475,7 +474,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
 .center {
@@ -499,10 +498,11 @@ img {
 }
 
 .margin-sides {
-  margin:0 1em;
+  margin: 0 1em;
 }
+
 .margin-right {
-  margin-right:1em;
+  margin-right: 1em;
 }
 
 .justify-end {
@@ -510,28 +510,27 @@ img {
 }
 
 .pad-top-4 {
-  padding-top:4em;
+  padding-top: 4em;
 }
 
 .pad-top-2 {
-  padding-top:2em;
+  padding-top: 2em;
 }
 
 .badge {
-  max-width:125px;
-  margin-bottom:1em;
+  max-width: 125px;
+  margin-bottom: 1em;
 }
 
 .stars {
-  max-width:250px;
-  margin-bottom:1em;
+  max-width: 250px;
+  margin-bottom: 1em;
 }
 
 .no-margin {
-  margin:0;
+  margin: 0;
 }
 
 .light {
-	font-weight: lighter;
+  font-weight: lighter;
 }
-

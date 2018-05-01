@@ -24,32 +24,38 @@
     
     position: absolute;
     background-color: $secondary-three;
-    border-radius:2px;
+    border-radius: 2px;
     z-index: 2;
-    
+
     .content {
       width:100%;
       border-radius:2px;
-      padding:em(23) em(28);
+      padding:20px 24px;
       background:$secondary-three;
       position:relative;
       z-index:2;
+      color: $neutral-two;
       
-      p {margin-bottom: 0;}
+      p {
+        margin-bottom: 0;
+        font-weight: normal
+      }
       
       .coach-link {
         display:flex;
         justify-content:flex-end;
-        color: $neutral-two;
         margin-top: em(28);
+        color: $neutral-two;
       }
     }
+
     .title-container {
       @include flex;
+
       margin-bottom: 0.25em;
-      
+
       button {
-      	color: $neutral-three;
+        color: $neutral-three;
       }
     }
   }
@@ -58,8 +64,8 @@
 @mixin arrow {
   content: "";
   @include box-size(0, 0);
+
   position: absolute;
-  
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid $secondary-three;
