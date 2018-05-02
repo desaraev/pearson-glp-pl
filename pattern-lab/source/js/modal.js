@@ -1,58 +1,62 @@
 'use strict';
 
 (function() {
-    const modalButtons = document.querySelectorAll("button[data-modal-id]"),
-        scrollOverlays = document.querySelectorAll('.overlay-scroll'),
-        actionButtons = document.querySelectorAll('.modal-actions button'),
-        closeButtons = document.querySelectorAll('.modal-close');
+    const modalButton = document.getElementById('trigger-modal'),
+          overlay = document.getElementById('modalOverlay'),
+          modal = document.getElementById('modal'),
+          main = document.getElementById('main'),
+          firstButton = document.getElementById('firstButton'),
+          lastButton = document.getElementById('lastButton');
 
-    modalButtons.forEach(button => {
-        button.addEventListener('click', event => {
-            const modalId = event.currentTarget.getAttribute('data-modal-id'),
-                modalToOpen = document.querySelector('.modal-body[data-modal-open=' + modalId + ']'),
-                overlayToOpen = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
-            overlayToOpen.classList.remove('hidden');
-            modalToOpen.classList.remove('hidden');
-            modalToOpen.setAttribute('aria-hidden', 'false');
-            if (overlayToOpen.classList.contains('content-scroll')) {
-                const content = modalToOpen.querySelector('.modal-content');
-                if (content.scrollHeight > content.clientHeight) {
-                    content.classList.add('content-border');
-                    content.nextElementSibling.classList.add('actions-scroll-style');
-                }
-            }
-        })
-    })
+          modalButton.addEventListener('click', event => {
+              const thisButton = event.currentTarget,
+              buttonDisabled = thisButton.getAttribute('disabled');
 
-    actionButtons.forEach(button => {
-        closeModal(button);
-    })
+              if (buttonDisabled === null) {
+                  thisButton.setAttribute('disabled', true);
+                  main.setAttribute('aria-hidden', 'true');
+                overlay.removeAttribute('disabled')
+              }
 
-    closeButtons.forEach(button => {
-        closeModal(button);
-    })
+              overlay.classList.remove('hidden');
+              modal.classList.remove('hidden');
+              firstButton.focus();
+          });
 
-    scrollOverlays.forEach(overlay => {
-        overlay.addEventListener('click', event => {
-            const modalId = overlay.getAttribute('data-overlay-open');
+          lastButton.addEventListener('blur', () => {
+            overlay.focus();
+          });
+
+          overlay.addEventListener('blur', ()=> {
+            firstButton.focus();
+          });
+
+          overlay.addEventListener('click', () => {
+            modalButton.removeAttribute('disabled');
+            main.setAttribute('aria-hidden', 'false');
             overlay.classList.add('hidden');
-            closeModalBody(modalId);
-        })
-    })
+            modal.classList.add('hidden');
+            overlay.setAttribute('disabled', 'true')
+          });
 
-    function closeModal(button) {
-        button.addEventListener('click', event => {
-            const modalId = button.getAttribute('data-button-close'),
-                overlayToClose = document.querySelector('.modal-overlay[data-overlay-open=' + modalId + ']');
-            overlayToClose.classList.add('hidden');
-            closeModalBody(modalId);
-        })
-    }
+          lastButton.addEventListener('click', () => {
+              modalButton.removeAttribute('disabled');
+              main.setAttribute('aria-hidden', 'false');
+              overlay.classList.add('hidden');
+              modal.classList.add('hidden');
+              overlay.setAttribute('disabled', 'true')
+          });
 
-    function closeModalBody(id) {
-        const modalToClose = document.querySelector('.modal-body[data-modal-open=' + id + ']');
-        modalToClose.classList.add('hidden');
-        modalToClose.setAttribute('aria-hidden', 'true');
-    }
+          document.addEventListener('keyup', e => {
+            if(e.keyCode == '27'){
+              if (main.getAttribute('aria-hidden') === 'true') {
+                modalButton.removeAttribute('disabled');
+                main.setAttribute('aria-hidden', 'false');
+                overlay.classList.add('hidden');
+                modal.classList.add('hidden');
+              }
+          };
+          });
 
 })();
+

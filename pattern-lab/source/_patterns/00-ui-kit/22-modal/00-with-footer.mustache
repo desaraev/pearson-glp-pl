@@ -1,0 +1,18 @@
+<main id="main" aria-hidden="false">
+	<h1>Accessible Modal Dialog</h1>
+	<p>Coding instructions: <a href="http://w3c.github.io/aria-practices/#dialog_modal">http://w3c.github.io/aria-practices/#dialog_modal</a></p>
+	<h2>WAI-ARIA role=dialog</h2>
+	<button id="trigger-modal">Trigger modal dialog</button>
+</main>
+<button class="hidden" id="modalOverlay"></button>
+<div class="hidden" id="modal" role="dialog" aria-labelledby="dialog-heading" aria-describedby="dialog-description" aria-modal="true">
+	<div id="firstElement" tabindex="0"></div>
+	<h1 id="dialog-heading">Modal Dialog Title</h1>
+	<div id="dialog-description">
+		<p>The quick brown fox jumps over the lazy dog.</p>
+	</div>
+	<button id="firstButton">Option Dog</button>
+	<button>Option Fox</button>
+	<button id="lastButton" aria-label="Close Dialog">X</button>
+	<div id="lastElement" tabindex="0"></div>
+</div>
