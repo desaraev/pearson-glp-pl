@@ -1,66 +1,71 @@
 {{> ui-kit-header}}
 <div class="manage-course">
-	<div class="col-sm-12 settings-course-name-main">
-		<h1 class="pe-title">Course name</h1>
-		{{> ui-kit-tab}}
-	</div>
-	<div class="col-sm-12 settings-body">
-		<div class="pe-form col-xs-12 no-padding">
-	<div class="row section-row" id="section-code-row">
-		<div class="col-xs-12">
-			<div class="pe-form--group">
-				<label for="course-section" id="course-section-label" class="pe-textLabelInput__label ">
-					<span>Section code (optional)</span>&nbsp;
-					<button type="button" id="section-tooltip" class="pe-icon--btn">
-						<span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="no" class="pe-icon--info-fill-18" style="vertical-align: middle; max-height: 25px; max-width: 25px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info-fill-18" style="pointer-events: none;"></use></svg></span>
-					</button>
-				</label>
-				<div class="row">
-					<div class="col-xs-12">
-						<input type="text" id="course-section" name="sectionCode" value="" class="pe-textInput--basic full-width " placeholder="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="course-duration-dates">
-		<div class="pe-form--group">
-			<label for="course-duration" id="course-duration-label" class="pe-textLabelInput__label "></label>
-			<div id="course-duration" class="row">
-				<div class="col-xs-12 col-sm-3 no-margin start-date-group">
-					<div class="pe-datepicker-main pe-form--group">
-						<label for="course-start-date" class="pe-textLabelInput__label">Start date (mm/dd/yyyy)</label>
-						{{>ui-kit-datepicker}}
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-3 no-margin">
-					<div class="pe-datepicker-main pe-form--group">
-						<label for="course-end-date" class="pe-textLabelInput__label">End date (mm/dd/yyyy)</label>
-						{{>ui-kit-datepicker}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="pe-form col-xs-12">
-		<div id="onlineOnly" class="row" style="margin-bottom: 2em;">
-			<div class="pe-checkbox" style="box-sizing: content-box;">
-				<input type="checkbox" id="online-only-checkbox" value="on" style="height: 16px; width: 16px; margin-top: 0px; z-index: 2;">
-				<label for="online-only-checkbox"><span><span>This course does not meet during specific days and times</span>&nbsp;<em> (<span>ex: online course</span>) </em></span></label><span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="pe-icon--check-sm-18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use></svg></span>
-			</div>
-		</div>
-	</div>
-		{{> organisms-course-dates}}
-	<div class="form-buttons">
-			<button type="button" id="delete-course-button" class="pe-btn--btn_xlarge course-delete"><span>Delete Course</span></button>
+    <div class="col-sm-12 settings-course-name-main">
+        <h1 class="pe-title">Course name</h1>
+        {{> ui-kit-tab}}
+    </div>
+    <div class="col-sm-12 settings-body">
+        <div class="pe-form col-xs-12 no-padding">
+            <div class="row section-row" id="section-code-row">
+                <div class="col-xs-12">
+                    <div class="pe-form--group">
+                        <label for="course-section" id="course-section-label" class="pe-textLabelInput__label ">
+                            <span>Section code (optional)</span>&nbsp;
+                            <button type="button" id="section-tooltip" class="pe-icon--btn">
+                                <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="no" class="pe-icon--info-fill-18" style="vertical-align: middle; max-height: 25px; max-width: 25px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info-fill-18" style="pointer-events: none;"></use></svg></span>
+                            </button>
+                        </label>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="text" id="course-section" name="sectionCode" value="" class="pe-textInput--basic full-width " placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-duration-dates">
+                <div class="pe-form--group">
+                    <label for="course-duration" id="course-duration-label" class="pe-textLabelInput__label "></label>
+                    <div id="course-duration" class="row">
+                        <div class="col-xs-12 col-sm-3 no-margin start-date-group">
+                            <div class="pe-datepicker-main pe-form--group">
+                                <label for="course-start-date" class="pe-textLabelInput__label">Start date (mm/dd/yyyy)</label>
+                                {{>ui-kit-datepicker}}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 no-margin">
+                            <div class="pe-datepicker-main pe-form--group">
+                                <label for="course-end-date" class="pe-textLabelInput__label">End date (mm/dd/yyyy)</label>
+                                {{>ui-kit-datepicker}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pe-form col-xs-12">
+                <div id="onlineOnly" class="row" style="margin-bottom: 2em;">
+                    <div class="pe-checkbox" style="box-sizing: content-box;">
+                        <input type="checkbox" id="online-only-checkbox" value="on" style="height: 16px; width: 16px; margin-top: 0px; z-index: 2;">
+                        <label for="online-only-checkbox"><span><span>This course does not meet during specific days and times</span>&nbsp;<em> (<span>ex: online course</span>) </em>
+                            </span>
+                        </label><span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="pe-icon--check-sm-18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use></svg></span>
+                    </div>
+                </div>
+            </div>
+            {{> organisms-course-dates}}
+            <div class="form-buttons">
+                <button type="button" id="delete-course-button" class="pe-btn--btn_xlarge course-delete"><span>Delete Course</span>
+                </button>
 
-			<div>
-				<button type="button" role="link" id="cancel-bottom" class="pe-btn--btn_xlarge return-to-original margin-right"><span>Cancel</span></button>
-				<button role="link" type="submit" id="submit-bottom" class=" pe-btn__primary--btn_xlarge course-submit"><span>Save</span></button>
-			</div>
-	</div>
+                <div>
+                    <button type="button" role="link" id="cancel-bottom" class="pe-btn--btn_xlarge return-to-original margin-right"><span>Cancel</span>
+                    </button>
+                    <button role="link" type="submit" id="submit-bottom" class=" pe-btn__primary--btn_xlarge course-submit"><span>Save</span>
+                    </button>
+                </div>
+            </div>
 
-</div>
-	</div>
+        </div>
+    </div>
 </div>
 

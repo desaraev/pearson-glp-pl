@@ -1,43 +1,52 @@
 .manage-course {
   .settings-course-name-main {
-	width: 100%;
-	height: 100%;
-	//display: inline-flex;
-	padding-top: 24px;
-	background-color: $primary-four;
+    width: 100%;
+    height: 100%;
 
-	h1 {
-	  text-align: center;
-	  margin-bottom: 2em;
-	}
-	.tabbed-navigation ul {
-		margin: auto;
-		text-align: center;
+    //display: inline-flex;
+    padding-top: 24px;
+    background-color: $primary-four;
 
-		a {
-		  margin-bottom: 0;
-		}
-	}
+    h1 {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .tabbed-navigation ul {
+      margin: auto;
+      text-align: center;
+
+      a {
+        margin-bottom: 0;
+      }
+    }
   }
+
   .settings-body {
     padding: 0 80px;
     margin: 2em 0;
-	.calendar {z-index: 1001}
+
+    .calendar {
+      z-index: 1001;
+    }
+
     //.row {margin:0;}
     .section-row {
-    	margin-top: 15px;
+      margin-top: 15px;
     }
+
     .pe-icon--btn {
-    	color: $neutral-three;
+      color: $neutral-three;
     }
 
     .pe-form--group {
-    	margin-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
+
   .form-buttons {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .col-xs-12, .col-sm-12 {
@@ -46,6 +55,7 @@
     padding-right: 15px;
     width: 100%;
   }
+
   .full-width {
     width: 100%;
   }

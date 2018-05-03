@@ -1,5 +1,5 @@
 {
-  "tabNavigation": [{
+    "tabNavigation": [{
         "tabList": [{
                 "label": "Settings",
                 "active-label": "true",
