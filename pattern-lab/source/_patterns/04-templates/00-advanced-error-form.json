@@ -1,4 +1,20 @@
 {
+  "tabNavigation": [{
+        "tabList": [{
+                "label": "Settings",
+                "active-label": "true",
+                "active": true
+            },
+            {
+                "label": "Roster",
+                "active-label": "false"
+            },
+            {
+                "label": "Materials",
+                "active-label": "false"
+            }
+        ]
+    }],
     "courseDates": [{
         "num": "0",
         "daySelect": [{

@@ -80,8 +80,8 @@
 
             var activeDescendantID = menu.getAttribute('aria-activedescendant');
             var activeDescendant = document.getElementById(activeDescendantID);
-            activeDescendant.style.outline = "2px solid navy";
-            activeDescendant.style.backgroundColor = "#E9E9E9";
+            // activeDescendant.style.outline = "2px solid navy";
+//             activeDescendant.style.backgroundColor = "#E9E9E9";
 
             menu.focus();
 
@@ -95,13 +95,13 @@
         menuitems.forEach(item => {
             item.style.outline = "none";
             item.style.backgroundColor = "white";
-            item.style.padding = "7px 10px"
+           // item.style.padding = "7px 10px"
         });
         menus.forEach(menu => {
             var activeDescendantID = menu.getAttribute('aria-activedescendant');
             var activeDescendant = document.getElementById(activeDescendantID);
-            activeDescendant.style.outline = "2px solid navy";
-            activeDescendant.style.backgroundColor = "#E9E9E9";
+          //  activeDescendant.style.outline = "2px solid navy";
+            //activeDescendant.style.backgroundColor = "#E9E9E9";
         });
     }
 
@@ -112,12 +112,12 @@
         //menu.setAttribute('aria-labelledby', menu.parentElement.previousElementSibling.id);
         menu.setAttribute('aria-activedescendant', menu.firstElementChild.id);
         menuitems.forEach(item => {
-            item.style.padding = "7px 10px"
+            //item.style.padding = "7px 10px"
         });
         var activeDescendantID = menu.getAttribute('aria-activedescendant');
         var activeDescendant = document.getElementById(activeDescendantID);
-        activeDescendant.style.outline = "2px solid navy";
-        activeDescendant.style.backgroundColor = "#E9E9E9";
+        //activeDescendant.style.outline = "2px solid navy";
+        //activeDescendant.style.backgroundColor = "#E9E9E9";
 
         if (!menu.parentElement.classList.contains('dropdown-menu')) {
             menu.classList.remove('hidden');
@@ -152,8 +152,8 @@
 
                     activeDescendantID = menu.getAttribute('aria-activedescendant');
                     activeDescendant = document.getElementById(activeDescendantID);
-                    activeDescendant.style.outline = "2px solid navy";
-                    activeDescendant.style.backgroundColor = "#E9E9E9";
+                    //activeDescendant.style.outline = "2px solid navy";
+                    //activeDescendant.style.backgroundColor = "#E9E9E9";
 
                     break;
 
@@ -169,8 +169,8 @@
 
                     activeDescendantID = menu.getAttribute('aria-activedescendant');
                     activeDescendant = document.getElementById(activeDescendantID);
-                    activeDescendant.style.outline = "2px solid navy";
-                    activeDescendant.style.backgroundColor = "#E9E9E9";
+                    //activeDescendant.style.outline = "2px solid navy";
+                    //activeDescendant.style.backgroundColor = "#E9E9E9";
 
 
 
@@ -188,8 +188,8 @@
 
                     activeDescendantID = menu.getAttribute('aria-activedescendant');
                     activeDescendant = document.getElementById(activeDescendantID);
-                    activeDescendant.style.outline = "2px solid navy";
-                    activeDescendant.style.backgroundColor = "#E9E9E9";
+                   // activeDescendant.style.outline = "2px solid navy";
+                   // activeDescendant.style.backgroundColor = "#E9E9E9";
                     activeDescendant.click();
                     break;
                 case 36: // home
@@ -198,8 +198,8 @@
 
                     activeDescendantID = menu.getAttribute('aria-activedescendant');
                     activeDescendant = document.getElementById(activeDescendantID);
-                    activeDescendant.style.outline = "2px solid navy";
-                    activeDescendant.style.backgroundColor = "#E9E9E9";
+                  //  activeDescendant.style.outline = "2px solid navy";
+                   // activeDescendant.style.backgroundColor = "#E9E9E9";
                     break;
 
                 case 35: // end
@@ -208,8 +208,8 @@
 
                     activeDescendantID = menu.getAttribute('aria-activedescendant');
                     activeDescendant = document.getElementById(activeDescendantID);
-                    activeDescendant.style.outline = "2px solid navy";
-                    activeDescendant.style.backgroundColor = "#E9E9E9";
+                    //activeDescendant.style.outline = "2px solid navy";
+                    //activeDescendant.style.backgroundColor = "#E9E9E9";
                     break;
 
 

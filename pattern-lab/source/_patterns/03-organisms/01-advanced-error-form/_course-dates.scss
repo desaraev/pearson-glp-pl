@@ -1,47 +1,73 @@
 .course-dates {
-	margin:0;
-	.row {
-		margin:0;
-	}
-	.pe-form--group {
-		margin-bottom: 20px;
-	}
-	.col-xs-5 {
-		width: 41.66667%;
-	}
-	.col-xs-2 {
-		width: 16.66667%;
-	}
-	.col-xs-offset-2 {
-		margin-left: 16.66667%;
-	}
-	.start-end-times {
-		display: flex;
-		align-items: center;
+  margin: 0;
+  margin-bottom: 2em;
+  margin-left: -15px;
 
-		.timepicker-container .timepicker {
-			max-width: unset;
+  .row {
+    margin: 0;
+    align-items: flex-end;
+  }
+
+  .pe-form--group {
+    margin-bottom: 20px;
+  }
+
+  .col-xs-5 {
+    width: 41.66667%;
+  }
+
+  .col-xs-2 {
+    width: 16.66667%;
+  }
+
+  .col-xs-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .schedule-row {
+  	margin-bottom: 3em;
+  }
+  .start-end-times {
+    display: flex;
+    align-items: flex-end;
+
+    .timepicker-container {
+    .menu {
+			top: 62px;
 		}
-	}
-	.to-time {
-		text-align: center;
-	}
+    .timepicker {
+      max-width: unset;
 
-	.add-row {
-		padding-left: 15px;
-		padding-right: 15px;
+	      .pe-input--error_message {
+    	  	position: absolute;
+      		line-height: 18px;
+      	}
+      }
+    }
+  }
 
-		.add-day {
-			color: $secondary-four;
-		}
-	}
+  .to-time {
+    text-align: center;
+    height: 36px;
+    padding: 5px 0;
+  }
 
-	.pe-select-container {
-		min-width: unset;
-	}
+  .add-row {
+    padding-left: 15px;
+    padding-right: 15px;
 
-	input[aria-invalid="true"], textarea[aria-invalid="true"] {
-  		border: 1px solid #f00;
-  		box-shadow: 0 0 4px 0 #f00;
-	}
+    .add-day {
+      color: $secondary-four;
+    }
+  }
+  .remove-daytime {
+  	margin-bottom: 10px;
+  }
+  .pe-select-container {
+    min-width: unset;
+  }
+
+  // input[aria-invalid="true"], textarea[aria-invalid="true"] {
+//     border: 1px solid #f00;
+//     box-shadow: 0 0 4px 0 #f00;
+//   }
 }

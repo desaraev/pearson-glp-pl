@@ -1,0 +1,354 @@
+{{#courseDates}}
+<div class="course-dates">
+    <div class="pe-form--group" id="courseDates">
+        <div class="label-spacing">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs">
+                    <label id="label-head-days" for="course-duration" class="pe-textLabelInput__label "><span>Days</span>
+                    </label>
+                </div>
+                <div class="col-sm-6 start-end-times">
+                    <div class="col-xs-5 hidden-xs no-padding">
+                        <label for="start-time" class="pe-textLabelInput__label ">
+                            <div><span>Start time</span>
+                                <!-- react-text: 474 -->&nbsp;(
+                                <!-- /react-text --><span>hh:mm AM/PM</span>
+                                <!-- react-text: 476 -->)
+                                <!-- /react-text -->
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-xs-5 col-xs-offset-2 hidden-xs end-time-label">
+                        <label for="end-time" class="pe-textLabelInput__label ">
+                            <div><span>End time</span>
+                                <!-- react-text: 481 -->&nbsp;(
+                                <!-- /react-text --><span>hh:mm AM/PM</span>
+                                <!-- react-text: 483 -->)
+                                <!-- /react-text -->
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule-row" id="schedule-row-{{num}}">
+            <div class="pe-form--group">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 ">
+                        <div class="basic-select">
+                            {{#daySelect}}
+                            <div class="pe-select-container">
+                                <select class="pe-selectInput--basic" id="{{id}}" aria-labelledby="label-head-days">
+                                    {{#optionList}}
+                                    <option value="{{value}}">{{label}}</option>
+                                    {{/optionList}}
+                                </select>
+                                {{> ui-kit-single-icon }}
+                            </div>
+                            {{/daySelect}}
+                        </div>
+                    </div>
+                    <div class="start-end-times col-xs-12 col-sm-6">
+                        <div class="col-xs-5 no-padding">
+                            {{#startTime}}
+                            <div class="timepicker-container start">
+                                <div class="timepicker">
+                                    {{> ui-kit-input-icon }}
+                                </div>
+                                {{> ui-kit-menu }}
+                            </div>
+                            {{/startTime}}
+                        </div>
+                        <div class="col-xs-2 to-time"><span>to</span>
+                        </div>
+                        <div class="col-xs-5 no-padding">
+                            {{#endTime}}
+                            <div class="timepicker-container end">
+                                <div class="timepicker">
+                                    {{> ui-kit-input-icon }}
+                                </div>
+                                {{> ui-kit-menu }}
+                            </div>
+                            {{/endTime}}
+                        </div>
+                    </div>
+                    <button id="remove-schedule-item-{{num}}" class="pe-link--btn remove-daytime" type="button" onclick="removeRow(event)"><span>Remove</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{#addRow}}
+    <div class="add-row">
+        <span class="add-day">
+			{{>ui-kit-single-icon}}
+		</span>
+        <button id="add-schedule-item" class="pe-link--btn" type="button" onclick="cloneRow()">
+            <span>Add another day and time</span>
+        </button>
+    </div>
+    {{/addRow}}
+</div>
+{{/courseDates}}
+<script>
+
+</script>
+<script>
+
+ var courseArray = [];
+ var counter = 0;
+var courseInfo = {num: counter, day: '', start: '', end: ''};
+    function cloneRow() {
+
+    		var row = document.querySelector(".schedule-row:last-child");
+    		var container = document.getElementById("courseDates");
+    		var currentDate = row.querySelector("select").selectedIndex;
+    		var clone = row.cloneNode(true);
+    		var deleteRowBtn = clone.querySelector("button.remove-daytime");
+    		var select = clone.querySelector("select");
+    		var startTime = clone.querySelector(".start input");
+    		var endTime = clone.querySelector(".end input");
+    		var startMenu = clone.querySelector(".start .menu");
+    		var endMenu = clone.querySelector(".end .menu");
+
+
+    		//get previous day of week and add two
+
+    		var date = clone.querySelector("select");
+
+    		if (currentDate == 5) {
+    			date.selectedIndex = 0;
+    		}
+    		else if (currentDate == 6) {
+    			date.selectedIndex = 1;
+    		}
+    		else {
+    			date.selectedIndex = currentDate + 2;
+    		}
+
+    		counter++;
+
+    		clone.id = "schedule-row-" + counter;
+    		deleteRowBtn.id = "remove-schedule-item-" + counter;
+    		select.id = "dateSelector-" + counter;
+    		startTime.id = "timeSelectorStart-" + counter;
+    		endTime.id = "timeSelectorEnd-" + counter;
+    		startMenu.id = "menu" + counter + "-start";
+    		endMenu.id = "menu" + counter + "-end";
+
+    		container.appendChild(clone);
+
+    		courseArray.push(courseInfo);
+    		console.log(courseArray);
+    	}
+
+    function removeRow(event) {
+    	var row = event.target.parentNode.parentNode.parentNode.parentNode;
+
+    	row.parentNode.removeChild(row);
+    }
+
+function rowFunctions(event) {
+	//if (!event.target.matches('input')) return
+	//console.log('this is an input')
+	if (event.target.matches('input')) {
+	const menu = event.target.parentNode.parentNode.parentNode.querySelector('.menu'),
+		listItem = menu.querySelectorAll('li'),
+		input = event.target;
+
+	menu.classList.remove('hidden');
+	listItem.forEach((item) => {
+            item.addEventListener('click', event => {
+
+                listItem.forEach((item) => {
+
+                    item.setAttribute('aria-checked', 'false');
+                });
+                event.preventDefault();
+                input.value = event.currentTarget.querySelector('a').textContent.replace(/\s(?!AM|PM|am|pm)/g, '').toUpperCase();
+                menu.classList.add('hidden');
+               // item.setAttribute('aria-checked', 'true');
+            })
+        });
+		input.addEventListener('keyup', () => {
+            menu.classList.add('hidden');
+        });
+        }
+
+
+
+
+	const scheduleRows = event.currentTarget.querySelectorAll('.schedule-row');
+
+
+
+    	scheduleRows.forEach(row => {
+    	    const start = row.querySelector('.timepicker-container.start'),
+    	    	 end = row.querySelector('.timepicker-container.end'),
+    	    	 startTime = start.querySelector('input'),
+    	    	 endTime = end.querySelector('input'),
+    	    	 dates = row.querySelectorAll('select'),
+    	    	 startMenuItems = start.querySelectorAll('.menu li'),
+    	    	 endMenuItems = end.querySelectorAll('.menu li');
+
+				var currentDate;
+
+				dates.forEach((date) => {
+					currentDate = date.options[date.selectedIndex].value;
+
+					date.addEventListener('change', event => {
+						currentDate = date.selectedIndex.value;
+					})
+					//dateArr[dateArr.length] = currentDate;
+					courseArray[courseArray.length-1]=currentDate;
+
+				})
+
+    			//if they select from the list
+    			startMenuItems.forEach((item) => {
+                	item.addEventListener('click', event => {
+                 	   startTime.value = event.currentTarget.querySelector('a').textContent.replace(/\s(?!AM|PM|am|pm)/g, '').toUpperCase();
+                 	   var currentTime = moment(startTime.value, 'h:mm A');
+    				//	console.log(currentTime);
+    					endTime.value = moment(currentTime).add(50, "minutes").format('h:mm A');
+
+    					validateTime();
+             	   })
+        	    });
+        	    endMenuItems.forEach((item) => {
+                	item.addEventListener('click', event => {
+                 	   endTime.value = event.currentTarget.querySelector('a').textContent.replace(/\s(?!AM|PM|am|pm)/g, '').toUpperCase();
+                 	   var currentEnd = moment(endTime.value, 'h:mm A');
+    				//	console.log(currentEnd);
+    					endTime.value = moment(currentEnd).format('h:mm A');
+
+    					validateTime();
+             	   })
+
+        	    });
+
+    			//if they type into start
+    			startTime.addEventListener('keyup', () => {
+
+    				var currentStart = startTime.value.toUpperCase();
+    				startTime.value = currentStart.toLocaleString();
+    				//console.log(startTime.value);
+    				//var m = currentTime.match(/(\d{1,2}:\d{2})\s+?(AM|PM)/i)
+validateTime();
+
+    			});
+    			startTime.addEventListener('blur', () => {
+    				if (startTime.value) {
+    					var currentStart = moment(startTime.value, 'h:mm A');
+    					//console.log(currentStart);
+    					endTime.value = moment(currentStart).add(50, "minutes").format('h:mm A');
+    				}
+    			})
+    			endTime.addEventListener('keyup', () => {
+    				var currentEnd = endTime.value.toUpperCase();
+    				endTime.value = currentEnd.toLocaleString();
+
+    				validateTime();
+
+
+    			});
+    			endTime.addEventListener('blur', () => {
+    				if (endTime.value) {
+    					var currentEnd = moment(endTime.value, 'h:mm A');
+    					endTime.value = currentEnd.format('h:mm A');
+    				}
+    				validateTime();
+    			});
+
+				//courseInfo.start[courseInfo.length] = startTime.value;
+				//courseInfo.end[courseInfo.length] = endTime.value;
+
+    			//create function to check validation and tag to all keydown or blur eventss
+    			function validateTime(date, st, et) {
+    				//var date = dateArr.indexOf(currentDate);
+    				var st = startTime.value;
+    				var et = endTime.value;
+    				var diff = moment(et, 'hh:mm A') - moment(st, 'hh:mm A');
+    				var counter = 0;
+    				var fragment = document.createDocumentFragment();
+    				var errorP = document.createElement('p');
+					errorP.classList = 'pe-input--error_message';
+
+					counter++;
+
+					 // if (!dateArr[currentDate]) {
+//  					 console.log(currentDate)
+//  					}
+
+    				if (diff == 0) {
+    					console.log("end time is same as start time");
+    					if (!endTime.classList.contains('pe-textInput--basic_error')) {
+    						endTime.classList = "pe-textInput--basic_error";
+    						endTime.setAttribute('aria-describedby', 'error2-' + counter);
+    						endTime.setAttribute('aria-invalid', 'true');
+
+    						errorP.innerHTML = '<svg focusable="false" class="pe-icon--warning-sm-18" role="img" aria-label="Error" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning-sm-18"></use></svg> End time is same as start time';
+    						errorP.id = 'error2-' + counter;
+    						endTime.parentNode.parentNode.appendChild(errorP);
+    						}
+    				}
+    				else if (diff < 0) {
+
+						//console.log(diff);
+    					//console.log("end time is after start time");
+    					if (!endTime.classList.contains('pe-textInput--basic_error')) {
+    						endTime.classList = "pe-textInput--basic_error";
+    						endTime.setAttribute('aria-describedby', 'error1-' + counter);
+    						endTime.setAttribute('aria-invalid', 'true');
+							errorP.id = 'error1-' + counter;
+    						endTime.parentNode.parentNode.appendChild(errorP);
+
+    						if (( endTime.value.slice(-2) == 'AM' ) && (startTime.value.slice(-2) == 'PM')) {
+    						   errorP.innerHTML = '<svg focusable="false" class="pe-icon--warning-sm-18" role="img" aria-label="Error" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning-sm-18"></use></svg> End time must be on the same day';
+
+    						}
+    						else {
+    						errorP.innerHTML = '<svg focusable="false" class="pe-icon--warning-sm-18" role="img" aria-label="Error" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning-sm-18"></use></svg> End time is after start time';
+
+    						}
+
+    					}
+    				} else {
+    					//clear errors
+    					if (endTime.classList.contains('pe-textInput--basic_error')) {
+    						endTime.classList = "pe-textInput--basic";
+							var errorMessage = endTime.parentNode.parentNode.querySelector('p.pe-input--error_message');
+
+    						endTime.parentNode.parentNode.removeChild(errorMessage);
+    						endTime.removeAttribute('aria-describedby');
+    						endTime.removeAttribute('aria-invalid');
+
+    					}
+    				}
+    			} //end validate function
+				// courseArray.push(
+// 				    courseInfo
+// 				);
+//    			startArr[startArr.length] = startTime.value;
+//     			endArr[endArr.length] = endTime.value;
+//
+ 			//console.log(courseArray);
+    	});
+
+
+    };
+    function closeMenus(event) {
+    	if (event.target.matches('input')) return
+    	const menus = document.querySelectorAll('.menu');
+		menus.forEach((menu) => {
+			if (menu.classList.contains('hidden')) {return}
+			else {
+			menu.classList.add('hidden');}
+		})
+    }
+    const courseDateList = document.querySelector('#courseDates');
+    courseDateList.addEventListener('click', rowFunctions);
+   document.addEventListener('click', closeMenus);
+
+
+</script>

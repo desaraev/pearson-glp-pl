@@ -1396,6 +1396,23 @@
         {
             "front": [{
                 "icon": [{
+                    "icon": "warning-sm-24",
+                    "decorative": true
+                }],
+                "size": "warning-sm-24"
+            }],
+            "back": [{
+                "icon": [{
+                    "icon": "warning-sm-18",
+                    "decorative": true
+                }],
+                "size": "warning-sm-18",
+                "label": "warning"
+            }]
+        },
+        {
+            "front": [{
+                "icon": [{
                     "icon": "warning-24",
                     "decorative": true
                 }],
