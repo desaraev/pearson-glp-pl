@@ -4,9 +4,11 @@
         <thead>
             <tr>
                 {{#th}}
-                <th scope="col" class="sort" aria-sort="none" tabindex="0">{{label}} {{#icons}}
-                    <span class="{{direction}}">{{>ui-kit-single-icon}}</span>
-                    {{/icons}}
+                <th scope="col" class="sort" aria-sort="none">
+					<button class="sort-btn" title="Unsorted">{{label}} {{#icons}}
+                        <span class="sortable-icon {{direction}}">{{>ui-kit-single-icon}}</span>
+                        {{/icons}}
+                    </button>
                 </th>
                 {{/th}}
             </tr>

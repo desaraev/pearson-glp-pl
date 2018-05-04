@@ -1,95 +1,4 @@
 table {
-<<<<<<< HEAD
-  &.pe-proto {
-	thead {
-      background-color:$neutral-four;
-	  border:1px solid $border;
-    }
-	
-	tr {
-	  border-bottom:1px solid $border;
-	  &:nth-child(even) {
-		background-color:$primary-four;
-	  }
-	}
-	
-	th {
-	  padding:em(12) em(20);
-	  border-right:1px solid $border;
-	  &.sortable {
-		svg {
-		  transform: rotate(90deg)
-		}
-	  }
-	}
-	
-	td {
-	  padding:em(14) em(20);
-	  vertical-align: middle;
-	}
-
-	&.small {
-	  th, td {
-		padding:5px 20px;
-	  }
-	}
-  }
-  
-  thead {
-	border-top: 1px solid $neutral-four;
-	border-bottom: 1px solid $neutral-four;
-	
-	th {
-	  padding: 1em 20px;
-	}
-  }
-  tbody {
-	td{
-	  padding:1em 20px;
-	}
-	border-bottom: 1px solid $neutral-four;
-  }
-  
-  &.hoverable {
-	tbody tr {
-	  &:hover {
-		background-color:$neutral-five;
-		cursor: pointer;
-	  }
-	}
-  }
-  &.sortable {
-	th {
-	  &:hover {
-		background-color:$neutral-five;
-		cursor: pointer;
-	  }
-	  .up {
-		display:none;
-	  }
-	  &.selected {
-		.up {
-		  display:inline;
-		}
-		.down {
-		  display:none;
-		}
-	  }
-	}
-  }
-  &.selectable {
-	@extend .hoverable;
-	
-	.selected {
-	  background-color: $secondary-three;
-	  &:hover {
-		outline: 1px solid $primary;
-	  }
-	}
-  }
-}
-
-=======
   min-width: 640px;
   margin-bottom: 0;
 
@@ -163,24 +72,22 @@ table {
   }
 
   &.sortable {
+
+    .sort-btn {
+      border: 0;
+      background-color: transparent;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
+    }
+
     th {
       &:hover {
         background-color: $neutral-five;
-        cursor: pointer;
       }
 
-      .up {
+      .up, .down {
         display: none;
-      }
-
-      &.selected {
-        .up {
-          display: inline;
-        }
-
-        .down {
-          display: none;
-        }
       }
     }
   }
@@ -236,4 +143,3 @@ table {
     overflow: scroll;
   }
 }
->>>>>>> f004035aa240d2057d9d6054d7edb023683c9f5d

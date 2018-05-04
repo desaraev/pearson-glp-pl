@@ -611,6 +611,13 @@
                             "icon": "sort-up-18",
                             "label": "sort ascending"
                         }]
+                    },
+                    {
+                        "direction": "none",
+                        "icon": [{
+                            "icon": "sortable-18",
+                            "label": "sort ascending"
+                        }]
                     }
                 ]
             },
@@ -627,6 +634,13 @@
                         "direction": "up",
                         "icon": [{
                             "icon": "sort-up-18",
+                            "label": "sort ascending"
+                        }]
+                    },
+                    {
+                        "direction": "none",
+                        "icon": [{
+                            "icon": "sortable-18",
                             "label": "sort ascending"
                         }]
                     }
@@ -647,6 +661,13 @@
                             "icon": "sort-up-18",
                             "label": "sort ascending"
                         }]
+                    },
+                    {
+                        "direction": "none",
+                        "icon": [{
+                            "icon": "sortable-18",
+                            "label": "sort ascending"
+                        }]
                     }
                 ]
             },
@@ -665,6 +686,13 @@
                             "icon": "sort-up-18",
                             "label": "sort ascending"
                         }]
+                    },
+                    {
+                        "direction": "none",
+                        "icon": [{
+                            "icon": "sortable-18",
+                            "label": "sort ascending"
+                        }]
                     }
                 ]
             },
@@ -681,6 +709,13 @@
                         "direction": "up",
                         "icon": [{
                             "icon": "sort-up-18",
+                            "label": "sort ascending"
+                        }]
+                    },
+                    {
+                        "direction": "none",
+                        "icon": [{
+                            "icon": "sortable-18",
                             "label": "sort ascending"
                         }]
                     }

@@ -3,7 +3,7 @@
     const sortableTable = document.querySelectorAll('table.sortable');
 
     sortableTable.forEach(table => {
-        const sortBtns = table.querySelectorAll('th.sort');
+        const sortBtns = table.querySelectorAll('th.sort button');
 
         function sortTable(n) {
             let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -39,21 +39,50 @@
                     }
                 }
             }
+
+            //set other columns to unsorted
+            sortBtns.forEach((btn, index) => {
+                if (index != n) {
+                    btn.parentElement.setAttribute('aria-sort', 'none');
+                    btn.setAttribute('title', 'Unsorted');
+                    const upicon = btn.querySelector('.up');
+                    const downicon = btn.querySelector('.down');
+                    const sorticon = btn.querySelector('.none');
+                    sorticon.style.display = "inline";
+                    upicon.style.display = "none";
+                    downicon.style.display = "none";
+                }
+            })
         }
 
         sortBtns.forEach((btn, index) => {
             btn.addEventListener('click', event => {
-                const ariaSort = btn.getAttribute('aria-sort');
+                const ariaSort = btn.parentElement.getAttribute('aria-sort');
+                const upicon = btn.querySelector('.up');
+                const downicon = btn.querySelector('.down');
+                const sorticon = btn.querySelector('.none');
+                sorticon.style.display = "none";
 
                 sortBtns.forEach(btn => {
-                    btn.setAttribute('aria-sort', 'none');
+                    btn.parentElement.setAttribute('aria-sort', 'none');
+                    btn.setAttribute('title', 'Unsorted');
                 });
-                if (ariaSort === 'none')
-                    btn.setAttribute('aria-sort', 'ascending');
-                else if (ariaSort === 'ascending')
-                    btn.setAttribute('aria-sort', 'descending');
-                else
-                    btn.setAttribute('aria-sort', 'ascending');
+                if (ariaSort === 'none') {
+                    btn.parentElement.setAttribute('aria-sort', 'ascending');
+                    btn.setAttribute('title', 'Sorted Up');
+                    upicon.style.display = "inline";
+                    downicon.style.display = "none";
+                } else if (ariaSort === 'ascending') {
+                    btn.parentElement.setAttribute('aria-sort', 'descending');
+                    btn.setAttribute('title', 'Sorted Down');
+                    upicon.style.display = "none";
+                    downicon.style.display = "inline";
+                } else {
+                    btn.parentElement.setAttribute('aria-sort', 'ascending');
+                    btn.setAttribute('title', 'Sorted Up');
+                    upicon.style.display = "inline";
+                    downicon.style.display = "none";
+                }
 
                 if (btn.classList.contains('selected') === false) {
                     sortBtns.forEach(btn => {
@@ -68,7 +97,7 @@
                 sortTable(index);
             });
 
-            btn.addEventListener('keydown', function(event) {
+            btn.addEventListener('keyup', function(event) {
                 if (event.keyCode === 32) {
                     btn.click();
                 }
