@@ -3,8 +3,15 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  @media (max-width: 640px) {
+    overflow-x: hidden;
+  }
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -16,82 +23,372 @@ input[type=number]::-webkit-outer-spin-button {
 // Background Color Helpers ////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 .black-bg {
-  background-color: #000;
+  @include setcolor(#000);
 }
 
 .white-bg {
-  background-color: #fff;
+  @include setcolor(#fff);
 }
 
 .main-bg {
-  background-color:$primary;
+  @include setcolor($primary);
 }
 
 .main-two-bg {
-  background-color: $primary-two;
+  @include setcolor($primary-two);
 }
 
 .main-three-bg {
-  background-color: $primary-three;
+  @include setcolor($primary-three);
 }
 
 .main-four-bg {
-  background-color: $primary-four;
+  @include setcolor($primary-four);
 }
 
 .secondary-bg {
-  background-color: $secondary;
+  @include setcolor($secondary);
 }
 
 .secondary-two-bg {
-  background-color: $secondary-two;
+  @include setcolor($secondary-two);
 }
 
 .secondary-three-bg {
-  background-color: $secondary-three;
+  @include setcolor($secondary-three);
 }
 
 .secondary-four-bg {
-  background-color: $secondary-four;
+  @include setcolor($secondary-four);
 }
 
 .secondary-five-bg {
-  background-color: $secondary-five;
+  @include setcolor($secondary-five);
 }
 
 .neutral-bg {
-  background-color:$neutral;
+  @include setcolor($neutral);
 }
 
 .neutral-two-bg {
-  background-color:$neutral-two;
+  @include setcolor($neutral-two);
 }
 
 .neutral-three-bg {
-  background-color:$neutral-three;
+  @include setcolor($neutral-three);
 }
 
 .neutral-four-bg {
-  background-color:$neutral-four;
+  @include setcolor($neutral-four);
 }
 
 .neutral-five-bg {
-  background-color:$neutral-five;
+  @include setcolor($neutral-five);
 }
 
 .condition-one-bg {
-  background-color: $condition-one;
+  @include setcolor($condition-one);
 }
 
 .condition-two-bg {
-  background-color:$condition-two;
+  @include setcolor($condition-two);
 }
 
 .condition-three-bg {
-  background-color:$condition-three;
+  @include setcolor($condition-three);
 }
 
+// D3 Colors 10 Array //////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
+.d3-10-array00-bg {
+  @include setcolor($d3-10-array00);
+}
+
+.d3-10-array01-bg {
+  @include setcolor($d3-10-array01);
+}
+
+.d3-10-array02-bg {
+  @include setcolor($condition-two);
+}
+
+.d3-10-array03-bg {
+  @include setcolor($condition-one);
+}
+
+.d3-10-array04-bg {
+  @include setcolor(#9e007e);
+}
+
+.d3-10-array05-bg {
+  @include setcolor(#bb5e00);
+}
+
+.d3-10-array06-bg {
+  @include setcolor($condition-three);
+}
+
+.d3-10-array07-bg {
+  @include setcolor($neutral-three);
+}
+
+.d3-10-array08-bg {
+  @include setcolor(#a8af0b);
+}
+
+.d3-10-array09-bg {
+  @include setcolor(#19a5a3);
+}
+
+// D3 Colors 20 Array //////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+.d3-20-array00-bg {
+  @include setcolor($d3-20-array00);
+}
+
+.d3-20-array01-bg {
+  @include setcolor($d3-20-array01);
+}
+
+.d3-20-array02-bg {
+  @include setcolor($d3-20-array02);
+}
+
+.d3-20-array03-bg {
+  @include setcolor($d3-20-array03);
+}
+
+.d3-20-array04-bg {
+  @include setcolor($d3-20-array04);
+}
+
+.d3-20-array05-bg {
+  @include setcolor($d3-20-array05);
+}
+
+.d3-20-array06-bg {
+  @include setcolor($d3-20-array06);
+}
+
+.d3-20-array07-bg {
+  @include setcolor($d3-20-array07);
+}
+
+.d3-20-array08-bg {
+  @include setcolor($d3-20-array08);
+}
+
+.d3-20-array09-bg {
+  @include setcolor($d3-20-array09);
+}
+
+.d3-20-array10-bg {
+  @include setcolor($d3-20-array10);
+}
+
+.d3-20-array11-bg {
+  @include setcolor($d3-20-array11);
+}
+
+.d3-20-array12-bg {
+  @include setcolor($d3-20-array12);
+}
+
+.d3-20-array13-bg {
+  @include setcolor($d3-20-array13);
+}
+
+.d3-20-array14-bg {
+  @include setcolor($d3-20-array14);
+}
+
+.d3-20-array15-bg {
+  @include setcolor($d3-20-array15);
+}
+
+.d3-20-array16-bg {
+  @include setcolor($d3-20-array16);
+}
+
+.d3-20-array17-bg {
+  @include setcolor($d3-20-array17);
+}
+
+.d3-20-array18-bg {
+  @include setcolor($d3-20-array18);
+}
+
+.d3-20-array19-bg {
+  @include setcolor($d3-20-array19);
+}
+
+// D3 Colors 20b Array //////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+.d3-20b-array00-bg {
+  @include setcolor($d3-20b-array00);
+}
+
+.d3-20b-array01-bg {
+  @include setcolor($d3-20b-array01);
+}
+
+.d3-20b-array02-bg {
+  @include setcolor($d3-20b-array02);
+}
+
+.d3-20b-array03-bg {
+  @include setcolor($d3-20b-array03);
+}
+
+.d3-20b-array04-bg {
+  @include setcolor($d3-20b-array04);
+}
+
+.d3-20b-array05-bg {
+  @include setcolor($d3-20b-array05);
+}
+
+.d3-20b-array06-bg {
+  @include setcolor($d3-20b-array06);
+}
+
+.d3-20b-array07-bg {
+  @include setcolor($d3-20b-array07);
+}
+
+.d3-20b-array08-bg {
+  @include setcolor($d3-20b-array08);
+}
+
+.d3-20b-array09-bg {
+  @include setcolor($d3-20b-array09);
+}
+
+.d3-20b-array10-bg {
+  @include setcolor($d3-20b-array10);
+}
+
+.d3-20b-array11-bg {
+  @include setcolor($d3-20b-array11);
+}
+
+.d3-20b-array12-bg {
+  @include setcolor($d3-20b-array12);
+}
+
+.d3-20b-array13-bg {
+  @include setcolor($d3-20b-array13);
+}
+
+.d3-20b-array14-bg {
+  @include setcolor($d3-20b-array14);
+}
+
+.d3-20b-array15-bg {
+  @include setcolor($d3-20b-array15);
+}
+
+.d3-20b-array16-bg {
+  @include setcolor($d3-20b-array16);
+}
+
+.d3-20b-array17-bg {
+  @include setcolor($d3-20b-array17);
+}
+
+.d3-20b-array18-bg {
+  @include setcolor($d3-20b-array18);
+}
+
+.d3-20b-array19-bg {
+  @include setcolor($d3-20b-array19);
+}
+
+// D3 Colors 20c Array //////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+.d3-20c-array00-bg {
+  @include setcolor($d3-20c-array00);
+}
+
+.d3-20c-array01-bg {
+  @include setcolor($d3-20c-array01);
+}
+
+.d3-20c-array02-bg {
+  @include setcolor($d3-20c-array02);
+}
+
+.d3-20c-array03-bg {
+  @include setcolor($d3-20c-array03);
+}
+
+.d3-20c-array04-bg {
+  @include setcolor($d3-20c-array04);
+}
+
+.d3-20c-array05-bg {
+  @include setcolor($d3-20c-array05);
+}
+
+.d3-20c-array06-bg {
+  @include setcolor($d3-20c-array06);
+}
+
+.d3-20c-array07-bg {
+  @include setcolor($d3-20c-array07);
+}
+
+.d3-20c-array08-bg {
+  @include setcolor($d3-20c-array08);
+}
+
+.d3-20c-array09-bg {
+  @include setcolor($d3-20c-array09);
+}
+
+.d3-20c-array10-bg {
+  @include setcolor($d3-20c-array10);
+}
+
+.d3-20c-array11-bg {
+  @include setcolor($d3-20c-array11);
+}
+
+.d3-20c-array12-bg {
+  @include setcolor($d3-20c-array12);
+}
+
+.d3-20c-array13-bg {
+  @include setcolor($d3-20c-array13);
+}
+
+.d3-20c-array14-bg {
+  @include setcolor($d3-20c-array14);
+}
+
+.d3-20c-array15-bg {
+  @include setcolor($d3-20c-array15);
+}
+
+.d3-20c-array16-bg {
+  @include setcolor($d3-20c-array16);
+}
+
+.d3-20c-array17-bg {
+  @include setcolor($d3-20c-array17);
+}
+
+.d3-20c-array18-bg {
+  @include setcolor($d3-20c-array18);
+}
+
+.d3-20c-array19-bg {
+  @include setcolor($d3-20c-array19);
+}
 
 // Font Color Helpers - Targets color and fill color for SVG ///
 ////////////////////////////////////////////////////////////////
@@ -111,7 +408,7 @@ input[type=number]::-webkit-outer-spin-button {
   @include font-color($primary-two);
 }
 
-.main-three{
+.main-three {
   @include font-color($primary-three);
 }
 
@@ -167,9 +464,9 @@ input[type=number]::-webkit-outer-spin-button {
   @include font-color($condition-three);
 }
 
-
 .flex-container {
   @include flex;
+
   &.justify-flex-start {
     align-items: center;
     justify-content: flex-start;
@@ -177,5 +474,63 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hidden {
-  display:none;
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.circle-image {
+  img {
+    border-radius: 50%;
+  }
+}
+
+.circle-image li {
+  list-style: none;
+  width: 50%;
+  float: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+.margin-sides {
+  margin: 0 1em;
+}
+
+.margin-right {
+  margin-right: 1em;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.pad-top-4 {
+  padding-top: 4em;
+}
+
+.pad-top-2 {
+  padding-top: 2em;
+}
+
+.badge {
+  max-width: 125px;
+  margin-bottom: 1em;
+}
+
+.stars {
+  max-width: 250px;
+  margin-bottom: 1em;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.light {
+  font-weight: lighter;
 }

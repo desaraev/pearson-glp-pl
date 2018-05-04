@@ -1,15 +1,18 @@
 .dropdown {
-  position:relative;
+  position: relative;
+
   button {
-	position:relative;
-	z-index: 9;
+    position: relative;
+    z-index: 9;
   }
+
   .dropdown-menu {
-	position:absolute;
-	z-index:10;
-	.menu {
-	  background-color:white;
-	  position: absolute;
-	}
+    position: absolute;
+    z-index: 10;
+
+    .menu {
+      background-color: $primary-three;
+      position: absolute;
+    }
   }
 }

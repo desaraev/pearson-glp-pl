@@ -1,24 +1,23 @@
 {{#calendar}}
-<div class="calendar">
-	<div class="header">
-		<span class="pe-title pe-title--small neutral-two">{{month}} {{year}}</span>
-		<div class="button-group">
-			{{#buttons}}
-				{{> ui-kit-icon}}
-			{{/buttons}}
-		</div>
-	</div>
-	<div class="days-of-week">
-		{{#days}}
-			<span class="pe-label pe-label--small neutral-three">{{day}}</span>
-		{{/days}}
-	</div>
-	{{#week}}
-		<div class="weeks">
-			{{#numbers}}
-				<button type="button" class="pe-link--btn pe-label neutral-two" aria-label="{{month}} {{number}}">{{number}}</button>
-			{{/numbers}}
-		</div>
-	{{/week}}
-</div>
+<section class="calendar">
+    <div class="header">
+        <h1>
+			<span class="pe-title pe-title--small neutral-two month">{{month}}</span>
+			<span class="pe-title pe-title--small neutral-two year">{{year}}</span>
+		</h1>
+        <div class="button-group">
+            {{#buttons}} {{> ui-kit-icon}} {{/buttons}}
+        </div>
+    </div>
+    <div class="days-of-week">
+        {{#days}}
+        <span class="pe-label pe-label--small">{{day}}</span>
+        {{/days}}
+    </div>
+    {{#week}}
+    <div class="days">
+
+    </div>
+    {{/week}}
+</section>
 {{/calendar}}

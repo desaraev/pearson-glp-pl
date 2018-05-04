@@ -1,0 +1,27 @@
+<p class="pe-label">Click on the red rectangles to see the styling info.</p>
+<button class="pe-btn__cta--btn_large redline-target  redline-example">Call to Action</button>
+<button class="pe-btn__primary--btn_large redline-target redline-example">Primary</button>
+
+{{#calendar}}
+<section class="calendar redline-example redline-target">
+    <div class="header">
+        <h1>
+			<span class="pe-title pe-title--small neutral-two month">{{month}}</span>
+			<span class="pe-title pe-title--small neutral-two year">{{year}}</span>
+		</h1>
+        <div class="button-group redline-target">
+            {{#buttons}} {{> ui-kit-icon}} {{/buttons}}
+        </div>
+    </div>
+    <div class="days-of-week">
+        {{#days}}
+        <span class="pe-label pe-label--small">{{day}}</span>
+        {{/days}}
+    </div>
+    {{#week}}
+    <div class="days">
+
+    </div>
+    {{/week}}
+</section>
+{{/calendar}}

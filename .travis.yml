@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "7"
+  - "9"
 before_install:
   - rvm install 2.3.1
   - gem install sass
@@ -10,4 +10,6 @@ before_script:
   - npm install -g gulp-cli
 script:
   - gulp deploy
-
+branches:
+  only:
+  - master

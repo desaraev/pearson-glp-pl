@@ -1,0 +1,45 @@
+{{#tableWithControls}}
+
+<div class="table-with-controls">
+    <div class="controls">
+        <div class="control">
+            <div class="basic-select">
+                <label class="pe-textLabelInput__label" for="{{id}}" aria-label="{{label}}">{{label}}</label>
+                <div class="pe-select-container">
+                    <select class="pe-selectInput--basic" id="{{id}}">
+                        {{#th}}
+                        <option value="{{label}}">{{label}}</option>
+                        {{/th}}
+                    </select>
+                    {{> ui-kit-single-icon }}
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            {{> ui-kit-input-icon }}
+        </div>
+    </div>
+    <div class="responsive-table">
+        <table class="selectable" aria-label="{{tableName}}">
+            <thead>
+                <tr>
+                    <th width="50" scope="col">{{> ui-kit-checkboxes }}</th>
+                    {{#th}}
+                    <th scope="col" data-value>{{label}}</th>
+                    {{/th}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#tr}}
+                <tr{{#selected}} class="selected" {{/selected}} tabindex="0">
+                    <td width="50" scope="row">{{> ui-kit-checkboxes }}</td>
+                    {{#td}}
+                    <td>{{label}}</td>
+                    {{/td}}
+                    </tr>
+                    {{/tr}}
+            </tbody>
+        </table>
+    </div>
+</div>
+{{/tableWithControls}}

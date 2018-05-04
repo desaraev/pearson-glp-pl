@@ -1,5 +1,9 @@
-# Pearson GLP Patternlab - v0.5
-http://45.55.127.237/pearson-glp-pl/
+
+[![Build Status](https://travis-ci.com/pearson-ux/pearson-glp-pl.svg?token=yRiZW31ciCX2AwmRD34E&branch=master)](https://travis-ci.com/pearson-ux/pearson-glp-pl)
+
+# Pearson GLP Patternlab - v0.6
+https://ux.pearson.com/prototypes/pearson-glp-pl/
+
 
 ## Pattern Lab & Elements Boilerplate
 This setup will get you started with running a basic Pattern Lab integrated with elements.  Perfect for prototyping HTML and SCSS in an atomic environment. To get started, install all the necessary dependencies and load configuration folders and files.
@@ -27,28 +31,22 @@ For more information on patternlab
 1. http://patternlab.io
 2. http://patternlab.io/docs/index.html
 
-## Bundle Final Files
 
-1. To export and prepare files for bundling navigate to the patternlab url you would like the html for.  Example if you wanted to export a finished page navigate to: http://localhost:3000/?p=your-page
-2. Copy the query immediatley following the p=.  In the above example you would copy 'your-page'
-3. Open patternlab-config.json
-4. Navigate to line 59
-5. Remove any existing items in the array you may not want to export.
-6. Paste in the copied query into the empty array.  NOTE if you want to export multiple pages repeat steps 1 -4 and ADD the item to the array.  you can export as many pages as you want.
-7. The line should like this:   ```"patternExportPatternPartials": ["your-page"],```
-8. Save the file
-9. in the command line from the root of the project type: ```$ gulp bundle```
-10 The files and your project should now be included in the UI folder
-11. NOTE: on occassion you will randomly run into console errors, if this is the case, terminate and run again.  These errors will not harm your files, it will just prevent the export.  We are working on a way to eliminate them.
+## Automatic Deployment
+We're using Travis CI to test for automatic deployment.
+1. First you will want to create a new repo here https://github.com/pearson-ux
+2. If you dont have permissions please contact greg.davis@pearson.com to request access.  
+3. Add the project to the repo.  (its assumed that you know how to do this, if not please reach out to david.odey@pearson.com for help)
+4. In github go into the repository and click Settings.
+5. Navigate to and click 'Integrations and Services'
+6. Choose 'Travis CI' and click 'Add Service'
+7. Next, navigate to Travis page for private repos: https://travis-ci.com/profile and enable your project.  You may need to link your Github account to Travis, if you have not previously used it.  If you need help, please contact david.odey@pearson.com
+8. Open deploy.js in the '_tasks' folder
+9. find the following code:             `remotePath: '/home/webroot/pearson-glp-pl'` and change that to             `remotePath: '/home/webroot/your-project-url-here'`
+10. Commit your files and push them to github.  
+11. Your files will automatically build and deploy to: http://45.55.127.237/your-project-url-here
 
-## Copy files to ftp http://159.182.11.87
-1. open up the ftp.js file in the _tasks folder
-2. on line 10 replace the project folder name, with a name of your choice, that accurately reflects you project.
-3. change ```remotePath: '/home/webroot/elements-patternlab'```  to ```remotePath: '/home/webroot/your-project'```
-4. Save
-5. sign into VPN
-5. from the console run $ gulp ftp
-6. when the process is complete your pattern lab will be show up at: http://159.182.11.87/your-project/
+
 
 ## Contributing
 Anyone can contribute to this project.  To get started:
@@ -58,3 +56,4 @@ Anyone can contribute to this project.  To get started:
 4. after review we will merge it to master
 
 All components must be accessible and reviewed by the group.
+
